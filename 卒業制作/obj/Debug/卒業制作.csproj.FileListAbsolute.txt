@@ -1,0 +1,13 @@
+W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\bin\Debug\卒業制作.exe.config
+W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\bin\Debug\卒業制作.exe
+W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\bin\Debug\卒業制作.pdb
+W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\obj\Debug\卒業制作.csproj.AssemblyReference.cache
+W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\obj\Debug\卒業制作.Properties.Resources.resources
+W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\obj\Debug\卒業制作.csproj.GenerateResource.cache
+W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\obj\Debug\卒業制作.csproj.CoreCompileInputs.cache
+W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\obj\Debug\卒業制作.exe
+W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\obj\Debug\卒業制作.pdb
+W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\obj\Debug\卒業制作.frmmember.resources
+W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\obj\Debug\卒業制作.frmTop.resources
+W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\obj\Debug\卒業制作.frmGoods.resources
+W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\obj\Debug\卒業制作.Form1.resources
