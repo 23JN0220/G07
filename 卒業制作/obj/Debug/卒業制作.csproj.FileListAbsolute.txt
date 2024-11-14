@@ -11,3 +11,16 @@ W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\obj
 W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\obj\Debug\卒業制作.frmTop.resources
 W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\obj\Debug\卒業制作.frmGoods.resources
 W:\卒業制作\23JN02\7班作業フォルダ\C＃\卒業制作\卒業制作\obj\Debug\卒業制作.Form1.resources
+C:\Users\23jn0204\Source\Repos\G07\卒業制作\bin\Debug\卒業制作.exe.config
+C:\Users\23jn0204\Source\Repos\G07\卒業制作\bin\Debug\卒業制作.exe
+C:\Users\23jn0204\Source\Repos\G07\卒業制作\bin\Debug\卒業制作.pdb
+C:\Users\23jn0204\Source\Repos\G07\卒業制作\obj\Debug\卒業制作.csproj.AssemblyReference.cache
+C:\Users\23jn0204\Source\Repos\G07\卒業制作\obj\Debug\卒業制作.frmGoods.resources
+C:\Users\23jn0204\Source\Repos\G07\卒業制作\obj\Debug\卒業制作.Form1.resources
+C:\Users\23jn0204\Source\Repos\G07\卒業制作\obj\Debug\卒業制作.frmTop.resources
+C:\Users\23jn0204\Source\Repos\G07\卒業制作\obj\Debug\卒業制作.frmMember.resources
+C:\Users\23jn0204\Source\Repos\G07\卒業制作\obj\Debug\卒業制作.Properties.Resources.resources
+C:\Users\23jn0204\Source\Repos\G07\卒業制作\obj\Debug\卒業制作.csproj.GenerateResource.cache
+C:\Users\23jn0204\Source\Repos\G07\卒業制作\obj\Debug\卒業制作.csproj.CoreCompileInputs.cache
+C:\Users\23jn0204\Source\Repos\G07\卒業制作\obj\Debug\卒業制作.exe
+C:\Users\23jn0204\Source\Repos\G07\卒業制作\obj\Debug\卒業制作.pdb
