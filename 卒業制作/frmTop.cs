@@ -24,7 +24,7 @@ namespace 卒業制作
 
         private void btnMember_Click(object sender, EventArgs e)
         {
-            //コミットテスト
+            //テスト
             frmMember frmMember = new frmMember();
             frmMember.ShowDialog();
 
