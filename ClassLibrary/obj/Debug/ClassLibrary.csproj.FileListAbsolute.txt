@@ -1,0 +1,7 @@
+C:\Users\23JN0220\source\repos\G07\ClassLibrary\bin\Debug\ClassLibrary.dll.config
+C:\Users\23JN0220\source\repos\G07\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\23JN0220\source\repos\G07\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\23JN0220\source\repos\G07\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+C:\Users\23JN0220\source\repos\G07\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\23JN0220\source\repos\G07\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\23JN0220\source\repos\G07\ClassLibrary\obj\Debug\ClassLibrary.pdb

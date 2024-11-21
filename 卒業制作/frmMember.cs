@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClassLibrary;
 
 namespace 卒業制作
 {
@@ -22,9 +23,17 @@ namespace 卒業制作
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void frmMember_Shown(object sender, EventArgs e)
         {
+            MemberTable memberTable = new MemberTable();
 
+            DataTable dataTable = memberTable.GetMember();
+
+            if (dataTable != null)
+            {
+                dgvMember.AutoGenerateColumns = false;
+                dgvMember.DataSource = dataTable;
+            }
         }
     }
 }

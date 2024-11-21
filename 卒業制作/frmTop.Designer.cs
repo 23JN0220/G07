@@ -55,6 +55,7 @@
             this.btnGoods.TabIndex = 1;
             this.btnGoods.Text = "商品管理";
             this.btnGoods.UseVisualStyleBackColor = true;
+            this.btnGoods.Click += new System.EventHandler(this.btnGoods_Click);
             // 
             // btnCompatibility
             // 

@@ -24,10 +24,15 @@ namespace 卒業制作
 
         private void btnMember_Click(object sender, EventArgs e)
         {
-            //1010101テスト
             frmMember frmMember = new frmMember();
             frmMember.ShowDialog();
 
+        }
+
+        private void btnGoods_Click(object sender, EventArgs e)
+        {
+            frmGoods frmGoods = new frmGoods();
+            frmGoods.ShowDialog();
         }
     }
 }

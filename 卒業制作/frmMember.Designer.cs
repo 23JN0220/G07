@@ -30,11 +30,11 @@
         {
             this.btnDelete = new System.Windows.Forms.Button();
             this.dgvMember = new System.Windows.Forms.DataGridView();
-            this.btnClose = new System.Windows.Forms.Button();
             this.member_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.member_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnClose = new System.Windows.Forms.Button();
             this.txtMember = new System.Windows.Forms.TextBox();
             this.brnSerch = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -68,6 +68,34 @@
             this.dgvMember.Size = new System.Drawing.Size(539, 258);
             this.dgvMember.TabIndex = 2;
             // 
+            // member_id
+            // 
+            this.member_id.DataPropertyName = "member_id";
+            this.member_id.HeaderText = "会員番号";
+            this.member_id.Name = "member_id";
+            this.member_id.Width = 119;
+            // 
+            // tel
+            // 
+            this.tel.DataPropertyName = "tel";
+            this.tel.HeaderText = "電話番号";
+            this.tel.Name = "tel";
+            this.tel.Width = 119;
+            // 
+            // member_name
+            // 
+            this.member_name.DataPropertyName = "member_name";
+            this.member_name.HeaderText = "会員名";
+            this.member_name.Name = "member_name";
+            this.member_name.Width = 98;
+            // 
+            // email
+            // 
+            this.email.DataPropertyName = "email";
+            this.email.HeaderText = "メールアドレス";
+            this.email.Name = "email";
+            this.email.Width = 147;
+            // 
             // btnClose
             // 
             this.btnClose.Location = new System.Drawing.Point(537, 387);
@@ -76,34 +104,6 @@
             this.btnClose.TabIndex = 3;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
-            // 
-            // member_id
-            // 
-            this.member_id.DataPropertyName = "member_id";
-            this.member_id.HeaderText = "会員番号";
-            this.member_id.Name = "member_id";
-            this.member_id.Width = 90;
-            // 
-            // tel
-            // 
-            this.tel.DataPropertyName = "tel";
-            this.tel.HeaderText = "電話番号";
-            this.tel.Name = "tel";
-            this.tel.Width = 90;
-            // 
-            // member_name
-            // 
-            this.member_name.DataPropertyName = "member_name";
-            this.member_name.HeaderText = "会員名";
-            this.member_name.Name = "member_name";
-            this.member_name.Width = 90;
-            // 
-            // email
-            // 
-            this.email.DataPropertyName = "email";
-            this.email.HeaderText = "メールアドレス";
-            this.email.Name = "email";
-            this.email.Width = 106;
             // 
             // txtMember
             // 
@@ -130,7 +130,7 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "会員番号";
             // 
-            // frmmembr
+            // frmMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -143,8 +143,9 @@
             this.Controls.Add(this.btnDelete);
             this.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Name = "frmmembr";
+            this.Name = "frmMember";
             this.Text = "会員管理画面";
+            this.Shown += new System.EventHandler(this.frmMember_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
