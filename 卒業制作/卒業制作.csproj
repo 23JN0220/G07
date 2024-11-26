@@ -61,6 +61,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmGoodsCooler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGoodsCooler.Designer.cs">
+      <DependentUpon>frmGoodsCooler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGoodsCpu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGoodsCpu.Designer.cs">
+      <DependentUpon>frmGoodsCpu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGoodsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGoodsAdd.Designer.cs">
+      <DependentUpon>frmGoodsAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGokanseiPowerUnit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +173,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGokanseiMemory.resx">
       <DependentUpon>frmGokanseiMemory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGoodsAdd.resx">
+      <DependentUpon>frmGoodsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGoodsCooler.resx">
+      <DependentUpon>frmGoodsCooler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTop.resx">
       <DependentUpon>frmTop.cs</DependentUpon>
