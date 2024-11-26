@@ -1,6 +1,6 @@
 ﻿namespace 卒業制作
 {
-    partial class frmGokianseiCooler
+    partial class frmGokanseiCooler
     {
         /// <summary>
         /// Required designer variable.

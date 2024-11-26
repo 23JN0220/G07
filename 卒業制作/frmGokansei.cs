@@ -25,8 +25,21 @@ namespace 卒業制作
 
         private void btnCooler_Click(object sender, EventArgs e)
         {
-            frmGokianseiCooler frmGokianseiCooler = new frmGokianseiCooler();
+            frmGokanseiCooler frmGokianseiCooler = new frmGokanseiCooler();
             frmGokianseiCooler.ShowDialog();
+        }
+
+
+        private void btnMemory_Click(object sender, EventArgs e)
+        {
+            frmGokanseiMemory frmGokanseiMemory = new frmGokanseiMemory();
+            frmGokanseiMemory.ShowDialog();
+            }
+
+        private void btnMotherboard_Click(object sender, EventArgs e)
+        {
+            frmGokanseiMotherboard frmGokanseiMotherboard = new frmGokanseiMotherboard();
+            frmGokanseiMotherboard.ShowDialog();
         }
     }
 }

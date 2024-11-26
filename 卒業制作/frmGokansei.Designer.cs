@@ -70,6 +70,7 @@
             this.btnMotherboard.TabIndex = 2;
             this.btnMotherboard.Text = "マザーボード";
             this.btnMotherboard.UseVisualStyleBackColor = true;
+            this.btnMotherboard.Click += new System.EventHandler(this.btnMotherboard_Click);
             // 
             // btnMemory
             // 
@@ -79,6 +80,7 @@
             this.btnMemory.TabIndex = 3;
             this.btnMemory.Text = "メモリ";
             this.btnMemory.UseVisualStyleBackColor = true;
+            this.btnMemory.Click += new System.EventHandler(this.btnMemory_Click);
             // 
             // btnGpu
             // 

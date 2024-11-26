@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace 卒業制作
 {
-    public partial class frmGokanseiMotherboard : Form
+    public partial class frmGokanseiMemory : Form
     {
-        public frmGokanseiMotherboard()
+        public frmGokanseiMemory()
         {
             InitializeComponent();
         }
-
-      
     }
 }

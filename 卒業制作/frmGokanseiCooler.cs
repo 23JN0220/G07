@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace 卒業制作
 {
-    public partial class frmGokianseiCooler : Form
+    public partial class frmGokanseiCooler : Form
     {
-        public frmGokianseiCooler()
+        public frmGokanseiCooler()
         {
             InitializeComponent();
         }
