@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace 卒業制作
 {
-    public partial class frmGokanseiGpu : Form
+    public partial class frmGokanseiFan : Form
     {
-        public frmGokanseiGpu()
+        public frmGokanseiFan()
         {
             InitializeComponent();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }

@@ -138,6 +138,7 @@
             this.btnFan.TabIndex = 9;
             this.btnFan.Text = "ケースファン";
             this.btnFan.UseVisualStyleBackColor = true;
+            this.btnFan.Click += new System.EventHandler(this.btnFan_Click);
             // 
             // btnOs
             // 
@@ -147,6 +148,7 @@
             this.btnOs.TabIndex = 10;
             this.btnOs.Text = "OS";
             this.btnOs.UseVisualStyleBackColor = true;
+            this.btnOs.Click += new System.EventHandler(this.btnOs_Click);
             // 
             // btnBack
             // 
@@ -156,6 +158,7 @@
             this.btnBack.TabIndex = 11;
             this.btnBack.Text = "戻る";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // frmGokansei
             // 

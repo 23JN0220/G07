@@ -59,5 +59,22 @@ namespace 卒業制作
             frmGokanseiPowerUnit frmGokanseiPowerUnit = new frmGokanseiPowerUnit();
             frmGokanseiPowerUnit.ShowDialog();
         }
+
+        private void btnFan_Click(object sender, EventArgs e)
+        {
+            frmGokanseiFan frmGokanseiFan = new frmGokanseiFan();
+            frmGokanseiFan.ShowDialog();
+        }
+
+        private void btnOs_Click(object sender, EventArgs e)
+        {
+            frmGokanseiOs frmGokanseiOs = new frmGokanseiOs();
+            frmGokanseiOs.ShowDialog();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

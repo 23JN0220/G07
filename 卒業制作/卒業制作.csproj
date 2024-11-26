@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="frmGoodsCooler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +79,19 @@
     </Compile>
     <Compile Include="frmGoodsAdd.Designer.cs">
       <DependentUpon>frmGoodsAdd.cs</DependentUpon>
+=======
+    <Compile Include="frmGokanseiOs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGokanseiOs.Designer.cs">
+      <DependentUpon>frmGokanseiOs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGokanseiFan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGokanseiFan.Designer.cs">
+      <DependentUpon>frmGokanseiFan.cs</DependentUpon>
+>>>>>>> ab596ed0a854e65ddc85d473889d0c4cecf8ac68
     </Compile>
     <Compile Include="frmGokanseiPowerUnit.cs">
       <SubType>Form</SubType>
@@ -147,11 +161,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmGokanseiOs.resx">
+      <DependentUpon>frmGokanseiOs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGokanseiCpu.resx">
       <DependentUpon>frmGokanseiCpu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGokanseiCooler.resx">
       <DependentUpon>frmGokanseiCooler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGokanseiFan.resx">
+      <DependentUpon>frmGokanseiFan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGokanseiGpu.resx">
       <DependentUpon>frmGokanseiGpu.cs</DependentUpon>
