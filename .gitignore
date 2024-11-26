@@ -7,3 +7,9 @@
 /.vs/卒業制作/v17/.suo
 /.vs/卒業制作/v17/DocumentLayout.backup.json
 /.vs/卒業制作/FileContentIndex
+*.json
+*.exe
+*.suo
+*.pdb
+
+
