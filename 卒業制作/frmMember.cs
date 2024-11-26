@@ -69,10 +69,42 @@ namespace 卒業制作
             {
                 MessageBox.Show("検索したい会員番号を入力してください", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-
-
             
+        }
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            string id = dgvMember.CurrentRow.Cells["member_id"].Value.ToString();
+
+            DialogResult result = MessageBox.Show("会員番号「" + id + "」の会員を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                MemberTable memberTable = new MemberTable();
+
+                int ret = memberTable.Delete(id);
+
+                if (ret != 0)
+                {
+                    MessageBox.Show("会員は正常に削除されました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    txtMember.Text = "";
+                    DataTable dataTable = memberTable.GetMember();
+
+                    if (dataTable != null)
+                    {
+                        dgvMember.AutoGenerateColumns = false;
+                        dgvMember.DataSource = dataTable;
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("会員の削除に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+
+            }
 
             
         }
