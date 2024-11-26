@@ -298,6 +298,7 @@
             this.btnClose.TabIndex = 24;
             this.btnClose.Text = "戻る";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmGokanseiMotherboard
             // 

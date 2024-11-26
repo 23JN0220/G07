@@ -71,5 +71,10 @@ namespace 卒業制作
             frmGokanseiOs frmGokanseiOs = new frmGokanseiOs();
             frmGokanseiOs.ShowDialog();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

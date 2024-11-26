@@ -118,8 +118,9 @@
             this.btnBack.TabIndex = 8;
             this.btnBack.Text = "戻る";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // frmGokianseiCooler
+            // frmGokanseiCooler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -135,7 +136,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Name = "frmGokianseiCooler";
+            this.Name = "frmGokanseiCooler";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

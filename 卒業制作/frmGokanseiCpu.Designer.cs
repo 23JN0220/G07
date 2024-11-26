@@ -71,7 +71,7 @@
             this.lstSeries.FormattingEnabled = true;
             this.lstSeries.ItemHeight = 16;
             this.lstSeries.Location = new System.Drawing.Point(32, 68);
-            this.lstSeries.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstSeries.Margin = new System.Windows.Forms.Padding(2);
             this.lstSeries.Name = "lstSeries";
             this.lstSeries.Size = new System.Drawing.Size(99, 68);
             this.lstSeries.TabIndex = 1;
@@ -79,7 +79,7 @@
             // txtSeries
             // 
             this.txtSeries.Location = new System.Drawing.Point(258, 34);
-            this.txtSeries.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSeries.Margin = new System.Windows.Forms.Padding(2);
             this.txtSeries.Name = "txtSeries";
             this.txtSeries.ReadOnly = true;
             this.txtSeries.Size = new System.Drawing.Size(198, 23);
@@ -88,7 +88,7 @@
             // btnSeAdd
             // 
             this.btnSeAdd.Location = new System.Drawing.Point(258, 68);
-            this.btnSeAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSeAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnSeAdd.Name = "btnSeAdd";
             this.btnSeAdd.Size = new System.Drawing.Size(65, 25);
             this.btnSeAdd.TabIndex = 3;
@@ -110,7 +110,7 @@
             this.lstGen.FormattingEnabled = true;
             this.lstGen.ItemHeight = 16;
             this.lstGen.Location = new System.Drawing.Point(28, 181);
-            this.lstGen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstGen.Margin = new System.Windows.Forms.Padding(2);
             this.lstGen.Name = "lstGen";
             this.lstGen.Size = new System.Drawing.Size(103, 68);
             this.lstGen.TabIndex = 5;
@@ -118,7 +118,7 @@
             // txtGen
             // 
             this.txtGen.Location = new System.Drawing.Point(258, 144);
-            this.txtGen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGen.Margin = new System.Windows.Forms.Padding(2);
             this.txtGen.Name = "txtGen";
             this.txtGen.ReadOnly = true;
             this.txtGen.Size = new System.Drawing.Size(198, 23);
@@ -127,7 +127,7 @@
             // btnSeChange
             // 
             this.btnSeChange.Location = new System.Drawing.Point(327, 68);
-            this.btnSeChange.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSeChange.Margin = new System.Windows.Forms.Padding(2);
             this.btnSeChange.Name = "btnSeChange";
             this.btnSeChange.Size = new System.Drawing.Size(61, 25);
             this.btnSeChange.TabIndex = 7;
@@ -137,7 +137,7 @@
             // btnSeDelete
             // 
             this.btnSeDelete.Location = new System.Drawing.Point(394, 68);
-            this.btnSeDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSeDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnSeDelete.Name = "btnSeDelete";
             this.btnSeDelete.Size = new System.Drawing.Size(61, 25);
             this.btnSeDelete.TabIndex = 8;
@@ -147,7 +147,7 @@
             // btnGadd
             // 
             this.btnGadd.Location = new System.Drawing.Point(258, 181);
-            this.btnGadd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGadd.Margin = new System.Windows.Forms.Padding(2);
             this.btnGadd.Name = "btnGadd";
             this.btnGadd.Size = new System.Drawing.Size(61, 24);
             this.btnGadd.TabIndex = 9;
@@ -157,7 +157,7 @@
             // btnGchange
             // 
             this.btnGchange.Location = new System.Drawing.Point(327, 181);
-            this.btnGchange.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGchange.Margin = new System.Windows.Forms.Padding(2);
             this.btnGchange.Name = "btnGchange";
             this.btnGchange.Size = new System.Drawing.Size(61, 24);
             this.btnGchange.TabIndex = 10;
@@ -167,7 +167,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(424, 194);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(7, 6);
             this.button1.TabIndex = 11;
@@ -177,7 +177,7 @@
             // btnGdelete
             // 
             this.btnGdelete.Location = new System.Drawing.Point(394, 181);
-            this.btnGdelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGdelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnGdelete.Name = "btnGdelete";
             this.btnGdelete.Size = new System.Drawing.Size(61, 24);
             this.btnGdelete.TabIndex = 12;
@@ -199,7 +199,7 @@
             this.lstSocket.FormattingEnabled = true;
             this.lstSocket.ItemHeight = 16;
             this.lstSocket.Location = new System.Drawing.Point(28, 298);
-            this.lstSocket.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstSocket.Margin = new System.Windows.Forms.Padding(2);
             this.lstSocket.Name = "lstSocket";
             this.lstSocket.Size = new System.Drawing.Size(99, 68);
             this.lstSocket.TabIndex = 14;
@@ -207,7 +207,7 @@
             // txtSocket
             // 
             this.txtSocket.Location = new System.Drawing.Point(250, 264);
-            this.txtSocket.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSocket.Margin = new System.Windows.Forms.Padding(2);
             this.txtSocket.Name = "txtSocket";
             this.txtSocket.ReadOnly = true;
             this.txtSocket.Size = new System.Drawing.Size(198, 23);
@@ -216,7 +216,7 @@
             // btnSoAdd
             // 
             this.btnSoAdd.Location = new System.Drawing.Point(258, 298);
-            this.btnSoAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSoAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnSoAdd.Name = "btnSoAdd";
             this.btnSoAdd.Size = new System.Drawing.Size(61, 24);
             this.btnSoAdd.TabIndex = 16;
@@ -226,7 +226,7 @@
             // btnSoChange
             // 
             this.btnSoChange.Location = new System.Drawing.Point(327, 298);
-            this.btnSoChange.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSoChange.Margin = new System.Windows.Forms.Padding(2);
             this.btnSoChange.Name = "btnSoChange";
             this.btnSoChange.Size = new System.Drawing.Size(61, 24);
             this.btnSoChange.TabIndex = 17;
@@ -236,7 +236,7 @@
             // btnSoDelete
             // 
             this.btnSoDelete.Location = new System.Drawing.Point(394, 298);
-            this.btnSoDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSoDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnSoDelete.Name = "btnSoDelete";
             this.btnSoDelete.Size = new System.Drawing.Size(61, 24);
             this.btnSoDelete.TabIndex = 18;
@@ -305,6 +305,7 @@
             this.btnBack.TabIndex = 25;
             this.btnBack.Text = "戻る";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // frmGokanseiCpu
             // 
