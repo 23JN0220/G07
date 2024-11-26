@@ -47,5 +47,11 @@ namespace 卒業制作
             frmGokanseiGpu frmGokanseiGpu = new frmGokanseiGpu();
             frmGokanseiGpu.ShowDialog();
         }
+
+        private void btnSsd_Click(object sender, EventArgs e)
+        {
+            frmGokanseiSsd frmGokanseiSsd = new frmGokanseiSsd();
+            frmGokanseiSsd.ShowDialog();
+        }
     }
 }
