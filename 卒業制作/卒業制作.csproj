@@ -61,12 +61,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="frmReview.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmReview.Designer.cs">
       <DependentUpon>frmReview.cs</DependentUpon>
     </Compile>
+=======
+<<<<<<< HEAD
+    <Compile Include="frmGoodsCooler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGoodsCooler.Designer.cs">
+      <DependentUpon>frmGoodsCooler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGoodsCpu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGoodsCpu.Designer.cs">
+      <DependentUpon>frmGoodsCpu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGoodsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGoodsAdd.Designer.cs">
+      <DependentUpon>frmGoodsAdd.cs</DependentUpon>
+=======
+>>>>>>> 2e8784ce639553dab5313c844c2b5ab218a26a92
     <Compile Include="frmGokanseiOs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +100,7 @@
     </Compile>
     <Compile Include="frmGokanseiFan.Designer.cs">
       <DependentUpon>frmGokanseiFan.cs</DependentUpon>
+>>>>>>> ab596ed0a854e65ddc85d473889d0c4cecf8ac68
     </Compile>
     <Compile Include="frmGokanseiPowerUnit.cs">
       <SubType>Form</SubType>
@@ -180,8 +203,16 @@
     <EmbeddedResource Include="frmGokanseiMemory.resx">
       <DependentUpon>frmGokanseiMemory.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmReview.resx">
       <DependentUpon>frmReview.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="frmGoodsAdd.resx">
+      <DependentUpon>frmGoodsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGoodsCooler.resx">
+      <DependentUpon>frmGoodsCooler.cs</DependentUpon>
+>>>>>>> 2e8784ce639553dab5313c844c2b5ab218a26a92
     </EmbeddedResource>
     <EmbeddedResource Include="frmTop.resx">
       <DependentUpon>frmTop.cs</DependentUpon>
