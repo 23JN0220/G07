@@ -16,5 +16,10 @@ namespace 卒業制作
         {
             InitializeComponent();
         }
+
+        private void lstCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
