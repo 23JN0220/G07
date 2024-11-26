@@ -38,6 +38,7 @@
             this.txtMember = new System.Windows.Forms.TextBox();
             this.brnSerch = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,6 +66,7 @@
             this.email});
             this.dgvMember.Location = new System.Drawing.Point(101, 123);
             this.dgvMember.Name = "dgvMember";
+            this.dgvMember.ReadOnly = true;
             this.dgvMember.RowTemplate.Height = 21;
             this.dgvMember.Size = new System.Drawing.Size(539, 258);
             this.dgvMember.TabIndex = 2;
@@ -74,6 +76,7 @@
             this.member_id.DataPropertyName = "member_id";
             this.member_id.HeaderText = "会員番号";
             this.member_id.Name = "member_id";
+            this.member_id.ReadOnly = true;
             this.member_id.Width = 119;
             // 
             // tel
@@ -81,6 +84,7 @@
             this.tel.DataPropertyName = "tel";
             this.tel.HeaderText = "電話番号";
             this.tel.Name = "tel";
+            this.tel.ReadOnly = true;
             this.tel.Width = 119;
             // 
             // member_name
@@ -88,6 +92,7 @@
             this.member_name.DataPropertyName = "member_name";
             this.member_name.HeaderText = "会員名";
             this.member_name.Name = "member_name";
+            this.member_name.ReadOnly = true;
             this.member_name.Width = 98;
             // 
             // email
@@ -95,6 +100,7 @@
             this.email.DataPropertyName = "email";
             this.email.HeaderText = "メールアドレス";
             this.email.Name = "email";
+            this.email.ReadOnly = true;
             this.email.Width = 147;
             // 
             // btnClose
@@ -133,11 +139,22 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "会員番号";
             // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(507, 42);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(116, 27);
+            this.btnReset.TabIndex = 8;
+            this.btnReset.Text = "検索リセット";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // frmMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 431);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.brnSerch);
             this.Controls.Add(this.txtMember);
@@ -166,5 +183,6 @@
         private System.Windows.Forms.TextBox txtMember;
         private System.Windows.Forms.Button brnSerch;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnReset;
     }
 }

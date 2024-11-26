@@ -72,6 +72,11 @@ namespace 卒業制作
             
         }
 
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnDelete_Click(object sender, EventArgs e)
         {
             string id = dgvMember.CurrentRow.Cells["member_id"].Value.ToString();
@@ -113,5 +118,7 @@ namespace 卒業制作
         {
             this.Close();
         }
+
+        
     }
 }
