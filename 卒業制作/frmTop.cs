@@ -34,5 +34,11 @@ namespace 卒業制作
             frmGoods frmGoods = new frmGoods();
             frmGoods.ShowDialog();
         }
+
+        private void btnCompatibility_Click(object sender, EventArgs e)
+        {
+            frmGokansei frmGokansei = new frmGokansei();
+            frmGokansei.ShowDialog();
+        }
     }
 }

@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace 卒業制作
 {
-    public partial class Form1 : Form
+    public partial class frmGokansei : Form
     {
-        public Form1()
+        public frmGokansei()
         {
             InitializeComponent();
+        }
+
+        private void btnCpu_Click(object sender, EventArgs e)
+        {
+            frmGokanseiCpu frmGokanseiCpu = new frmGokanseiCpu();
+            frmGokanseiCpu.ShowDialog();        
+        }
+
+        private void btnCooler_Click(object sender, EventArgs e)
+        {
+            frmGokianseiCooler frmGokianseiCooler = new frmGokianseiCooler();
+            frmGokianseiCooler.ShowDialog();
         }
     }
 }

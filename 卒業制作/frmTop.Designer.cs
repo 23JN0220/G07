@@ -65,6 +65,7 @@
             this.btnCompatibility.TabIndex = 2;
             this.btnCompatibility.Text = "互換性管理";
             this.btnCompatibility.UseVisualStyleBackColor = true;
+            this.btnCompatibility.Click += new System.EventHandler(this.btnCompatibility_Click);
             // 
             // btnReview
             // 

@@ -1,6 +1,6 @@
 ﻿namespace 卒業制作
 {
-    partial class Form1
+    partial class frmGokansei
     {
         /// <summary>
         /// Required designer variable.
@@ -50,6 +50,7 @@
             this.btnCpu.TabIndex = 0;
             this.btnCpu.Text = "CPU";
             this.btnCpu.UseVisualStyleBackColor = true;
+            this.btnCpu.Click += new System.EventHandler(this.btnCpu_Click);
             // 
             // btnCooler
             // 
@@ -59,6 +60,7 @@
             this.btnCooler.TabIndex = 1;
             this.btnCooler.Text = "CPUクーラー";
             this.btnCooler.UseVisualStyleBackColor = true;
+            this.btnCooler.Click += new System.EventHandler(this.btnCooler_Click);
             // 
             // btnMotherboard
             // 
@@ -150,7 +152,7 @@
             this.btnBack.Text = "戻る";
             this.btnBack.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // frmGokansei
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -169,7 +171,7 @@
             this.Controls.Add(this.btnCpu);
             this.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Name = "Form1";
+            this.Name = "frmGokansei";
             this.Text = "互換性管理画面";
             this.ResumeLayout(false);
 
