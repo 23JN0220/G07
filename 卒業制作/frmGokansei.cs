@@ -53,5 +53,11 @@ namespace 卒業制作
             frmGokanseiSsd frmGokanseiSsd = new frmGokanseiSsd();
             frmGokanseiSsd.ShowDialog();
         }
+
+        private void btnPowerUnit_Click(object sender, EventArgs e)
+        {
+            frmGokanseiPowerUnit frmGokanseiPowerUnit = new frmGokanseiPowerUnit();
+            frmGokanseiPowerUnit.ShowDialog();
+        }
     }
 }

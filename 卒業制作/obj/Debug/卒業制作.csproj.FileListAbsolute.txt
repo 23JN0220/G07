@@ -64,3 +64,4 @@ C:\Users\23jn0204\source\repos\23JN0220\G07\卒業制作\obj\Debug\卒業制作.
 C:\Users\23jn0204\source\repos\23JN0220\G07\卒業制作\obj\Debug\卒業制作.frmGokanseiMotherboard.resources
 C:\Users\23jn0204\source\repos\23JN0220\G07\卒業制作\obj\Debug\卒業制作.frmGokanseiGpu.resources
 C:\Users\23jn0204\source\repos\23JN0220\G07\卒業制作\obj\Debug\卒業制作.frmGokanseiSsd.resources
+C:\Users\23jn0204\source\repos\23JN0220\G07\卒業制作\obj\Debug\卒業制作.frmGokanseiPowerUnit.resources
