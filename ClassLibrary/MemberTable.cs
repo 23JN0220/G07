@@ -45,5 +45,26 @@ namespace ClassLibrary
             }
             return table;
         }
+
+        public int Delete(string id)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "DELETE FROM Member WHERE member_id = @member_id";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@member_id", id);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+
+        }
+
     }
 }
