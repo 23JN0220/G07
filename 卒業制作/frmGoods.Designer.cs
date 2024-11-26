@@ -59,6 +59,7 @@
             this.btnSerch.TabIndex = 1;
             this.btnSerch.Text = "検索";
             this.btnSerch.UseVisualStyleBackColor = true;
+            this.btnSerch.Click += new System.EventHandler(this.btnSerch_Click);
             // 
             // lstCategory
             // 
@@ -68,7 +69,6 @@
             this.lstCategory.Name = "lstCategory";
             this.lstCategory.Size = new System.Drawing.Size(145, 29);
             this.lstCategory.TabIndex = 2;
-            this.lstCategory.SelectedIndexChanged += new System.EventHandler(this.lstCategory_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -100,6 +100,7 @@
             this.price});
             this.dgvGoods.Location = new System.Drawing.Point(48, 72);
             this.dgvGoods.Name = "dgvGoods";
+            this.dgvGoods.ReadOnly = true;
             this.dgvGoods.RowTemplate.Height = 21;
             this.dgvGoods.Size = new System.Drawing.Size(666, 273);
             this.dgvGoods.TabIndex = 5;
@@ -109,21 +110,21 @@
             this.goods_code.DataPropertyName = "Goods_code";
             this.goods_code.HeaderText = "商品番号";
             this.goods_code.Name = "goods_code";
-            this.goods_code.Width = 90;
+            this.goods_code.Width = 119;
             // 
             // goods_name
             // 
             this.goods_name.DataPropertyName = "Goods_name";
             this.goods_name.HeaderText = "商品名";
             this.goods_name.Name = "goods_name";
-            this.goods_name.Width = 90;
+            this.goods_name.Width = 98;
             // 
             // price
             // 
             this.price.DataPropertyName = "price";
             this.price.HeaderText = "価格";
             this.price.Name = "price";
-            this.price.Width = 71;
+            this.price.Width = 77;
             // 
             // btnAdd
             // 
@@ -180,6 +181,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoods";
             this.Text = "商品管理画面";
+            this.Shown += new System.EventHandler(this.frmGoods_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGoods)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
