@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmGokanseiGpu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGokanseiGpu.Designer.cs">
+      <DependentUpon>frmGokanseiGpu.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGokanseiMotherboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGokanseiCooler.resx">
       <DependentUpon>frmGokanseiCooler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGokanseiGpu.resx">
+      <DependentUpon>frmGokanseiGpu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGokanseiMotherboard.resx">
       <DependentUpon>frmGokanseiMotherboard.cs</DependentUpon>

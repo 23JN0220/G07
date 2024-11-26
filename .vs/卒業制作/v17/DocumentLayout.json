@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0204\\source\\repos\\23jn0220\\g07\\\u5352\u696D\u5236\u4F5C\\frmgokanseimotherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseimotherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0204\\source\\repos\\23jn0220\\g07\\\u5352\u696D\u5236\u4F5C\\frmgokanseimemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseimemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0204\\source\\repos\\23jn0220\\g07\\\u5352\u696D\u5236\u4F5C\\frmgokansei.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokansei.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,20 +11,32 @@
       "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokansei.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0204\\source\\repos\\23jn0220\\g07\\\u5352\u696D\u5236\u4F5C\\frmgokanseicooler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseicooler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0204\\source\\repos\\23jn0220\\g07\\\u5352\u696D\u5236\u4F5C\\frmgokanseigpu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseigpu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0204\\source\\repos\\23jn0220\\g07\\\u5352\u696D\u5236\u4F5C\\frmtop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmtop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0204\\source\\repos\\23jn0220\\g07\\\u5352\u696D\u5236\u4F5C\\frmgoods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgoods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0204\\source\\repos\\23jn0220\\g07\\\u5352\u696D\u5236\u4F5C\\frmgokanseicpu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseicpu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0204\\source\\repos\\23jn0220\\g07\\\u5352\u696D\u5236\u4F5C\\frmgoods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgoods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0204\\source\\repos\\23jn0220\\g07\\\u5352\u696D\u5236\u4F5C\\frmgokanseicooler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseicooler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0204\\source\\repos\\23jn0220\\g07\\\u5352\u696D\u5236\u4F5C\\frmgokanseimemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseimemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0204\\source\\repos\\23jn0220\\g07\\\u5352\u696D\u5236\u4F5C\\frmgokanseimotherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseimotherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,19 +86,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmGokanseiMotherboard.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "DocumentMoniker": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmGokanseiMotherboard.cs",
-              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiMotherboard.cs",
-              "ToolTip": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmGokanseiMotherboard.cs [\u30C7\u30B6\u30A4\u30F3]*",
-              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGokanseiMotherboard.cs [\u30C7\u30B6\u30A4\u30F3]*",
+              "DocumentIndex": 2,
+              "Title": "frmGokanseiGpu.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "DocumentMoniker": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmGokanseiGpu.cs",
+              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiGpu.cs",
+              "ToolTip": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmGokanseiGpu.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGokanseiGpu.cs [\u30C7\u30B6\u30A4\u30F3]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T04:41:04.387Z",
+              "WhenOpened": "2024-11-26T05:09:49.722Z",
               "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "frmGokanseiMemory.cs [\u30C7\u30B6\u30A4\u30F3]",
               "DocumentMoniker": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmGokanseiMemory.cs",
               "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiMemory.cs",
@@ -106,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "frmGokanseiCooler.cs [\u30C7\u30B6\u30A4\u30F3]",
               "DocumentMoniker": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmGokanseiCooler.cs",
               "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiCooler.cs",
@@ -118,20 +122,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "frmGokansei.cs",
               "DocumentMoniker": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmGokansei.cs",
               "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokansei.cs",
               "ToolTip": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmGokansei.cs",
               "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGokansei.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAhwCkAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAhwC8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T01:44:26.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "frmGokansei.cs [\u30C7\u30B6\u30A4\u30F3]",
               "DocumentMoniker": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmGokansei.cs",
               "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokansei.cs",
@@ -143,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "frmGokanseiCpu.cs [\u30C7\u30B6\u30A4\u30F3]",
               "DocumentMoniker": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmGokanseiCpu.cs",
               "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiCpu.cs",
@@ -155,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "frmGoods.cs",
               "DocumentMoniker": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmGoods.cs",
               "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGoods.cs",
@@ -168,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "frmTop.cs [\u30C7\u30B6\u30A4\u30F3]",
               "DocumentMoniker": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmTop.cs",
               "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmTop.cs",
@@ -180,7 +184,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
+              "Title": "frmGokanseiMotherboard.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "DocumentMoniker": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmGokanseiMotherboard.cs",
+              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiMotherboard.cs",
+              "ToolTip": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmGokanseiMotherboard.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGokanseiMotherboard.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T04:41:04.387Z",
+              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "MemberTable.cs",
               "DocumentMoniker": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\ClassLibrary\\MemberTable.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\MemberTable.cs",
@@ -193,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Member.cs",
               "DocumentMoniker": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\ClassLibrary\\Member.cs",
               "RelativeDocumentMoniker": "ClassLibrary\\Member.cs",
@@ -206,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "frmMember.cs",
               "DocumentMoniker": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmMember.cs",
               "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmMember.cs",
@@ -219,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "frmMember.cs [\u30C7\u30B6\u30A4\u30F3]",
               "DocumentMoniker": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmMember.cs",
               "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmMember.cs",
@@ -231,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "frmTop.cs",
               "DocumentMoniker": "C:\\Users\\23jn0204\\source\\repos\\23JN0220\\G07\\\u5352\u696D\u5236\u4F5C\\frmTop.cs",
               "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmTop.cs",

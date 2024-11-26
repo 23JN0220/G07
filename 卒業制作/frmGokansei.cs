@@ -41,5 +41,11 @@ namespace 卒業制作
             frmGokanseiMotherboard frmGokanseiMotherboard = new frmGokanseiMotherboard();
             frmGokanseiMotherboard.ShowDialog();
         }
+
+        private void btnGpu_Click(object sender, EventArgs e)
+        {
+            frmGokanseiGpu frmGokanseiGpu = new frmGokanseiGpu();
+            frmGokanseiGpu.ShowDialog();
+        }
     }
 }
