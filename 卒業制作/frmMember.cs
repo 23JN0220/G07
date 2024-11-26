@@ -35,5 +35,51 @@ namespace 卒業制作
                 dgvMember.DataSource = dataTable;
             }
         }
+
+        private void brnSerch_Click(object sender, EventArgs e)
+        {
+            
+            int id;
+
+            if (txtMember.Text != "")
+            {
+                if (int.TryParse(txtMember.Text, out id))
+                {
+                    MemberTable memberTable = new MemberTable();
+
+                    DataTable dataTable = memberTable.GetMemberbyID(id);
+
+                    if (dataTable != null)
+                    {
+                        dgvMember.AutoGenerateColumns = false;
+                        dgvMember.DataSource = dataTable;
+                    }
+                    else
+                    {
+                        dgvMember.DataSource = null;
+                        MessageBox.Show("この会員番号は存在しません。", "検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("会員番号は半角数字を入力してください", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            else
+            {
+                MessageBox.Show("検索したい会員番号を入力してください", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+
+            
+
+
+            
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

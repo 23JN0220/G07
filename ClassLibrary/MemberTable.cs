@@ -23,5 +23,27 @@ namespace ClassLibrary
             }
             return table;
         }
+
+        public DataTable GetMemberbyID(int id)
+        {
+            DataTable table = null;
+            DataTable dataTable = new DataTable();
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT * FROM Member WHERE member_id = @member_id";
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@member_id", id);
+
+                int cnt = adapter.Fill(dataTable);
+
+                if (cnt > 0)
+                {
+                    table = new DataTable();
+                    table = dataTable;
+                }
+            }
+            return table;
+        }
     }
 }

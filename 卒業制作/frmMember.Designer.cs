@@ -104,6 +104,7 @@
             this.btnClose.TabIndex = 3;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // txtMember
             // 
@@ -120,6 +121,7 @@
             this.brnSerch.TabIndex = 6;
             this.brnSerch.Text = "検索";
             this.brnSerch.UseVisualStyleBackColor = true;
+            this.brnSerch.Click += new System.EventHandler(this.brnSerch_Click);
             // 
             // label1
             // 
