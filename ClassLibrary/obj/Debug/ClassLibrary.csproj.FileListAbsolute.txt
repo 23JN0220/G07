@@ -12,3 +12,10 @@ C:\Users\23jn0204\source\repos\23JN0220\G07\ClassLibrary\obj\Debug\ClassLibrary.
 C:\Users\23jn0204\source\repos\23JN0220\G07\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\23jn0204\source\repos\23JN0220\G07\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\23jn0204\source\repos\23JN0220\G07\ClassLibrary\obj\Debug\ClassLibrary.pdb
+C:\Users\23JN0220\Source\Repos\G07\test\ClassLibrary\bin\Debug\ClassLibrary.dll.config
+C:\Users\23JN0220\Source\Repos\G07\test\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\23JN0220\Source\Repos\G07\test\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\23JN0220\Source\Repos\G07\test\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+C:\Users\23JN0220\Source\Repos\G07\test\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\23JN0220\Source\Repos\G07\test\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\23JN0220\Source\Repos\G07\test\ClassLibrary\obj\Debug\ClassLibrary.pdb
