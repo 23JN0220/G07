@@ -1,6 +1,6 @@
 ﻿namespace 卒業制作
 {
-    partial class Form1
+    partial class frmOrderDetail
     {
         /// <summary>
         /// Required designer variable.
