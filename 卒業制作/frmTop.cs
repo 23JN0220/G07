@@ -40,5 +40,11 @@ namespace 卒業制作
             frmGokansei frmGokansei = new frmGokansei();
             frmGokansei.ShowDialog();
         }
+
+        private void btnReview_Click(object sender, EventArgs e)
+        {
+            frmReview frmReview = new frmReview();
+            frmReview.ShowDialog();
+        }
     }
 }

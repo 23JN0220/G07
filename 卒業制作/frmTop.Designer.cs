@@ -75,6 +75,7 @@
             this.btnReview.TabIndex = 3;
             this.btnReview.Text = "レビュー管理";
             this.btnReview.UseVisualStyleBackColor = true;
+            this.btnReview.Click += new System.EventHandler(this.btnReview_Click);
             // 
             // btnOrder
             // 
