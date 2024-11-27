@@ -110,6 +110,7 @@
             this.goods_code.DataPropertyName = "Goods_code";
             this.goods_code.HeaderText = "商品番号";
             this.goods_code.Name = "goods_code";
+            this.goods_code.ReadOnly = true;
             this.goods_code.Width = 119;
             // 
             // goods_name
@@ -117,6 +118,7 @@
             this.goods_name.DataPropertyName = "Goods_name";
             this.goods_name.HeaderText = "商品名";
             this.goods_name.Name = "goods_name";
+            this.goods_name.ReadOnly = true;
             this.goods_name.Width = 98;
             // 
             // price
@@ -124,6 +126,7 @@
             this.price.DataPropertyName = "price";
             this.price.HeaderText = "価格";
             this.price.Name = "price";
+            this.price.ReadOnly = true;
             this.price.Width = 77;
             // 
             // btnAdd
@@ -134,6 +137,7 @@
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "新規商品追加";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnEdit
             // 

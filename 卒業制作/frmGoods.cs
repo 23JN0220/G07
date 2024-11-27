@@ -42,5 +42,11 @@ namespace 卒業制作
         {
 
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmGoodsAdd frmGoodsAdd = new frmGoodsAdd();
+            frmGoodsAdd.ShowDialog();
+        }
     }
 }
