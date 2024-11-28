@@ -16,5 +16,23 @@ namespace 卒業制作
         {
             InitializeComponent();
         }
+
+        private void btnCpu_Click(object sender, EventArgs e)
+        {
+            frmGoodsCpu frmGoodsCpu = new frmGoodsCpu();
+            frmGoodsCpu.ShowDialog();
+        }
+
+        private void btnCooler_Click(object sender, EventArgs e)
+        {
+            frmGoodsCooler frmGoodsCooler = new frmGoodsCooler();
+            frmGoodsCooler.ShowDialog();
+        }
+
+        private void btnMotherboard_Click(object sender, EventArgs e)
+        {
+            frmGoodsMotherboard frmGoodsMotherboard = new frmGoodsMotherboard();
+            frmGoodsMotherboard.ShowDialog();
+        }
     }
 }

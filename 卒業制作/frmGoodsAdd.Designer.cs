@@ -132,6 +132,7 @@
             this.btnMotherboard.TabIndex = 14;
             this.btnMotherboard.Text = "マザーボード";
             this.btnMotherboard.UseVisualStyleBackColor = true;
+            this.btnMotherboard.Click += new System.EventHandler(this.btnMotherboard_Click);
             // 
             // btnCooler
             // 
@@ -141,6 +142,7 @@
             this.btnCooler.TabIndex = 13;
             this.btnCooler.Text = "CPUクーラー";
             this.btnCooler.UseVisualStyleBackColor = true;
+            this.btnCooler.Click += new System.EventHandler(this.btnCooler_Click);
             // 
             // btnCpu
             // 
@@ -150,6 +152,7 @@
             this.btnCpu.TabIndex = 12;
             this.btnCpu.Text = "CPU";
             this.btnCpu.UseVisualStyleBackColor = true;
+            this.btnCpu.Click += new System.EventHandler(this.btnCpu_Click);
             // 
             // label1
             // 

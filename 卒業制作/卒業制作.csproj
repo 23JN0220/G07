@@ -61,6 +61,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmGoodsMotherboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGoodsMotherboard.Designer.cs">
+      <DependentUpon>frmGoodsMotherboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGoodsCooler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGoodsCooler.Designer.cs">
+      <DependentUpon>frmGoodsCooler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGoodsCpu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGoodsCpu.Designer.cs">
+      <DependentUpon>frmGoodsCpu.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmOrderDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +177,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmGoodsCooler.resx">
+      <DependentUpon>frmGoodsCooler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGoodsCpu.resx">
+      <DependentUpon>frmGoodsCpu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGoodsMotherboard.resx">
+      <DependentUpon>frmGoodsMotherboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmOrderDetail.resx">
       <DependentUpon>frmOrderDetail.cs</DependentUpon>
     </EmbeddedResource>
