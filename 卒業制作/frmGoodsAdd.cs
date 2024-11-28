@@ -34,5 +34,11 @@ namespace 卒業制作
             frmGoodsMotherboard frmGoodsMotherboard = new frmGoodsMotherboard();
             frmGoodsMotherboard.ShowDialog();
         }
+
+        private void btnMemory_Click(object sender, EventArgs e)
+        {
+            frmGoodsMemory frmGoodsMemory = new frmGoodsMemory();
+            frmGoodsMemory.ShowDialog();
+        }
     }
 }

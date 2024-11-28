@@ -123,6 +123,7 @@
             this.btnMemory.TabIndex = 15;
             this.btnMemory.Text = "メモリ";
             this.btnMemory.UseVisualStyleBackColor = true;
+            this.btnMemory.Click += new System.EventHandler(this.btnMemory_Click);
             // 
             // btnMotherboard
             // 
