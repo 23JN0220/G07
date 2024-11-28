@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmGoodsHdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGoodsHdd.Designer.cs">
+      <DependentUpon>frmGoodsHdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGoodsSsd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGoodsGpu.resx">
       <DependentUpon>frmGoodsGpu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGoodsHdd.resx">
+      <DependentUpon>frmGoodsHdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGoodsMemory.resx">
       <DependentUpon>frmGoodsMemory.cs</DependentUpon>

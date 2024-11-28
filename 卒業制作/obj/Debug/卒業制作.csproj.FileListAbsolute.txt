@@ -130,3 +130,4 @@ C:\Users\23JN0220\Source\Repos\G07\test\卒業制作\obj\Debug\卒業制作.frmG
 C:\Users\23JN0220\Source\Repos\G07\test\卒業制作\obj\Debug\卒業制作.frmGoodsMemory.resources
 C:\Users\23JN0220\Source\Repos\G07\test\卒業制作\obj\Debug\卒業制作.frmGoodsGpu.resources
 C:\Users\23JN0220\Source\Repos\G07\test\卒業制作\obj\Debug\卒業制作.frmGoodsSsd.resources
+C:\Users\23JN0220\Source\Repos\G07\test\卒業制作\obj\Debug\卒業制作.frmGoodsHdd.resources

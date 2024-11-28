@@ -52,5 +52,11 @@ namespace 卒業制作
             frmGoodsSsd frmGoodsSsd = new frmGoodsSsd();
             frmGoodsSsd.ShowDialog();
         }
+
+        private void btnHdd_Click(object sender, EventArgs e)
+        {
+            frmGoodsHdd frmGoodsHdd = new frmGoodsHdd();
+            frmGoodsHdd.ShowDialog();
+        }
     }
 }

@@ -96,6 +96,7 @@
             this.btnHdd.TabIndex = 18;
             this.btnHdd.Text = "HDD";
             this.btnHdd.UseVisualStyleBackColor = true;
+            this.btnHdd.Click += new System.EventHandler(this.btnHdd_Click);
             // 
             // btnSsd
             // 
