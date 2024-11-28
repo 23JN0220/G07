@@ -105,6 +105,7 @@
             this.btnSsd.TabIndex = 17;
             this.btnSsd.Text = "SSD";
             this.btnSsd.UseVisualStyleBackColor = true;
+            this.btnSsd.Click += new System.EventHandler(this.btnSsd_Click);
             // 
             // btnGpu
             // 
