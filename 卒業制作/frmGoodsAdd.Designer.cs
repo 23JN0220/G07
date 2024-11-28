@@ -87,6 +87,7 @@
             this.btnPowerUnit.TabIndex = 19;
             this.btnPowerUnit.Text = "電源ユニット";
             this.btnPowerUnit.UseVisualStyleBackColor = true;
+            this.btnPowerUnit.Click += new System.EventHandler(this.btnPowerUnit_Click);
             // 
             // btnHdd
             // 

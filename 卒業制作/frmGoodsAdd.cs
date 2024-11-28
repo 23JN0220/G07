@@ -58,5 +58,11 @@ namespace 卒業制作
             frmGoodsHdd frmGoodsHdd = new frmGoodsHdd();
             frmGoodsHdd.ShowDialog();
         }
+
+        private void btnPowerUnit_Click(object sender, EventArgs e)
+        {
+            frmGoodsPowerUnit frmGoodsPowerUnit = new frmGoodsPowerUnit();
+            frmGoodsPowerUnit.ShowDialog();
+        }
     }
 }
