@@ -40,5 +40,11 @@ namespace 卒業制作
             frmGoodsMemory frmGoodsMemory = new frmGoodsMemory();
             frmGoodsMemory.ShowDialog();
         }
+
+        private void btnGpu_Click(object sender, EventArgs e)
+        {
+            frmGoodsGpu frmGoodsGpu = new frmGoodsGpu();
+            frmGoodsGpu.ShowDialog();
+        }
     }
 }

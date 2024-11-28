@@ -114,6 +114,7 @@
             this.btnGpu.TabIndex = 16;
             this.btnGpu.Text = "グラフィックボード";
             this.btnGpu.UseVisualStyleBackColor = true;
+            this.btnGpu.Click += new System.EventHandler(this.btnGpu_Click);
             // 
             // btnMemory
             // 
