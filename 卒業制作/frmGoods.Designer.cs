@@ -65,10 +65,13 @@
             // 
             this.lstCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstCategory.FormattingEnabled = true;
+            this.lstCategory.Items.AddRange(new object[] {
+            "すべて"});
             this.lstCategory.Location = new System.Drawing.Point(569, 16);
             this.lstCategory.Name = "lstCategory";
             this.lstCategory.Size = new System.Drawing.Size(145, 29);
             this.lstCategory.TabIndex = 2;
+            this.lstCategory.SelectedIndexChanged += new System.EventHandler(this.lstCategory_SelectedIndexChanged);
             // 
             // label1
             // 

@@ -36,11 +36,27 @@ namespace 卒業制作
                 dgvGoods.AutoGenerateColumns = false;
                 dgvGoods.DataSource = table1;
             }
+            else
+            {
+                MessageBox.Show("商品が見つかりませんでした。", "検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void btnSerch_Click(object sender, EventArgs e)
         {
-
+            GoodsTable goodsTable = new GoodsTable();
+            DataTable table = goodsTable.GetGoodsByName(txtGoods.Text);
+            
+            if (table != null)
+            {
+                dgvGoods.AutoGenerateColumns = false;
+                dgvGoods.DataSource = table;
+            }
+            else
+            {
+                dgvGoods.DataSource = null;
+                MessageBox.Show("商品が見つかりませんでした。", "検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -52,6 +68,42 @@ namespace 卒業制作
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void lstCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lstCategory.Text == "すべて")
+            {
+                GoodsTable goodsTable = new GoodsTable();
+                DataTable table = goodsTable.GetGoods();
+
+                if (table != null)
+                {
+                    dgvGoods.AutoGenerateColumns = false;
+                    dgvGoods.DataSource = table;
+                }
+                else
+                {
+                    dgvGoods.DataSource = null;
+                    MessageBox.Show("商品が見つかりませんでした。", "検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                GoodsTable goodsTable = new GoodsTable();
+                DataTable table = goodsTable.GetGoodsById(lstCategory.SelectedIndex);
+
+                if (table != null)
+                {
+                    dgvGoods.AutoGenerateColumns = false;
+                    dgvGoods.DataSource = table;
+                }
+                else
+                {
+                    dgvGoods.DataSource = null;
+                    MessageBox.Show("商品が見つかりませんでした。", "検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
         }
     }
 }

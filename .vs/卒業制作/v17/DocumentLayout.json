@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\\u5352\u696D\u5236\u4F5C\\frmmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\\u5352\u696D\u5236\u4F5C\\frmgoods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgoods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\\u5352\u696D\u5236\u4F5C\\frmmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\\u5352\u696D\u5236\u4F5C\\frmgoods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgoods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\classlibrary\\goodstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\goodstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\classlibrary\\membertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\membertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 26,
+          "SelectedChildIndex": 28,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,27 +134,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmMember.cs",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmMember.cs",
-              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmMember.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmMember.cs",
-              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmMember.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAkwFEAAAANAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "MemberTable.cs",
+              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\MemberTable.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\MemberTable.cs",
+              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\MemberTable.cs",
+              "RelativeToolTip": "ClassLibrary\\MemberTable.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T04:37:42.265Z",
+              "WhenOpened": "2024-12-03T04:57:23.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GoodsTable.cs",
+              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\GoodsTable.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\GoodsTable.cs",
+              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\GoodsTable.cs",
+              "RelativeToolTip": "ClassLibrary\\GoodsTable.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T04:46:57.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmGoods.cs",
+              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoods.cs",
+              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGoods.cs",
+              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoods.cs",
+              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGoods.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAwDoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T04:42:34.218Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmMember.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmMember.cs",
-              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmMember.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmMember.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmMember.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "Title": "frmGoods.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoods.cs",
+              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGoods.cs",
+              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoods.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGoods.cs [\u30C7\u30B6\u30A4\u30F3]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T04:37:40.044Z",
+              "WhenOpened": "2024-12-03T04:41:31.93Z",
               "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
             }
           ]

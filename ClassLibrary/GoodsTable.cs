@@ -12,14 +12,21 @@ namespace ClassLibrary
     {
         public DataTable GetGoods()
         {
-            DataTable table = new DataTable();
+            DataTable table = null;
+            DataTable dataTable = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string sql = "SELECT * FROM Goods";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
 
-                adapter.Fill(table);
+                int cnt = adapter.Fill(dataTable);
+
+                if (cnt > 0)
+                {
+                    table = new DataTable();
+                    table = dataTable;
+                }
             }
             return table;
         }
@@ -27,17 +34,47 @@ namespace ClassLibrary
 
         public DataTable GetGoodsByName(string goodsname)
         {
-            DataTable table = new DataTable();
+            DataTable table = null;
+            DataTable dataTable = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string sql = "SELECT * FROM Goods WHERE goods_name LIKE @goods_name";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
                 adapter.SelectCommand.Parameters.AddWithValue("@goods_name", "%" + goodsname + "%");
-                adapter.Fill(table);
+
+                int cnt = adapter.Fill(dataTable);
+
+                if (cnt > 0)
+                {
+                    table = new DataTable();
+                    table = dataTable;
+                }
             }
             return table;
 
+        }
+
+        public DataTable GetGoodsById(int id)
+        {
+            DataTable table = null;
+            DataTable dataTable = new DataTable();
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT * FROM Goods WHERE group_code = @group_code";
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@group_code", id);
+
+                int cnt = adapter.Fill(dataTable);
+
+                if (cnt > 0)
+                {
+                    table = new DataTable();
+                    table = dataTable;
+                }
+            }
+            return table;
         }
     }
 }
