@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\\u5352\u696D\u5236\u4F5C\\frmgoodsadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgoodsadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\\u5352\u696D\u5236\u4F5C\\frmtop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmtop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\\u5352\u696D\u5236\u4F5C\\frmgoodsadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgoodsadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\\u5352\u696D\u5236\u4F5C\\frmgoodsos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgoodsos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\\u5352\u696D\u5236\u4F5C\\frmgoodshdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgoodshdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\\u5352\u696D\u5236\u4F5C\\frmgoodsfan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgoodsfan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\\u5352\u696D\u5236\u4F5C\\frmtop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmtop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -139,62 +127,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmGoodsAdd.cs",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoodsAdd.cs",
-              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGoodsAdd.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoodsAdd.cs",
-              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGoodsAdd.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAwwFIAAAAkAAAAAAAAAA==",
+              "Title": "frmTop.cs",
+              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmTop.cs",
+              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmTop.cs",
+              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmTop.cs",
+              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmTop.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAwwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T03:10:40.853Z",
+              "WhenOpened": "2024-12-03T03:18:52.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmGoodsHdd.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoodsHdd.cs",
-              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGoodsHdd.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoodsHdd.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGoodsHdd.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T03:06:23.998Z",
-              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmGoodsOs.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\Source\\Repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoodsOs.cs",
-              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGoodsOs.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\Source\\Repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoodsOs.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGoodsOs.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T03:04:12.284Z",
-              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmGoodsAdd.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoodsAdd.cs",
-              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGoodsAdd.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoodsAdd.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGoodsAdd.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "Title": "frmTop.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmTop.cs",
+              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmTop.cs",
+              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmTop.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmTop.cs [\u30C7\u30B6\u30A4\u30F3]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T02:56:07.385Z",
-              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmGoodsFan.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\Source\\Repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoodsFan.cs",
-              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGoodsFan.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\Source\\Repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoodsFan.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGoodsFan.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T02:26:28.247Z",
+              "WhenOpened": "2024-12-03T03:18:50.978Z",
               "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
             }
           ]

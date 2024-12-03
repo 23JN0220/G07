@@ -51,6 +51,7 @@
             this.btnBack.TabIndex = 23;
             this.btnBack.Text = "戻る";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnOs
             // 

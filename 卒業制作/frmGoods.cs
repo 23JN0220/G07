@@ -49,5 +49,9 @@ namespace 卒業制作
             frmGoodsAdd.ShowDialog();
         }
 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

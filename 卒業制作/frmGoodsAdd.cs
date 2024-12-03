@@ -82,5 +82,10 @@ namespace 卒業制作
             frmGoodsOs frmGoodsOs = new frmGoodsOs();
             frmGoodsOs.ShowDialog();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -61,7 +61,7 @@ namespace 卒業制作
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }
