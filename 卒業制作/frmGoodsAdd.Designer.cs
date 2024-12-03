@@ -69,6 +69,7 @@
             this.btnFan.TabIndex = 21;
             this.btnFan.Text = "ケースファン";
             this.btnFan.UseVisualStyleBackColor = true;
+            this.btnFan.Click += new System.EventHandler(this.btnFan_Click);
             // 
             // btnCase
             // 
