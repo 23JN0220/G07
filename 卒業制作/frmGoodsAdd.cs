@@ -76,5 +76,11 @@ namespace 卒業制作
             frmGoodsFan frmGoodsFan = new frmGoodsFan();
             frmGoodsFan.ShowDialog();
         }
+
+        private void btnOs_Click(object sender, EventArgs e)
+        {
+            frmGoodsOs frmGoodsOs = new frmGoodsOs();
+            frmGoodsOs.ShowDialog();
+        }
     }
 }

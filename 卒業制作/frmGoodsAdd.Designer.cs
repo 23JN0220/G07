@@ -60,6 +60,7 @@
             this.btnOs.TabIndex = 22;
             this.btnOs.Text = "OS";
             this.btnOs.UseVisualStyleBackColor = true;
+            this.btnOs.Click += new System.EventHandler(this.btnOs_Click);
             // 
             // btnFan
             // 
