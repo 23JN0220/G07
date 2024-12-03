@@ -48,5 +48,6 @@ namespace 卒業制作
             frmGoodsAdd frmGoodsAdd = new frmGoodsAdd();
             frmGoodsAdd.ShowDialog();
         }
+
     }
 }

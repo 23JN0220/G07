@@ -165,6 +165,7 @@
             this.btnClose.TabIndex = 9;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
+           
             // 
             // frmGoods
             // 

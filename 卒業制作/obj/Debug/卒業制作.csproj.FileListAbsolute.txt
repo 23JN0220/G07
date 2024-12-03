@@ -94,7 +94,6 @@ C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.csproj.CoreC
 C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.csproj.Up2Date
 C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.exe
 C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.pdb
-C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.Form1.resources
 C:\Users\23JN0220\Source\Repos\G07\test\卒業制作\bin\Debug\卒業制作.exe.config
 C:\Users\23JN0220\Source\Repos\G07\test\卒業制作\bin\Debug\卒業制作.exe
 C:\Users\23JN0220\Source\Repos\G07\test\卒業制作\bin\Debug\卒業制作.pdb
@@ -132,3 +131,15 @@ C:\Users\23JN0220\Source\Repos\G07\test\卒業制作\obj\Debug\卒業制作.frmG
 C:\Users\23JN0220\Source\Repos\G07\test\卒業制作\obj\Debug\卒業制作.frmGoodsSsd.resources
 C:\Users\23JN0220\Source\Repos\G07\test\卒業制作\obj\Debug\卒業制作.frmGoodsHdd.resources
 C:\Users\23JN0220\Source\Repos\G07\test\卒業制作\obj\Debug\卒業制作.frmGoodsPowerUnit.resources
+C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmGoodsCase.resources
+C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmGoodsCooler.resources
+C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmGoodsCpu.resources
+C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmGoodsGpu.resources
+C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmGoodsHdd.resources
+C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmGoodsMemory.resources
+C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmGoodsMotherboard.resources
+C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmGoodsPowerUnit.resources
+C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmGoodsSsd.resources
+C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmOrderDetail.resources
+C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmGoodsAdd.resources
+C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.payment.resources

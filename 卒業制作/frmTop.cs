@@ -46,5 +46,22 @@ namespace 卒業制作
             frmReview frmReview = new frmReview();
             frmReview.ShowDialog();
         }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            frmOrderDetail frmOrderDetail = new frmOrderDetail();
+            frmOrderDetail.ShowDialog();
+        }
+
+        private void btnPay_Click(object sender, EventArgs e)
+        {
+            payment payment = new payment();
+            payment.ShowDialog();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

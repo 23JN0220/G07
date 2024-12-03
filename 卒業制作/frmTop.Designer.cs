@@ -85,6 +85,7 @@
             this.btnOrder.TabIndex = 4;
             this.btnOrder.Text = "注文管理";
             this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // btnPay
             // 
@@ -94,6 +95,7 @@
             this.btnPay.TabIndex = 5;
             this.btnPay.Text = "支払管理";
             this.btnPay.UseVisualStyleBackColor = true;
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
             // btnClose
             // 
@@ -103,6 +105,7 @@
             this.btnClose.TabIndex = 6;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmTop
             // 
