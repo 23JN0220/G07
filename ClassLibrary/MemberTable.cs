@@ -24,7 +24,7 @@ namespace ClassLibrary
             return table;
         }
 
-        public DataTable GetMemberbyID(int id)
+        public DataTable GetMemberbyMemberID(int id)
         {
             DataTable table = null;
             DataTable dataTable = new DataTable();

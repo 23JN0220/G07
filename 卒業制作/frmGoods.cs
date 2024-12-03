@@ -91,7 +91,7 @@ namespace 卒業制作
             else
             {
                 GoodsTable goodsTable = new GoodsTable();
-                DataTable table = goodsTable.GetGoodsById(lstCategory.SelectedIndex);
+                DataTable table = goodsTable.GetGoodsByGroupCode(lstCategory.SelectedIndex);
 
                 if (table != null)
                 {

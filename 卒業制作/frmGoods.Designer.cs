@@ -34,13 +34,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvGoods = new System.Windows.Forms.DataGridView();
-            this.goods_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.goods_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.goods_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.goods_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGoods)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,30 +108,6 @@
             this.dgvGoods.Size = new System.Drawing.Size(666, 273);
             this.dgvGoods.TabIndex = 5;
             // 
-            // goods_code
-            // 
-            this.goods_code.DataPropertyName = "Goods_code";
-            this.goods_code.HeaderText = "商品番号";
-            this.goods_code.Name = "goods_code";
-            this.goods_code.ReadOnly = true;
-            this.goods_code.Width = 119;
-            // 
-            // goods_name
-            // 
-            this.goods_name.DataPropertyName = "Goods_name";
-            this.goods_name.HeaderText = "商品名";
-            this.goods_name.Name = "goods_name";
-            this.goods_name.ReadOnly = true;
-            this.goods_name.Width = 98;
-            // 
-            // price
-            // 
-            this.price.DataPropertyName = "price";
-            this.price.HeaderText = "価格";
-            this.price.Name = "price";
-            this.price.ReadOnly = true;
-            this.price.Width = 77;
-            // 
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(48, 366);
@@ -170,6 +146,30 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // price
+            // 
+            this.price.DataPropertyName = "price";
+            this.price.HeaderText = "価格";
+            this.price.Name = "price";
+            this.price.ReadOnly = true;
+            this.price.Width = 77;
+            // 
+            // goods_name
+            // 
+            this.goods_name.DataPropertyName = "Goods_name";
+            this.goods_name.HeaderText = "商品名";
+            this.goods_name.Name = "goods_name";
+            this.goods_name.ReadOnly = true;
+            this.goods_name.Width = 98;
+            // 
+            // goods_code
+            // 
+            this.goods_code.DataPropertyName = "Goods_code";
+            this.goods_code.HeaderText = "商品番号";
+            this.goods_code.Name = "goods_code";
+            this.goods_code.ReadOnly = true;
+            this.goods_code.Width = 119;
+            // 
             // frmGoods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
@@ -204,12 +204,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvGoods;
-        private System.Windows.Forms.DataGridViewTextBoxColumn goods_code;
-        private System.Windows.Forms.DataGridViewTextBoxColumn goods_name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn price;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn goods_code;
+        private System.Windows.Forms.DataGridViewTextBoxColumn goods_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price;
     }
 }

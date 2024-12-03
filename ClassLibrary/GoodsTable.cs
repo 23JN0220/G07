@@ -55,7 +55,7 @@ namespace ClassLibrary
 
         }
 
-        public DataTable GetGoodsById(int id)
+        public DataTable GetGoodsByGroupCode(int group_code)
         {
             DataTable table = null;
             DataTable dataTable = new DataTable();
@@ -64,7 +64,7 @@ namespace ClassLibrary
             {
                 string sql = "SELECT * FROM Goods WHERE group_code = @group_code";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
-                adapter.SelectCommand.Parameters.AddWithValue("@group_code", id);
+                adapter.SelectCommand.Parameters.AddWithValue("@group_code", group_code);
 
                 int cnt = adapter.Fill(dataTable);
 

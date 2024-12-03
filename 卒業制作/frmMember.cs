@@ -42,7 +42,7 @@ namespace 卒業制作
                 {
                     MemberTable memberTable = new MemberTable();
 
-                    DataTable dataTable = memberTable.GetMemberbyID(id);
+                    DataTable dataTable = memberTable.GetMemberbyMemberID(id);
 
                     if (dataTable != null)
                     {
