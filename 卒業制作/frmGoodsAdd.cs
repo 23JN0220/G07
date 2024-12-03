@@ -64,5 +64,11 @@ namespace 卒業制作
             frmGoodsPowerUnit frmGoodsPowerUnit = new frmGoodsPowerUnit();
             frmGoodsPowerUnit.ShowDialog();
         }
+
+        private void btnCase_Click(object sender, EventArgs e)
+        {
+            frmGoodsCase frmGoodsCase = new frmGoodsCase();
+            frmGoodsCase.ShowDialog();
+        }
     }
 }

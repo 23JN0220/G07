@@ -78,6 +78,7 @@
             this.btnCase.TabIndex = 20;
             this.btnCase.Text = "PCケース";
             this.btnCase.UseVisualStyleBackColor = true;
+            this.btnCase.Click += new System.EventHandler(this.btnCase_Click);
             // 
             // btnPowerUnit
             // 
