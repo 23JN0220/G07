@@ -18,11 +18,6 @@ namespace 卒業制作
             InitializeComponent();
         }
 
-        private void txtMember_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void frmMember_Shown(object sender, EventArgs e)
         {
             MemberTable memberTable = new MemberTable();
@@ -74,6 +69,17 @@ namespace 卒業制作
 
         private void btnReset_Click(object sender, EventArgs e)
         {
+            txtMember.Text = "";
+
+            MemberTable memberTable = new MemberTable();
+
+            DataTable dataTable = memberTable.GetMember();
+
+            if (dataTable != null)
+            {
+                dgvMember.AutoGenerateColumns = false;
+                dgvMember.DataSource = dataTable;
+            }
 
         }
 
