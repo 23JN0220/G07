@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="CategoryGroupTable.cs" />
     <Compile Include="CategoryGroup.cs" />
+    <Compile Include="Review.cs" />
     <Compile Include="Goods.cs" />
     <Compile Include="GoodsTable.cs" />
     <Compile Include="MemberTable.cs" />
@@ -53,6 +54,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="ReviewTable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

@@ -18,7 +18,8 @@ namespace 卒業制作
             InitializeComponent();
         }
 
-        private void frmGoods_Shown(object sender, EventArgs e)
+
+        private void frmGoods_Load(object sender, EventArgs e)
         {
             CategoryGroupTable categoryGroupTable = new CategoryGroupTable();
             GoodsTable goodsTable = new GoodsTable();
@@ -40,6 +41,12 @@ namespace 卒業制作
             {
                 MessageBox.Show("商品が見つかりませんでした。", "検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+
+        private void frmGoods_Shown(object sender, EventArgs e)
+        {
+            
         }
 
         private void btnSerch_Click(object sender, EventArgs e)
@@ -105,5 +112,7 @@ namespace 卒業制作
                 }
             }
         }
+
+        
     }
 }

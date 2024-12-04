@@ -18,7 +18,7 @@ namespace 卒業制作
             InitializeComponent();
         }
 
-        private void frmMember_Shown(object sender, EventArgs e)
+        private void frmMember_Load(object sender, EventArgs e)
         {
             MemberTable memberTable = new MemberTable();
 

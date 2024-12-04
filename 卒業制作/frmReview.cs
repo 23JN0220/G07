@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,19 @@ namespace 卒業制作
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmReview_Load(object sender, EventArgs e)
+        {
+            ReviewTable reviewTable = new ReviewTable();
+
+            DataTable dataTable = reviewTable.GetReview();
+
+            if (dataTable != null)
+            {
+                dgvReview.AutoGenerateColumns = false;
+                dgvReview.DataSource = dataTable;
+            }
         }
     }
 }

@@ -165,7 +165,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmMember";
             this.Text = "会員管理画面";
-            this.Shown += new System.EventHandler(this.frmMember_Shown);
+            this.Load += new System.EventHandler(this.frmMember_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -105,6 +105,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmReview";
             this.Text = "レビュー情報管理";
+            this.Load += new System.EventHandler(this.frmReview_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReview)).EndInit();
             this.ResumeLayout(false);
 

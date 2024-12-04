@@ -8,14 +8,14 @@ namespace ClassLibrary
 {
     public class Member
     {
-        public int MemberID { get; set; }
-        public string MemberName { get; set; }
-        public string Email { get; set; }
-        public string Tel { get; set; }
-        public string Password { get; set; }
-        public string ZipCode { get; set; }
-        public string Address { get; set; }
-        public int CreditCard { get; set; }
-        public DateTime CreditDate { get; set; }
+        public int member_id { get; set; }
+        public string member_name { get; set; }
+        public string email { get; set; }
+        public string tel { get; set; }
+        public string password { get; set; }
+        public string zip_code { get; set; }
+        public string address { get; set; }
+        public int credit_card { get; set; }
+        public DateTime credit_date { get; set; }
     }
 }
