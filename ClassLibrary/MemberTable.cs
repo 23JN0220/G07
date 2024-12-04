@@ -24,7 +24,7 @@ namespace ClassLibrary
             return table;
         }
 
-        public DataTable GetMemberbyMemberID(int id)
+        public DataTable GetMemberbyMemberID(int member_id)
         {
             DataTable table = null;
             DataTable dataTable = new DataTable();
@@ -33,7 +33,7 @@ namespace ClassLibrary
             {
                 string sql = "SELECT * FROM Member WHERE member_id = @member_id";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
-                adapter.SelectCommand.Parameters.AddWithValue("@member_id", id);
+                adapter.SelectCommand.Parameters.AddWithValue("@member_id", member_id);
 
                 int cnt = adapter.Fill(dataTable);
 
@@ -46,7 +46,7 @@ namespace ClassLibrary
             return table;
         }
 
-        public int Delete(string id)
+        public int Delete(string member_id)
         {
             int ret = 0;
 
@@ -56,7 +56,7 @@ namespace ClassLibrary
                 string sql = "DELETE FROM Member WHERE member_id = @member_id";
 
                 SqlCommand command = new SqlCommand(sql, connection);
-                command.Parameters.AddWithValue("@member_id", id);
+                command.Parameters.AddWithValue("@member_id", member_id);
 
                 connection.Open();
                 ret = command.ExecuteNonQuery();

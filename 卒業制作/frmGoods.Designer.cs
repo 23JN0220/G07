@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.txtGoods = new System.Windows.Forms.TextBox();
-            this.btnSerch = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.lstCategory = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,16 +50,17 @@
             this.txtGoods.Name = "txtGoods";
             this.txtGoods.Size = new System.Drawing.Size(211, 28);
             this.txtGoods.TabIndex = 0;
+            this.txtGoods.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtGoods_KeyDown);
             // 
-            // btnSerch
+            // btnSearch
             // 
-            this.btnSerch.Location = new System.Drawing.Point(363, 12);
-            this.btnSerch.Name = "btnSerch";
-            this.btnSerch.Size = new System.Drawing.Size(94, 34);
-            this.btnSerch.TabIndex = 1;
-            this.btnSerch.Text = "検索";
-            this.btnSerch.UseVisualStyleBackColor = true;
-            this.btnSerch.Click += new System.EventHandler(this.btnSerch_Click);
+            this.btnSearch.Location = new System.Drawing.Point(363, 12);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(94, 34);
+            this.btnSearch.TabIndex = 1;
+            this.btnSearch.Text = "検索";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // lstCategory
             // 
@@ -183,7 +184,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstCategory);
-            this.Controls.Add(this.btnSerch);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtGoods);
             this.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -199,7 +200,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtGoods;
-        private System.Windows.Forms.Button btnSerch;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.ComboBox lstCategory;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

@@ -43,17 +43,11 @@ namespace 卒業制作
             }
         }
 
-
-        private void frmGoods_Shown(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnSerch_Click(object sender, EventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
             GoodsTable goodsTable = new GoodsTable();
             DataTable table = goodsTable.GetGoodsByName(txtGoods.Text);
-            
+
             if (table != null)
             {
                 dgvGoods.AutoGenerateColumns = false;
@@ -65,6 +59,7 @@ namespace 卒業制作
                 MessageBox.Show("商品が見つかりませんでした。", "検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -110,6 +105,14 @@ namespace 卒業制作
                     dgvGoods.DataSource = null;
                     MessageBox.Show("商品が見つかりませんでした。", "検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+            }
+        }
+
+        private void txtGoods_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSearch.PerformClick();
             }
         }
 

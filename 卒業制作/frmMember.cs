@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibrary;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace 卒業制作
 {
@@ -31,9 +32,8 @@ namespace 卒業制作
             }
         }
 
-        private void brnSerch_Click(object sender, EventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
-            
             int id;
 
             if (txtMember.Text != "")
@@ -64,7 +64,6 @@ namespace 卒業制作
             {
                 MessageBox.Show("検索したい会員番号を入力してください", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -85,15 +84,15 @@ namespace 卒業制作
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            string id = dgvMember.CurrentRow.Cells["member_id"].Value.ToString();
+            string member_id = dgvMember.CurrentRow.Cells["member_id"].Value.ToString();
 
-            DialogResult result = MessageBox.Show("会員番号「" + id + "」の会員を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("会員番号「" + member_id + "」の会員を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {
                 MemberTable memberTable = new MemberTable();
 
-                int ret = memberTable.Delete(id);
+                int ret = memberTable.Delete(member_id);
 
                 if (ret != 0)
                 {
@@ -123,6 +122,14 @@ namespace 卒業制作
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtMember_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSearch.PerformClick();
+            }
         }
 
         

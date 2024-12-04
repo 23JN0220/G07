@@ -36,7 +36,7 @@
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnClose = new System.Windows.Forms.Button();
             this.txtMember = new System.Windows.Forms.TextBox();
-            this.brnSerch = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).BeginInit();
@@ -119,16 +119,17 @@
             this.txtMember.Name = "txtMember";
             this.txtMember.Size = new System.Drawing.Size(235, 28);
             this.txtMember.TabIndex = 5;
+            this.txtMember.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMember_KeyDown);
             // 
-            // brnSerch
+            // btnSearch
             // 
-            this.brnSerch.Location = new System.Drawing.Point(417, 42);
-            this.brnSerch.Name = "brnSerch";
-            this.brnSerch.Size = new System.Drawing.Size(84, 27);
-            this.brnSerch.TabIndex = 6;
-            this.brnSerch.Text = "検索";
-            this.brnSerch.UseVisualStyleBackColor = true;
-            this.brnSerch.Click += new System.EventHandler(this.brnSerch_Click);
+            this.btnSearch.Location = new System.Drawing.Point(417, 42);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(84, 27);
+            this.btnSearch.TabIndex = 6;
+            this.btnSearch.Text = "検索";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // label1
             // 
@@ -156,7 +157,7 @@
             this.ClientSize = new System.Drawing.Size(734, 431);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.brnSerch);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtMember);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.dgvMember);
@@ -181,7 +182,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn member_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.TextBox txtMember;
-        private System.Windows.Forms.Button brnSerch;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnReset;
     }
