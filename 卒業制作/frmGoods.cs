@@ -31,6 +31,8 @@ namespace 卒業制作
                 lstCategory.Items.Add(dr[1].ToString());
             }
 
+            lstCategory.SelectedIndex = 0;
+
             DataTable table1 = goodsTable.GetGoods();
             if (table1 != null)
             {
@@ -46,18 +48,40 @@ namespace 卒業制作
         private void btnSearch_Click(object sender, EventArgs e)
         {
             GoodsTable goodsTable = new GoodsTable();
-            DataTable table = goodsTable.GetGoodsByName(txtGoods.Text);
 
-            if (table != null)
+            if (lstCategory.Text == "すべて")
             {
-                dgvGoods.AutoGenerateColumns = false;
-                dgvGoods.DataSource = table;
+                DataTable table = goodsTable.GetGoodsByName(txtGoods.Text);
+
+                if (table != null)
+                {
+                    dgvGoods.AutoGenerateColumns = false;
+                    dgvGoods.DataSource = table;
+                }
+                else
+                {
+                    dgvGoods.DataSource = null;
+                    MessageBox.Show("商品が見つかりませんでした。", "検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             else
             {
-                dgvGoods.DataSource = null;
-                MessageBox.Show("商品が見つかりませんでした。", "検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                int group_code = lstCategory.SelectedIndex;
+                DataTable table = goodsTable.GetGoodsByGroupCode_Name(group_code, txtGoods.Text);
+
+                if (table != null)
+                {
+                    dgvGoods.AutoGenerateColumns = false;
+                    dgvGoods.DataSource = table;
+                }
+                else
+                {
+                    dgvGoods.DataSource = null;
+                    MessageBox.Show("商品が見つかりませんでした。", "検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
             }
+            
         }
 
 
@@ -76,8 +100,25 @@ namespace 卒業制作
         {
             if (lstCategory.Text == "すべて")
             {
+
                 GoodsTable goodsTable = new GoodsTable();
-                DataTable table = goodsTable.GetGoods();
+                DataTable table;
+
+                if (txtGoods.Text == "")
+                {
+                    table = goodsTable.GetGoods();
+                }
+                else
+                {
+                    table = goodsTable.GetGoodsByName(txtGoods.Text);
+                }
+
+
+
+
+
+                
+                
 
                 if (table != null)
                 {
@@ -93,7 +134,16 @@ namespace 卒業制作
             else
             {
                 GoodsTable goodsTable = new GoodsTable();
-                DataTable table = goodsTable.GetGoodsByGroupCode(lstCategory.SelectedIndex);
+                DataTable table;
+
+                if (txtGoods.Text == "")
+                {
+                    table = goodsTable.GetGoodsByGroupCode(lstCategory.SelectedIndex);
+                }
+                else
+                {
+                    table = goodsTable.GetGoodsByGroupCode_Name(lstCategory.SelectedIndex, txtGoods.Text);
+                }
 
                 if (table != null)
                 {
