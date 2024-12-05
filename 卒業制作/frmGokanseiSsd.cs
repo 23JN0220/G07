@@ -94,5 +94,36 @@ namespace 卒業制作
                 MessageBox.Show("タイプの名称が入力されていません。\n名称を入力してください。", "未入力エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void btnTchange_Click(object sender, EventArgs e)
+        {
+            if (txtType.Text != "" && lstType.SelectedIndex != -1)
+            {
+                SsdTypeTable ssdTypeTable = new SsdTypeTable();
+                int ret = ssdTypeTable.Update(txtType.Text, lstType.SelectedItem.ToString());
+
+                if (ret == 1)
+                {
+                    MessageBox.Show("データを変更しました。", "変更完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    lstType.Items.Clear();
+                    DataTable dataTable = ssdTypeTable.GetSsdType();
+                    foreach (DataRow dr in dataTable.Rows)
+                    {
+                        lstType.Items.Add(dr[1].ToString());
+                    }
+
+                    txtType.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("データを変更できませんでした。", "変更エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            else
+            {
+                MessageBox.Show("変更する項目が選択されていないか、変更後の名称が未入力です。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
     }
 }

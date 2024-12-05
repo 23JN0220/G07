@@ -49,5 +49,25 @@ namespace ClassLibrary
             }
             return ret;
         }
+
+        public int Update(string type_name, string type_name_old)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE SSD_Type SET type_name = @type_name WHERE type_name = @type_name_old";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@type_name", type_name);
+                command.Parameters.AddWithValue("@type_name_old", type_name_old);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
     }
 }

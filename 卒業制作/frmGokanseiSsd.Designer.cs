@@ -201,6 +201,7 @@
             this.btnTchange.TabIndex = 16;
             this.btnTchange.Text = "変更";
             this.btnTchange.UseVisualStyleBackColor = true;
+            this.btnTchange.Click += new System.EventHandler(this.btnTchange_Click);
             // 
             // button1
             // 
