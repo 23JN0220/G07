@@ -34,13 +34,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvGoods = new System.Windows.Forms.DataGridView();
-            this.goods_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.goods_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.goods_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.group_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.goods_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGoods)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,6 +101,7 @@
             this.dgvGoods.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGoods.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.goods_code,
+            this.group_code,
             this.goods_name,
             this.price});
             this.dgvGoods.Location = new System.Drawing.Point(48, 72);
@@ -108,30 +110,6 @@
             this.dgvGoods.RowTemplate.Height = 21;
             this.dgvGoods.Size = new System.Drawing.Size(666, 273);
             this.dgvGoods.TabIndex = 5;
-            // 
-            // goods_code
-            // 
-            this.goods_code.DataPropertyName = "Goods_code";
-            this.goods_code.HeaderText = "商品番号";
-            this.goods_code.Name = "goods_code";
-            this.goods_code.ReadOnly = true;
-            this.goods_code.Width = 119;
-            // 
-            // goods_name
-            // 
-            this.goods_name.DataPropertyName = "Goods_name";
-            this.goods_name.HeaderText = "商品名";
-            this.goods_name.Name = "goods_name";
-            this.goods_name.ReadOnly = true;
-            this.goods_name.Width = 98;
-            // 
-            // price
-            // 
-            this.price.DataPropertyName = "price";
-            this.price.HeaderText = "価格";
-            this.price.Name = "price";
-            this.price.ReadOnly = true;
-            this.price.Width = 77;
             // 
             // btnAdd
             // 
@@ -151,6 +129,7 @@
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "選択した商品の編集";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
@@ -170,6 +149,39 @@
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // goods_code
+            // 
+            this.goods_code.DataPropertyName = "Goods_code";
+            this.goods_code.HeaderText = "商品番号";
+            this.goods_code.Name = "goods_code";
+            this.goods_code.ReadOnly = true;
+            this.goods_code.Width = 119;
+            // 
+            // group_code
+            // 
+            this.group_code.DataPropertyName = "group_code";
+            this.group_code.HeaderText = "グループコード";
+            this.group_code.Name = "group_code";
+            this.group_code.ReadOnly = true;
+            this.group_code.Visible = false;
+            this.group_code.Width = 148;
+            // 
+            // goods_name
+            // 
+            this.goods_name.DataPropertyName = "Goods_name";
+            this.goods_name.HeaderText = "商品名";
+            this.goods_name.Name = "goods_name";
+            this.goods_name.ReadOnly = true;
+            this.goods_name.Width = 98;
+            // 
+            // price
+            // 
+            this.price.DataPropertyName = "price";
+            this.price.HeaderText = "価格";
+            this.price.Name = "price";
+            this.price.ReadOnly = true;
+            this.price.Width = 77;
             // 
             // frmGoods
             // 
@@ -210,6 +222,7 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.DataGridViewTextBoxColumn goods_code;
+        private System.Windows.Forms.DataGridViewTextBoxColumn group_code;
         private System.Windows.Forms.DataGridViewTextBoxColumn goods_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn price;
     }

@@ -67,6 +67,7 @@
             this.lstSpec.Name = "lstSpec";
             this.lstSpec.Size = new System.Drawing.Size(120, 88);
             this.lstSpec.TabIndex = 1;
+            this.lstSpec.SelectedIndexChanged += new System.EventHandler(this.lstSpec_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -85,12 +86,12 @@
             this.lstPlugs.Name = "lstPlugs";
             this.lstPlugs.Size = new System.Drawing.Size(120, 88);
             this.lstPlugs.TabIndex = 3;
+            this.lstPlugs.SelectedIndexChanged += new System.EventHandler(this.lstPlugs_SelectedIndexChanged);
             // 
             // txtSpec
             // 
             this.txtSpec.Location = new System.Drawing.Point(264, 58);
             this.txtSpec.Name = "txtSpec";
-            this.txtSpec.ReadOnly = true;
             this.txtSpec.Size = new System.Drawing.Size(237, 28);
             this.txtSpec.TabIndex = 4;
             // 
@@ -125,7 +126,6 @@
             // 
             this.txtPlugs.Location = new System.Drawing.Point(264, 208);
             this.txtPlugs.Name = "txtPlugs";
-            this.txtPlugs.ReadOnly = true;
             this.txtPlugs.Size = new System.Drawing.Size(237, 28);
             this.txtPlugs.TabIndex = 8;
             // 
@@ -174,12 +174,12 @@
             this.lstType.Name = "lstType";
             this.lstType.Size = new System.Drawing.Size(120, 88);
             this.lstType.TabIndex = 13;
+            this.lstType.SelectedIndexChanged += new System.EventHandler(this.lstType_SelectedIndexChanged);
             // 
             // txtType
             // 
             this.txtType.Location = new System.Drawing.Point(264, 414);
             this.txtType.Name = "txtType";
-            this.txtType.ReadOnly = true;
             this.txtType.Size = new System.Drawing.Size(237, 28);
             this.txtType.TabIndex = 14;
             // 
@@ -191,6 +191,7 @@
             this.btnTadd.TabIndex = 15;
             this.btnTadd.Text = "追加";
             this.btnTadd.UseVisualStyleBackColor = true;
+            this.btnTadd.Click += new System.EventHandler(this.btnTadd_Click);
             // 
             // btnTchange
             // 
@@ -258,6 +259,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGokanseiSsd";
             this.Text = "互換性SSD";
+            this.Load += new System.EventHandler(this.frmGokanseiSsd_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

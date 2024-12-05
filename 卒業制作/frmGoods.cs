@@ -113,13 +113,6 @@ namespace 卒業制作
                     table = goodsTable.GetGoodsByName(txtGoods.Text);
                 }
 
-
-
-
-
-                
-                
-
                 if (table != null)
                 {
                     dgvGoods.AutoGenerateColumns = false;
@@ -166,6 +159,73 @@ namespace 卒業制作
             }
         }
 
-        
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            //ここからそれぞれの画面に分岐
+            //MessageBox.Show(dgvGoods.CurrentRow.Cells["group_code"].Value.ToString());
+            switch (dgvGoods.CurrentRow.Cells["group_code"].Value)
+            {
+                case 1:
+                    frmGoodsCpu frmGoodsCpu = new frmGoodsCpu();
+                    frmGoodsCpu.ShowDialog();
+
+                    break;
+                case 2:
+                    frmGokanseiCooler frmGokanseiCooler = new frmGokanseiCooler();
+                    frmGokanseiCooler.ShowDialog();
+
+                    break;
+                case 3:
+                    frmGoodsMotherboard frmGoodsMotherboard = new frmGoodsMotherboard();
+                    frmGoodsMotherboard.ShowDialog();
+
+                    break;
+                case 4:
+                    frmGoodsMemory frmGoodsMemory = new frmGoodsMemory();
+                    frmGoodsMemory.ShowDialog();
+
+                    break;
+                case 5:
+                    frmGoodsGpu frmGoodsGpu = new frmGoodsGpu();
+                    frmGoodsGpu.ShowDialog();
+
+                    break;
+                case 6:
+                    frmGoodsSsd frmGoodsSsd = new frmGoodsSsd();
+                    frmGoodsSsd.ShowDialog();
+
+                    break;
+                case 7:
+                    frmGoodsHdd frmGoodsHdd = new frmGoodsHdd();
+                    frmGoodsHdd.ShowDialog();
+
+                    break;
+                case 8:
+                    frmGoodsPowerUnit frmGoodsPowerUnit = new frmGoodsPowerUnit();
+                    frmGoodsPowerUnit.ShowDialog();
+                    
+                    break;
+                case 9:
+                    frmGoodsCase frmGoodsCase = new frmGoodsCase();
+                    frmGoodsCase.ShowDialog();
+
+                    break;
+                case 10:
+                    frmGoodsFan frmGoodsFan = new frmGoodsFan();
+                    frmGoodsFan.ShowDialog();
+
+                    break;
+                case 11:
+                    frmGoodsOs frmGoodsOs = new frmGoodsOs();
+
+                    frmGoodsOs.ShowDialog();
+
+                    break;
+                default:
+                    MessageBox.Show("この商品のカテゴリーが不明です", "商品エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    break;
+            }
+        }
     }
 }

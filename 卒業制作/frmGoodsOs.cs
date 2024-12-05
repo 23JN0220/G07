@@ -12,6 +12,11 @@ namespace 卒業制作
 {
     public partial class frmGoodsOs : Form
     {
+        public string goods_name;
+        public int version_id;
+        public int price;
+
+
         public frmGoodsOs()
         {
             InitializeComponent();
