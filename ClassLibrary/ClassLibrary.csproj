@@ -43,6 +43,10 @@
   <ItemGroup>
     <Compile Include="CategoryGroupTable.cs" />
     <Compile Include="CategoryGroup.cs" />
+    <Compile Include="GoodsOrder.cs" />
+    <Compile Include="GoodsOrderTable.cs" />
+    <Compile Include="OrderDetail.cs" />
+    <Compile Include="OrderDetailTable.cs" />
     <Compile Include="SsdConnection.cs" />
     <Compile Include="Review.cs" />
     <Compile Include="Goods.cs" />

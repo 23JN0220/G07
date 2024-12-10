@@ -30,6 +30,10 @@ namespace 卒業制作
                 dgvMember.AutoGenerateColumns = false;
                 dgvMember.DataSource = dataTable;
             }
+            else
+            {
+                MessageBox.Show("会員データが存在しません", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -84,36 +88,43 @@ namespace 卒業制作
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            string member_id = dgvMember.CurrentRow.Cells["member_id"].Value.ToString();
-
-            DialogResult result = MessageBox.Show("会員番号「" + member_id + "」の会員を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
+            if (dgvMember.SelectedCells.Count > 0)
             {
-                MemberTable memberTable = new MemberTable();
+                string member_id = dgvMember.CurrentRow.Cells["member_id"].Value.ToString();
 
-                int ret = memberTable.Delete(member_id);
+                DialogResult result = MessageBox.Show("会員番号「" + member_id + "」の会員を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
-                if (ret != 0)
+                if (result == DialogResult.Yes)
                 {
-                    MessageBox.Show("会員は正常に削除されました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MemberTable memberTable = new MemberTable();
 
-                    txtMember.Text = "";
-                    DataTable dataTable = memberTable.GetMember();
+                    int ret = memberTable.Delete(member_id);
 
-                    if (dataTable != null)
+                    if (ret != 0)
                     {
-                        dgvMember.AutoGenerateColumns = false;
-                        dgvMember.DataSource = dataTable;
+                        MessageBox.Show("会員は正常に削除されました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        txtMember.Text = "";
+                        DataTable dataTable = memberTable.GetMember();
+
+                        if (dataTable != null)
+                        {
+                            dgvMember.AutoGenerateColumns = false;
+                            dgvMember.DataSource = dataTable;
+                        }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("会員の削除に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
 
-                }
-                else
-                {
-                    MessageBox.Show("会員の削除に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
 
-
+                }
+            }
+            else
+            {
+                MessageBox.Show("会員が選択されていません。", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
             

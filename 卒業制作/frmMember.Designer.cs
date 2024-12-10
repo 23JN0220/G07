@@ -65,6 +65,7 @@
             this.member_name,
             this.email});
             this.dgvMember.Location = new System.Drawing.Point(101, 123);
+            this.dgvMember.MultiSelect = false;
             this.dgvMember.Name = "dgvMember";
             this.dgvMember.ReadOnly = true;
             this.dgvMember.RowTemplate.Height = 21;

@@ -55,7 +55,7 @@ namespace 卒業制作
 
         private void btnPay_Click(object sender, EventArgs e)
         {
-            payment payment = new payment();
+            frmPayment payment = new frmPayment();
             payment.ShowDialog();
         }
 
