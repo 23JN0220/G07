@@ -21,5 +21,11 @@ namespace 卒業制作
         {
             this.Close();
         }
+
+        private void btnChipSetSelect_Click(object sender, EventArgs e)
+        {
+            frmGoodsGokanseiChipSet frmGoodsGokansei = new frmGoodsGokanseiChipSet();
+            frmGoodsGokansei.ShowDialog();
+        }
     }
 }

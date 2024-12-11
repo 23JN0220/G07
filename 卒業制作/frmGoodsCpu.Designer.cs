@@ -35,7 +35,6 @@
             this.lstGenerational = new System.Windows.Forms.ComboBox();
             this.lstSocket = new System.Windows.Forms.ComboBox();
             this.txtCore = new System.Windows.Forms.TextBox();
-            this.lstChip = new System.Windows.Forms.ComboBox();
             this.txtClock = new System.Windows.Forms.TextBox();
             this.txtPowerConsumption = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
@@ -55,6 +54,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.btnChipSetSelect = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,15 +115,6 @@
             this.txtCore.Name = "txtCore";
             this.txtCore.Size = new System.Drawing.Size(399, 28);
             this.txtCore.TabIndex = 6;
-            // 
-            // lstChip
-            // 
-            this.lstChip.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstChip.FormattingEnabled = true;
-            this.lstChip.Location = new System.Drawing.Point(505, 220);
-            this.lstChip.Name = "lstChip";
-            this.lstChip.Size = new System.Drawing.Size(399, 29);
-            this.lstChip.TabIndex = 7;
             // 
             // txtClock
             // 
@@ -291,11 +282,22 @@
             this.label14.TabIndex = 18;
             this.label14.Text = "円";
             // 
+            // btnChipSetSelect
+            // 
+            this.btnChipSetSelect.Location = new System.Drawing.Point(505, 220);
+            this.btnChipSetSelect.Name = "btnChipSetSelect";
+            this.btnChipSetSelect.Size = new System.Drawing.Size(399, 29);
+            this.btnChipSetSelect.TabIndex = 19;
+            this.btnChipSetSelect.Text = "選択画面へ";
+            this.btnChipSetSelect.UseVisualStyleBackColor = true;
+            this.btnChipSetSelect.Click += new System.EventHandler(this.btnChipSetSelect_Click);
+            // 
             // frmGoodsCpu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(961, 523);
+            this.Controls.Add(this.btnChipSetSelect);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -313,7 +315,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstMaker);
-            this.Controls.Add(this.lstChip);
             this.Controls.Add(this.lstSocket);
             this.Controls.Add(this.lstGenerational);
             this.Controls.Add(this.lstSeries);
@@ -342,7 +343,6 @@
         private System.Windows.Forms.ComboBox lstGenerational;
         private System.Windows.Forms.ComboBox lstSocket;
         private System.Windows.Forms.TextBox txtCore;
-        private System.Windows.Forms.ComboBox lstChip;
         private System.Windows.Forms.TextBox txtClock;
         private System.Windows.Forms.TextBox txtPowerConsumption;
         private System.Windows.Forms.TextBox txtPrice;
@@ -362,5 +362,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button btnChipSetSelect;
     }
 }
