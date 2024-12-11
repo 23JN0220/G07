@@ -76,5 +76,16 @@ namespace 卒業制作
         {
             this.Close();
         }
+
+        private void btnHdd_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("設定できる項目はありません", "項目なし", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnCase_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("それぞれの互換性管理にて設定してください\n" +
+                "対応マザーボード→互換性管理：マザーボード\n" + "ケースファン対応サイズ→互換性管理：ケースファン\n" + "対応電源ユニット→互換性管理：電源ユニット", "項目なし", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

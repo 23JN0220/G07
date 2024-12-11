@@ -110,6 +110,7 @@
             this.btnHdd.TabIndex = 6;
             this.btnHdd.Text = "HDD";
             this.btnHdd.UseVisualStyleBackColor = true;
+            this.btnHdd.Click += new System.EventHandler(this.btnHdd_Click);
             // 
             // btnPowerUnit
             // 
@@ -129,6 +130,7 @@
             this.btnCase.TabIndex = 8;
             this.btnCase.Text = "PCケース";
             this.btnCase.UseVisualStyleBackColor = true;
+            this.btnCase.Click += new System.EventHandler(this.btnCase_Click);
             // 
             // btnFan
             // 
