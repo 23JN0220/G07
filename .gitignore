@@ -16,3 +16,4 @@
 /ClassLibrary/Properties/AssemblyInfo.cs
 /ClassLibrary/Properties/Settings.Designer.cs
 /ClassLibrary/Properties/Settings.settings
+*.resources
