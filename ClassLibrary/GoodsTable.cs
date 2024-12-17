@@ -32,6 +32,39 @@ namespace ClassLibrary
             return table;
         }
 
+        public Goods GetGoodsByGoodsCode(string goods_code)
+        {
+            Goods goods = null;
+
+            DataTable dataTable = new DataTable();
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT * FROM Goods WHERE goods_code = @goods_code";
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@goods_code", goods_code);
+
+                int cnt = adapter.Fill(dataTable);
+
+                if (cnt == 1)
+                {
+                    DataRow dr = dataTable.Rows[0];
+
+                    goods = new Goods();
+                    goods.goods_code = int.Parse(dr[0].ToString());
+                    goods.goods_name = dr[1].ToString();
+                    goods.maker_id = int.Parse(dr[2].ToString());
+                    goods.price = int.Parse(dr[3].ToString());
+                    goods.group_code = int.Parse(dr[4].ToString());
+                    goods.power_consumption = int.Parse(dr[5].ToString());
+                    goods.goods_image = dr[6].ToString();
+                }
+            }
+
+            return goods;
+
+        }
+
 
         public DataTable GetGoodsByName(string goods_name)
         {

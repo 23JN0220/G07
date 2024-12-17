@@ -1,58 +1,50 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class ChipSetSeriesTable
+    public class CpuSocketTable
     {
-
-        public DataTable GetChipsetSeries()
+        public DataTable GetCPUSocket()
         {
-            DataTable table = null;
-            DataTable dataTable = new DataTable();
+            DataTable table = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT * FROM ChipsetSeries";
+                string sql = "SELECT * FROM CPU_Socket";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
 
-                int cnt = adapter.Fill(dataTable);
-
-                if (cnt > 0)
-                {
-                    table = new DataTable();
-                    table = dataTable;
-                }
+                adapter.Fill(table);
             }
             return table;
         }
 
-        public int GetChipSetIdByName(string series_name)
+        public string GetCPUSocketNameByID(int socket_id)
         {
-            int series_id = 0;
+            string socket_name = null;
 
             DataTable dataTable = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT series_id FROM ChipsetSeries WHERE series_name = @series_name";
+                string sql = "SELECT socket_name FROM CPU_Socket WHERE socket_id = @socket_id";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
-                adapter.SelectCommand.Parameters.AddWithValue("@series_name", series_name);
+                adapter.SelectCommand.Parameters.AddWithValue("@socket_id", socket_id);
 
                 int cnt = adapter.Fill(dataTable);
 
                 if (cnt == 1)
                 {
                     DataRow dr = dataTable.Rows[0];
-                    series_id = int.Parse(dr[0].ToString());
+                    socket_name = dr[0].ToString();
                 }
             }
-            return series_id;
+            return socket_name;
         }
     }
 }

@@ -44,8 +44,16 @@
     <Compile Include="CategoryGroupTable.cs" />
     <Compile Include="CategoryGroup.cs" />
     <Compile Include="ChipSetSeriesTable.cs" />
+    <Compile Include="CpuGenerationTable.cs" />
+    <Compile Include="CpuSeriesTable.cs" />
+    <Compile Include="CpuSocketTable.cs" />
+    <Compile Include="CpuChipsetSeriesTable.cs" />
+    <Compile Include="GoodsCpu.cs" />
+    <Compile Include="GoodsCpuTable.cs" />
+    <Compile Include="Maker.cs" />
     <Compile Include="GoodsOrder.cs" />
     <Compile Include="GoodsOrderTable.cs" />
+    <Compile Include="MakerTable.cs" />
     <Compile Include="OrderDetail.cs" />
     <Compile Include="OrderDetailTable.cs" />
     <Compile Include="SsdConnection.cs" />
