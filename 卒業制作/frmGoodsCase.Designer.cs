@@ -46,7 +46,6 @@
             this.lstMaker = new System.Windows.Forms.ComboBox();
             this.listUnit = new System.Windows.Forms.ComboBox();
             this.listCaseFan = new System.Windows.Forms.ComboBox();
-            this.lstMotherboard = new System.Windows.Forms.ComboBox();
             this.txtCaseNumber = new System.Windows.Forms.TextBox();
             this.txtSlotNumber = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
@@ -70,6 +69,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.lstMotherboard = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -235,15 +235,6 @@
             this.listCaseFan.Name = "listCaseFan";
             this.listCaseFan.Size = new System.Drawing.Size(399, 29);
             this.listCaseFan.TabIndex = 8;
-            // 
-            // lstMotherboard
-            // 
-            this.lstMotherboard.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstMotherboard.FormattingEnabled = true;
-            this.lstMotherboard.Location = new System.Drawing.Point(570, 81);
-            this.lstMotherboard.Name = "lstMotherboard";
-            this.lstMotherboard.Size = new System.Drawing.Size(399, 29);
-            this.lstMotherboard.TabIndex = 3;
             // 
             // txtCaseNumber
             // 
@@ -429,11 +420,21 @@
             this.label12.TabIndex = 78;
             this.label12.Text = "個";
             // 
+            // lstMotherboard
+            // 
+            this.lstMotherboard.Location = new System.Drawing.Point(570, 81);
+            this.lstMotherboard.Name = "lstMotherboard";
+            this.lstMotherboard.Size = new System.Drawing.Size(399, 29);
+            this.lstMotherboard.TabIndex = 79;
+            this.lstMotherboard.Text = "選択画面へ";
+            this.lstMotherboard.UseVisualStyleBackColor = true;
+            // 
             // frmGoodsCase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 742);
+            this.Controls.Add(this.lstMotherboard);
             this.Controls.Add(this.chkWaterCooler);
             this.Controls.Add(this.chkLowPro);
             this.Controls.Add(this.textBox5);
@@ -463,7 +464,6 @@
             this.Controls.Add(this.lstMaker);
             this.Controls.Add(this.listUnit);
             this.Controls.Add(this.listCaseFan);
-            this.Controls.Add(this.lstMotherboard);
             this.Controls.Add(this.txtCaseNumber);
             this.Controls.Add(this.txtSlotNumber);
             this.Controls.Add(this.textBox6);
@@ -505,7 +505,6 @@
         private System.Windows.Forms.ComboBox lstMaker;
         private System.Windows.Forms.ComboBox listUnit;
         private System.Windows.Forms.ComboBox listCaseFan;
-        private System.Windows.Forms.ComboBox lstMotherboard;
         private System.Windows.Forms.TextBox txtCaseNumber;
         private System.Windows.Forms.TextBox txtSlotNumber;
         private System.Windows.Forms.TextBox txtPrice;
@@ -529,5 +528,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button lstMotherboard;
     }
 }

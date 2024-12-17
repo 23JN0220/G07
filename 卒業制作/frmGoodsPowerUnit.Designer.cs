@@ -36,12 +36,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lstMaker = new System.Windows.Forms.ComboBox();
-            this.lstModule = new System.Windows.Forms.ComboBox();
             this.lstSizeStandard = new System.Windows.Forms.ComboBox();
             this.txtSize = new System.Windows.Forms.TextBox();
             this.txtPowerCapacity = new System.Windows.Forms.TextBox();
@@ -60,7 +58,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(1017, 154);
+            this.label8.Location = new System.Drawing.Point(1017, 119);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(36, 21);
             this.label8.TabIndex = 66;
@@ -69,7 +67,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1017, 188);
+            this.label7.Location = new System.Drawing.Point(1017, 153);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(26, 21);
             this.label7.TabIndex = 65;
@@ -78,7 +76,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(1017, 325);
+            this.label14.Location = new System.Drawing.Point(1017, 290);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(31, 21);
             this.label14.TabIndex = 64;
@@ -106,7 +104,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(554, 325);
+            this.label10.Location = new System.Drawing.Point(554, 290);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(52, 21);
             this.label10.TabIndex = 63;
@@ -115,7 +113,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(512, 188);
+            this.label6.Location = new System.Drawing.Point(512, 153);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(94, 21);
             this.label6.TabIndex = 62;
@@ -124,20 +122,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(493, 154);
+            this.label5.Location = new System.Drawing.Point(493, 119);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(113, 21);
             this.label5.TabIndex = 61;
             this.label5.Text = "サイズ(奥行)";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(515, 119);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 21);
-            this.label4.TabIndex = 60;
-            this.label4.Text = "モジュール";
             // 
             // label3
             // 
@@ -175,15 +164,6 @@
             this.lstMaker.Size = new System.Drawing.Size(399, 29);
             this.lstMaker.TabIndex = 2;
             // 
-            // lstModule
-            // 
-            this.lstModule.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstModule.FormattingEnabled = true;
-            this.lstModule.Location = new System.Drawing.Point(612, 116);
-            this.lstModule.Name = "lstModule";
-            this.lstModule.Size = new System.Drawing.Size(399, 29);
-            this.lstModule.TabIndex = 4;
-            // 
             // lstSizeStandard
             // 
             this.lstSizeStandard.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -195,21 +175,21 @@
             // 
             // txtSize
             // 
-            this.txtSize.Location = new System.Drawing.Point(612, 151);
+            this.txtSize.Location = new System.Drawing.Point(612, 116);
             this.txtSize.Name = "txtSize";
             this.txtSize.Size = new System.Drawing.Size(399, 28);
             this.txtSize.TabIndex = 5;
             // 
             // txtPowerCapacity
             // 
-            this.txtPowerCapacity.Location = new System.Drawing.Point(612, 185);
+            this.txtPowerCapacity.Location = new System.Drawing.Point(612, 150);
             this.txtPowerCapacity.Name = "txtPowerCapacity";
             this.txtPowerCapacity.Size = new System.Drawing.Size(399, 28);
             this.txtPowerCapacity.TabIndex = 6;
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(612, 322);
+            this.txtPrice.Location = new System.Drawing.Point(612, 287);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(399, 28);
             this.txtPrice.TabIndex = 10;
@@ -232,7 +212,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(524, 222);
+            this.label9.Location = new System.Drawing.Point(524, 187);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 21);
             this.label9.TabIndex = 68;
@@ -250,14 +230,14 @@
             "GOLD",
             "PLATINUM",
             "TITANIUM"});
-            this.comboBox1.Location = new System.Drawing.Point(612, 219);
+            this.comboBox1.Location = new System.Drawing.Point(612, 184);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(399, 29);
             this.comboBox1.TabIndex = 7;
             // 
             // txtPciconnector
             // 
-            this.txtPciconnector.Location = new System.Drawing.Point(612, 254);
+            this.txtPciconnector.Location = new System.Drawing.Point(612, 219);
             this.txtPciconnector.Name = "txtPciconnector";
             this.txtPciconnector.Size = new System.Drawing.Size(399, 28);
             this.txtPciconnector.TabIndex = 8;
@@ -265,7 +245,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(358, 257);
+            this.label11.Location = new System.Drawing.Point(358, 222);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(248, 21);
             this.label11.TabIndex = 63;
@@ -273,7 +253,7 @@
             // 
             // txtSataConnector
             // 
-            this.txtSataConnector.Location = new System.Drawing.Point(612, 288);
+            this.txtSataConnector.Location = new System.Drawing.Point(612, 253);
             this.txtSataConnector.Name = "txtSataConnector";
             this.txtSataConnector.Size = new System.Drawing.Size(399, 28);
             this.txtSataConnector.TabIndex = 9;
@@ -281,7 +261,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(420, 291);
+            this.label12.Location = new System.Drawing.Point(420, 256);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(186, 21);
             this.label12.TabIndex = 63;
@@ -304,12 +284,10 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstMaker);
-            this.Controls.Add(this.lstModule);
             this.Controls.Add(this.lstSizeStandard);
             this.Controls.Add(this.txtSize);
             this.Controls.Add(this.txtPowerCapacity);
@@ -337,12 +315,10 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox lstMaker;
-        private System.Windows.Forms.ComboBox lstModule;
         private System.Windows.Forms.ComboBox lstSizeStandard;
         private System.Windows.Forms.TextBox txtSize;
         private System.Windows.Forms.TextBox txtPowerCapacity;
