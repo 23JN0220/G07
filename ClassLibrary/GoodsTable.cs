@@ -133,5 +133,73 @@ namespace ClassLibrary
             }
             return table;
         }
+
+        public int Insert(Goods goods)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "INSERT INTO Goods(goods_name, maker_id, price, group_code, power_consumption) " +
+                             "VALUES (@goods_name, @maker_id, @price, @group_code, @power_consumption)";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@goods_name", goods.goods_name);
+                command.Parameters.AddWithValue("@maker_id", goods.maker_id);
+                command.Parameters.AddWithValue("@price", goods.price);
+                command.Parameters.AddWithValue("@group_code", goods.group_code);
+                command.Parameters.AddWithValue("@power_consumption", goods.power_consumption);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
+
+        public int UpdatePicture(Goods goods)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE Goods SET goods_image = @goods_image WHERE goods_code = @goods_code";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@goods_image", goods.goods_image);
+                command.Parameters.AddWithValue("@goods_code", goods.goods_code);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
+
+
+        public int GetGoodsCodeByName(string goods_name)
+        {
+            int goods_code = 0;
+
+            DataTable dataTable = new DataTable();
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT goods_code FROM Goods WHERE goods_name = @goods_name";
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@goods_name", goods_name);
+
+                int cnt = adapter.Fill(dataTable);
+
+                if (cnt == 1)
+                {
+                    DataRow dr = dataTable.Rows[0];
+                    goods_code = int.Parse(dr[0].ToString());
+                }
+            }
+            return goods_code;
+        }
     }
 }

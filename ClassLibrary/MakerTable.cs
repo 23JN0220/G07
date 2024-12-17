@@ -24,7 +24,7 @@ namespace ClassLibrary
             return table;
         }
 
-        public int GetMakerByName(string maker_name)
+        public int GetMakerIdByName(string maker_name)
         {
             int maker_id = 0;
 
@@ -47,7 +47,7 @@ namespace ClassLibrary
             return maker_id;
         }
 
-        public string GetMakerNameByID(int maker_id)
+        public string GetMakerNameById(int maker_id)
         {
             string maker_name = null;
 
