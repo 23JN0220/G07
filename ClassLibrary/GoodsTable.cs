@@ -158,6 +158,35 @@ namespace ClassLibrary
             return ret;
         }
 
+        public int Update(Goods goods)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE Goods SET " +
+                             "goods_name = @goods_name, " +
+                             "maker_id = @maker_id, " +
+                             "price = @price, " +
+                             "power_consumption = @power_consumption " + 
+                             "WHERE goods_code = @goods_code";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@goods_name", goods.goods_name);
+                command.Parameters.AddWithValue("@maker_id", goods.maker_id);
+                command.Parameters.AddWithValue("@price", goods.price);
+                command.Parameters.AddWithValue("@power_consumption", goods.power_consumption);
+                command.Parameters.AddWithValue("@goods_code", goods.goods_code);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
+
+
         public int UpdatePicture(Goods goods)
         {
             int ret = 0;

@@ -65,5 +65,37 @@ namespace ClassLibrary
             }
             return ret;
         }
+
+        public int Update(GoodsCpu goodsCpu)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE Goods_CPU SET " +
+                             "series_id = @series_id, " +
+                             "generation_id = @generation_id, " +
+                             "socket_id = @socket_id, " +
+                             "core = @core, " +
+                             "thread = @thread, " +
+                             "clock = @clock " +
+                             "WHERE goods_code = @goods_code";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@series_id", goodsCpu.series_id);
+                command.Parameters.AddWithValue("@generation_id", goodsCpu.generation_id);
+                command.Parameters.AddWithValue("@socket_id", goodsCpu.socket_id);
+                command.Parameters.AddWithValue("@core", goodsCpu.core);
+                command.Parameters.AddWithValue("@thread", goodsCpu.thread);
+                command.Parameters.AddWithValue("@clock", goodsCpu.clock);
+                command.Parameters.AddWithValue("@goods_code", goodsCpu.goods_code);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
     }
 }

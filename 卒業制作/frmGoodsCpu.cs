@@ -139,17 +139,73 @@ namespace 卒業制作
                             MessageBox.Show("商品の追加に失敗しました。\n同じ商品名の商品が既に追加されている場合があります。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
 
-
-
-
-
-
-
                     }
                     else
                     {
                         //商品情報変更
-                        MessageBox.Show("商品情報変更");
+                        //MessageBox.Show("商品情報変更");
+                        goods.goods_name = txtName.Text;
+                        goods.maker_id = makerTable.GetMakerIdByName(lstMaker.Text);
+                        goods.price = price;
+                        goods.group_code = 1;
+                        goods.power_consumption = power;
+
+                        int retGoods = goodsTable.Update(goods);
+
+                        if (retGoods == 1) 
+                        {
+                            goodsCpu = new GoodsCpu();
+                            goodsCpu.goods_code = goods.goods_code;
+                            goodsCpu.series_id = cpuSeriesTable.GetCpuSeriesIdByName(lstSeries.Text);
+                            goodsCpu.generation_id = cpuGenerationTable.GetCPUGenerationIdByName(lstGenerational.Text);
+                            goodsCpu.socket_id = cpuSocketTable.GetCPUSocketIdByName(lstSocket.Text);
+                            goodsCpu.core = core;
+                            goodsCpu.thread = thread;
+                            goodsCpu.clock = clock;
+
+                            int retGoodsCPU = goodsCpuTable.Update(goodsCpu);
+
+                            if (retGoodsCPU == 1)
+                            {
+                                int delData = cpuChipsetSeriesTable.Delete(goods.goods_code);
+                                MessageBox.Show(delData.ToString());
+
+                                bool retChip = true;
+
+                                for (int i = 0; i < idList.Count; i++)
+                                {
+                                    int chipsetid = idList[i];
+                                    int ret = cpuChipsetSeriesTable.Insert(goods.goods_code, chipsetid);
+
+                                    if (ret != 1)
+                                    {
+                                        retChip = false;
+                                        break;
+                                    }
+
+                                }
+
+                                if (retChip)
+                                {
+                                    MessageBox.Show("商品を追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                }
+                                else
+                                {
+                                    MessageBox.Show("CPUとチップセットシリーズ対応データの更新に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("商品のCPUデータの更新に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("商品の更新に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+
+
+
                     }
                 }
                 else
