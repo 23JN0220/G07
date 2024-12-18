@@ -58,6 +58,8 @@
             this.txtThread = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.btnPicture = new System.Windows.Forms.Button();
+            this.ofdPicture = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -235,7 +237,7 @@
             this.btnOK.Location = new System.Drawing.Point(346, 428);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(215, 73);
-            this.btnOK.TabIndex = 12;
+            this.btnOK.TabIndex = 13;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -245,7 +247,7 @@
             this.btnClose.Location = new System.Drawing.Point(875, 502);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(95, 38);
-            this.btnClose.TabIndex = 13;
+            this.btnClose.TabIndex = 14;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -321,11 +323,26 @@
             this.label16.TabIndex = 15;
             this.label16.Text = "スレッド";
             // 
+            // btnPicture
+            // 
+            this.btnPicture.Location = new System.Drawing.Point(128, 357);
+            this.btnPicture.Name = "btnPicture";
+            this.btnPicture.Size = new System.Drawing.Size(103, 28);
+            this.btnPicture.TabIndex = 12;
+            this.btnPicture.Text = "画像選択";
+            this.btnPicture.UseVisualStyleBackColor = true;
+            this.btnPicture.Click += new System.EventHandler(this.btnPicture_Click);
+            // 
+            // ofdPicture
+            // 
+            this.ofdPicture.Filter = "画像ファイル(*.jpg;*.jpeg;*.png;)|*.jpg;*.jpeg;*.png";
+            // 
             // frmGoodsCpu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(982, 552);
+            this.Controls.Add(this.btnPicture);
             this.Controls.Add(this.btnChipSetSelect);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -399,5 +416,7 @@
         private System.Windows.Forms.TextBox txtThread;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnPicture;
+        private System.Windows.Forms.OpenFileDialog ofdPicture;
     }
 }

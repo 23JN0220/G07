@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,8 @@ namespace 卒業制作
         public GoodsCpu goodsCpu;
 
         public List<int> idList = new List<int>();
+        public bool changedPic = false;
+        public string format = null;
 
         public frmGoodsCpu()
         {
@@ -25,7 +28,7 @@ namespace 卒業制作
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-
+            DialogResult ret = MessageBox.Show
             this.Close();
         }
 
@@ -115,7 +118,14 @@ namespace 卒業制作
 
                                     if (retChip)
                                     {
+                                        if (changedPic)
+                                        {
+                                            File.Copy(pictureBox1.ImageLocation, "\\\\10.32.97.1\\Web\\SOTSU\\2024\\23JN02\\G07\\images\\goods\\" + goods.goods_code + format, true);
+                                        }
+                                        
+
                                         MessageBox.Show("商品を追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                        this.Close();
                                     }
                                     else
                                     {
@@ -168,7 +178,6 @@ namespace 卒業制作
                             if (retGoodsCPU == 1)
                             {
                                 int delData = cpuChipsetSeriesTable.Delete(goods.goods_code);
-                                MessageBox.Show(delData.ToString());
 
                                 bool retChip = true;
 
@@ -187,7 +196,13 @@ namespace 卒業制作
 
                                 if (retChip)
                                 {
-                                    MessageBox.Show("商品を追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    if (changedPic)
+                                    {
+                                        File.Copy(pictureBox1.ImageLocation, "\\\\10.32.97.1\\Web\\SOTSU\\2024\\23JN02\\G07\\images\\goods\\" + goods.goods_code + format, true);
+                                    }
+
+                                    MessageBox.Show("商品情報を更新しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    this.Close();
                                 }
                                 else
                                 {
@@ -201,7 +216,7 @@ namespace 卒業制作
                         }
                         else
                         {
-                            MessageBox.Show("商品の更新に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            MessageBox.Show("商品情報の更新に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
 
 
@@ -268,6 +283,24 @@ namespace 卒業制作
 
                 pictureBox1.ImageLocation = "http://10.32.97.1/SOTSU/2024/23JN02/G07/images/goods/" + goods.goods_code + ".jpg";
 
+            }
+        }
+
+        private void btnPicture_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("画像は320×320のものを使用してください","画像サイズについて",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            DialogResult ret = ofdPicture.ShowDialog();
+
+            if (ret == DialogResult.OK)
+            {
+                string fileName = ofdPicture.FileName;
+                pictureBox1.ImageLocation = fileName;
+                format = System.IO.Path.GetExtension(fileName);
+
+                changedPic = true;
+
+                //MessageBox.Show(pictureBox1.ImageLocation);
+                //MessageBox.Show("\\\\10.32.97.1\\Web\\SOTSU\\2024\\23JN02\\G07\\images\\goods\\10"/* + goods.goods_code*/ + format);
             }
         }
     }

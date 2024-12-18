@@ -240,6 +240,8 @@ namespace 卒業制作
 
                         break;
                 }
+
+                btnSearch.PerformClick();
             }
             else
             {
