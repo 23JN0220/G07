@@ -231,6 +231,10 @@ namespace 卒業制作
                         break;
                     case 11:
                         frmGoodsOs frmGoodsOs = new frmGoodsOs();
+                        GoodsOsTable goodsOsTable = new GoodsOsTable();
+
+                        frmGoodsOs.goods = goods;
+                        frmGoodsOs.goodsOs = goodsOsTable.GetGoodsOSById(goods.goods_code);
 
                         frmGoodsOs.ShowDialog();
 

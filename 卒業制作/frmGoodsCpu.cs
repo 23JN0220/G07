@@ -285,7 +285,7 @@ namespace 卒業制作
                 txtPowerConsumption.Text = goods.power_consumption.ToString();
                 idList = cpuChipsetSeries.GetCpuChipsetSeriesById(goods.goods_code);
 
-                pictureBox1.ImageLocation = "http://10.32.97.1/SOTSU/2024/23JN02/G07/images/goods/" + goods.goods_code + ".jpg";
+                pictureBox1.ImageLocation = "http://10.32.97.1/SOTSU/2024/23JN02/G07/images/goods/" + goods.goods_image;
 
             }
         }
