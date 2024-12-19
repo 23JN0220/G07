@@ -149,4 +149,4 @@ C:\Users\23JN0220\Source\Repos\G07\test\卒業制作\obj\Debug\卒業制作.frmP
 C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmGoodsFan.resources
 C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmGoodsOs.resources
 C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmPayment.resources
-C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmGoodsGokansei.resources
+C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmGoodsGokanseiChipSet.resources

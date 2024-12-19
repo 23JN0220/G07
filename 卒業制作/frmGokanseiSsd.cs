@@ -136,7 +136,7 @@ namespace 卒業制作
 
                 if (result == DialogResult.Yes)
                 {
-                    //削除処理を書いてね
+                   //削除処理を書いてね
                 }
 
             }
