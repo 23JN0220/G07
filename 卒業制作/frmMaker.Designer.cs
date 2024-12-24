@@ -33,11 +33,11 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.dgvMaker = new System.Windows.Forms.DataGridView();
+            this.maker_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maker_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMakerChange = new System.Windows.Forms.Button();
             this.btnAddMaker = new System.Windows.Forms.Button();
-            this.maker_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maker_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaker)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,7 +75,7 @@
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "削除";
             this.btnDelete.UseVisualStyleBackColor = true;
-           
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // dgvMaker
             // 
@@ -89,8 +89,25 @@
             this.dgvMaker.Location = new System.Drawing.Point(54, 72);
             this.dgvMaker.Name = "dgvMaker";
             this.dgvMaker.RowTemplate.Height = 21;
+            this.dgvMaker.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMaker.Size = new System.Drawing.Size(420, 205);
             this.dgvMaker.TabIndex = 4;
+            // 
+            // maker_id
+            // 
+            this.maker_id.DataPropertyName = "maker_id";
+            this.maker_id.HeaderText = "メーカー番号";
+            this.maker_id.Name = "maker_id";
+            this.maker_id.ReadOnly = true;
+            this.maker_id.Width = 141;
+            // 
+            // maker_name
+            // 
+            this.maker_name.DataPropertyName = "maker_name";
+            this.maker_name.HeaderText = "メーカー名";
+            this.maker_name.Name = "maker_name";
+            this.maker_name.ReadOnly = true;
+            this.maker_name.Width = 120;
             // 
             // btnClose
             // 
@@ -110,7 +127,6 @@
             this.btnMakerChange.TabIndex = 6;
             this.btnMakerChange.Text = "編集";
             this.btnMakerChange.UseVisualStyleBackColor = true;
-          
             // 
             // btnAddMaker
             // 
@@ -120,24 +136,9 @@
             this.btnAddMaker.TabIndex = 7;
             this.btnAddMaker.Text = "追加";
             this.btnAddMaker.UseVisualStyleBackColor = true;
+            this.btnAddMaker.Click += new System.EventHandler(this.btnAddMaker_Click);
             // 
-            // maker_id
-            // 
-            this.maker_id.DataPropertyName = "maker_id";
-            this.maker_id.HeaderText = "メーカー番号";
-            this.maker_id.Name = "maker_id";
-            this.maker_id.ReadOnly = true;
-            this.maker_id.Width = 141;
-            // 
-            // maker_name
-            // 
-            this.maker_name.DataPropertyName = "maker_name";
-            this.maker_name.HeaderText = "メーカー名";
-            this.maker_name.Name = "maker_name";
-            this.maker_name.ReadOnly = true;
-            this.maker_name.Width = 120;
-            // 
-            // frmMeker
+            // frmMaker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -152,7 +153,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Name = "frmMeker";
+            this.Name = "frmMaker";
             this.Text = "メーカー管理";
             this.Load += new System.EventHandler(this.frmMeker_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaker)).EndInit();

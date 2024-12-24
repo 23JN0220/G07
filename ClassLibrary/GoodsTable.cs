@@ -252,5 +252,24 @@ namespace ClassLibrary
             }
             return ret;
         }
+        public bool ExistMakerId(int maker_id) 
+        {
+            bool ret = false;
+            DataTable dataTable = new DataTable();
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT * FROM Goods WHERE maker_id = @maker_id";
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@maker_id", maker_id);
+                int cnt = adapter.Fill(dataTable);
+
+                if (cnt == 1)
+                {
+                    ret = true;
+                }
+                return ret;
+            }
+        } 
     }
 }

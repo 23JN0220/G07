@@ -56,7 +56,24 @@ namespace 卒業制作
 
         }
 
+        private void btnAddMaker_Click(object sender, EventArgs e)
+        {
+            frmMakerAdd frmMakerAdd = new frmMakerAdd();
+            frmMakerAdd.ShowDialog();
+        }
 
-       
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (dgvMaker.SelectedRows.Count != -1)
+            {
+                string maker_name = dgvMaker.SelectedRows.ToString();
+                DialogResult result = MessageBox.Show(maker_name + "を削除します。よろしいですか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                  
+                }
+            }
+        }
     }
 }

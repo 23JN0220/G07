@@ -28,25 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtMaker = new System.Windows.Forms.TextBox();
+            this.txtMaker_id = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtMaker_name = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnOk = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // txtMaker
+            // txtMaker_id
             // 
-            this.txtMaker.Location = new System.Drawing.Point(170, 36);
-            this.txtMaker.Name = "txtMaker";
-            this.txtMaker.Size = new System.Drawing.Size(168, 28);
-            this.txtMaker.TabIndex = 0;
+            this.txtMaker_id.Location = new System.Drawing.Point(170, 36);
+            this.txtMaker_id.Name = "txtMaker_id";
+            this.txtMaker_id.ReadOnly = true;
+            this.txtMaker_id.Size = new System.Drawing.Size(168, 28);
+            this.txtMaker_id.TabIndex = 0;
             // 
-            // frmAddMaker
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(48, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 21);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "メーカー番号";
+            // 
+            // txtMaker_name
+            // 
+            this.txtMaker_name.Location = new System.Drawing.Point(170, 108);
+            this.txtMaker_name.Name = "txtMaker_name";
+            this.txtMaker_name.Size = new System.Drawing.Size(168, 28);
+            this.txtMaker_name.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(69, 108);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 21);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "メーカー名";
+            // 
+            // btnOk
+            // 
+            this.btnOk.Location = new System.Drawing.Point(411, 41);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(98, 33);
+            this.btnOk.TabIndex = 4;
+            this.btnOk.Text = "OK";
+            this.btnOk.UseVisualStyleBackColor = true;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(411, 192);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(88, 35);
+            this.btnClose.TabIndex = 5;
+            this.btnClose.Text = "閉じる";
+            this.btnClose.UseVisualStyleBackColor = true;
+            // 
+            // frmMakerAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(588, 323);
-            this.Controls.Add(this.txtMaker);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnOk);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtMaker_name);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtMaker_id);
             this.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Name = "frmAddMaker";
+            this.Name = "frmMakerAdd";
             this.Text = "frmAddMaker";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -55,6 +109,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtMaker;
+        private System.Windows.Forms.TextBox txtMaker_id;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtMaker_name;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.Button btnClose;
     }
 }
