@@ -89,6 +89,7 @@ namespace 卒業制作
         {
             frmGoodsAdd frmGoodsAdd = new frmGoodsAdd();
             frmGoodsAdd.ShowDialog();
+            btnSearch.PerformClick();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

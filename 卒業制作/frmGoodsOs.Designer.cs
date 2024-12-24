@@ -39,6 +39,7 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPicture = new System.Windows.Forms.Button();
+            this.ofdPicture = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,6 +70,7 @@
             this.btnOK.TabIndex = 5;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // label10
             // 
@@ -136,6 +138,11 @@
             this.btnPicture.TabIndex = 4;
             this.btnPicture.Text = "画像選択";
             this.btnPicture.UseVisualStyleBackColor = true;
+            this.btnPicture.Click += new System.EventHandler(this.btnPicture_Click);
+            // 
+            // ofdPicture
+            // 
+            this.ofdPicture.Filter = "画像ファイル(*.jpg;*.jpeg;*.png;)|*.jpg;*.jpeg;*.png";
             // 
             // frmGoodsOs
             // 
@@ -176,5 +183,6 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnPicture;
+        private System.Windows.Forms.OpenFileDialog ofdPicture;
     }
 }

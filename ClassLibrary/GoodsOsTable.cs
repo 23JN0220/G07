@@ -35,5 +35,39 @@ namespace ClassLibrary
 
             return goodsOs;
         }
+
+        public int Insert(GoodsOs goodsOs)
+        {
+            int cnt = 0;
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "INSERT INTO Goods_OS(goods_code, version_id) VALUES(@goods_code, @version_id)";
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@goods_code", goodsOs.goods_code);
+                command.Parameters.AddWithValue("@version_id", goodsOs.version_id);
+                connection.Open();
+                cnt = command.ExecuteNonQuery();
+            }
+            return cnt;
+        }
+
+        public int Update(GoodsOs goodsOs)
+        {
+            int cnt = 0;
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE Goods_OS SET version_id = @version_id WHERE goods_code = @goods_code";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@goods_code", goodsOs.goods_code);
+                command.Parameters.AddWithValue("@version_id", goodsOs.version_id);
+
+                connection.Open();
+                cnt = command.ExecuteNonQuery();
+            }
+            return cnt;
+        }
     }
 }

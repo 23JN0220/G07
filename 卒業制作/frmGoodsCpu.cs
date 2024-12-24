@@ -150,7 +150,7 @@ namespace 卒業制作
                         }
                         else
                         {
-                            MessageBox.Show("商品の追加に失敗しました。\n同じ商品名の商品が既に追加されている場合があります。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            MessageBox.Show("商品の追加に失敗しました。\n同じ商品名の商品が既に追加されている場合があります", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
 
                     }
