@@ -148,5 +148,24 @@ namespace ClassLibrary
             }
             return cnt;
         }
+        public int Delete(string maker_Name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "DELETE FROM Maker WHERE maker_Name = @maker_Name";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@maker_Name", maker_Name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+
+        }
     }
 }

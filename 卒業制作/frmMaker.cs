@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibrary;
-
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace 卒業制作
 {
@@ -71,7 +71,25 @@ namespace 卒業制作
 
                 if (result == DialogResult.Yes)
                 {
-                  
+                    MakerTable makerTable = new MakerTable();
+
+                    int ret = makerTable.Delete(maker_name);
+                    if (ret != 0) {
+                        MessageBox.Show("メーカーは正常に削除されました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        txtMaker_Name.Text = maker_name;
+                        DataTable dataTable = makerTable.GetMaker();
+                        dgvMaker.AutoGenerateColumns = false;
+                        dgvMaker.DataSource = dataTable;
+                    }
+                    else
+                    {
+                        MessageBox.Show("メーカーの削除に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("メーカーが選択されていません。", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
         }
