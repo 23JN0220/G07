@@ -71,11 +71,13 @@ namespace 卒業制作
 
                 if (retCore && retThread && retPower && retPrice && retClock)
                 {
-                    if (!goodsTable.ExistGoodsName(txtName.Text) || goods!= null) {
+                    //if (!goodsTable.ExistGoodsName(txtName.Text) || goods!= null) {
 
-                        if (goods == null)
+                    if (goods == null)
+                    {
+                        //新規登録
+                        if (!goodsTable.ExistGoodsName(txtName.Text))
                         {
-                            //新規登録
                             goods = new Goods();
                             goods.goods_name = txtName.Text;
                             goods.maker_id = makerTable.GetMakerIdByName(lstMaker.Text);
@@ -86,12 +88,12 @@ namespace 卒業制作
                             int retGoods = goodsTable.Insert(goods);
 
                             if (retGoods == 1)
-                            { 
+                            {
                                 goods.goods_code = goodsTable.GetGoodsCodeByName(goods.goods_name);
                                 goods.goods_image = goods.goods_code + ".jpg";
 
                                 int retPic = goodsTable.UpdatePicture(goods);
-    
+
                                 if (retPic == 1)
                                 {
                                     goodsCpu = new GoodsCpu();
@@ -113,13 +115,13 @@ namespace 卒業制作
                                         {
                                             int chipsetid = idList[i];
                                             int ret = cpuChipsetSeriesTable.Insert(goods.goods_code, chipsetid);
-                                                
+
                                             if (ret != 1)
                                             {
                                                 retChip = false;
                                                 break;
                                             }
-                                            
+
                                         }
 
 
@@ -129,9 +131,9 @@ namespace 卒業制作
                                             {
                                                 File.Copy(pictureBox1.ImageLocation, "\\\\10.32.97.1\\Web\\SOTSU\\2024\\23JN02\\G07\\images\\goods\\" + goods.goods_code + format, true);
                                             }
-                                            
-                                                
-                                            MessageBox.Show("商品を追加しました。", "追加完了",   MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                                            MessageBox.Show("商品を追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                             this.Close();
                                         }
                                         else
@@ -143,7 +145,7 @@ namespace 卒業制作
                                     {
                                         MessageBox.Show("商品のCPUデータの追加に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                                     }
-                                        
+
                                 }
                                 else
                                 {
@@ -155,9 +157,16 @@ namespace 卒業制作
                             {
                                 MessageBox.Show("商品の追加に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                             }
-                                
+
                         }
                         else
+                        {
+                            MessageBox.Show("同じ商品名の商品が既に追加されているため、追加できません。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                    }
+                    else
+                    {
+                        if (!goodsTable.ExistGoodsName(txtName.Text) || goods.goods_name == txtName.Text)
                         {
                             //商品情報変更
                             //MessageBox.Show("商品情報変更");
@@ -166,10 +175,10 @@ namespace 卒業制作
                             goods.price = price;
                             goods.group_code = 1;
                             goods.power_consumption = power;
-                                
+
                             int retGoods = goodsTable.Update(goods);
-                                
-                            if (retGoods == 1) 
+
+                            if (retGoods == 1)
                             {
                                 goodsCpu = new GoodsCpu();
                                 goodsCpu.goods_code = goods.goods_code;
@@ -179,11 +188,11 @@ namespace 卒業制作
                                 goodsCpu.core = core;
                                 goodsCpu.thread = thread;
                                 goodsCpu.clock = clock;
-                                    
+
                                 int retGoodsCPU = goodsCpuTable.Update(goodsCpu);
-                                    
-                                if (retGoodsCPU == 1)   
-                                {   
+
+                                if (retGoodsCPU == 1)
+                                {
                                     int delData = cpuChipsetSeriesTable.Delete(goods.goods_code);
 
                                     bool retChip = true;
@@ -223,14 +232,13 @@ namespace 卒業制作
                             }
                             else
                             {
-                                MessageBox.Show("商品情報の更新に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                MessageBox.Show("商品データの更新に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                             }
                         }
-
-                    }
-                    else
-                    {
-                        MessageBox.Show("同じ商品名の商品が既に追加されているため、追加できません。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        else
+                        {
+                            MessageBox.Show("同じ商品名の商品が既に追加されているため、追加できません。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
                     }
                 }
                 else

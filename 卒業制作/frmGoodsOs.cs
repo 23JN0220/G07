@@ -85,9 +85,11 @@ namespace 卒業制作
                 OsVersionTable osVersionTable = new OsVersionTable();
                 GoodsOsTable GoodsOsTable = new GoodsOsTable();
 
-                if (!goodsTable.ExistGoodsName(txtName.Text) || goods != null)
+                //if (!goodsTable.ExistGoodsName(txtName.Text) || goods != null)
+                //{
+                if (goods == null)
                 {
-                    if (goods == null)
+                    if (!goodsTable.ExistGoodsName(txtName.Text))
                     {
                         if (makerTable.GetMakerIdByName("Microsoft") == 0)
                         {
@@ -160,7 +162,13 @@ namespace 卒業制作
                     }
                     else
                     {
-
+                        MessageBox.Show("同じ商品名の商品が既に追加されているため、追加できません", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+                else
+                {
+                    if (!goodsTable.ExistGoodsName(txtName.Text) || goods.goods_name == txtName.Text)
+                    {
                         goods.goods_name = txtName.Text;
                         goods.price = int.Parse(txtPrice.Text);
 
@@ -190,18 +198,14 @@ namespace 卒業制作
                         }
                         else
                         {
-                            MessageBox.Show("商品の更新に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            MessageBox.Show("商品データの更新に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
                     }
-
+                    else
+                    {
+                        MessageBox.Show("同じ商品名の商品が既に追加されているため、追加できません", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("同じ商品名の商品が既に追加されているため、追加できません", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-
-                    
-
             }
             else
             {
