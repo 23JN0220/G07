@@ -156,3 +156,4 @@ C:\Users\23JN0220\Source\Repos\G07\test\卒業制作\obj\Debug\卒業制作.frmM
 C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmGoodsGokanseiSocket.resources
 C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmMakerAdd.resources
 C:\Users\23jn0204\Source\Repos2\卒業制作\obj\Debug\卒業制作.frmMaker.resources
+C:\Users\23JN0220\Source\Repos\G07\test\卒業制作\obj\Debug\卒業制作.frmGoodsGokanseiSocket.resources

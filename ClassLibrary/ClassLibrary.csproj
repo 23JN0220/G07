@@ -45,10 +45,13 @@
     <Compile Include="CategoryGroup.cs" />
     <Compile Include="ChipSetSeriesTable.cs" />
     <Compile Include="CoolerSocketTable.cs" />
+    <Compile Include="CoolerTypeTable.cs" />
     <Compile Include="CpuGenerationTable.cs" />
     <Compile Include="CpuSeriesTable.cs" />
     <Compile Include="CpuSocketTable.cs" />
     <Compile Include="CpuChipsetSeriesTable.cs" />
+    <Compile Include="GoodsCooler.cs" />
+    <Compile Include="GoodsCoolerTable.cs" />
     <Compile Include="GoodsCpu.cs" />
     <Compile Include="GoodsCpuTable.cs" />
     <Compile Include="GoodsOs.cs" />

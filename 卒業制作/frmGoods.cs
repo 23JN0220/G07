@@ -186,8 +186,14 @@ namespace 卒業制作
 
                         break;
                     case 2:
-                        frmGokanseiCooler frmGokanseiCooler = new frmGokanseiCooler();
-                        frmGokanseiCooler.ShowDialog();
+                        frmGoodsCooler frmGoodsCooler = new frmGoodsCooler();
+                        GoodsCoolerTable goodsCoolerTable = new GoodsCoolerTable();
+
+                        frmGoodsCooler.goods = goods;
+
+                        frmGoodsCooler.goodsCooler = goodsCoolerTable.GetGoodsCoolerById(goods.goods_code);
+
+                        frmGoodsCooler.ShowDialog();
 
                         break;
                     case 3:

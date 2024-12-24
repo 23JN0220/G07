@@ -62,6 +62,7 @@
             this.btnClose.TabIndex = 8;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnOK
             // 
@@ -71,6 +72,7 @@
             this.btnOK.TabIndex = 7;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // label1
             // 
@@ -95,6 +97,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoodsGokanseiSocket";
             this.Text = "項目選択";
+            this.Load += new System.EventHandler(this.frmGoodsGokanseiSocket_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
