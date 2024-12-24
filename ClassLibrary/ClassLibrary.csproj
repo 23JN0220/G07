@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GoodsFan.cs" />
     <Compile Include="CategoryGroupTable.cs" />
     <Compile Include="CategoryGroup.cs" />
     <Compile Include="ChipSetSeriesTable.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="GoodsCoolerTable.cs" />
     <Compile Include="GoodsCpu.cs" />
     <Compile Include="GoodsCpuTable.cs" />
+    <Compile Include="GoodsFanTable.cs" />
     <Compile Include="GoodsOs.cs" />
     <Compile Include="GoodsOsTable.cs" />
     <Compile Include="Maker.cs" />
