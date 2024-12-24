@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmGoodsGokanseiSocket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGoodsGokanseiSocket.Designer.cs">
+      <DependentUpon>frmGoodsGokanseiSocket.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMakerAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,6 +255,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmGoodsGokanseiSocket.resx">
+      <DependentUpon>frmGoodsGokanseiSocket.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMakerAdd.resx">
       <DependentUpon>frmMakerAdd.cs</DependentUpon>
     </EmbeddedResource>
