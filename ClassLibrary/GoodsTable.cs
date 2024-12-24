@@ -264,7 +264,7 @@ namespace ClassLibrary
                 adapter.SelectCommand.Parameters.AddWithValue("@maker_id", maker_id);
                 int cnt = adapter.Fill(dataTable);
 
-                if (cnt == 1)
+                if (cnt != 0)
                 {
                     ret = true;
                 }
