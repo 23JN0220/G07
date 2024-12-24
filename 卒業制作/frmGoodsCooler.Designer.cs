@@ -39,12 +39,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lstMaker = new System.Windows.Forms.ComboBox();
-            this.lstSocket = new System.Windows.Forms.ComboBox();
             this.lstType = new System.Windows.Forms.ComboBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtSize = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSocket = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,15 +148,6 @@
             this.lstMaker.Size = new System.Drawing.Size(399, 29);
             this.lstMaker.TabIndex = 2;
             // 
-            // lstSocket
-            // 
-            this.lstSocket.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstSocket.FormattingEnabled = true;
-            this.lstSocket.Location = new System.Drawing.Point(505, 116);
-            this.lstSocket.Name = "lstSocket";
-            this.lstSocket.Size = new System.Drawing.Size(399, 29);
-            this.lstSocket.TabIndex = 4;
-            // 
             // lstType
             // 
             this.lstType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -195,11 +186,21 @@
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
+            // btnSocket
+            // 
+            this.btnSocket.Location = new System.Drawing.Point(505, 116);
+            this.btnSocket.Name = "btnSocket";
+            this.btnSocket.Size = new System.Drawing.Size(399, 29);
+            this.btnSocket.TabIndex = 4;
+            this.btnSocket.Text = "選択画面へ";
+            this.btnSocket.UseVisualStyleBackColor = true;
+            // 
             // frmGoodsCooler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(961, 523);
+            this.Controls.Add(this.btnSocket);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btnClose);
@@ -211,7 +212,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstMaker);
-            this.Controls.Add(this.lstSocket);
             this.Controls.Add(this.lstType);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtSize);
@@ -240,11 +240,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox lstMaker;
-        private System.Windows.Forms.ComboBox lstSocket;
         private System.Windows.Forms.ComboBox lstType;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtSize;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnSocket;
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label12 = new System.Windows.Forms.Label();
-            this.txtMaxNumber = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
@@ -62,6 +61,7 @@
             this.txtOutput = new System.Windows.Forms.TextBox();
             this.chkAuxiliary = new System.Windows.Forms.CheckBox();
             this.txtSlot = new System.Windows.Forms.TextBox();
+            this.lstResolution = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,13 +73,6 @@
             this.label12.Size = new System.Drawing.Size(73, 21);
             this.label12.TabIndex = 83;
             this.label12.Text = "解像度";
-            // 
-            // txtMaxNumber
-            // 
-            this.txtMaxNumber.Location = new System.Drawing.Point(608, 419);
-            this.txtMaxNumber.Name = "txtMaxNumber";
-            this.txtMaxNumber.Size = new System.Drawing.Size(399, 28);
-            this.txtMaxNumber.TabIndex = 13;
             // 
             // label15
             // 
@@ -351,6 +344,15 @@
             this.txtSlot.Size = new System.Drawing.Size(399, 28);
             this.txtSlot.TabIndex = 15;
             // 
+            // lstResolution
+            // 
+            this.lstResolution.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstResolution.FormattingEnabled = true;
+            this.lstResolution.Location = new System.Drawing.Point(608, 419);
+            this.lstResolution.Name = "lstResolution";
+            this.lstResolution.Size = new System.Drawing.Size(399, 29);
+            this.lstResolution.TabIndex = 8;
+            // 
             // frmGoodsGpu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
@@ -360,7 +362,6 @@
             this.Controls.Add(this.chkLowPro);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtOutput);
-            this.Controls.Add(this.txtMaxNumber);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnOK);
@@ -378,6 +379,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstMaker);
+            this.Controls.Add(this.lstResolution);
             this.Controls.Add(this.lstInterface);
             this.Controls.Add(this.lstSeries);
             this.Controls.Add(this.txtCuda);
@@ -403,7 +405,6 @@
         #endregion
 
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtMaxNumber;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnOK;
@@ -436,5 +437,6 @@
         private System.Windows.Forms.TextBox txtOutput;
         private System.Windows.Forms.CheckBox chkAuxiliary;
         private System.Windows.Forms.TextBox txtSlot;
+        private System.Windows.Forms.ComboBox lstResolution;
     }
 }

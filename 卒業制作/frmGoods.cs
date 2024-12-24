@@ -164,12 +164,23 @@ namespace 卒業制作
         {
             if (dgvGoods.SelectedCells.Count > 0)
             {
+                GoodsTable goodsTable = new GoodsTable();
+
+                Goods goods = goodsTable.GetGoodsByGoodsCode(dgvGoods.CurrentRow.Cells["goods_code"].Value.ToString());
+
+
                 //ここからそれぞれの画面に分岐
                 //MessageBox.Show(dgvGoods.CurrentRow.Cells["group_code"].Value.ToString());
                 switch (dgvGoods.CurrentRow.Cells["group_code"].Value)
                 {
                     case 1:
                         frmGoodsCpu frmGoodsCpu = new frmGoodsCpu();
+                        GoodsCpuTable goodsCpuTable = new GoodsCpuTable();
+
+                        frmGoodsCpu.goods = goods;
+
+                        frmGoodsCpu.goodsCpu = goodsCpuTable.GetGoodsCPUById(goods.goods_code);
+
                         frmGoodsCpu.ShowDialog();
 
                         break;
@@ -220,6 +231,10 @@ namespace 卒業制作
                         break;
                     case 11:
                         frmGoodsOs frmGoodsOs = new frmGoodsOs();
+                        GoodsOsTable goodsOsTable = new GoodsOsTable();
+
+                        frmGoodsOs.goods = goods;
+                        frmGoodsOs.goodsOs = goodsOsTable.GetGoodsOSById(goods.goods_code);
 
                         frmGoodsOs.ShowDialog();
 
@@ -229,6 +244,8 @@ namespace 卒業制作
 
                         break;
                 }
+
+                btnSearch.PerformClick();
             }
             else
             {

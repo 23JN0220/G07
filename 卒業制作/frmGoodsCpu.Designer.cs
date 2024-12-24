@@ -55,6 +55,11 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.btnChipSetSelect = new System.Windows.Forms.Button();
+            this.txtThread = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.btnPicture = new System.Windows.Forms.Button();
+            this.ofdPicture = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,24 +123,24 @@
             // 
             // txtClock
             // 
-            this.txtClock.Location = new System.Drawing.Point(505, 255);
+            this.txtClock.Location = new System.Drawing.Point(505, 289);
             this.txtClock.Name = "txtClock";
             this.txtClock.Size = new System.Drawing.Size(399, 28);
-            this.txtClock.TabIndex = 8;
+            this.txtClock.TabIndex = 9;
             // 
             // txtPowerConsumption
             // 
-            this.txtPowerConsumption.Location = new System.Drawing.Point(505, 289);
+            this.txtPowerConsumption.Location = new System.Drawing.Point(505, 323);
             this.txtPowerConsumption.Name = "txtPowerConsumption";
             this.txtPowerConsumption.Size = new System.Drawing.Size(399, 28);
-            this.txtPowerConsumption.TabIndex = 9;
+            this.txtPowerConsumption.TabIndex = 10;
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(505, 323);
+            this.txtPrice.Location = new System.Drawing.Point(505, 357);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(399, 28);
-            this.txtPrice.TabIndex = 10;
+            this.txtPrice.TabIndex = 11;
             // 
             // label1
             // 
@@ -194,7 +199,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(359, 223);
+            this.label7.Location = new System.Drawing.Point(359, 257);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(140, 21);
             this.label7.TabIndex = 9;
@@ -203,7 +208,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(369, 258);
+            this.label8.Location = new System.Drawing.Point(369, 292);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(130, 21);
             this.label8.TabIndex = 10;
@@ -212,7 +217,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(405, 292);
+            this.label9.Location = new System.Drawing.Point(405, 326);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(94, 21);
             this.label9.TabIndex = 11;
@@ -221,7 +226,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(447, 326);
+            this.label10.Location = new System.Drawing.Point(447, 360);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(52, 21);
             this.label10.TabIndex = 12;
@@ -229,19 +234,20 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(344, 399);
+            this.btnOK.Location = new System.Drawing.Point(346, 428);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(215, 73);
-            this.btnOK.TabIndex = 11;
+            this.btnOK.TabIndex = 13;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(854, 473);
+            this.btnClose.Location = new System.Drawing.Point(875, 502);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(95, 38);
-            this.btnClose.TabIndex = 12;
+            this.btnClose.TabIndex = 14;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -258,7 +264,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(910, 258);
+            this.label12.Location = new System.Drawing.Point(910, 292);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(47, 21);
             this.label12.TabIndex = 16;
@@ -267,7 +273,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(910, 292);
+            this.label13.Location = new System.Drawing.Point(910, 326);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(26, 21);
             this.label13.TabIndex = 17;
@@ -276,7 +282,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(910, 326);
+            this.label14.Location = new System.Drawing.Point(910, 360);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(31, 21);
             this.label14.TabIndex = 18;
@@ -284,23 +290,64 @@
             // 
             // btnChipSetSelect
             // 
-            this.btnChipSetSelect.Location = new System.Drawing.Point(505, 220);
+            this.btnChipSetSelect.Location = new System.Drawing.Point(505, 254);
             this.btnChipSetSelect.Name = "btnChipSetSelect";
             this.btnChipSetSelect.Size = new System.Drawing.Size(399, 29);
-            this.btnChipSetSelect.TabIndex = 19;
+            this.btnChipSetSelect.TabIndex = 8;
             this.btnChipSetSelect.Text = "選択画面へ";
             this.btnChipSetSelect.UseVisualStyleBackColor = true;
             this.btnChipSetSelect.Click += new System.EventHandler(this.btnChipSetSelect_Click);
+            // 
+            // txtThread
+            // 
+            this.txtThread.Location = new System.Drawing.Point(505, 220);
+            this.txtThread.Name = "txtThread";
+            this.txtThread.Size = new System.Drawing.Size(399, 28);
+            this.txtThread.TabIndex = 7;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(409, 223);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(90, 21);
+            this.label15.TabIndex = 8;
+            this.label15.Text = "スレッド数";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(910, 223);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(69, 21);
+            this.label16.TabIndex = 15;
+            this.label16.Text = "スレッド";
+            // 
+            // btnPicture
+            // 
+            this.btnPicture.Location = new System.Drawing.Point(128, 357);
+            this.btnPicture.Name = "btnPicture";
+            this.btnPicture.Size = new System.Drawing.Size(103, 28);
+            this.btnPicture.TabIndex = 12;
+            this.btnPicture.Text = "画像選択";
+            this.btnPicture.UseVisualStyleBackColor = true;
+            this.btnPicture.Click += new System.EventHandler(this.btnPicture_Click);
+            // 
+            // ofdPicture
+            // 
+            this.ofdPicture.Filter = "画像ファイル(*.jpg;*.jpeg;*.png;)|*.jpg;*.jpeg;*.png";
             // 
             // frmGoodsCpu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(961, 523);
+            this.ClientSize = new System.Drawing.Size(982, 552);
+            this.Controls.Add(this.btnPicture);
             this.Controls.Add(this.btnChipSetSelect);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnOK);
@@ -308,6 +355,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -321,6 +369,7 @@
             this.Controls.Add(this.txtClock);
             this.Controls.Add(this.txtPowerConsumption);
             this.Controls.Add(this.txtPrice);
+            this.Controls.Add(this.txtThread);
             this.Controls.Add(this.txtCore);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.pictureBox1);
@@ -328,6 +377,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoodsCpu";
             this.Text = "CPU";
+            this.Load += new System.EventHandler(this.frmGoodsCpu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -363,5 +413,10 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btnChipSetSelect;
+        private System.Windows.Forms.TextBox txtThread;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnPicture;
+        private System.Windows.Forms.OpenFileDialog ofdPicture;
     }
 }

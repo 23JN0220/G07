@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    internal class Goods
+    public class Goods
     {
         public int goods_code { get; set; }
         public string goods_name { get; set; }
