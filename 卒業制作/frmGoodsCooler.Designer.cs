@@ -45,6 +45,8 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSocket = new System.Windows.Forms.Button();
+            this.btnPicture = new System.Windows.Forms.Button();
+            this.ofdPicture = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -194,12 +196,28 @@
             this.btnSocket.TabIndex = 4;
             this.btnSocket.Text = "選択画面へ";
             this.btnSocket.UseVisualStyleBackColor = true;
+            this.btnSocket.Click += new System.EventHandler(this.btnSocket_Click);
+            // 
+            // btnPicture
+            // 
+            this.btnPicture.Location = new System.Drawing.Point(135, 357);
+            this.btnPicture.Name = "btnPicture";
+            this.btnPicture.Size = new System.Drawing.Size(103, 28);
+            this.btnPicture.TabIndex = 46;
+            this.btnPicture.Text = "画像選択";
+            this.btnPicture.UseVisualStyleBackColor = true;
+            this.btnPicture.Click += new System.EventHandler(this.btnPicture_Click);
+            // 
+            // ofdPicture
+            // 
+            this.ofdPicture.Filter = "画像ファイル(*.jpg;*.jpeg;*.png;)|*.jpg;*.jpeg;*.png";
             // 
             // frmGoodsCooler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(961, 523);
+            this.Controls.Add(this.btnPicture);
             this.Controls.Add(this.btnSocket);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label11);
@@ -246,5 +264,7 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnSocket;
+        private System.Windows.Forms.Button btnPicture;
+        private System.Windows.Forms.OpenFileDialog ofdPicture;
     }
 }
