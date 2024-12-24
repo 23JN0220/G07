@@ -61,15 +61,26 @@ namespace 卒業制作
 
             frmMakerAdd frmMakerAdd = new frmMakerAdd();
             frmMakerAdd.ShowDialog();
+            MakerTable MakerTable = new MakerTable();
+            DataTable table = MakerTable.GetMaker();
+
+            DataTable dt = MakerTable.GetMaker();
+            {
+
+                dgvMaker.AutoGenerateColumns = false;
+                dgvMaker.DataSource = dt;
+            }
+
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (dgvMaker.SelectedRows.Count != -1)
             {
-                string maker_name = dgvMaker.SelectedRows.ToString();
-                txtMaker_Name.Text = maker_name;
-                DialogResult result = MessageBox.Show(txtMaker_Name.Text + "を削除します。よろしいですか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                string maker_name = dgvMaker.CurrentRow.Cells["maker_name"].Value.ToString();
+
+
+                DialogResult result = MessageBox.Show(maker_name + "を削除します。よろしいですか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (result == DialogResult.Yes)
                 {
@@ -79,7 +90,7 @@ namespace 卒業制作
                     if (ret != 0) {
                         MessageBox.Show("メーカーは正常に削除されました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        txtMaker_Name.Text = maker_name;
+                        txtMaker_Name.Text = "";
                         DataTable dataTable = makerTable.GetMaker();
                         dgvMaker.AutoGenerateColumns = false;
                         dgvMaker.DataSource = dataTable;

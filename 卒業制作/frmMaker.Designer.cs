@@ -34,7 +34,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.dgvMaker = new System.Windows.Forms.DataGridView();
             this.maker_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maker_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maker_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMakerChange = new System.Windows.Forms.Button();
             this.btnAddMaker = new System.Windows.Forms.Button();
@@ -85,7 +85,7 @@
             this.dgvMaker.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMaker.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.maker_id,
-            this.maker_name});
+            this.maker_Name});
             this.dgvMaker.Location = new System.Drawing.Point(54, 72);
             this.dgvMaker.Name = "dgvMaker";
             this.dgvMaker.RowTemplate.Height = 21;
@@ -103,11 +103,11 @@
             // 
             // maker_name
             // 
-            this.maker_name.DataPropertyName = "maker_name";
-            this.maker_name.HeaderText = "メーカー名";
-            this.maker_name.Name = "maker_name";
-            this.maker_name.ReadOnly = true;
-            this.maker_name.Width = 120;
+            this.maker_Name.DataPropertyName = "maker_name";
+            this.maker_Name.HeaderText = "メーカー名";
+            this.maker_Name.Name = "maker_name";
+            this.maker_Name.ReadOnly = true;
+            this.maker_Name.Width = 120;
             // 
             // btnClose
             // 
@@ -173,6 +173,6 @@
         private System.Windows.Forms.Button btnMakerChange;
         private System.Windows.Forms.Button btnAddMaker;
         private System.Windows.Forms.DataGridViewTextBoxColumn maker_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maker_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maker_Name;
     }
 }

@@ -39,6 +39,7 @@ namespace 卒業制作
             if (ret == 1)
             {
                 MessageBox.Show("登録が完了しました。", "登録完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
             }
             else {
                 MessageBox.Show("登録できませんでした", "登録エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
