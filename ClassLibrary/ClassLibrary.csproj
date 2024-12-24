@@ -44,6 +44,7 @@
     <Compile Include="CategoryGroupTable.cs" />
     <Compile Include="CategoryGroup.cs" />
     <Compile Include="ChipSetSeriesTable.cs" />
+    <Compile Include="CoolerSocketTable.cs" />
     <Compile Include="CpuGenerationTable.cs" />
     <Compile Include="CpuSeriesTable.cs" />
     <Compile Include="CpuSocketTable.cs" />
