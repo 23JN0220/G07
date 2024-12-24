@@ -94,6 +94,7 @@
             this.txtSpec.Name = "txtSpec";
             this.txtSpec.Size = new System.Drawing.Size(237, 28);
             this.txtSpec.TabIndex = 4;
+            this.txtSpec.TextChanged += new System.EventHandler(this.txtSpec_TextChanged);
             // 
             // btnSpAdd
             // 

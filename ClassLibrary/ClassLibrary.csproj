@@ -59,6 +59,7 @@
     <Compile Include="OrderDetail.cs" />
     <Compile Include="OrderDetailTable.cs" />
     <Compile Include="OsVersionTable.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="SsdConnection.cs" />
     <Compile Include="Review.cs" />
     <Compile Include="Goods.cs" />

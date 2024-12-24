@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Remoting.Messaging;
 
 namespace ClassLibrary
 {
@@ -68,6 +69,28 @@ namespace ClassLibrary
                 }
             }
             return maker_name;
+        }
+
+        public DataTable GetMakerNameByName(string maker_name)
+        {
+            DataTable table = null;
+            DataTable dataTable = new DataTable();
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT * FROM Maker WHERE maker_name LIKE @maker_name";
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@maker_name","%"+ maker_name +"%");
+
+                int cnt = adapter.Fill(dataTable);
+
+                if (cnt > 0)
+                {
+                    table = new DataTable();
+                    table = dataTable;
+                }
+            }
+            return table;
         }
     }
 }

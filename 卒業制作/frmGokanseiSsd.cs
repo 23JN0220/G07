@@ -145,5 +145,10 @@ namespace 卒業制作
                 MessageBox.Show("変更する項目が選択されていません。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void txtSpec_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

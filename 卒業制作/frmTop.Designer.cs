@@ -35,6 +35,7 @@
             this.btnOrder = new System.Windows.Forms.Button();
             this.btnPay = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnMaker = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMember
@@ -99,7 +100,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(435, 301);
+            this.btnClose.Location = new System.Drawing.Point(514, 326);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(86, 40);
             this.btnClose.TabIndex = 6;
@@ -107,11 +108,22 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // btnMaker
+            // 
+            this.btnMaker.Location = new System.Drawing.Point(80, 292);
+            this.btnMaker.Name = "btnMaker";
+            this.btnMaker.Size = new System.Drawing.Size(171, 58);
+            this.btnMaker.TabIndex = 7;
+            this.btnMaker.Text = "メーカー管理";
+            this.btnMaker.UseVisualStyleBackColor = true;
+            this.btnMaker.Click += new System.EventHandler(this.btnMaker_Click);
+            // 
             // frmTop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(612, 378);
+            this.Controls.Add(this.btnMaker);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnPay);
             this.Controls.Add(this.btnOrder);
@@ -137,6 +149,7 @@
         private System.Windows.Forms.Button btnOrder;
         private System.Windows.Forms.Button btnPay;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnMaker;
     }
 }
 
