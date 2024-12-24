@@ -169,7 +169,7 @@ namespace ClassLibrary
                              "goods_name = @goods_name, " +
                              "maker_id = @maker_id, " +
                              "price = @price, " +
-                             "power_consumption = @power_consumption " + 
+                             "power_consumption = @power_consumption " +
                              "WHERE goods_code = @goods_code";
 
                 SqlCommand command = new SqlCommand(sql, connection);
@@ -229,6 +229,28 @@ namespace ClassLibrary
                 }
             }
             return goods_code;
+        }
+
+        public bool ExistGoodsName(string goods_name)
+        {
+            bool ret = false;
+            DataTable dataTable = new DataTable();
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT * FROM Goods WHERE goods_name = @goods_name";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@goods_name", goods_name);
+
+                int cnt = adapter.Fill(dataTable);
+
+                if (cnt == 1)
+                {
+                    ret = true;
+                }
+            }
+            return ret;
         }
     }
 }

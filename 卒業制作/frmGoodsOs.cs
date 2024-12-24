@@ -77,118 +77,130 @@ namespace 卒業制作
         {
             if (txtName.Text != "" && lstVersion.SelectedIndex != -1 && txtPrice.Text != "")
             {
+
+
                 bool exist_Microsoft = true;
                 MakerTable makerTable = new MakerTable();
                 GoodsTable goodsTable = new GoodsTable();
                 OsVersionTable osVersionTable = new OsVersionTable();
                 GoodsOsTable GoodsOsTable = new GoodsOsTable();
 
-                if (goods == null)
+                if (!goodsTable.ExistGoodsName(txtName.Text) || goods != null)
                 {
-                    if (makerTable.GetMakerIdByName("Microsoft") == 0)
+                    if (goods == null)
                     {
-                        Maker maker = new Maker();
-                        maker.maker_name = "Microsoft";
-                        makerTable.Insert(maker);
-
-                        exist_Microsoft = false;
-                    }
-
-                    goods = new Goods();
-
-                    goods.goods_name = txtName.Text;
-                    goods.maker_id = makerTable.GetMakerMicrosoftId();
-                    goods.price = int.Parse(txtPrice.Text);
-                    goods.group_code = 11;
-                    goods.power_consumption = 0;
-
-                    int retGoods = goodsTable.Insert(goods);
-
-                    if (retGoods == 1)
-                    {
-                        goods.goods_code = goodsTable.GetGoodsCodeByName(goods.goods_name);
-                        goods.goods_image = goods.goods_code + ".jpg";
-                        int retPic = goodsTable.UpdatePicture(goods);
-
-                        if (retPic == 1)
+                        if (makerTable.GetMakerIdByName("Microsoft") == 0)
                         {
-                            goodsOs = new GoodsOs();
+                            Maker maker = new Maker();
+                            maker.maker_name = "Microsoft";
+                            makerTable.Insert(maker);
 
-                            goodsOs.goods_code = goods.goods_code;
-                            goodsOs.version_id = osVersionTable.GetOsVersionIdByName(lstVersion.SelectedItem.ToString());
+                            exist_Microsoft = false;
+                        }
 
-                            int retGoodsOs = GoodsOsTable.Insert(goodsOs);
+                        goods = new Goods();
 
-                            if (retGoodsOs == 1 && exist_Microsoft)
+                        goods.goods_name = txtName.Text;
+                        goods.maker_id = makerTable.GetMakerMicrosoftId();
+                        goods.price = int.Parse(txtPrice.Text);
+                        goods.group_code = 11;
+                        goods.power_consumption = 0;
+
+                        int retGoods = goodsTable.Insert(goods);
+
+                        if (retGoods == 1)
+                        {
+                            goods.goods_code = goodsTable.GetGoodsCodeByName(goods.goods_name);
+                            goods.goods_image = goods.goods_code + ".jpg";
+                            int retPic = goodsTable.UpdatePicture(goods);
+
+                            if (retPic == 1)
                             {
-                                if (changedPic)
-                                {
-                                    File.Copy(pictureBox1.ImageLocation, "\\\\10.32.97.1\\Web\\SOTSU\\2024\\23JN02\\G07\\images\\goods\\" + goods.goods_code + format, true);
-                                }
+                                goodsOs = new GoodsOs();
 
-                                MessageBox.Show("商品を追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                this.Close();
+                                goodsOs.goods_code = goods.goods_code;
+                                goodsOs.version_id = osVersionTable.GetOsVersionIdByName(lstVersion.SelectedItem.ToString());
+
+                                int retGoodsOs = GoodsOsTable.Insert(goodsOs);
+
+                                if (retGoodsOs == 1 && exist_Microsoft)
+                                {
+                                    if (changedPic)
+                                    {
+                                        File.Copy(pictureBox1.ImageLocation, "\\\\10.32.97.1\\Web\\SOTSU\\2024\\23JN02\\G07\\images\\goods\\" + goods.goods_code + format, true);
+                                    }
+
+                                    MessageBox.Show("商品を追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    this.Close();
+                                }
+                                else if (retGoodsOs == 1 && !exist_Microsoft)
+                                {
+                                    if (changedPic)
+                                    {
+                                        File.Copy(pictureBox1.ImageLocation, "\\\\10.32.97.1\\Web\\SOTSU\\2024\\23JN02\\G07\\images\\goods\\" + goods.goods_code + format, true);
+                                    }
+
+                                    MessageBox.Show("商品を追加しました。\nメーカーのデータベースにMicrosoftが存在しなかったため、メーカーのデータベースにMicrosoftを追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    this.Close();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("商品のOSデータの追加に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                }
                             }
-                            else if (retGoodsOs == 1 && !exist_Microsoft)
+                            else
+                            {
+                                MessageBox.Show("商品の画像の追加に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("商品の追加に失敗しました\n同じ商品名の商品が既に追加されている場合があります", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                    }
+                    else
+                    {
+
+                        goods.goods_name = txtName.Text;
+                        goods.price = int.Parse(txtPrice.Text);
+
+                        int retGoods = goodsTable.Update(goods);
+
+                        if (retGoods == 1)
+                        {
+                            goodsOs.goods_code = goods.goods_code;
+                            goodsOs.version_id = new OsVersionTable().GetOsVersionIdByName(lstVersion.SelectedItem.ToString());
+
+                            int retGoodsOs = GoodsOsTable.Update(goodsOs);
+
+                            if (retGoodsOs == 1)
                             {
                                 if (changedPic)
                                 {
                                     File.Copy(pictureBox1.ImageLocation, "\\\\10.32.97.1\\Web\\SOTSU\\2024\\23JN02\\G07\\images\\goods\\" + goods.goods_code + format, true);
                                 }
 
-                                MessageBox.Show("商品を追加しました。\nメーカーのデータベースにMicrosoftが存在しなかったため、メーカーのデータベースにMicrosoftを追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                MessageBox.Show("商品情報を更新しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 this.Close();
                             }
                             else
                             {
-                                MessageBox.Show("商品のOSデータの追加に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                MessageBox.Show("商品のOSデータの更新に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                             }
                         }
                         else
                         {
-                            MessageBox.Show("商品の画像の追加に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            MessageBox.Show("商品の更新に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
                     }
-                    else
-                    {
-                        MessageBox.Show("商品の追加に失敗しました\n同じ商品名の商品が既に追加されている場合があります", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    }
+
                 }
                 else
                 {
-                    
-                    goods.goods_name = txtName.Text;
-                    goods.price = int.Parse(txtPrice.Text);
-
-                    int retGoods = goodsTable.Update(goods);
-
-                    if (retGoods == 1)
-                    {
-                        goodsOs.goods_code = goods.goods_code;
-                        goodsOs.version_id = new OsVersionTable().GetOsVersionIdByName(lstVersion.SelectedItem.ToString());
-
-                        int retGoodsOs = GoodsOsTable.Update(goodsOs);
-
-                        if (retGoodsOs == 1)
-                        {
-                            if (changedPic)
-                            {
-                                File.Copy(pictureBox1.ImageLocation, "\\\\10.32.97.1\\Web\\SOTSU\\2024\\23JN02\\G07\\images\\goods\\" + goods.goods_code + format, true);
-                            }
-
-                            MessageBox.Show("商品情報を更新しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            this.Close();
-                        }
-                        else
-                        {
-                            MessageBox.Show("商品のOSデータの更新に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("商品の更新に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    }
+                    MessageBox.Show("同じ商品名の商品が既に追加されているため、追加できません", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
+
+                    
 
             }
             else
