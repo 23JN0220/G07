@@ -170,27 +170,27 @@ namespace 卒業制作
                                         }
                                         else
                                         {
-                                            MessageBox.Show("商品の対応ソケットデータの追加に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                            MessageBox.Show("商品の対応ソケットデータの追加に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                                         }
                                     }
                                     else
                                     {
-                                        MessageBox.Show("商品のCPUクーラーのデータの追加に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                        MessageBox.Show("商品のCPUクーラーのデータの追加に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                                     }
                                 }
                                 else
                                 {
-                                    MessageBox.Show("商品の画像パスのデータ追加に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                    MessageBox.Show("商品の画像パスのデータ追加に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                                 }
                             }
                             else
                             {
-                                MessageBox.Show("商品の追加に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                MessageBox.Show("商品の追加に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                             }
                         }
                         else
                         {
-                            MessageBox.Show("同じ商品名の商品が既に追加されているため、追加できません。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            MessageBox.Show("同じ商品名の商品が既に追加されているため、追加できません", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
                     }
                     else
@@ -238,38 +238,38 @@ namespace 卒業制作
                                             File.Copy(pictureBox1.ImageLocation, "\\\\10.32.97.1\\Web\\SOTSU\\2024\\23JN02\\G07\\images\\goods\\" + goods.goods_code + format, true);
                                         }
 
-                                        MessageBox.Show("商品情報を更新しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                        MessageBox.Show("商品情報を更新しました", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                         this.Close();
                                     }
                                     else
                                     {
-                                        MessageBox.Show("商品の対応ソケットデータの更新に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                        MessageBox.Show("商品の対応ソケットデータの更新に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                                     }
                                 }
                                 else
                                 {
-                                    MessageBox.Show("商品のCPUクーラーのデータの更新に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                    MessageBox.Show("商品のCPUクーラーのデータの更新に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                                 }
                             }
                             else
                             {
-                                MessageBox.Show("商品データの更新に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                MessageBox.Show("商品データの更新に失敗しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                             }
                         }
                         else
                         {
-                            MessageBox.Show("同じ商品名の商品が既に追加されているため、追加できません。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            MessageBox.Show("同じ商品名の商品が既に追加されているため、追加できません", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
                     }
                 }
                 else
                 {
-                    MessageBox.Show("高さと価格の入力欄には半角数字を入力してください。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("高さと価格の入力欄には半角数字を入力してください", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }    
             }
             else
             {
-                MessageBox.Show("未入力の項目があります。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("未入力の項目があります", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }
