@@ -57,7 +57,7 @@
             // 
             this.txtMaker_name.Location = new System.Drawing.Point(170, 108);
             this.txtMaker_name.Name = "txtMaker_name";
-            this.txtMaker_name.Size = new System.Drawing.Size(168, 28);
+            this.txtMaker_name.Size = new System.Drawing.Size(300, 28);
             this.txtMaker_name.TabIndex = 2;
             // 
             // label2
@@ -71,27 +71,29 @@
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(411, 41);
+            this.btnOk.Location = new System.Drawing.Point(510, 108);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(98, 33);
             this.btnOk.TabIndex = 4;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(411, 192);
+            this.btnClose.Location = new System.Drawing.Point(510, 205);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(88, 35);
+            this.btnClose.Size = new System.Drawing.Size(98, 35);
             this.btnClose.TabIndex = 5;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmMakerAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 323);
+            this.ClientSize = new System.Drawing.Size(630, 252);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.label2);
@@ -101,19 +103,18 @@
             this.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmMakerAdd";
-            this.Text = "frmAddMaker";
+            this.Text = "メーカー名編集";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtMaker_id;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtMaker_name;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Button btnClose;
+        public System.Windows.Forms.TextBox txtMaker_id;
     }
 }
