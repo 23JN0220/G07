@@ -12,9 +12,9 @@ using ClassLibrary;
 
 namespace 卒業制作
 {
-    public partial class frmMeker : Form
+    public partial class frmMaker : Form
     {
-        public frmMeker()
+        public frmMaker()
         {
             InitializeComponent();
         }

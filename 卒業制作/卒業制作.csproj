@@ -61,17 +61,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAddMaker.cs">
+    <Compile Include="frmMakerAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddMaker.Designer.cs">
-      <DependentUpon>frmAddMaker.cs</DependentUpon>
+    <Compile Include="frmMakerAdd.Designer.cs">
+      <DependentUpon>frmMakerAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMeker.cs">
+    <Compile Include="frmMaker.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMeker.Designer.cs">
-      <DependentUpon>frmMeker.cs</DependentUpon>
+    <Compile Include="frmMaker.Designer.cs">
+      <DependentUpon>frmMaker.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGoodsGokanseiChipSet.cs">
       <SubType>Form</SubType>
@@ -249,6 +249,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMakerAdd.resx">
+      <DependentUpon>frmMakerAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGoodsCase.resx">
       <DependentUpon>frmGoodsCase.cs</DependentUpon>
     </EmbeddedResource>
@@ -285,8 +288,8 @@
     <EmbeddedResource Include="frmGoodsSsd.resx">
       <DependentUpon>frmGoodsSsd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMeker.resx">
-      <DependentUpon>frmMeker.cs</DependentUpon>
+    <EmbeddedResource Include="frmMaker.resx">
+      <DependentUpon>frmMaker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOrderDetail.resx">
       <DependentUpon>frmOrderDetail.cs</DependentUpon>

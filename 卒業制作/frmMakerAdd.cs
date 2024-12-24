@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace 卒業制作
 {
-    public partial class frmAddMaker : Form
+    public partial class frmMakerAdd : Form
     {
-        public frmAddMaker()
+        public frmMakerAdd()
         {
             InitializeComponent();
         }

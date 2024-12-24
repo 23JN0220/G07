@@ -1,6 +1,6 @@
 ﻿namespace 卒業制作
 {
-    partial class frmMeker
+    partial class frmMaker
     {
         /// <summary>
         /// Required designer variable.

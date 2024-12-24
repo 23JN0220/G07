@@ -66,7 +66,7 @@ namespace 卒業制作
 
         private void btnMaker_Click(object sender, EventArgs e)
         {
-            frmMeker frmMeker = new frmMeker();
+            frmMaker frmMeker = new frmMaker();
             frmMeker.ShowDialog();
         }
     }
