@@ -100,10 +100,11 @@ namespace 卒業制作
                         MessageBox.Show("メーカーの削除に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                 }
-                else
-                {
-                    MessageBox.Show("メーカーが選択されていません。", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
+               
+            }
+            else
+            {
+                MessageBox.Show("メーカーが選択されていません。", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }
