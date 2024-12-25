@@ -78,7 +78,6 @@ namespace 卒業制作
             if (txtName.Text != "" && lstVersion.SelectedIndex != -1 && txtPrice.Text != "")
             {
 
-
                 bool exist_Microsoft = true;
                 MakerTable makerTable = new MakerTable();
                 GoodsTable goodsTable = new GoodsTable();

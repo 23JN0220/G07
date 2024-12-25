@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaseFanSizeTable.cs" />
     <Compile Include="GoodsFan.cs" />
     <Compile Include="CategoryGroupTable.cs" />
     <Compile Include="CategoryGroup.cs" />

@@ -233,6 +233,11 @@ namespace 卒業制作
                         break;
                     case 10:
                         frmGoodsFan frmGoodsFan = new frmGoodsFan();
+                        GoodsFanTable goodsFanTable = new GoodsFanTable();
+
+                        frmGoodsFan.goods = goods;
+                        frmGoodsFan.goodsFan = goodsFanTable.GetGoodsFanById(goods.goods_code);
+
                         frmGoodsFan.ShowDialog();
 
                         break;

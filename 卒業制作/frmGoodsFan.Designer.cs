@@ -43,6 +43,8 @@
             this.txtNumber = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnPicture = new System.Windows.Forms.Button();
+            this.ofdPicture = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,6 +84,7 @@
             this.btnOK.TabIndex = 6;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // label10
             // 
@@ -175,11 +178,26 @@
             this.pictureBox1.TabIndex = 54;
             this.pictureBox1.TabStop = false;
             // 
+            // btnPicture
+            // 
+            this.btnPicture.Location = new System.Drawing.Point(131, 357);
+            this.btnPicture.Name = "btnPicture";
+            this.btnPicture.Size = new System.Drawing.Size(103, 28);
+            this.btnPicture.TabIndex = 63;
+            this.btnPicture.Text = "画像選択";
+            this.btnPicture.UseVisualStyleBackColor = true;
+            this.btnPicture.Click += new System.EventHandler(this.btnPicture_Click);
+            // 
+            // ofdPicture
+            // 
+            this.ofdPicture.Filter = "画像ファイル(*.jpg;*.jpeg;*.png;)|*.jpg;*.jpeg;*.png";
+            // 
             // frmGoodsFan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(961, 523);
+            this.Controls.Add(this.btnPicture);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btnClose);
@@ -199,6 +217,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoodsFan";
             this.Text = "ケースファン";
+            this.Load += new System.EventHandler(this.frmGoodsFan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -222,5 +241,7 @@
         private System.Windows.Forms.TextBox txtNumber;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnPicture;
+        private System.Windows.Forms.OpenFileDialog ofdPicture;
     }
 }
