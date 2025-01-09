@@ -31,7 +31,7 @@ namespace ClassLibrary
 
                     goodsHdd.goods_code = int.Parse(dr[0].ToString());
                     goodsHdd.capacity = int.Parse(dr[2].ToString());
-                    if (dr[1].ToString() == "1")
+                    if (dr[1].ToString() == "True")
                     {
                         goodsHdd.size = true;
                     }
@@ -42,6 +42,46 @@ namespace ClassLibrary
                 }
             }
             return goodsHdd;
+        }
+
+        public int Insert(GoodsHdd goodsHdd)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "INSERT INTO Goods_HDD VALUES (@goods_code, @size, @capacity)";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@goods_code", goodsHdd.goods_code);
+                command.Parameters.AddWithValue("@size", goodsHdd.size);
+                command.Parameters.AddWithValue("@capacity", goodsHdd.capacity);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+            return ret;
+        }
+
+        public int Update(GoodsHdd goodsHdd)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE Goods_HDD SET size = @size, capacity = @capacity WHERE goods_code = @goods_code";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@goods_code", goodsHdd.goods_code);
+                command.Parameters.AddWithValue("@size", goodsHdd.size);
+                command.Parameters.AddWithValue("@capacity", goodsHdd.capacity);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+            return ret;
         }
     }
 }
