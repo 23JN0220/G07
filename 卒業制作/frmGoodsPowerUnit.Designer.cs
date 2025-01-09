@@ -281,6 +281,7 @@
             this.btnPicture.TabIndex = 69;
             this.btnPicture.Text = "画像選択";
             this.btnPicture.UseVisualStyleBackColor = true;
+            this.btnPicture.Click += new System.EventHandler(this.btnPicture_Click);
             // 
             // frmGoodsPowerUnit
             // 

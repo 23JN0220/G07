@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,12 @@ namespace 卒業制作
 {
     public partial class frmGoodsMotherboard : Form
     {
+        public Goods goods;
+
+
+        public bool changedPic = false;
+        public string format = null;
+
         public frmGoodsMotherboard()
         {
             InitializeComponent();
@@ -23,6 +30,21 @@ namespace 卒業制作
             if (ret == DialogResult.Yes)
             {
                 this.Close();
+            }
+        }
+
+        private void btnPicture_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("画像は320×320のものを使用してください", "画像サイズについて", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DialogResult ret = ofdPicture.ShowDialog();
+
+            if (ret == DialogResult.OK)
+            {
+                string fileName = ofdPicture.FileName;
+                pictureBox1.ImageLocation = fileName;
+                format = System.IO.Path.GetExtension(fileName);
+
+                changedPic = true;
             }
         }
     }
