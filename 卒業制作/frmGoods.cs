@@ -224,6 +224,11 @@ namespace 卒業制作
                         break;
                     case 7:
                         frmGoodsHdd frmGoodsHdd = new frmGoodsHdd();
+                        GoodsHddTable goodsHddTable = new GoodsHddTable();
+
+                        frmGoodsHdd.goods = goods;
+
+                        frmGoodsHdd.goodsHdd = goodsHddTable.GetGoodsHddById(goods.goods_code);
                         frmGoodsHdd.ShowDialog();
 
                         break;

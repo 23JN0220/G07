@@ -43,6 +43,8 @@
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnPicture = new System.Windows.Forms.Button();
+            this.ofdPicture = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -178,11 +180,25 @@
             this.pictureBox1.TabIndex = 75;
             this.pictureBox1.TabStop = false;
             // 
+            // btnPicture
+            // 
+            this.btnPicture.Location = new System.Drawing.Point(131, 357);
+            this.btnPicture.Name = "btnPicture";
+            this.btnPicture.Size = new System.Drawing.Size(103, 28);
+            this.btnPicture.TabIndex = 85;
+            this.btnPicture.Text = "画像選択";
+            this.btnPicture.UseVisualStyleBackColor = true;
+            // 
+            // ofdPicture
+            // 
+            this.ofdPicture.Filter = "画像ファイル(*.jpg;*.jpeg;*.png;)|*.jpg;*.jpeg;*.png";
+            // 
             // frmGoodsHdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(961, 523);
+            this.Controls.Add(this.btnPicture);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.btnClose);
@@ -202,6 +218,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoodsHdd";
             this.Text = "HDD";
+            this.Load += new System.EventHandler(this.frmGoodsHdd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -225,5 +242,7 @@
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnPicture;
+        private System.Windows.Forms.OpenFileDialog ofdPicture;
     }
 }

@@ -57,6 +57,8 @@
     <Compile Include="GoodsCpu.cs" />
     <Compile Include="GoodsCpuTable.cs" />
     <Compile Include="GoodsFanTable.cs" />
+    <Compile Include="GoodsHdd.cs" />
+    <Compile Include="GoodsHddTable.cs" />
     <Compile Include="GoodsMemory.cs" />
     <Compile Include="GoodsMemoryTable.cs" />
     <Compile Include="GoodsOs.cs" />
