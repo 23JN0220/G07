@@ -47,6 +47,8 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lstType = new System.Windows.Forms.ComboBox();
+            this.ofdPicture = new System.Windows.Forms.OpenFileDialog();
+            this.btnPicture = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,6 +88,7 @@
             this.btnOK.TabIndex = 8;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // label10
             // 
@@ -215,11 +218,26 @@
             this.lstType.Size = new System.Drawing.Size(399, 29);
             this.lstType.TabIndex = 5;
             // 
+            // ofdPicture
+            // 
+            this.ofdPicture.Filter = "画像ファイル(*.jpg;*.jpeg;*.png;)|*.jpg;*.jpeg;*.png";
+            // 
+            // btnPicture
+            // 
+            this.btnPicture.Location = new System.Drawing.Point(131, 357);
+            this.btnPicture.Name = "btnPicture";
+            this.btnPicture.Size = new System.Drawing.Size(103, 28);
+            this.btnPicture.TabIndex = 66;
+            this.btnPicture.Text = "画像選択";
+            this.btnPicture.UseVisualStyleBackColor = true;
+            this.btnPicture.Click += new System.EventHandler(this.btnPicture_Click);
+            // 
             // frmGoodsSsd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(961, 523);
+            this.Controls.Add(this.btnPicture);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.btnClose);
@@ -243,6 +261,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoodsSsd";
             this.Text = "SSD";
+            this.Load += new System.EventHandler(this.frmGoodsSsd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -269,5 +288,7 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox lstType;
+        private System.Windows.Forms.OpenFileDialog ofdPicture;
+        private System.Windows.Forms.Button btnPicture;
     }
 }

@@ -219,6 +219,11 @@ namespace 卒業制作
                         break;
                     case 6:
                         frmGoodsSsd frmGoodsSsd = new frmGoodsSsd();
+                        GoodsSsdTable goodsSsdTable = new GoodsSsdTable();
+
+                        frmGoodsSsd.goods = goods;
+
+                        frmGoodsSsd.goodsSsd = goodsSsdTable.GetGoodsSsdById(goods.goods_code);
                         frmGoodsSsd.ShowDialog();
 
                         break;

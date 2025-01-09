@@ -63,6 +63,8 @@
     <Compile Include="GoodsMemoryTable.cs" />
     <Compile Include="GoodsOs.cs" />
     <Compile Include="GoodsOsTable.cs" />
+    <Compile Include="GoodsSsd.cs" />
+    <Compile Include="GoodsSsdTable.cs" />
     <Compile Include="Maker.cs" />
     <Compile Include="GoodsOrder.cs" />
     <Compile Include="GoodsOrderTable.cs" />

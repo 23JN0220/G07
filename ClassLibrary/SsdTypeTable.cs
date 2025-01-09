@@ -69,5 +69,52 @@ namespace ClassLibrary
             }
             return ret;
         }
+
+        public string GetSsdTypeNameById(int type_id)
+        {
+            string type_name = null;
+
+            DataTable dataTable = new DataTable();
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT type_name FROM SSD_Type WHERE type_id = @type_id";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@type_id", type_id);
+
+                int cnt = adapter.Fill(dataTable);
+
+                if (cnt == 1)
+                {
+                    DataRow dr = dataTable.Rows[0];
+                    type_name = dr[0].ToString();
+                }
+            }
+            return type_name;
+        }
+
+        public int GetSsdTypeIdByName(string type_name)
+        {
+            int type_id = 0;
+
+            DataTable dataTable = new DataTable();
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT type_id FROM SSD_Type WHERE type_name = @type_name";
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@type_name", type_name);
+
+                int cnt = adapter.Fill(dataTable);
+
+                if (cnt == 1)
+                {
+                    DataRow dr = dataTable.Rows[0];
+                    type_id = int.Parse(dr[0].ToString());
+                }
+            }
+            return type_id;
+        }
     }
 }
