@@ -24,7 +24,7 @@ namespace ClassLibrary
             return table;
         }
 
-        public string GetMemoryStandardById(int standard_id)
+        public string GetMemoryStandardNameById(int standard_id)
         {
             string standard_name = null;
 
@@ -33,6 +33,7 @@ namespace ClassLibrary
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string sql = "SELECT standard_name FROM Memory_Standard WHERE standard_id = @standard_id";
+
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
                 adapter.SelectCommand.Parameters.AddWithValue("@standard_id", standard_id);
 
@@ -45,6 +46,30 @@ namespace ClassLibrary
                 }
             }
             return standard_name;
+        }
+
+        public int GetMemoryStandardIdByName(string standard_name)
+        {
+            int standard_id = 0;
+
+            DataTable dataTable = new DataTable();
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT standard_id FROM Memory_Standard WHERE standard_name = @standard_name";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@standard_name", standard_name);
+
+                int cnt = adapter.Fill(dataTable);
+
+                if (cnt == 1)
+                {
+                    DataRow dr = dataTable.Rows[0];
+                    standard_id = int.Parse(dr[0].ToString());
+                }
+            }
+            return standard_id;
         }
     }
 }

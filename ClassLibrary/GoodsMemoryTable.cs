@@ -38,5 +38,71 @@ namespace ClassLibrary
             }
             return goodsMemory;
         }
+
+        public int Insert(GoodsMemory goodsMemory)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "INSERT INTO Goods_Memory VALUES (@goods_code, @standard_id, @module_id, @capacity, @number, @ecc)";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@goods_code", goodsMemory.goods_code);
+                command.Parameters.AddWithValue("@standard_id", goodsMemory.standard_id);
+                command.Parameters.AddWithValue("@module_id", goodsMemory.module_id);
+                command.Parameters.AddWithValue("@capacity", goodsMemory.capacity);
+                command.Parameters.AddWithValue("@number", goodsMemory.number);
+                if (goodsMemory.ecc)
+                {
+                    command.Parameters.AddWithValue("@ecc", 1);
+                }
+                else
+                {
+                    command.Parameters.AddWithValue("@ecc", 0);
+                }
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+
+            return ret;
+        }
+
+        public int Update(GoodsMemory goodsMemory)
+        {
+            int ret = 0;
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE Goods_Memory SET " +
+                             "standard_id = @standard_id, " +
+                             "module_id = @module_id, " +
+                             "capacity = @capacity, " +
+                             "number = @number, " +
+                             "ecc = @ecc " +
+                             "WHERE goods_code = @goods_code";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@goods_code", goodsMemory.goods_code);
+                command.Parameters.AddWithValue("@standard_id", goodsMemory.standard_id);
+                command.Parameters.AddWithValue("@module_id", goodsMemory.module_id);
+                command.Parameters.AddWithValue("@capacity", goodsMemory.capacity);
+                command.Parameters.AddWithValue("@number", goodsMemory.number);
+                if (goodsMemory.ecc)
+                {
+                    command.Parameters.AddWithValue("@ecc", 1);
+                }
+                else
+                {
+                    command.Parameters.AddWithValue("@ecc", 0);
+                }
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+            return ret;
+        }
     }
 }
