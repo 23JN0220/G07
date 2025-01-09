@@ -35,15 +35,30 @@ namespace 卒業制作
 
             MakerTable makerTable = new MakerTable();
 
-             int ret = makerTable.Insert(maker);
-            if (ret == 1)
+            bool exist = makerTable.IsExistMaker(txtMaker_name.Text);
+            if (!exist)
             {
-                MessageBox.Show("登録が完了しました。", "登録完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
+
+                int ret = makerTable.Insert(maker);
+                if (ret == 1)
+                {
+                    MessageBox.Show("登録が完了しました。", "登録完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("登録できませんでした", "登録エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else {
-                MessageBox.Show("登録できませんでした", "登録エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                MessageBox.Show("このメーカーはすでに存在しています。", "追加エラー", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void frmMakerAdd_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

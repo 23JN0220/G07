@@ -167,7 +167,24 @@ namespace ClassLibrary
             return ret;
 
         }
-       
+        public int Check(int maker_id) {
+            int ret = 0;
+            DataTable dataTable = new DataTable();
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString)) 
+            {
+                string sql = "SELECT maker_name FROM Maker AS M  JOIN Goods AS G  ON M.maker_id = G.maker_id WHERE G.maker_id LIKE @maker_id GROUP BY maker_name;";
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@maker_id", maker_id);
+
+                ret = adapter.Fill(dataTable);
+
+            }
+            return ret;
+        }
+
+
 
     }
 }
