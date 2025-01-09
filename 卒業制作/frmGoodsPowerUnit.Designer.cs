@@ -52,6 +52,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtSataConnector = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.ofdPicture = new System.Windows.Forms.OpenFileDialog();
+            this.btnPicture = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -267,11 +269,25 @@
             this.label12.TabIndex = 63;
             this.label12.Text = "SATA電源コネクタ数";
             // 
+            // ofdPicture
+            // 
+            this.ofdPicture.Filter = "画像ファイル(*.jpg;*.jpeg;*.png;)|*.jpg;*.jpeg;*.png";
+            // 
+            // btnPicture
+            // 
+            this.btnPicture.Location = new System.Drawing.Point(131, 357);
+            this.btnPicture.Name = "btnPicture";
+            this.btnPicture.Size = new System.Drawing.Size(103, 28);
+            this.btnPicture.TabIndex = 69;
+            this.btnPicture.Text = "画像選択";
+            this.btnPicture.UseVisualStyleBackColor = true;
+            // 
             // frmGoodsPowerUnit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1072, 523);
+            this.Controls.Add(this.btnPicture);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label8);
@@ -331,5 +347,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtSataConnector;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.OpenFileDialog ofdPicture;
+        private System.Windows.Forms.Button btnPicture;
     }
 }

@@ -19,7 +19,11 @@ namespace 卒業制作
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult ret = MessageBox.Show("編集中の内容は保存されません。\n本当に閉じますか?", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (ret == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

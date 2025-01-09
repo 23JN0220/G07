@@ -62,6 +62,8 @@
             this.chkAuxiliary = new System.Windows.Forms.CheckBox();
             this.txtSlot = new System.Windows.Forms.TextBox();
             this.lstResolution = new System.Windows.Forms.ComboBox();
+            this.btnPicture = new System.Windows.Forms.Button();
+            this.ofdPicture = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -353,11 +355,25 @@
             this.lstResolution.Size = new System.Drawing.Size(399, 29);
             this.lstResolution.TabIndex = 8;
             // 
+            // btnPicture
+            // 
+            this.btnPicture.Location = new System.Drawing.Point(131, 357);
+            this.btnPicture.Name = "btnPicture";
+            this.btnPicture.Size = new System.Drawing.Size(103, 28);
+            this.btnPicture.TabIndex = 84;
+            this.btnPicture.Text = "画像選択";
+            this.btnPicture.UseVisualStyleBackColor = true;
+            // 
+            // ofdPicture
+            // 
+            this.ofdPicture.Filter = "画像ファイル(*.jpg;*.jpeg;*.png;)|*.jpg;*.jpeg;*.png";
+            // 
             // frmGoodsGpu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1053, 693);
+            this.Controls.Add(this.btnPicture);
             this.Controls.Add(this.chkAuxiliary);
             this.Controls.Add(this.chkLowPro);
             this.Controls.Add(this.label12);
@@ -438,5 +454,7 @@
         private System.Windows.Forms.CheckBox chkAuxiliary;
         private System.Windows.Forms.TextBox txtSlot;
         private System.Windows.Forms.ComboBox lstResolution;
+        private System.Windows.Forms.Button btnPicture;
+        private System.Windows.Forms.OpenFileDialog ofdPicture;
     }
 }
