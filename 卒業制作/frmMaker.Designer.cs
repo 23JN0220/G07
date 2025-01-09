@@ -174,7 +174,6 @@
         private System.Windows.Forms.Button btnMakerChange;
         private System.Windows.Forms.Button btnAddMaker;
         private System.Windows.Forms.DataGridViewTextBoxColumn maker_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maker_Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn maker_name;
     }
 }

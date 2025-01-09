@@ -38,7 +38,7 @@
             // 
             // txtMaker_id
             // 
-            this.txtMaker_id.Location = new System.Drawing.Point(170, 36);
+            this.txtMaker_id.Location = new System.Drawing.Point(179, 36);
             this.txtMaker_id.Name = "txtMaker_id";
             this.txtMaker_id.ReadOnly = true;
             this.txtMaker_id.Size = new System.Drawing.Size(168, 28);
@@ -103,7 +103,7 @@
             this.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmMakerAdd";
-            this.Text = "メーカー名追加・編集";
+            this.Text = "メーカー名編集";
             this.Load += new System.EventHandler(this.frmMakerAdd_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
