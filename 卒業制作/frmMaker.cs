@@ -77,28 +77,40 @@ namespace 卒業制作
         {
             if (dgvMaker.SelectedRows.Count != -1)
             {
+                int maker_id = int.Parse(dgvMaker.CurrentRow.Cells["maker_id"].Value.ToString());
                 string maker_name = dgvMaker.CurrentRow.Cells["maker_name"].Value.ToString();
 
+                MakerTable makerTable = new MakerTable();
 
-                DialogResult result = MessageBox.Show(maker_name + "を削除します。よろしいですか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                int ret2 = makerTable.Check(maker_id);
 
-                if (result == DialogResult.Yes)
+                if (ret2 == 0)
                 {
-                    MakerTable makerTable = new MakerTable();
+                    DialogResult result = MessageBox.Show(maker_name + "を削除します。よろしいですか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                    int ret = makerTable.Delete(maker_name);
-                    if (ret != 0) {
-                        MessageBox.Show("メーカーは正常に削除されました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        txtMaker_Name.Text = "";
-                        DataTable dataTable = makerTable.GetMaker();
-                        dgvMaker.AutoGenerateColumns = false;
-                        dgvMaker.DataSource = dataTable;
-                    }
-                    else
+                    if (result == DialogResult.Yes)
                     {
-                        MessageBox.Show("メーカーの削除に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        int ret = makerTable.Delete(maker_name);
+
+                        if (ret != 0)
+                        {
+                            MessageBox.Show("メーカーは正常に削除されました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            txtMaker_Name.Text = "";
+                            DataTable dataTable = makerTable.GetMaker();
+                            dgvMaker.AutoGenerateColumns = false;
+                            dgvMaker.DataSource = dataTable;
+                        }
+                        else
+                        {
+                            MessageBox.Show("メーカーの削除に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
                     }
+                }
+                else
+                {
+                    MessageBox.Show("このメーカーは商品の取り扱いがあるため削除できません。", "削除不可能", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   
                 }
                
             }
@@ -106,6 +118,13 @@ namespace 卒業制作
             {
                 MessageBox.Show("メーカーが選択されていません。", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void btnMakerChange_Click(object sender, EventArgs e)
+        {
+            frmMakerAdd frmMakerAdd = new frmMakerAdd();
+            frmMakerAdd.ShowDialog();
+
         }
     }
 }
