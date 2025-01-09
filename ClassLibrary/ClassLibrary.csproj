@@ -57,12 +57,16 @@
     <Compile Include="GoodsCpu.cs" />
     <Compile Include="GoodsCpuTable.cs" />
     <Compile Include="GoodsFanTable.cs" />
+    <Compile Include="GoodsMemory.cs" />
+    <Compile Include="GoodsMemoryTable.cs" />
     <Compile Include="GoodsOs.cs" />
     <Compile Include="GoodsOsTable.cs" />
     <Compile Include="Maker.cs" />
     <Compile Include="GoodsOrder.cs" />
     <Compile Include="GoodsOrderTable.cs" />
     <Compile Include="MakerTable.cs" />
+    <Compile Include="MemoryModuleTable.cs" />
+    <Compile Include="MemoryStandardTable.cs" />
     <Compile Include="OrderDetail.cs" />
     <Compile Include="OrderDetailTable.cs" />
     <Compile Include="OsVersionTable.cs" />

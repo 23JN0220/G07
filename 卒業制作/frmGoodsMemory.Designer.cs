@@ -45,10 +45,12 @@
             this.lstModule = new System.Windows.Forms.ComboBox();
             this.txtNumber = new System.Windows.Forms.TextBox();
             this.chkEcc = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCapacity = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnPicture = new System.Windows.Forms.Button();
+            this.ofdPicture = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -200,12 +202,12 @@
             this.chkEcc.Text = "ECC対応";
             this.chkEcc.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtCapacity
             // 
-            this.textBox1.Location = new System.Drawing.Point(505, 151);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(399, 28);
-            this.textBox1.TabIndex = 5;
+            this.txtCapacity.Location = new System.Drawing.Point(505, 151);
+            this.txtCapacity.Name = "txtCapacity";
+            this.txtCapacity.Size = new System.Drawing.Size(399, 28);
+            this.txtCapacity.TabIndex = 5;
             // 
             // label6
             // 
@@ -234,11 +236,26 @@
             this.label8.TabIndex = 45;
             this.label8.Text = "GB";
             // 
+            // btnPicture
+            // 
+            this.btnPicture.Location = new System.Drawing.Point(135, 357);
+            this.btnPicture.Name = "btnPicture";
+            this.btnPicture.Size = new System.Drawing.Size(103, 28);
+            this.btnPicture.TabIndex = 47;
+            this.btnPicture.Text = "画像選択";
+            this.btnPicture.UseVisualStyleBackColor = true;
+            this.btnPicture.Click += new System.EventHandler(this.btnPicture_Click);
+            // 
+            // ofdPicture
+            // 
+            this.ofdPicture.Filter = "画像ファイル(*.jpg;*.jpeg;*.png;)|*.jpg;*.jpeg;*.png";
+            // 
             // frmGoodsMemory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(961, 523);
+            this.Controls.Add(this.btnPicture);
             this.Controls.Add(this.chkEcc);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -255,7 +272,7 @@
             this.Controls.Add(this.lstMaker);
             this.Controls.Add(this.lstModule);
             this.Controls.Add(this.lstMemoryStandards);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCapacity);
             this.Controls.Add(this.txtNumber);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtName);
@@ -264,6 +281,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoodsMemory";
             this.Text = "メモリ";
+            this.Load += new System.EventHandler(this.frmGoodsMemory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -289,9 +307,11 @@
         private System.Windows.Forms.ComboBox lstModule;
         private System.Windows.Forms.TextBox txtNumber;
         private System.Windows.Forms.CheckBox chkEcc;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCapacity;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnPicture;
+        private System.Windows.Forms.OpenFileDialog ofdPicture;
     }
 }

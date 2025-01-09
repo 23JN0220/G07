@@ -203,6 +203,12 @@ namespace 卒業制作
                         break;
                     case 4:
                         frmGoodsMemory frmGoodsMemory = new frmGoodsMemory();
+                        GoodsMemoryTable goodsMemoryTable = new GoodsMemoryTable();
+
+                        frmGoodsMemory.goods = goods;
+
+                        frmGoodsMemory.goodsMemory = goodsMemoryTable.GetGoodsMemoryById(goods.goods_code);
+
                         frmGoodsMemory.ShowDialog();
 
                         break;
