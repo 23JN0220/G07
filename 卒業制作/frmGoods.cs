@@ -239,6 +239,11 @@ namespace 卒業制作
                         break;
                     case 8:
                         frmGoodsPowerUnit frmGoodsPowerUnit = new frmGoodsPowerUnit();
+                        GoodsPowerTable goodsPowerTable = new GoodsPowerTable();
+
+                        frmGoodsPowerUnit.goods = goods;
+
+                        frmGoodsPowerUnit.goodsPower = goodsPowerTable.GetGoodsPowerById(goods.goods_code);
                         frmGoodsPowerUnit.ShowDialog();
 
                         break;
