@@ -71,6 +71,22 @@ namespace 卒業制作
                 dgvMaker.DataSource = dt;
             }
 
+            MakerTable makerTable = new MakerTable();
+
+            DataTable dt1 = makerTable.GetMakerNameByName(txtMaker_Name.Text);
+
+            if (dt1 != null)
+            {
+
+                dgvMaker.AutoGenerateColumns = false;
+                dgvMaker.DataSource = dt1;
+            }
+            else
+            {
+                dgvMaker.DataSource = null;
+                MessageBox.Show("メーカーは見つかりませんでした", "検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -110,21 +126,45 @@ namespace 卒業制作
                 else
                 {
                     MessageBox.Show("このメーカーは商品の取り扱いがあるため削除できません。", "削除不可能", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                   
+
                 }
-               
+
             }
             else
             {
                 MessageBox.Show("メーカーが選択されていません。", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
             }
+
         }
 
         private void btnMakerChange_Click(object sender, EventArgs e)
         {
             frmMakerAdd frmMakerAdd = new frmMakerAdd();
+            MakerTable makerTable = new MakerTable();
+
+            Maker maker = new Maker();
+
+            maker.maker_id = int.Parse(dgvMaker.CurrentRow.Cells["maker_id"].Value.ToString());
+            maker.maker_name = dgvMaker.CurrentRow.Cells["maker_name"].Value.ToString();
+
+            frmMakerAdd.maker = maker;
+
             frmMakerAdd.ShowDialog();
 
+            DataTable dt1 = makerTable.GetMakerNameByName(txtMaker_Name.Text);
+
+            if (dt1 != null)
+            {
+
+                dgvMaker.AutoGenerateColumns = false;
+                dgvMaker.DataSource = dt1;
+            }
+            else
+            {
+                dgvMaker.DataSource = null;
+                MessageBox.Show("メーカーは見つかりませんでした", "検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

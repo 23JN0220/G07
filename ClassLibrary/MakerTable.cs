@@ -184,7 +184,22 @@ namespace ClassLibrary
             return ret;
         }
 
+        public int Update(int maker_id,string maker_name) {
 
+            int cnt = 0;
+            DataTable table = new DataTable();
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString)) { 
+            string sql = "UPDATE Maker SET maker_name = @maker_name WHERE maker_id = @maker_id;";
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@maker_id",maker_id);
+                command.Parameters.AddWithValue("@maker_name", maker_name);
+                connection.Open();
+                cnt = command.ExecuteNonQuery();
+            }
+            return cnt;
+        }
 
     }
 }

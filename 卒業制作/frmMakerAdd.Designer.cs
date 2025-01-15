@@ -42,7 +42,7 @@
             this.txtMaker_id.Name = "txtMaker_id";
             this.txtMaker_id.ReadOnly = true;
             this.txtMaker_id.Size = new System.Drawing.Size(168, 28);
-            this.txtMaker_id.TabIndex = 0;
+            this.txtMaker_id.TabIndex = 4;
             // 
             // label1
             // 
@@ -50,7 +50,7 @@
             this.label1.Location = new System.Drawing.Point(48, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 21);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 5;
             this.label1.Text = "メーカー番号";
             // 
             // txtMaker_name
@@ -58,7 +58,7 @@
             this.txtMaker_name.Location = new System.Drawing.Point(170, 108);
             this.txtMaker_name.Name = "txtMaker_name";
             this.txtMaker_name.Size = new System.Drawing.Size(300, 28);
-            this.txtMaker_name.TabIndex = 2;
+            this.txtMaker_name.TabIndex = 0;
             // 
             // label2
             // 
@@ -66,7 +66,7 @@
             this.label2.Location = new System.Drawing.Point(69, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 21);
-            this.label2.TabIndex = 3;
+            this.label2.TabIndex = 6;
             this.label2.Text = "メーカー名";
             // 
             // btnOk
@@ -74,7 +74,7 @@
             this.btnOk.Location = new System.Drawing.Point(510, 108);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(98, 33);
-            this.btnOk.TabIndex = 4;
+            this.btnOk.TabIndex = 2;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = true;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
@@ -84,7 +84,7 @@
             this.btnClose.Location = new System.Drawing.Point(510, 205);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(98, 35);
-            this.btnClose.TabIndex = 5;
+            this.btnClose.TabIndex = 3;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
