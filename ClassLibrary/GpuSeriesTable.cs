@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class MemoryModuleTable
+    public class GpuSeriesTable
     {
-        public DataTable GetMemoryModule()
+        public DataTable GetGpuSeries()
         {
             DataTable table = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT * FROM Memory_Module";
+                string sql = "SELECT * FROM GPU_Series";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
 
                 adapter.Fill(table);
@@ -24,51 +24,51 @@ namespace ClassLibrary
             return table;
         }
 
-        public string GetMemoryModuleNameById(int module_id)
+        public string GetGpuSeriesNameById(int gpu_series_id)
         {
-            string module_name = null;
+            string gpu_series_name = null;
 
             DataTable dataTable = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT module_name FROM Memory_Module WHERE module_id = @module_id";
+                string sql = "SELECT gpu_series_name FROM GPU_Series WHERE gpu_series_id = @gpu_series_id";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
-                adapter.SelectCommand.Parameters.AddWithValue("@module_id", module_id);
+                adapter.SelectCommand.Parameters.AddWithValue("@gpu_series_id", gpu_series_id);
 
                 int cnt = adapter.Fill(dataTable);
 
                 if (cnt == 1)
                 {
                     DataRow dr = dataTable.Rows[0];
-                    module_name = dr[0].ToString();
+                    gpu_series_name = dr[0].ToString();
                 }
             }
-            return module_name;
+            return gpu_series_name;
         }
 
-        public int GetMemoryModuleIdByName(string module_name)
+        public int GetGpuSeriesIdByName(string gpu_series_name)
         {
-            int module_id = 0;
+            int gpu_series_id = 0;
 
             DataTable dataTable = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT module_id FROM Memory_Module WHERE module_name = @module_name";
+                string sql = "SELECT gpu_series_id FROM GPU_Series WHERE gpu_series_name = @gpu_series_name";
 
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
-                adapter.SelectCommand.Parameters.AddWithValue("@module_name", module_name);
+                adapter.SelectCommand.Parameters.AddWithValue("@gpu_series_name", gpu_series_name);
 
                 int cnt = adapter.Fill(dataTable);
 
                 if (cnt == 1)
                 {
                     DataRow dr = dataTable.Rows[0];
-                    module_id = int.Parse(dr[0].ToString());
+                    gpu_series_id = int.Parse(dr[0].ToString());
                 }
             }
-            return module_id;
+            return gpu_series_id;
         }
     }
 }

@@ -79,7 +79,7 @@ namespace 卒業制作
                 txtPrice.Text = goods.price.ToString();
                 lstMaker.Text = makerTable.GetMakerNameById(goods.maker_id);
                 lstMemoryStandards.Text = memoryStandardTable.GetMemoryStandardNameById(goodsMemory.standard_id);
-                lstModule.Text = memoryModuleTable.GetMemoryModuleById(goodsMemory.module_id);
+                lstModule.Text = memoryModuleTable.GetMemoryModuleNameById(goodsMemory.module_id);
                 txtCapacity.Text = goodsMemory.capacity.ToString();
                 txtNumber.Text = goodsMemory.number.ToString();
 

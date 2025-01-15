@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class MemoryModuleTable
+    public class GpuResolutionTable
     {
-        public DataTable GetMemoryModule()
+        public DataTable GetGpuResolution()
         {
             DataTable table = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT * FROM Memory_Module";
+                string sql = "SELECT * FROM GPU_Resolution";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
 
                 adapter.Fill(table);
@@ -24,51 +24,51 @@ namespace ClassLibrary
             return table;
         }
 
-        public string GetMemoryModuleNameById(int module_id)
+        public string GetGpuResolutionNameById(int resolution_id)
         {
-            string module_name = null;
+            string resolution_name = null;
 
             DataTable dataTable = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT module_name FROM Memory_Module WHERE module_id = @module_id";
+                string sql = "SELECT resolution_name FROM GPU_Resolution WHERE resolution_id = @resolution_id";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
-                adapter.SelectCommand.Parameters.AddWithValue("@module_id", module_id);
+                adapter.SelectCommand.Parameters.AddWithValue("@resolution_id", resolution_id);
 
                 int cnt = adapter.Fill(dataTable);
 
                 if (cnt == 1)
                 {
                     DataRow dr = dataTable.Rows[0];
-                    module_name = dr[0].ToString();
+                    resolution_name = dr[0].ToString();
                 }
             }
-            return module_name;
+            return resolution_name;
         }
 
-        public int GetMemoryModuleIdByName(string module_name)
+        public int GetGpuResolutionIdByName(string resolution_name)
         {
-            int module_id = 0;
+            int resolution_id = 0;
 
             DataTable dataTable = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT module_id FROM Memory_Module WHERE module_name = @module_name";
+                string sql = "SELECT resolution_id FROM GPU_Resolution WHERE resolution_name = @resolution_name";
 
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
-                adapter.SelectCommand.Parameters.AddWithValue("@module_name", module_name);
+                adapter.SelectCommand.Parameters.AddWithValue("@resolution_name", resolution_name);
 
                 int cnt = adapter.Fill(dataTable);
 
                 if (cnt == 1)
                 {
                     DataRow dr = dataTable.Rows[0];
-                    module_id = int.Parse(dr[0].ToString());
+                    resolution_id = int.Parse(dr[0].ToString());
                 }
             }
-            return module_id;
+            return resolution_id;
         }
     }
 }
