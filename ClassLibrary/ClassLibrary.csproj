@@ -57,6 +57,8 @@
     <Compile Include="GoodsCpu.cs" />
     <Compile Include="GoodsCpuTable.cs" />
     <Compile Include="GoodsFanTable.cs" />
+    <Compile Include="GoodsGpu.cs" />
+    <Compile Include="GoodsGpuTable.cs" />
     <Compile Include="GoodsHdd.cs" />
     <Compile Include="GoodsHddTable.cs" />
     <Compile Include="GoodsMemory.cs" />
@@ -67,6 +69,7 @@
     <Compile Include="GoodsPowerTable.cs" />
     <Compile Include="GoodsSsd.cs" />
     <Compile Include="GoodsSsdTable.cs" />
+    <Compile Include="GpuInterfaceTable.cs" />
     <Compile Include="GpuResolutionTable.cs" />
     <Compile Include="GpuSeriesTable.cs" />
     <Compile Include="Maker.cs" />

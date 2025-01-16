@@ -214,6 +214,11 @@ namespace 卒業制作
                         break;
                     case 5:
                         frmGoodsGpu frmGoodsGpu = new frmGoodsGpu();
+                        GoodsGpuTable goodsGpuTable = new GoodsGpuTable();
+
+                        frmGoodsGpu.goods = goods;
+
+                        frmGoodsGpu.goodsGpu = goodsGpuTable.GetGoodsGpuById(goods.goods_code);
                         frmGoodsGpu.ShowDialog();
 
                         break;
