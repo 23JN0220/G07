@@ -45,5 +45,76 @@ namespace ClassLibrary
             }
             return goodsMotherBoard;
         }
+
+        public int Insert(GoodsMotherboard goodsMotherboard)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "INSERT INTO Goods_MotherBoard VALUES " +
+                             "(@goods_code, @size, @chipset_series_id, @chipset_id, @socket_id, @pci_number, @m2ssd_standard_id, @m2ssd_number, @sata_number, @lan_standerd_id, @max_number, @standerd_id)";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@goods_code", goodsMotherboard.goods_code);
+                command.Parameters.AddWithValue("@size", goodsMotherboard.size);
+                command.Parameters.AddWithValue("@chipset_series_id", goodsMotherboard.chipset_series_id);
+                command.Parameters.AddWithValue("@chipset_id", goodsMotherboard.chipset_id);
+                command.Parameters.AddWithValue("@socket_id", goodsMotherboard.socket_id);
+                command.Parameters.AddWithValue("@pci_number", goodsMotherboard.pci_number);
+                command.Parameters.AddWithValue("@m2ssd_standard_id", goodsMotherboard.m2ssd_standard_id);
+                command.Parameters.AddWithValue("@m2ssd_number", goodsMotherboard.m2ssd_number);
+                command.Parameters.AddWithValue("@sata_number", goodsMotherboard.sata_number);
+                command.Parameters.AddWithValue("@lan_standerd_id", goodsMotherboard.lan_standerd_id);
+                command.Parameters.AddWithValue("@max_number", goodsMotherboard.max_number);
+                command.Parameters.AddWithValue("@standerd_id", goodsMotherboard.standerd_id);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+
+            return ret;
+        }
+
+        public int Update(GoodsMotherboard goodsMotherboard)
+        {
+            int ret = 0;
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE Goods_MotherBoard SET " +
+                             "size = @size, " +
+                             "chipset_series_id = chipset_series_id, " +
+                             "chipset_id = @chipset_id, " +
+                             "socket_id = @socket_id, " +
+                             "pci_number = @pci_number, " +
+                             "m2ssd_standard_id = @m2ssd_standard_id, " +
+                             "m2ssd_number = @m2ssd_number, " +
+                             "sata_number = @sata_number, " +
+                             "lan_standerd_id = @lan_standerd_id, " +
+                             "max_number = @max_number, " +
+                             "standerd_id = @standerd_id " +
+                             "WHERE goods_code = @goods_code";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@goods_code", goodsMotherboard.goods_code);
+                command.Parameters.AddWithValue("@size", goodsMotherboard.size);
+                command.Parameters.AddWithValue("@chipset_series_id", goodsMotherboard.chipset_series_id);
+                command.Parameters.AddWithValue("@chipset_id", goodsMotherboard.chipset_id);
+                command.Parameters.AddWithValue("@socket_id", goodsMotherboard.socket_id);
+                command.Parameters.AddWithValue("@pci_number", goodsMotherboard.pci_number);
+                command.Parameters.AddWithValue("@m2ssd_standard_id", goodsMotherboard.m2ssd_standard_id);
+                command.Parameters.AddWithValue("@m2ssd_number", goodsMotherboard.m2ssd_number);
+                command.Parameters.AddWithValue("@sata_number", goodsMotherboard.sata_number);
+                command.Parameters.AddWithValue("@lan_standerd_id", goodsMotherboard.lan_standerd_id);
+                command.Parameters.AddWithValue("@max_number", goodsMotherboard.max_number);
+                command.Parameters.AddWithValue("@standerd_id", goodsMotherboard.standerd_id);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+            return ret;
+        }
     }
 }
