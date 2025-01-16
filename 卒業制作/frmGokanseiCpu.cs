@@ -26,5 +26,10 @@ namespace 卒業制作
         {
             this.Close();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
