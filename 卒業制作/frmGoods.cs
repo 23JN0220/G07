@@ -198,6 +198,12 @@ namespace 卒業制作
                         break;
                     case 3:
                         frmGoodsMotherboard frmGoodsMotherboard = new frmGoodsMotherboard();
+                        GoodsMotherboardTable goodsMotherboardTable = new GoodsMotherboardTable();
+
+                        frmGoodsMotherboard.goods = goods;
+
+                        frmGoodsMotherboard.goodsMotherboard = goodsMotherboardTable.GetGoodsMotherboardById(goods.goods_code);
+
                         frmGoodsMotherboard.ShowDialog();
 
                         break;

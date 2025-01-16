@@ -441,6 +441,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoodsMotherboard";
             this.Text = "マザーボード";
+            this.Load += new System.EventHandler(this.frmGoodsMotherboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

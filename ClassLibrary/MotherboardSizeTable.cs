@@ -1,81 +1,74 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class ChipSetSeriesTable
+    public class MotherboardSizeTable
     {
-
-        public DataTable GetChipsetSeries()
+        public DataTable GetMotherboardSize()
         {
-            DataTable table = null;
-            DataTable dataTable = new DataTable();
+            DataTable table = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT * FROM ChipsetSeries";
+                string sql = "SELECT * FROM Motherboard_size";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
 
-                int cnt = adapter.Fill(dataTable);
-
-                if (cnt > 0)
-                {
-                    table = new DataTable();
-                    table = dataTable;
-                }
+                adapter.Fill(table);
             }
             return table;
         }
 
-        public int GetChipSetIdByName(string series_name)
+        public string GetMotherboardSizeNameById(int size_id)
         {
-            int series_id = 0;
+            string size_name = null;
 
             DataTable dataTable = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT series_id FROM ChipsetSeries WHERE series_name = @series_name";
+                string sql = "SELECT size_name FROM Motherboard_size WHERE size_id = @size_id";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
-                adapter.SelectCommand.Parameters.AddWithValue("@series_name", series_name);
+                adapter.SelectCommand.Parameters.AddWithValue("@size_id", size_id);
 
                 int cnt = adapter.Fill(dataTable);
 
                 if (cnt == 1)
                 {
                     DataRow dr = dataTable.Rows[0];
-                    series_id = int.Parse(dr[0].ToString());
+                    size_name = dr[0].ToString();
                 }
             }
-            return series_id;
+            return size_name;
         }
 
-        public string GetChipSetNameById(int series_id)
+        public int GetMotherboardSizeIdByName(string size_name)
         {
-            string series_name = null;
+            int size_id = 0;
+
             DataTable dataTable = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT series_name FROM ChipsetSeries WHERE series_id = @series_id";
+                string sql = "SELECT size_id FROM Motherboard_size WHERE size_name = @size_name";
 
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
-                adapter.SelectCommand.Parameters.AddWithValue("@series_id", series_id);
+                adapter.SelectCommand.Parameters.AddWithValue("@size_name", size_name);
 
                 int cnt = adapter.Fill(dataTable);
 
                 if (cnt == 1)
                 {
                     DataRow dr = dataTable.Rows[0];
-                    series_name = dr[0].ToString();
+                    size_id = int.Parse(dr[0].ToString());
                 }
             }
-            return series_name;
+            return size_id;
         }
     }
 }

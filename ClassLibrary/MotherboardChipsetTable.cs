@@ -1,81 +1,74 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class ChipSetSeriesTable
+    public class MotherboardChipsetTable
     {
-
-        public DataTable GetChipsetSeries()
+        public DataTable GetMotherboardChipset()
         {
-            DataTable table = null;
-            DataTable dataTable = new DataTable();
+            DataTable table = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT * FROM ChipsetSeries";
+                string sql = "SELECT * FROM Motherboard_Chipset";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
 
-                int cnt = adapter.Fill(dataTable);
-
-                if (cnt > 0)
-                {
-                    table = new DataTable();
-                    table = dataTable;
-                }
+                adapter.Fill(table);
             }
             return table;
         }
 
-        public int GetChipSetIdByName(string series_name)
+        public string GetMotherboardChipsetNameById(int chipset_id)
         {
-            int series_id = 0;
+            string chipset_name = null;
 
             DataTable dataTable = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT series_id FROM ChipsetSeries WHERE series_name = @series_name";
+                string sql = "SELECT chipset_name FROM Motherboard_Chipset WHERE chipset_id = @chipset_id";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
-                adapter.SelectCommand.Parameters.AddWithValue("@series_name", series_name);
+                adapter.SelectCommand.Parameters.AddWithValue("@chipset_id", chipset_id);
 
                 int cnt = adapter.Fill(dataTable);
 
                 if (cnt == 1)
                 {
                     DataRow dr = dataTable.Rows[0];
-                    series_id = int.Parse(dr[0].ToString());
+                    chipset_name = dr[0].ToString();
                 }
             }
-            return series_id;
+            return chipset_name;
         }
 
-        public string GetChipSetNameById(int series_id)
+        public int GetMotherboardChipsetIdByName(string chipset_name)
         {
-            string series_name = null;
+            int chipset_id = 0;
+
             DataTable dataTable = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT series_name FROM ChipsetSeries WHERE series_id = @series_id";
+                string sql = "SELECT chipset_id FROM Motherboard_Chipset WHERE chipset_name = @chipset_name";
 
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
-                adapter.SelectCommand.Parameters.AddWithValue("@series_id", series_id);
+                adapter.SelectCommand.Parameters.AddWithValue("@chipset_name", chipset_name);
 
                 int cnt = adapter.Fill(dataTable);
 
                 if (cnt == 1)
                 {
                     DataRow dr = dataTable.Rows[0];
-                    series_name = dr[0].ToString();
+                    chipset_id = int.Parse(dr[0].ToString());
                 }
             }
-            return series_name;
+            return chipset_id;
         }
     }
 }

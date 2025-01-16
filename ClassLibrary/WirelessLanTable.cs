@@ -1,81 +1,74 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class ChipSetSeriesTable
+    public class WirelessLanTable
     {
-
-        public DataTable GetChipsetSeries()
+        public DataTable GetWirelessLan()
         {
-            DataTable table = null;
-            DataTable dataTable = new DataTable();
+            DataTable table = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT * FROM ChipsetSeries";
+                string sql = "SELECT * FROM Wireless_LAN";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
 
-                int cnt = adapter.Fill(dataTable);
-
-                if (cnt > 0)
-                {
-                    table = new DataTable();
-                    table = dataTable;
-                }
+                adapter.Fill(table);
             }
             return table;
         }
 
-        public int GetChipSetIdByName(string series_name)
+        public string GetWirelessLanNameById(int lan_id)
         {
-            int series_id = 0;
+            string lan_name = null;
 
             DataTable dataTable = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT series_id FROM ChipsetSeries WHERE series_name = @series_name";
+                string sql = "SELECT lan_name FROM Wireless_LAN WHERE lan_id = @lan_id";
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
-                adapter.SelectCommand.Parameters.AddWithValue("@series_name", series_name);
+                adapter.SelectCommand.Parameters.AddWithValue("@lan_id", lan_id);
 
                 int cnt = adapter.Fill(dataTable);
 
                 if (cnt == 1)
                 {
                     DataRow dr = dataTable.Rows[0];
-                    series_id = int.Parse(dr[0].ToString());
+                    lan_name = dr[0].ToString();
                 }
             }
-            return series_id;
+            return lan_name;
         }
 
-        public string GetChipSetNameById(int series_id)
+        public int GetWirelessLanIdByName(string lan_name)
         {
-            string series_name = null;
+            int lan_id = 0;
+
             DataTable dataTable = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "SELECT series_name FROM ChipsetSeries WHERE series_id = @series_id";
+                string sql = "SELECT lan_id FROM Wireless_LAN WHERE lan_name = @lan_name";
 
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
-                adapter.SelectCommand.Parameters.AddWithValue("@series_id", series_id);
+                adapter.SelectCommand.Parameters.AddWithValue("@lan_name", lan_name);
 
                 int cnt = adapter.Fill(dataTable);
 
                 if (cnt == 1)
                 {
                     DataRow dr = dataTable.Rows[0];
-                    series_name = dr[0].ToString();
+                    lan_id = int.Parse(dr[0].ToString());
                 }
             }
-            return series_name;
+            return lan_id;
         }
     }
 }

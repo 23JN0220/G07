@@ -14,7 +14,7 @@ namespace 卒業制作
     public partial class frmGoodsMotherboard : Form
     {
         public Goods goods;
-
+        public GoodsMotherboard goodsMotherboard;
 
         public bool changedPic = false;
         public string format = null;
@@ -46,6 +46,75 @@ namespace 卒業制作
 
                 changedPic = true;
             }
+        }
+
+        private void frmGoodsMotherboard_Load(object sender, EventArgs e)
+        {
+            MakerTable makerTable = new MakerTable();
+            MotherboardSizeTable motherboardSizeTable = new MotherboardSizeTable();
+            ChipSetSeriesTable chipsetSeriesTable = new ChipSetSeriesTable();
+            MotherboardChipsetTable motherboardChipsetTable = new MotherboardChipsetTable();
+            CpuSocketTable socketTable = new CpuSocketTable();
+            SsdStandardTable ssdStandardTable = new SsdStandardTable();
+            WirelessLanTable wirelessLanTable = new WirelessLanTable();
+            MemoryStandardTable memoryStandardTable = new MemoryStandardTable();
+
+            DataTable table = makerTable.GetMaker();
+
+            foreach (DataRow dr in table.Rows)
+            {
+                lstMaker.Items.Add(dr[1].ToString());
+            }
+
+            table = motherboardSizeTable.GetMotherboardSize();
+
+            foreach (DataRow dr in table.Rows)
+            {
+                lstSize.Items.Add(dr[1].ToString());
+            }
+
+            table = chipsetSeriesTable.GetChipsetSeries();
+
+            foreach (DataRow dr in table.Rows)
+            {
+                lstChipSetSeries.Items.Add(dr[1].ToString());
+            }
+
+            table = motherboardChipsetTable.GetMotherboardChipset();
+
+            foreach (DataRow dr in table.Rows)
+            {
+                lstChipSet.Items.Add(dr[1].ToString());
+            }
+
+            table = socketTable.GetCPUSocket();
+
+            foreach (DataRow dr in table.Rows)
+            {
+                lstSocket.Items.Add(dr[1].ToString());
+            }
+
+            table = ssdStandardTable.GetSsdStandard();
+
+            foreach (DataRow dr in table.Rows)
+            {
+                lstM2ssdsStandard.Items.Add(dr[1].ToString());
+            }
+
+            table = wirelessLanTable.GetWirelessLan();
+
+            foreach (DataRow dr in table.Rows)
+            {
+                lstLan.Items.Add(dr[1].ToString());
+            }
+
+            table = memoryStandardTable.GetMemoryStandard();
+
+            foreach (DataRow dr in table.Rows)
+            {
+                lstMemoryStandard.Items.Add(dr[1].ToString());
+            }
+
         }
     }
 }
