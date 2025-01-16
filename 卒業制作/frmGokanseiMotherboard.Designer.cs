@@ -58,117 +58,129 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label1.Location = new System.Drawing.Point(20, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 16);
+            this.label1.Size = new System.Drawing.Size(98, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "チップセット";
             // 
             // lstChipset
             // 
+            this.lstChipset.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lstChipset.FormattingEnabled = true;
-            this.lstChipset.ItemHeight = 16;
+            this.lstChipset.ItemHeight = 21;
             this.lstChipset.Location = new System.Drawing.Point(24, 50);
             this.lstChipset.Margin = new System.Windows.Forms.Padding(2);
             this.lstChipset.Name = "lstChipset";
-            this.lstChipset.Size = new System.Drawing.Size(99, 68);
+            this.lstChipset.Size = new System.Drawing.Size(155, 67);
             this.lstChipset.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label2.Location = new System.Drawing.Point(20, 136);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 16);
+            this.label2.Size = new System.Drawing.Size(62, 21);
             this.label2.TabIndex = 2;
             this.label2.Text = "大きさ";
             // 
             // txtChipset
             // 
+            this.txtChipset.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txtChipset.Location = new System.Drawing.Point(250, 50);
             this.txtChipset.Margin = new System.Windows.Forms.Padding(2);
             this.txtChipset.Name = "txtChipset";
             this.txtChipset.ReadOnly = true;
-            this.txtChipset.Size = new System.Drawing.Size(225, 23);
+            this.txtChipset.Size = new System.Drawing.Size(225, 28);
             this.txtChipset.TabIndex = 3;
             // 
             // btnCadd
             // 
+            this.btnCadd.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnCadd.Location = new System.Drawing.Point(250, 85);
             this.btnCadd.Margin = new System.Windows.Forms.Padding(2);
             this.btnCadd.Name = "btnCadd";
-            this.btnCadd.Size = new System.Drawing.Size(61, 33);
+            this.btnCadd.Size = new System.Drawing.Size(61, 39);
             this.btnCadd.TabIndex = 4;
             this.btnCadd.Text = "追加";
             this.btnCadd.UseVisualStyleBackColor = true;
             // 
             // btnCchange
             // 
+            this.btnCchange.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnCchange.Location = new System.Drawing.Point(327, 85);
             this.btnCchange.Margin = new System.Windows.Forms.Padding(2);
             this.btnCchange.Name = "btnCchange";
-            this.btnCchange.Size = new System.Drawing.Size(61, 33);
+            this.btnCchange.Size = new System.Drawing.Size(61, 39);
             this.btnCchange.TabIndex = 5;
             this.btnCchange.Text = "変更";
             this.btnCchange.UseVisualStyleBackColor = true;
             // 
             // btnCdelete
             // 
+            this.btnCdelete.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnCdelete.Location = new System.Drawing.Point(413, 85);
             this.btnCdelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnCdelete.Name = "btnCdelete";
-            this.btnCdelete.Size = new System.Drawing.Size(61, 33);
+            this.btnCdelete.Size = new System.Drawing.Size(61, 39);
             this.btnCdelete.TabIndex = 6;
             this.btnCdelete.Text = "削除";
             this.btnCdelete.UseVisualStyleBackColor = true;
             // 
             // lstSize
             // 
+            this.lstSize.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lstSize.FormattingEnabled = true;
-            this.lstSize.ItemHeight = 16;
+            this.lstSize.ItemHeight = 21;
             this.lstSize.Location = new System.Drawing.Point(24, 162);
             this.lstSize.Margin = new System.Windows.Forms.Padding(2);
             this.lstSize.Name = "lstSize";
-            this.lstSize.Size = new System.Drawing.Size(99, 68);
+            this.lstSize.Size = new System.Drawing.Size(155, 67);
             this.lstSize.TabIndex = 7;
             // 
             // txtSize
             // 
+            this.txtSize.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txtSize.Location = new System.Drawing.Point(250, 162);
             this.txtSize.Margin = new System.Windows.Forms.Padding(2);
             this.txtSize.Name = "txtSize";
             this.txtSize.ReadOnly = true;
-            this.txtSize.Size = new System.Drawing.Size(225, 23);
+            this.txtSize.Size = new System.Drawing.Size(225, 28);
             this.txtSize.TabIndex = 8;
             // 
             // btnSadd
             // 
+            this.btnSadd.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnSadd.Location = new System.Drawing.Point(250, 201);
             this.btnSadd.Margin = new System.Windows.Forms.Padding(2);
             this.btnSadd.Name = "btnSadd";
-            this.btnSadd.Size = new System.Drawing.Size(61, 29);
+            this.btnSadd.Size = new System.Drawing.Size(61, 38);
             this.btnSadd.TabIndex = 9;
             this.btnSadd.Text = "追加";
             this.btnSadd.UseVisualStyleBackColor = true;
             // 
             // btnSchange
             // 
+            this.btnSchange.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnSchange.Location = new System.Drawing.Point(327, 201);
             this.btnSchange.Margin = new System.Windows.Forms.Padding(2);
             this.btnSchange.Name = "btnSchange";
-            this.btnSchange.Size = new System.Drawing.Size(61, 29);
+            this.btnSchange.Size = new System.Drawing.Size(61, 38);
             this.btnSchange.TabIndex = 10;
             this.btnSchange.Text = "変更";
             this.btnSchange.UseVisualStyleBackColor = true;
             // 
             // btnSdelete
             // 
+            this.btnSdelete.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnSdelete.Location = new System.Drawing.Point(413, 201);
             this.btnSdelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnSdelete.Name = "btnSdelete";
-            this.btnSdelete.Size = new System.Drawing.Size(61, 29);
+            this.btnSdelete.Size = new System.Drawing.Size(61, 38);
             this.btnSdelete.TabIndex = 11;
             this.btnSdelete.Text = "削除";
             this.btnSdelete.UseVisualStyleBackColor = true;
@@ -176,35 +188,39 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label3.Location = new System.Drawing.Point(20, 256);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 16);
+            this.label3.Size = new System.Drawing.Size(148, 21);
             this.label3.TabIndex = 12;
             this.label3.Text = "無線LANの規格";
             // 
             // lstSpec
             // 
+            this.lstSpec.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lstSpec.FormattingEnabled = true;
-            this.lstSpec.ItemHeight = 16;
+            this.lstSpec.ItemHeight = 21;
             this.lstSpec.Location = new System.Drawing.Point(24, 293);
             this.lstSpec.Margin = new System.Windows.Forms.Padding(2);
             this.lstSpec.Name = "lstSpec";
-            this.lstSpec.Size = new System.Drawing.Size(99, 68);
+            this.lstSpec.Size = new System.Drawing.Size(144, 67);
             this.lstSpec.TabIndex = 13;
             // 
             // txtSpec
             // 
+            this.txtSpec.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txtSpec.Location = new System.Drawing.Point(250, 293);
             this.txtSpec.Margin = new System.Windows.Forms.Padding(2);
             this.txtSpec.Name = "txtSpec";
             this.txtSpec.ReadOnly = true;
-            this.txtSpec.Size = new System.Drawing.Size(225, 23);
+            this.txtSpec.Size = new System.Drawing.Size(225, 28);
             this.txtSpec.TabIndex = 14;
             // 
             // btnSpAdd
             // 
-            this.btnSpAdd.Location = new System.Drawing.Point(250, 326);
+            this.btnSpAdd.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnSpAdd.Location = new System.Drawing.Point(250, 325);
             this.btnSpAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnSpAdd.Name = "btnSpAdd";
             this.btnSpAdd.Size = new System.Drawing.Size(61, 35);
@@ -214,6 +230,7 @@
             // 
             // btnSpChange
             // 
+            this.btnSpChange.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnSpChange.Location = new System.Drawing.Point(327, 326);
             this.btnSpChange.Margin = new System.Windows.Forms.Padding(2);
             this.btnSpChange.Name = "btnSpChange";
@@ -224,6 +241,7 @@
             // 
             // btnSpDelete
             // 
+            this.btnSpDelete.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnSpDelete.Location = new System.Drawing.Point(413, 326);
             this.btnSpDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnSpDelete.Name = "btnSpDelete";
@@ -245,6 +263,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label5.Location = new System.Drawing.Point(21, 418);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(426, 16);

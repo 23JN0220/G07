@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CaseFanSizeTable.cs" />
+    <Compile Include="GoodsCase.cs" />
     <Compile Include="GoodsFan.cs" />
     <Compile Include="CategoryGroupTable.cs" />
     <Compile Include="CategoryGroup.cs" />
