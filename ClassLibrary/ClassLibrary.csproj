@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CaseFanSizeTable.cs" />
+    <Compile Include="MotherboardChipsetTable.cs" />
     <Compile Include="GoodsFan.cs" />
     <Compile Include="CategoryGroupTable.cs" />
     <Compile Include="CategoryGroup.cs" />
@@ -63,6 +64,8 @@
     <Compile Include="GoodsHddTable.cs" />
     <Compile Include="GoodsMemory.cs" />
     <Compile Include="GoodsMemoryTable.cs" />
+    <Compile Include="GoodsMotherboard.cs" />
+    <Compile Include="GoodsMotherboardTable.cs" />
     <Compile Include="GoodsOs.cs" />
     <Compile Include="GoodsOsTable.cs" />
     <Compile Include="GoodsPower.cs" />
@@ -78,6 +81,7 @@
     <Compile Include="MakerTable.cs" />
     <Compile Include="MemoryModuleTable.cs" />
     <Compile Include="MemoryStandardTable.cs" />
+    <Compile Include="MotherboardSizeTable.cs" />
     <Compile Include="OrderDetail.cs" />
     <Compile Include="OrderDetailTable.cs" />
     <Compile Include="OsVersionTable.cs" />
@@ -102,6 +106,7 @@
     <Compile Include="SsdStandardTable.cs" />
     <Compile Include="SsdType.cs" />
     <Compile Include="SsdTypeTable.cs" />
+    <Compile Include="WirelessLanTable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
