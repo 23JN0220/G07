@@ -22,8 +22,8 @@ namespace ClassLibrary
         public int Depth { get; set; }
         public int height { get; set; }
         public string  color { get; set; }
-        public int lowpro {  get; set; }
-        public int water_cooling { get; set; }
+        public bool lowpro {  get; set; }
+        public bool water_cooling { get; set; }
 
     }
 }
