@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CaseFanSizeTable.cs" />
+    <Compile Include="CaseMotherboardSizeTable.cs" />
     <Compile Include="GoodsCase.cs" />
     <Compile Include="GoodsCaseTable.cs" />
     <Compile Include="MotherboardChipsetTable.cs" />

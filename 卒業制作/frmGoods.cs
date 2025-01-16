@@ -260,6 +260,11 @@ namespace 卒業制作
                         break;
                     case 9:
                         frmGoodsCase frmGoodsCase = new frmGoodsCase();
+                        GoodsCaseTable goodsCaseTable = new GoodsCaseTable();
+
+                        frmGoodsCase.goods = goods;
+
+                        frmGoodsCase.goodsCase = goodsCaseTable.GetGoodsCaseById(goods.goods_code);
                         frmGoodsCase.ShowDialog();
 
                         break;

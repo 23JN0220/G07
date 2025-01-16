@@ -19,7 +19,7 @@ namespace ClassLibrary
         public int slot_number { get; set; }
         public int power_size_id { get; set; }
         public int width {  get; set; }
-        public int Depth { get; set; }
+        public int depth { get; set; }
         public int height { get; set; }
         public string  color { get; set; }
         public bool lowpro {  get; set; }

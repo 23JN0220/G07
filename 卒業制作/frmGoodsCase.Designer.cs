@@ -44,23 +44,23 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lstMaker = new System.Windows.Forms.ComboBox();
-            this.listUnit = new System.Windows.Forms.ComboBox();
-            this.listCaseFan = new System.Windows.Forms.ComboBox();
+            this.lstUnit = new System.Windows.Forms.ComboBox();
+            this.lstCaseFan = new System.Windows.Forms.ComboBox();
             this.txtCaseNumber = new System.Windows.Forms.TextBox();
             this.txtSlotNumber = new System.Windows.Forms.TextBox();
-            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.txtDepth = new System.Windows.Forms.TextBox();
             this.txtMaxGpu = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtBayNumber = new System.Windows.Forms.TextBox();
             this.txt3ShadowBayNumber = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt2ShadowBayNumber = new System.Windows.Forms.TextBox();
+            this.txtHeight = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtColor = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtWidth = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.chkLowPro = new System.Windows.Forms.CheckBox();
@@ -220,23 +220,23 @@
             this.lstMaker.Size = new System.Drawing.Size(399, 29);
             this.lstMaker.TabIndex = 2;
             // 
-            // listUnit
+            // lstUnit
             // 
-            this.listUnit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.listUnit.FormattingEnabled = true;
-            this.listUnit.Location = new System.Drawing.Point(570, 355);
-            this.listUnit.Name = "listUnit";
-            this.listUnit.Size = new System.Drawing.Size(399, 29);
-            this.listUnit.TabIndex = 11;
+            this.lstUnit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstUnit.FormattingEnabled = true;
+            this.lstUnit.Location = new System.Drawing.Point(570, 355);
+            this.lstUnit.Name = "lstUnit";
+            this.lstUnit.Size = new System.Drawing.Size(399, 29);
+            this.lstUnit.TabIndex = 11;
             // 
-            // listCaseFan
+            // lstCaseFan
             // 
-            this.listCaseFan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.listCaseFan.FormattingEnabled = true;
-            this.listCaseFan.Location = new System.Drawing.Point(570, 252);
-            this.listCaseFan.Name = "listCaseFan";
-            this.listCaseFan.Size = new System.Drawing.Size(399, 29);
-            this.listCaseFan.TabIndex = 8;
+            this.lstCaseFan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstCaseFan.FormattingEnabled = true;
+            this.lstCaseFan.Location = new System.Drawing.Point(570, 252);
+            this.lstCaseFan.Name = "lstCaseFan";
+            this.lstCaseFan.Size = new System.Drawing.Size(399, 29);
+            this.lstCaseFan.TabIndex = 8;
             // 
             // txtCaseNumber
             // 
@@ -252,12 +252,12 @@
             this.txtSlotNumber.Size = new System.Drawing.Size(399, 28);
             this.txtSlotNumber.TabIndex = 10;
             // 
-            // txtPrice
+            // txtDepth
             // 
-            this.txtPrice.Location = new System.Drawing.Point(570, 424);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(399, 28);
-            this.txtPrice.TabIndex = 14;
+            this.txtDepth.Location = new System.Drawing.Point(570, 424);
+            this.txtDepth.Name = "txtDepth";
+            this.txtDepth.Size = new System.Drawing.Size(399, 28);
+            this.txtDepth.TabIndex = 14;
             // 
             // txtMaxGpu
             // 
@@ -295,19 +295,19 @@
             this.txt3ShadowBayNumber.Size = new System.Drawing.Size(399, 28);
             this.txt3ShadowBayNumber.TabIndex = 5;
             // 
-            // textBox1
+            // txt2ShadowBayNumber
             // 
-            this.textBox1.Location = new System.Drawing.Point(570, 184);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(399, 28);
-            this.textBox1.TabIndex = 6;
+            this.txt2ShadowBayNumber.Location = new System.Drawing.Point(570, 184);
+            this.txt2ShadowBayNumber.Name = "txt2ShadowBayNumber";
+            this.txt2ShadowBayNumber.Size = new System.Drawing.Size(399, 28);
+            this.txt2ShadowBayNumber.TabIndex = 6;
             // 
-            // textBox2
+            // txtHeight
             // 
-            this.textBox2.Location = new System.Drawing.Point(570, 458);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(399, 28);
-            this.textBox2.TabIndex = 15;
+            this.txtHeight.Location = new System.Drawing.Point(570, 458);
+            this.txtHeight.Name = "txtHeight";
+            this.txtHeight.Size = new System.Drawing.Size(399, 28);
+            this.txtHeight.TabIndex = 15;
             // 
             // label16
             // 
@@ -318,12 +318,12 @@
             this.label16.TabIndex = 77;
             this.label16.Text = "サイズ(高さ)";
             // 
-            // textBox3
+            // txtColor
             // 
-            this.textBox3.Location = new System.Drawing.Point(570, 492);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(399, 28);
-            this.textBox3.TabIndex = 16;
+            this.txtColor.Location = new System.Drawing.Point(570, 492);
+            this.txtColor.Name = "txtColor";
+            this.txtColor.Size = new System.Drawing.Size(399, 28);
+            this.txtColor.TabIndex = 16;
             // 
             // label18
             // 
@@ -334,19 +334,19 @@
             this.label18.TabIndex = 77;
             this.label18.Text = "カラー";
             // 
-            // textBox5
+            // txtWidth
             // 
-            this.textBox5.Location = new System.Drawing.Point(570, 390);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(399, 28);
-            this.textBox5.TabIndex = 13;
+            this.txtWidth.Location = new System.Drawing.Point(570, 390);
+            this.txtWidth.Name = "txtWidth";
+            this.txtWidth.Size = new System.Drawing.Size(399, 28);
+            this.txtWidth.TabIndex = 13;
             // 
-            // textBox6
+            // txtPrice
             // 
-            this.textBox6.Location = new System.Drawing.Point(570, 557);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(399, 28);
-            this.textBox6.TabIndex = 19;
+            this.txtPrice.Location = new System.Drawing.Point(570, 557);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(399, 28);
+            this.txtPrice.TabIndex = 19;
             // 
             // label15
             // 
@@ -430,6 +430,7 @@
             this.btnMotherboard.TabIndex = 3;
             this.btnMotherboard.Text = "選択画面へ";
             this.btnMotherboard.UseVisualStyleBackColor = true;
+            this.btnMotherboard.Click += new System.EventHandler(this.btnMotherboard_Click);
             // 
             // btnPicture
             // 
@@ -454,7 +455,7 @@
             this.Controls.Add(this.btnMotherboard);
             this.Controls.Add(this.chkWaterCooler);
             this.Controls.Add(this.chkLowPro);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtWidth);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
@@ -479,15 +480,15 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstMaker);
-            this.Controls.Add(this.listUnit);
-            this.Controls.Add(this.listCaseFan);
+            this.Controls.Add(this.lstUnit);
+            this.Controls.Add(this.lstCaseFan);
             this.Controls.Add(this.txtCaseNumber);
             this.Controls.Add(this.txtSlotNumber);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.txtPrice);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtColor);
+            this.Controls.Add(this.txtHeight);
+            this.Controls.Add(this.txtDepth);
+            this.Controls.Add(this.txt2ShadowBayNumber);
             this.Controls.Add(this.txt3ShadowBayNumber);
             this.Controls.Add(this.txtBayNumber);
             this.Controls.Add(this.txtMaxGpu);
@@ -497,6 +498,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoodsCase";
             this.Text = "PCケース";
+            this.Load += new System.EventHandler(this.frmGoodsCase_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -520,23 +522,23 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox lstMaker;
-        private System.Windows.Forms.ComboBox listUnit;
-        private System.Windows.Forms.ComboBox listCaseFan;
+        private System.Windows.Forms.ComboBox lstUnit;
+        private System.Windows.Forms.ComboBox lstCaseFan;
         private System.Windows.Forms.TextBox txtCaseNumber;
         private System.Windows.Forms.TextBox txtSlotNumber;
-        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.TextBox txtDepth;
         private System.Windows.Forms.TextBox txtMaxGpu;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtBayNumber;
         private System.Windows.Forms.TextBox txt3ShadowBayNumber;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt2ShadowBayNumber;
+        private System.Windows.Forms.TextBox txtHeight;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtColor;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtWidth;
+        private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.CheckBox chkLowPro;

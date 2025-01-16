@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmGoodsGokanseiMotherBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGoodsGokanseiMotherBoard.Designer.cs">
+      <DependentUpon>frmGoodsGokanseiMotherBoard.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGoodsGokanseiSocket.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -255,6 +261,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmGoodsGokanseiMotherBoard.resx">
+      <DependentUpon>frmGoodsGokanseiMotherBoard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGoodsGokanseiSocket.resx">
       <DependentUpon>frmGoodsGokanseiSocket.cs</DependentUpon>
     </EmbeddedResource>
