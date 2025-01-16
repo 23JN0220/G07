@@ -53,13 +53,54 @@ namespace ClassLibrary
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "DELETE FROM Member WHERE member_id = @member_id";
+                string sql1 = "DELETE FROM Cart WHERE member_id = @member_id";
 
-                SqlCommand command = new SqlCommand(sql, connection);
-                command.Parameters.AddWithValue("@member_id", member_id);
-
+                SqlCommand command1 = new SqlCommand(sql1, connection);
+                command1.Parameters.AddWithValue("@member_id", member_id);
                 connection.Open();
-                ret = command.ExecuteNonQuery();
+                command1.ExecuteNonQuery();
+
+                string sql2 = "DELETE FROM Review WHERE member_id = @member_id";
+
+                SqlCommand command2 = new SqlCommand(sql2, connection);
+                command2.Parameters.AddWithValue("@member_id", member_id);
+               
+                command2.ExecuteNonQuery();
+
+                string sql3 = "DELETE FROM Bookmark WHERE member_id = @member_id";
+
+                SqlCommand command3 = new SqlCommand(sql3, connection);
+                command3.Parameters.AddWithValue("@member_id", member_id);
+               
+                command3.ExecuteNonQuery();
+
+                string sql4 = "DELETE FROM Composition WHERE member_id = @member_id";
+
+                SqlCommand command4 = new SqlCommand(sql4, connection);
+                command4.Parameters.AddWithValue("@member_id", member_id);
+              
+                command4.ExecuteNonQuery();
+
+                string sql5 = "DELETE FROM Order_Detail WHERE order_id = (SELECT order_id FROM Goods_Order  WHERE member_id = @member_id)";
+
+                SqlCommand command5 = new SqlCommand(sql5, connection);
+                command5.Parameters.AddWithValue("@member_id", member_id);
+                
+                command5.ExecuteNonQuery();
+
+                string sql6 = "DELETE FROM Goods_Order WHERE member_id = @member_id";
+
+                SqlCommand command6 = new SqlCommand(sql6, connection);
+                command6.Parameters.AddWithValue("@member_id", member_id);
+              
+                command6.ExecuteNonQuery();
+
+                string sql7 = "DELETE FROM Member WHERE member_id = @member_id";
+                
+                SqlCommand command7 = new SqlCommand(sql7, connection);
+                command7.Parameters.AddWithValue("@member_id", member_id);
+               
+                ret = command7.ExecuteNonQuery();
 
             }
             return ret;
