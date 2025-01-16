@@ -45,5 +45,114 @@ namespace ClassLibrary
             }
             return goodsGpu;
         }
+
+        public int Insert(GoodsGpu goodsGpu)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "INSERT INTO Goods_Gpu VALUES " +
+                             "(@goods_code, @series_id, @memory_size, @cuda, @width, @interface_id, @hdmi_port, " +
+                             "@dp_port, @lowpro, @max_output, @resolution_id, @auxiliary, @slot)";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@goods_code", goodsGpu.goods_code);
+                command.Parameters.AddWithValue("@series_id", goodsGpu.series_id);
+                command.Parameters.AddWithValue("@memory_size", goodsGpu.memory_size);
+                command.Parameters.AddWithValue("@cuda", goodsGpu.cuda);
+                command.Parameters.AddWithValue("@width", goodsGpu.width);
+                command.Parameters.AddWithValue("@interface_id", goodsGpu.interface_id);
+                command.Parameters.AddWithValue("@hdmi_port", goodsGpu.hdmi_port);
+                command.Parameters.AddWithValue("@dp_port", goodsGpu.dp_port);
+                command.Parameters.AddWithValue("@max_output", goodsGpu.max_output);
+                command.Parameters.AddWithValue("@resolution_id", goodsGpu.resolution_id);
+                command.Parameters.AddWithValue("@slot", goodsGpu.slot);
+
+                if (goodsGpu.lowpro)
+                {
+                    command.Parameters.AddWithValue("@lowpro", 1);
+                }
+                else
+                {
+                    command.Parameters.AddWithValue("@lowpro", 0);
+                }
+
+                if (goodsGpu.auxiliary)
+                {
+                    command.Parameters.AddWithValue("@auxiliary", 1);
+                }
+                else
+                {
+                    command.Parameters.AddWithValue("@auxiliary", 0);
+                }
+
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+
+            return ret;
+        }
+
+        public int Update(GoodsGpu goodsGpu)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE Goods_Gpu SET " +
+                             "series_id = @series_id, " +
+                             "memory_size = @memory_size, " +
+                             "cuda = @cuda, " +
+                             "width = @width, " +
+                             "interface_id = @interface_id, " +
+                             "hdmi_port = @hdmi_port, " +
+                             "dp_port = @dp_port, " +
+                             "lowpro = @lowpro, " +
+                             "max_output = @max_output, " +
+                             "resolution_id = @resolution_id, " +
+                             "auxiliary = @auxiliary, " +
+                             "slot = @slot " +
+                             "WHERE goods_code = @goods_code";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@goods_code", goodsGpu.goods_code);
+                command.Parameters.AddWithValue("@series_id", goodsGpu.series_id);
+                command.Parameters.AddWithValue("@memory_size", goodsGpu.memory_size);
+                command.Parameters.AddWithValue("@cuda", goodsGpu.cuda);
+                command.Parameters.AddWithValue("@width", goodsGpu.width);
+                command.Parameters.AddWithValue("@interface_id", goodsGpu.interface_id);
+                command.Parameters.AddWithValue("@hdmi_port", goodsGpu.hdmi_port);
+                command.Parameters.AddWithValue("@dp_port", goodsGpu.dp_port);
+                command.Parameters.AddWithValue("@max_output", goodsGpu.max_output);
+                command.Parameters.AddWithValue("@resolution_id", goodsGpu.resolution_id);
+                command.Parameters.AddWithValue("@slot", goodsGpu.slot);
+                if (goodsGpu.lowpro)
+                {
+                    command.Parameters.AddWithValue("@lowpro", 1);
+                }
+                else
+                {
+                    command.Parameters.AddWithValue("@lowpro", 0);
+                }
+
+                if (goodsGpu.auxiliary)
+                {
+                    command.Parameters.AddWithValue("@auxiliary", 1);
+                }
+                else
+                {
+                    command.Parameters.AddWithValue("@auxiliary", 0);
+                }
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+
+            return ret;
+        }
     }
 }
