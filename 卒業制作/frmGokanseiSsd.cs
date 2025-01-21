@@ -192,7 +192,7 @@ namespace 卒業制作
                 }
                 else
                 {
-                    FrmGokanseiWarning frmGokanseiWarning = new FrmGokanseiWarning();
+                    frmGokanseiWarning frmGokanseiWarning = new frmGokanseiWarning();
                     frmGokanseiWarning.dataTable = dataTable;
 
                     frmGokanseiWarning.ShowDialog();
@@ -320,7 +320,7 @@ namespace 卒業制作
                 }
                 else
                 {
-                    FrmGokanseiWarning frmGokanseiWarning = new FrmGokanseiWarning();
+                    frmGokanseiWarning frmGokanseiWarning = new frmGokanseiWarning();
                     frmGokanseiWarning.dataTable = dataTable;
                     frmGokanseiWarning.ShowDialog();
                 }
@@ -448,7 +448,7 @@ namespace 卒業制作
                 }
                 else
                 {
-                    FrmGokanseiWarning frmGokanseiWarning = new FrmGokanseiWarning();
+                    frmGokanseiWarning frmGokanseiWarning = new frmGokanseiWarning();
                     frmGokanseiWarning.dataTable = dataTable;
 
                     frmGokanseiWarning.ShowDialog();

@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace 卒業制作
 {
-    public partial class FrmGokanseiWarning : Form
+    public partial class frmGokanseiWarning : Form
     {
         public DataTable dataTable;
 
-        public FrmGokanseiWarning()
+        public frmGokanseiWarning()
         {
             InitializeComponent();
         }

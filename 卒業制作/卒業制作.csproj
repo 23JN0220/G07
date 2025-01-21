@@ -61,11 +61,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmGokanseiWarning.cs">
+    <Compile Include="frmGokanseiWarning.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmGokanseiWarning.Designer.cs">
-      <DependentUpon>FrmGokanseiWarning.cs</DependentUpon>
+    <Compile Include="frmGokanseiWarning.Designer.cs">
+      <DependentUpon>frmGokanseiWarning.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGoodsGokanseiMotherBoard.cs">
       <SubType>Form</SubType>
@@ -267,8 +267,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmGokanseiWarning.resx">
-      <DependentUpon>FrmGokanseiWarning.cs</DependentUpon>
+    <EmbeddedResource Include="frmGokanseiWarning.resx">
+      <DependentUpon>frmGokanseiWarning.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGoodsGokanseiMotherBoard.resx">
       <DependentUpon>frmGoodsGokanseiMotherBoard.cs</DependentUpon>
