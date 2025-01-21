@@ -1,30 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\",
+  "WorkspaceRootPath": "C:\\Users\\23jn0204\\source\\Repos2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\classlibrary\\goodstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\goodstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0204\\source\\repos2\\\u5352\u696D\u5236\u4F5C\\frmgokanseimotherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseimotherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\\u5352\u696D\u5236\u4F5C\\frmgoods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgoods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0204\\source\\repos2\\\u5352\u696D\u5236\u4F5C\\frmgokanseimotherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseimotherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmgoodscase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgoodscase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0204\\source\\repos2\\classlibrary\\motherboardsizetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\motherboardsizetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmgoodscooler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgoodscooler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0204\\source\\repos2\\classlibrary\\motherboardchipsettable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\motherboardchipsettable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmgoodscase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgoodscase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0204\\source\\repos2\\\u5352\u696D\u5236\u4F5C\\frmgokanseissd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseissd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\classlibrary\\casemotherboardsizetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\casemotherboardsizetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0204\\source\\repos2\\classlibrary\\wirelesslantable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\wirelesslantable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0204\\source\\repos2\\classlibrary\\coolertypetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\coolertypetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0204\\source\\repos2\\\u5352\u696D\u5236\u4F5C\\frmgokanseissd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseissd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,35 +42,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 25,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WirelessLanTable.cs",
+              "DocumentMoniker": "C:\\Users\\23jn0204\\source\\Repos2\\ClassLibrary\\WirelessLanTable.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\WirelessLanTable.cs",
+              "ToolTip": "C:\\Users\\23jn0204\\source\\Repos2\\ClassLibrary\\WirelessLanTable.cs",
+              "RelativeToolTip": "ClassLibrary\\WirelessLanTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:47:37.627Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MotherboardChipsetTable.cs",
+              "DocumentMoniker": "C:\\Users\\23jn0204\\source\\Repos2\\ClassLibrary\\MotherboardChipsetTable.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\MotherboardChipsetTable.cs",
+              "ToolTip": "C:\\Users\\23jn0204\\source\\Repos2\\ClassLibrary\\MotherboardChipsetTable.cs",
+              "RelativeToolTip": "ClassLibrary\\MotherboardChipsetTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:44:51.8Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MotherboardSizeTable.cs",
+              "DocumentMoniker": "C:\\Users\\23jn0204\\source\\Repos2\\ClassLibrary\\MotherboardSizeTable.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\MotherboardSizeTable.cs",
+              "ToolTip": "C:\\Users\\23jn0204\\source\\Repos2\\ClassLibrary\\MotherboardSizeTable.cs",
+              "RelativeToolTip": "ClassLibrary\\MotherboardSizeTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:44:42.96Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmGokanseiMotherboard.cs",
+              "DocumentMoniker": "C:\\Users\\23jn0204\\source\\Repos2\\\u5352\u696D\u5236\u4F5C\\frmGokanseiMotherboard.cs",
+              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiMotherboard.cs",
+              "ToolTip": "C:\\Users\\23jn0204\\source\\Repos2\\\u5352\u696D\u5236\u4F5C\\frmGokanseiMotherboard.cs",
+              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGokanseiMotherboard.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAnwC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:43:11.087Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmGokanseiMotherboard.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "DocumentMoniker": "C:\\Users\\23jn0204\\source\\Repos2\\\u5352\u696D\u5236\u4F5C\\frmGokanseiMotherboard.cs",
+              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiMotherboard.cs",
+              "ToolTip": "C:\\Users\\23jn0204\\source\\Repos2\\\u5352\u696D\u5236\u4F5C\\frmGokanseiMotherboard.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGokanseiMotherboard.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:42:44.166Z",
+              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmGokanseiSsd.cs",
+              "DocumentMoniker": "C:\\Users\\23jn0204\\source\\Repos2\\\u5352\u696D\u5236\u4F5C\\frmGokanseiSsd.cs",
+              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiSsd.cs",
+              "ToolTip": "C:\\Users\\23jn0204\\source\\Repos2\\\u5352\u696D\u5236\u4F5C\\frmGokanseiSsd.cs",
+              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGokanseiSsd.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAwCMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:33:24.572Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CoolerTypeTable.cs",
+              "DocumentMoniker": "C:\\Users\\23jn0204\\source\\Repos2\\ClassLibrary\\CoolerTypeTable.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\CoolerTypeTable.cs",
+              "ToolTip": "C:\\Users\\23jn0204\\source\\Repos2\\ClassLibrary\\CoolerTypeTable.cs",
+              "RelativeToolTip": "ClassLibrary\\CoolerTypeTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:32:04.479Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -70,147 +140,26 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:142:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:146:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:148:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:150:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:147:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:149:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:145:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:143:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:141:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GoodsTable.cs",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\GoodsTable.cs",
-              "RelativeDocumentMoniker": "ClassLibrary\\GoodsTable.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\GoodsTable.cs",
-              "RelativeToolTip": "ClassLibrary\\GoodsTable.cs",
-              "ViewState": "AgIAAAUBAAAAAAAAAAAowBsBAAAsAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "frmGokanseiSsd.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "DocumentMoniker": "C:\\Users\\23jn0204\\source\\Repos2\\\u5352\u696D\u5236\u4F5C\\frmGokanseiSsd.cs",
+              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiSsd.cs",
+              "ToolTip": "C:\\Users\\23jn0204\\source\\Repos2\\\u5352\u696D\u5236\u4F5C\\frmGokanseiSsd.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGokanseiSsd.cs [\u30C7\u30B6\u30A4\u30F3]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T00:08:21.641Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CaseMotherboardSizeTable.cs",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\CaseMotherboardSizeTable.cs",
-              "RelativeDocumentMoniker": "ClassLibrary\\CaseMotherboardSizeTable.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\CaseMotherboardSizeTable.cs",
-              "RelativeToolTip": "ClassLibrary\\CaseMotherboardSizeTable.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAcwEoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T00:07:16.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmGoods.cs",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoods.cs",
-              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGoods.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoods.cs",
-              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGoods.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAASwFwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T09:29:38.608Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmGoodsCooler.cs",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoodsCooler.cs",
-              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGoodsCooler.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoodsCooler.cs",
-              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGoodsCooler.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAYwFsAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T09:26:30.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmGoodsCase.cs",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoodsCase.cs",
-              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGoodsCase.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoodsCase.cs",
-              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGoodsCase.cs",
-              "ViewState": "AgIAAFMBAAAAAAAAAAAWwHUBAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T09:02:23.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmGoodsCase.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoodsCase.cs",
-              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGoodsCase.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGoodsCase.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGoodsCase.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T09:02:17.589Z",
+              "WhenOpened": "2025-01-21T00:41:30.536Z",
               "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
             }
           ]

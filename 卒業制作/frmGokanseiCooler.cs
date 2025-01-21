@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,17 @@ namespace 卒業制作
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmGokanseiCooler_Load(object sender, EventArgs e)
+        {
+            CoolerTypeTable coolerTypeTable = new CoolerTypeTable();
+
+            DataTable dataTable = coolerTypeTable.GetCoolerType();
+            foreach (DataRow dr in dataTable.Rows)
+            {
+                lstType.Items.Add(dr[1].ToString());
+            }
         }
     }
 }

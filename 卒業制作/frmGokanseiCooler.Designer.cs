@@ -54,12 +54,12 @@
             this.lstType.ItemHeight = 21;
             this.lstType.Location = new System.Drawing.Point(61, 52);
             this.lstType.Name = "lstType";
-            this.lstType.Size = new System.Drawing.Size(120, 88);
+            this.lstType.Size = new System.Drawing.Size(165, 130);
             this.lstType.TabIndex = 1;
             // 
             // txtCPUcooler
             // 
-            this.txtCPUcooler.Location = new System.Drawing.Point(278, 52);
+            this.txtCPUcooler.Location = new System.Drawing.Point(278, 65);
             this.txtCPUcooler.Name = "txtCPUcooler";
             this.txtCPUcooler.ReadOnly = true;
             this.txtCPUcooler.Size = new System.Drawing.Size(244, 28);
@@ -85,7 +85,7 @@
             // 
             // btnCPUcAdd
             // 
-            this.btnCPUcAdd.Location = new System.Drawing.Point(278, 99);
+            this.btnCPUcAdd.Location = new System.Drawing.Point(278, 127);
             this.btnCPUcAdd.Name = "btnCPUcAdd";
             this.btnCPUcAdd.Size = new System.Drawing.Size(75, 27);
             this.btnCPUcAdd.TabIndex = 5;
@@ -94,7 +94,7 @@
             // 
             // btnCPUcChange
             // 
-            this.btnCPUcChange.Location = new System.Drawing.Point(369, 99);
+            this.btnCPUcChange.Location = new System.Drawing.Point(359, 127);
             this.btnCPUcChange.Name = "btnCPUcChange";
             this.btnCPUcChange.Size = new System.Drawing.Size(75, 27);
             this.btnCPUcChange.TabIndex = 6;
@@ -103,7 +103,7 @@
             // 
             // btnCPUcdelete
             // 
-            this.btnCPUcdelete.Location = new System.Drawing.Point(459, 99);
+            this.btnCPUcdelete.Location = new System.Drawing.Point(447, 127);
             this.btnCPUcdelete.Name = "btnCPUcdelete";
             this.btnCPUcdelete.Size = new System.Drawing.Size(75, 27);
             this.btnCPUcdelete.TabIndex = 7;
@@ -137,7 +137,8 @@
             this.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGokanseiCooler";
-            this.Text = "Form1";
+            this.Text = "CPUクーラー";
+            this.Load += new System.EventHandler(this.frmGokanseiCooler_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

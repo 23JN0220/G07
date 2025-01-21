@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,29 @@ namespace 卒業制作
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmGokanseiMotherboard_Load(object sender, EventArgs e)
+        {
+           MotherboardChipsetTable motherboardChipsetTable = new MotherboardChipsetTable();
+           MotherboardSizeTable motherboardSizeTable = new MotherboardSizeTable();
+            WirelessLanTable wirelessLanTable = new WirelessLanTable();
+
+            DataTable dataTable = motherboardChipsetTable.GetMotherboardChipset();
+            foreach (DataRow dr in dataTable.Rows)
+            {
+                lstChipset.Items.Add(dr[1].ToString());
+            }
+           dataTable = motherboardSizeTable.GetMotherboardSize();
+            foreach (DataRow dr in dataTable.Rows)
+            {
+                lstSize.Items.Add(dr[1].ToString());
+            }
+            dataTable = wirelessLanTable.GetWirelessLan();
+            foreach (DataRow dr in dataTable.Rows)
+            {
+                lstWirelessLan.Items.Add(dr[1].ToString());
+            }
         }
     }
 }
