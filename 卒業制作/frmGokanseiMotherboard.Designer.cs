@@ -42,7 +42,7 @@
             this.btnSdelete = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.lstWirelessLan = new System.Windows.Forms.ListBox();
-            this.txtSpec = new System.Windows.Forms.TextBox();
+            this.txtWirelessLan = new System.Windows.Forms.TextBox();
             this.btnSpAdd = new System.Windows.Forms.Button();
             this.btnSpChange = new System.Windows.Forms.Button();
             this.btnSpDelete = new System.Windows.Forms.Button();
@@ -76,6 +76,7 @@
             this.lstChipset.Name = "lstChipset";
             this.lstChipset.Size = new System.Drawing.Size(155, 88);
             this.lstChipset.TabIndex = 1;
+            this.lstChipset.SelectedIndexChanged += new System.EventHandler(this.lstChipset_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -94,7 +95,6 @@
             this.txtChipset.Location = new System.Drawing.Point(250, 50);
             this.txtChipset.Margin = new System.Windows.Forms.Padding(2);
             this.txtChipset.Name = "txtChipset";
-            this.txtChipset.ReadOnly = true;
             this.txtChipset.Size = new System.Drawing.Size(225, 28);
             this.txtChipset.TabIndex = 3;
             // 
@@ -141,6 +141,7 @@
             this.lstSize.Name = "lstSize";
             this.lstSize.Size = new System.Drawing.Size(155, 88);
             this.lstSize.TabIndex = 7;
+            this.lstSize.SelectedIndexChanged += new System.EventHandler(this.lstSize_SelectedIndexChanged);
             // 
             // txtSize
             // 
@@ -148,7 +149,6 @@
             this.txtSize.Location = new System.Drawing.Point(249, 172);
             this.txtSize.Margin = new System.Windows.Forms.Padding(2);
             this.txtSize.Name = "txtSize";
-            this.txtSize.ReadOnly = true;
             this.txtSize.Size = new System.Drawing.Size(225, 28);
             this.txtSize.TabIndex = 8;
             // 
@@ -206,16 +206,16 @@
             this.lstWirelessLan.Name = "lstWirelessLan";
             this.lstWirelessLan.Size = new System.Drawing.Size(155, 88);
             this.lstWirelessLan.TabIndex = 13;
+            this.lstWirelessLan.SelectedIndexChanged += new System.EventHandler(this.lstWirelessLan_SelectedIndexChanged);
             // 
-            // txtSpec
+            // txtWirelessLan
             // 
-            this.txtSpec.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtSpec.Location = new System.Drawing.Point(249, 293);
-            this.txtSpec.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSpec.Name = "txtSpec";
-            this.txtSpec.ReadOnly = true;
-            this.txtSpec.Size = new System.Drawing.Size(225, 28);
-            this.txtSpec.TabIndex = 14;
+            this.txtWirelessLan.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txtWirelessLan.Location = new System.Drawing.Point(249, 293);
+            this.txtWirelessLan.Margin = new System.Windows.Forms.Padding(2);
+            this.txtWirelessLan.Name = "txtWirelessLan";
+            this.txtWirelessLan.Size = new System.Drawing.Size(225, 28);
+            this.txtWirelessLan.TabIndex = 14;
             // 
             // btnSpAdd
             // 
@@ -334,7 +334,7 @@
             this.Controls.Add(this.btnSpDelete);
             this.Controls.Add(this.btnSpChange);
             this.Controls.Add(this.btnSpAdd);
-            this.Controls.Add(this.txtSpec);
+            this.Controls.Add(this.txtWirelessLan);
             this.Controls.Add(this.lstWirelessLan);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSdelete);
@@ -375,7 +375,7 @@
         private System.Windows.Forms.Button btnSdelete;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox lstWirelessLan;
-        private System.Windows.Forms.TextBox txtSpec;
+        private System.Windows.Forms.TextBox txtWirelessLan;
         private System.Windows.Forms.Button btnSpAdd;
         private System.Windows.Forms.Button btnSpChange;
         private System.Windows.Forms.Button btnSpDelete;

@@ -45,5 +45,20 @@ namespace 卒業制作
                 lstWirelessLan.Items.Add(dr[1].ToString());
             }
         }
+
+        private void lstChipset_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtChipset.Text = lstChipset.SelectedItem.ToString();
+        }
+
+        private void lstSize_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtSize.Text = lstSize.SelectedItem.ToString();
+        }
+
+        private void lstWirelessLan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           txtWirelessLan.Text = lstWirelessLan.SelectedItem.ToString();    
+        }
     }
 }

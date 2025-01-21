@@ -64,5 +64,128 @@ namespace 卒業制作
             lstSeries.Items.Add(dr[1].ToString());
             }
         }
+
+        private void lstSeries_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtSeries.Text = lstSeries.SelectedItem.ToString();
+        }
+
+        private void lstGen_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtGen.Text = lstGen.SelectedItem.ToString();
+        }
+
+        private void lstSocket_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtSocket.Text = lstSocket.SelectedItem.ToString();
+        }
+
+        private void lstChipset_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtChipset.Text = lstChipset.SelectedItem.ToString();
+        }
+
+        private void btnSeAdd_Click(object sender, EventArgs e)
+        {
+            if (txtSeries.Text != "")
+            {
+               CpuSeriesTable cpuSeriesTable = new CpuSeriesTable();
+                int ret = cpuSeriesTable.Insert(txtSeries.Text);
+
+                if (ret == 1)
+                {
+                    MessageBox.Show("データを追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    lstSeries.Items.Clear();
+                    DataTable dataTable = cpuSeriesTable.GetCpuSeries();
+                    foreach (DataRow dr in dataTable.Rows)
+                    {
+                        lstSeries.Items.Add(dr[1].ToString());
+                    }
+
+                    txtSeries.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("データを追加できませんでした。", "追加エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("タイプの名称が入力されていません。\n名称を入力してください。", "未入力エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnSeChange_Click(object sender, EventArgs e)
+        {
+            if (txtSeries.Text != "" && lstSeries.SelectedIndex != -1)
+            {
+                CpuSeriesTable cpuSeriesTable = new CpuSeriesTable();
+                int ret = cpuSeriesTable.Update(txtSeries.Text, lstSeries.SelectedItem.ToString());
+
+                if (ret == 1)
+                {
+                    MessageBox.Show("データを変更しました。", "変更完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    lstSeries.Items.Clear();
+                    DataTable dataTable = cpuSeriesTable.GetCpuSeries();
+                    foreach (DataRow dr in dataTable.Rows)
+                    {
+                        lstSeries.Items.Add(dr[1].ToString());
+                    }
+
+                    txtSeries.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("データを変更できませんでした。", "変更エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            else
+            {
+                MessageBox.Show("変更する項目が選択されていないか、変更後の名称が未入力です。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnSeDelete_Click(object sender, EventArgs e)
+        {
+            if (lstSeries.SelectedIndex != -1)
+            {
+                string series_name = lstSeries.SelectedItem.ToString();
+
+                DialogResult result = MessageBox.Show("「" + series_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    CpuSeriesTable cpuSeriesTable = new CpuSeriesTable();
+                    int ret = cpuSeriesTable.Delete(lstSeries.SelectedItem.ToString());
+
+                    if (ret == 1)
+                    {
+                        MessageBox.Show("データを削除しました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        lstSeries.Items.Clear();
+                        DataTable dataTable = cpuSeriesTable.GetCpuSeries();
+                        foreach (DataRow dr in dataTable.Rows)
+                        {
+                            lstSeries.Items.Add(dr[1].ToString());
+                        }
+
+                        txtSeries.Text = "";
+                    }
+                    else 
+                    {
+                        MessageBox.Show("データを削除できませんでした。", "削除失敗", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("変更する項目が選択されていません。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
     }
-}
+    }
+

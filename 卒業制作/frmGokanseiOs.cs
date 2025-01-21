@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,22 @@ namespace 卒業制作
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmGokanseiOs_Load(object sender, EventArgs e)
+        {
+            OsVersionTable osVersionTable = new OsVersionTable();
+
+            DataTable dataTable = osVersionTable.GetOsVersion();
+            foreach (DataRow dr in dataTable.Rows)
+            {
+                lstVersion.Items.Add(dr[1].ToString());
+            }
+        }
+
+        private void lstVersion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtVersion.Text = lstVersion.SelectedItem.ToString();
         }
     }
 }

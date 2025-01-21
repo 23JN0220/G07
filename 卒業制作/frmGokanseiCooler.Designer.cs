@@ -56,12 +56,12 @@
             this.lstType.Name = "lstType";
             this.lstType.Size = new System.Drawing.Size(165, 130);
             this.lstType.TabIndex = 1;
+            this.lstType.SelectedIndexChanged += new System.EventHandler(this.lstType_SelectedIndexChanged);
             // 
             // txtCPUcooler
             // 
             this.txtCPUcooler.Location = new System.Drawing.Point(278, 65);
             this.txtCPUcooler.Name = "txtCPUcooler";
-            this.txtCPUcooler.ReadOnly = true;
             this.txtCPUcooler.Size = new System.Drawing.Size(244, 28);
             this.txtCPUcooler.TabIndex = 2;
             // 
@@ -137,7 +137,7 @@
             this.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGokanseiCooler";
-            this.Text = "CPUクーラー";
+            this.Text = "互換性管理CPUクーラー";
             this.Load += new System.EventHandler(this.frmGokanseiCooler_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -33,5 +33,10 @@ namespace 卒業制作
                 lstType.Items.Add(dr[1].ToString());
             }
         }
+
+        private void lstType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtCPUcooler.Text = lstType.SelectedItem.ToString();
+        }
     }
 }

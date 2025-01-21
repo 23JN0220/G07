@@ -78,6 +78,7 @@
             this.lstSeries.Name = "lstSeries";
             this.lstSeries.Size = new System.Drawing.Size(186, 88);
             this.lstSeries.TabIndex = 1;
+            this.lstSeries.SelectedIndexChanged += new System.EventHandler(this.lstSeries_SelectedIndexChanged);
             // 
             // txtSeries
             // 
@@ -85,7 +86,6 @@
             this.txtSeries.Location = new System.Drawing.Point(258, 62);
             this.txtSeries.Margin = new System.Windows.Forms.Padding(2);
             this.txtSeries.Name = "txtSeries";
-            this.txtSeries.ReadOnly = true;
             this.txtSeries.Size = new System.Drawing.Size(198, 28);
             this.txtSeries.TabIndex = 2;
             // 
@@ -99,6 +99,7 @@
             this.btnSeAdd.TabIndex = 3;
             this.btnSeAdd.Text = "追加";
             this.btnSeAdd.UseVisualStyleBackColor = true;
+            this.btnSeAdd.Click += new System.EventHandler(this.btnSeAdd_Click);
             // 
             // label2
             // 
@@ -121,6 +122,7 @@
             this.lstGen.Name = "lstGen";
             this.lstGen.Size = new System.Drawing.Size(186, 88);
             this.lstGen.TabIndex = 5;
+            this.lstGen.SelectedIndexChanged += new System.EventHandler(this.lstGen_SelectedIndexChanged);
             // 
             // txtGen
             // 
@@ -128,7 +130,6 @@
             this.txtGen.Location = new System.Drawing.Point(254, 184);
             this.txtGen.Margin = new System.Windows.Forms.Padding(2);
             this.txtGen.Name = "txtGen";
-            this.txtGen.ReadOnly = true;
             this.txtGen.Size = new System.Drawing.Size(198, 28);
             this.txtGen.TabIndex = 6;
             // 
@@ -142,6 +143,7 @@
             this.btnSeChange.TabIndex = 7;
             this.btnSeChange.Text = "変更";
             this.btnSeChange.UseVisualStyleBackColor = true;
+            this.btnSeChange.Click += new System.EventHandler(this.btnSeChange_Click);
             // 
             // btnSeDelete
             // 
@@ -153,6 +155,7 @@
             this.btnSeDelete.TabIndex = 8;
             this.btnSeDelete.Text = "削除";
             this.btnSeDelete.UseVisualStyleBackColor = true;
+            this.btnSeDelete.Click += new System.EventHandler(this.btnSeDelete_Click);
             // 
             // btnGadd
             // 
@@ -218,6 +221,7 @@
             this.lstSocket.Name = "lstSocket";
             this.lstSocket.Size = new System.Drawing.Size(186, 88);
             this.lstSocket.TabIndex = 14;
+            this.lstSocket.SelectedIndexChanged += new System.EventHandler(this.lstSocket_SelectedIndexChanged);
             // 
             // txtSocket
             // 
@@ -225,7 +229,6 @@
             this.txtSocket.Location = new System.Drawing.Point(258, 306);
             this.txtSocket.Margin = new System.Windows.Forms.Padding(2);
             this.txtSocket.Name = "txtSocket";
-            this.txtSocket.ReadOnly = true;
             this.txtSocket.Size = new System.Drawing.Size(198, 28);
             this.txtSocket.TabIndex = 15;
             // 
@@ -281,13 +284,13 @@
             this.lstChipset.Name = "lstChipset";
             this.lstChipset.Size = new System.Drawing.Size(186, 88);
             this.lstChipset.TabIndex = 20;
+            this.lstChipset.SelectedIndexChanged += new System.EventHandler(this.lstChipset_SelectedIndexChanged);
             // 
             // txtChipset
             // 
             this.txtChipset.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txtChipset.Location = new System.Drawing.Point(257, 432);
             this.txtChipset.Name = "txtChipset";
-            this.txtChipset.ReadOnly = true;
             this.txtChipset.Size = new System.Drawing.Size(198, 28);
             this.txtChipset.TabIndex = 21;
             // 

@@ -40,7 +40,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 48);
+            this.label1.Location = new System.Drawing.Point(12, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 21);
             this.label1.TabIndex = 0;
@@ -50,22 +50,22 @@
             // 
             this.lstVersion.FormattingEnabled = true;
             this.lstVersion.ItemHeight = 21;
-            this.lstVersion.Location = new System.Drawing.Point(58, 89);
+            this.lstVersion.Location = new System.Drawing.Point(12, 70);
             this.lstVersion.Name = "lstVersion";
-            this.lstVersion.Size = new System.Drawing.Size(102, 130);
+            this.lstVersion.Size = new System.Drawing.Size(196, 151);
             this.lstVersion.TabIndex = 1;
+            this.lstVersion.SelectedIndexChanged += new System.EventHandler(this.lstVersion_SelectedIndexChanged);
             // 
             // txtVersion
             // 
-            this.txtVersion.Location = new System.Drawing.Point(271, 89);
+            this.txtVersion.Location = new System.Drawing.Point(244, 70);
             this.txtVersion.Name = "txtVersion";
-            this.txtVersion.ReadOnly = true;
             this.txtVersion.Size = new System.Drawing.Size(246, 28);
             this.txtVersion.TabIndex = 2;
             // 
             // btnVadd
             // 
-            this.btnVadd.Location = new System.Drawing.Point(271, 134);
+            this.btnVadd.Location = new System.Drawing.Point(244, 114);
             this.btnVadd.Name = "btnVadd";
             this.btnVadd.Size = new System.Drawing.Size(75, 32);
             this.btnVadd.TabIndex = 3;
@@ -74,7 +74,7 @@
             // 
             // btnVchange
             // 
-            this.btnVchange.Location = new System.Drawing.Point(352, 134);
+            this.btnVchange.Location = new System.Drawing.Point(325, 114);
             this.btnVchange.Name = "btnVchange";
             this.btnVchange.Size = new System.Drawing.Size(75, 32);
             this.btnVchange.TabIndex = 4;
@@ -83,7 +83,7 @@
             // 
             // btnVdelete
             // 
-            this.btnVdelete.Location = new System.Drawing.Point(442, 134);
+            this.btnVdelete.Location = new System.Drawing.Point(415, 114);
             this.btnVdelete.Name = "btnVdelete";
             this.btnVdelete.Size = new System.Drawing.Size(75, 32);
             this.btnVdelete.TabIndex = 5;
@@ -92,7 +92,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(415, 333);
+            this.btnClose.Location = new System.Drawing.Point(415, 201);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 34);
             this.btnClose.TabIndex = 6;
@@ -104,7 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(573, 495);
+            this.ClientSize = new System.Drawing.Size(514, 266);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnVdelete);
             this.Controls.Add(this.btnVchange);
@@ -116,6 +116,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGokanseiOs";
             this.Text = "互換性管理OS";
+            this.Load += new System.EventHandler(this.frmGokanseiOs_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

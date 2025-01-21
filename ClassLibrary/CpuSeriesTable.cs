@@ -69,5 +69,85 @@ namespace ClassLibrary
             }
             return series_id;
         }
+        public int Insert(string series_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "INSERT INTO CPU_Series(series_name) VALUES (@series_name)";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@series_name", series_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
+
+        public bool ExistSeriesName(string series_name)
+        {
+            int cnt;
+
+            DataTable dataTable = new DataTable();
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT * FROM CPU_Series WHERE series_name = @series_name";
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@series_name", series_name);
+
+                cnt = adapter.Fill(dataTable);
+
+                
+            }
+            if (cnt > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            
+        }
+        public int Update(string series_name,string series_name_old)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE CPU_Series SET series_name = @series_name WHERE series_name = @series_name_old";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@series_name", series_name);
+                command.Parameters.AddWithValue("@series_name_old", series_name_old);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
+        public int Delete(string series_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "DELETE FROM CPU_Series WHERE series_name = @series_name";
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@series_name", series_name);
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+            return ret;
+        }
+
     }
 }
