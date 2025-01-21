@@ -72,12 +72,15 @@
             this.btnMotherboard = new System.Windows.Forms.Button();
             this.btnPicture = new System.Windows.Forms.Button();
             this.ofdPicture = new System.Windows.Forms.OpenFileDialog();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtCooler = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(911, 692);
+            this.btnClose.Location = new System.Drawing.Point(911, 734);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(95, 38);
             this.btnClose.TabIndex = 21;
@@ -87,7 +90,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(370, 618);
+            this.btnOK.Location = new System.Drawing.Point(370, 660);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(215, 73);
             this.btnOK.TabIndex = 20;
@@ -98,7 +101,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(451, 427);
+            this.label14.Location = new System.Drawing.Point(451, 461);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(113, 21);
             this.label14.TabIndex = 77;
@@ -125,7 +128,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(472, 393);
+            this.label13.Location = new System.Drawing.Point(472, 427);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(92, 21);
             this.label13.TabIndex = 74;
@@ -255,7 +258,7 @@
             // 
             // txtDepth
             // 
-            this.txtDepth.Location = new System.Drawing.Point(570, 424);
+            this.txtDepth.Location = new System.Drawing.Point(570, 458);
             this.txtDepth.Name = "txtDepth";
             this.txtDepth.Size = new System.Drawing.Size(399, 28);
             this.txtDepth.TabIndex = 14;
@@ -305,7 +308,7 @@
             // 
             // txtHeight
             // 
-            this.txtHeight.Location = new System.Drawing.Point(570, 458);
+            this.txtHeight.Location = new System.Drawing.Point(570, 492);
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(399, 28);
             this.txtHeight.TabIndex = 15;
@@ -313,7 +316,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(457, 461);
+            this.label16.Location = new System.Drawing.Point(457, 495);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(107, 21);
             this.label16.TabIndex = 77;
@@ -321,7 +324,7 @@
             // 
             // txtColor
             // 
-            this.txtColor.Location = new System.Drawing.Point(570, 492);
+            this.txtColor.Location = new System.Drawing.Point(570, 526);
             this.txtColor.Name = "txtColor";
             this.txtColor.Size = new System.Drawing.Size(399, 28);
             this.txtColor.TabIndex = 16;
@@ -329,7 +332,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(507, 495);
+            this.label18.Location = new System.Drawing.Point(507, 529);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(57, 21);
             this.label18.TabIndex = 77;
@@ -337,14 +340,14 @@
             // 
             // txtWidth
             // 
-            this.txtWidth.Location = new System.Drawing.Point(570, 390);
+            this.txtWidth.Location = new System.Drawing.Point(570, 424);
             this.txtWidth.Name = "txtWidth";
             this.txtWidth.Size = new System.Drawing.Size(399, 28);
             this.txtWidth.TabIndex = 13;
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(570, 557);
+            this.txtPrice.Location = new System.Drawing.Point(570, 591);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(399, 28);
             this.txtPrice.TabIndex = 19;
@@ -352,7 +355,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(512, 560);
+            this.label15.Location = new System.Drawing.Point(512, 594);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(52, 21);
             this.label15.TabIndex = 77;
@@ -361,7 +364,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(975, 560);
+            this.label17.Location = new System.Drawing.Point(975, 594);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(31, 21);
             this.label17.TabIndex = 78;
@@ -370,7 +373,7 @@
             // chkLowPro
             // 
             this.chkLowPro.AutoSize = true;
-            this.chkLowPro.Location = new System.Drawing.Point(570, 526);
+            this.chkLowPro.Location = new System.Drawing.Point(570, 560);
             this.chkLowPro.Name = "chkLowPro";
             this.chkLowPro.Size = new System.Drawing.Size(134, 25);
             this.chkLowPro.TabIndex = 17;
@@ -380,7 +383,7 @@
             // chkWaterCooler
             // 
             this.chkWaterCooler.AutoSize = true;
-            this.chkWaterCooler.Location = new System.Drawing.Point(710, 526);
+            this.chkWaterCooler.Location = new System.Drawing.Point(710, 560);
             this.chkWaterCooler.Name = "chkWaterCooler";
             this.chkWaterCooler.Size = new System.Drawing.Size(113, 25);
             this.chkWaterCooler.TabIndex = 18;
@@ -390,7 +393,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(975, 461);
+            this.label19.Location = new System.Drawing.Point(975, 495);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(36, 21);
             this.label19.TabIndex = 78;
@@ -399,7 +402,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(975, 427);
+            this.label20.Location = new System.Drawing.Point(975, 461);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(36, 21);
             this.label20.TabIndex = 78;
@@ -408,7 +411,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(975, 393);
+            this.label21.Location = new System.Drawing.Point(975, 427);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(36, 21);
             this.label21.TabIndex = 78;
@@ -447,16 +450,43 @@
             // 
             this.ofdPicture.Filter = "画像ファイル(*.jpg;*.jpeg;*.png;)|*.jpg;*.jpeg;*.png";
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(372, 393);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(192, 21);
+            this.label22.TabIndex = 74;
+            this.label22.Text = "CPUクーラー最大高さ";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(975, 393);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(40, 21);
+            this.label23.TabIndex = 78;
+            this.label23.Text = "mm";
+            // 
+            // txtCooler
+            // 
+            this.txtCooler.Location = new System.Drawing.Point(570, 390);
+            this.txtCooler.Name = "txtCooler";
+            this.txtCooler.Size = new System.Drawing.Size(399, 28);
+            this.txtCooler.TabIndex = 13;
+            // 
             // frmGoodsCase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1018, 742);
+            this.ClientSize = new System.Drawing.Size(1018, 784);
             this.Controls.Add(this.btnPicture);
             this.Controls.Add(this.btnMotherboard);
             this.Controls.Add(this.chkWaterCooler);
             this.Controls.Add(this.chkLowPro);
+            this.Controls.Add(this.txtCooler);
             this.Controls.Add(this.txtWidth);
+            this.Controls.Add(this.label23);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
@@ -469,6 +499,7 @@
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label10);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label11);
@@ -551,5 +582,8 @@
         private System.Windows.Forms.Button btnMotherboard;
         private System.Windows.Forms.Button btnPicture;
         private System.Windows.Forms.OpenFileDialog ofdPicture;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox txtCooler;
     }
 }

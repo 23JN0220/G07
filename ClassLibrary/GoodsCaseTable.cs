@@ -36,12 +36,13 @@ namespace ClassLibrary
                     goodsCase.fan_number = int.Parse(dr[6].ToString());
                     goodsCase.slot_number = int.Parse(dr[7].ToString());
                     goodsCase.power_size_id = int.Parse(dr[8].ToString());
-                    goodsCase.width = int.Parse(dr[9].ToString());
-                    goodsCase.depth = int.Parse(dr[10].ToString());
-                    goodsCase.height = int.Parse(dr[11].ToString());
-                    goodsCase.color = dr[12].ToString();
-                    goodsCase.lowpro = bool.Parse(dr[13].ToString());
-                    goodsCase.water_cooling = bool.Parse(dr[14].ToString());
+                    goodsCase.cooler_size = int.Parse(dr[9].ToString());
+                    goodsCase.width = int.Parse(dr[10].ToString());
+                    goodsCase.depth = int.Parse(dr[11].ToString());
+                    goodsCase.height = int.Parse(dr[12].ToString());
+                    goodsCase.color = dr[13].ToString();
+                    goodsCase.lowpro = bool.Parse(dr[14].ToString());
+                    goodsCase.water_cooling = bool.Parse(dr[15].ToString());
                 }
             }
 
@@ -55,7 +56,7 @@ namespace ClassLibrary
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string sql = "INSERT INTO Goods_Case VALUES" +
-                             "(@goods_code, @bay_number, @shadowbay3_number, @shadowbay2_number, @gpu_size, @fan_size_id, @fan_number, @slot_number, @power_size_id, @width,@Depth, @height, @color, @lowpro, @water_cooling)";
+                             "(@goods_code, @bay_number, @shadowbay3_number, @shadowbay2_number, @gpu_size, @fan_size_id, @fan_number, @slot_number, @power_size_id, @cooler_size, @width,@Depth, @height, @color, @lowpro, @water_cooling)";
 
                 SqlCommand command = new SqlCommand(sql, connection);
                 command.Parameters.AddWithValue("@goods_code", goodsCase.goods_code);
@@ -67,6 +68,7 @@ namespace ClassLibrary
                 command.Parameters.AddWithValue("@fan_number", goodsCase.fan_number);
                 command.Parameters.AddWithValue("@slot_number", goodsCase.slot_number);
                 command.Parameters.AddWithValue("@power_size_id", goodsCase.power_size_id);
+                command.Parameters.AddWithValue("@cooler_size", goodsCase.cooler_size);
                 command.Parameters.AddWithValue("@width", goodsCase.width);
                 command.Parameters.AddWithValue("@Depth", goodsCase.depth);
                 command.Parameters.AddWithValue("@height", goodsCase.height);
@@ -111,6 +113,7 @@ namespace ClassLibrary
                              "fan_number = @fan_number, " +
                              "slot_number = @slot_number, " +
                              "power_size_id = @power_size_id, " +
+                             "cooler_size = @cooler_size, " +
                              "width = @width, " +
                              "Depth = @Depth, " +
                              "height = @height, " +
@@ -129,6 +132,7 @@ namespace ClassLibrary
                 command.Parameters.AddWithValue("@fan_number", goodsCase.fan_number);
                 command.Parameters.AddWithValue("@slot_number", goodsCase.slot_number);
                 command.Parameters.AddWithValue("@power_size_id", goodsCase.power_size_id);
+                command.Parameters.AddWithValue("@cooler_size", goodsCase.cooler_size);
                 command.Parameters.AddWithValue("@width", goodsCase.width);
                 command.Parameters.AddWithValue("@Depth", goodsCase.depth);
                 command.Parameters.AddWithValue("@height", goodsCase.height);

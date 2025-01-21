@@ -18,6 +18,7 @@ namespace ClassLibrary
         public int fan_number { get; set; }
         public int slot_number { get; set; }
         public int power_size_id { get; set; }
+        public int cooler_size { get; set; }
         public int width {  get; set; }
         public int depth { get; set; }
         public int height { get; set; }

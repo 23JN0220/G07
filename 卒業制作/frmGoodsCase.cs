@@ -104,6 +104,7 @@ namespace 卒業制作
                 txtMaxGpu.Text = goodsCase.gpu_size.ToString();
                 txtCaseNumber.Text = goodsCase.fan_number.ToString();
                 txtSlotNumber.Text = goodsCase.slot_number.ToString();
+                txtCooler.Text = goodsCase.cooler_size.ToString();
                 txtWidth.Text = goodsCase.width.ToString();
                 txtDepth.Text = goodsCase.depth.ToString();
                 txtHeight.Text = goodsCase.height.ToString();
@@ -143,6 +144,7 @@ namespace 卒業制作
                 bool retMaxGpu = int.TryParse(txtMaxGpu.Text, out int gpu);
                 bool retCaseFanNumber = int.TryParse(txtCaseNumber.Text, out int caseFanNumber);
                 bool retSlotNumber = int.TryParse(txtSlotNumber.Text, out int slotNumber);
+                bool retCooler = int.TryParse(txtCooler.Text, out int cooler_size);
                 bool retWidth = int.TryParse(txtWidth.Text, out int width);
                 bool retDepth = int.TryParse(txtDepth.Text, out int depth);
                 bool retHeight = int.TryParse(txtHeight.Text, out int height);
@@ -191,6 +193,7 @@ namespace 卒業制作
                                     goodsCase.fan_number = caseFanNumber;
                                     goodsCase.slot_number = slotNumber;
                                     goodsCase.power_size_id = powerSizeTable.GetPowerSizeIdByName(lstUnit.Text);
+                                    goodsCase.cooler_size = cooler_size;
                                     goodsCase.width = width;
                                     goodsCase.depth = depth;
                                     goodsCase.height = height;
@@ -289,6 +292,7 @@ namespace 卒業制作
                                 goodsCase.fan_number = caseFanNumber;
                                 goodsCase.slot_number = slotNumber;
                                 goodsCase.power_size_id = powerSizeTable.GetPowerSizeIdByName(lstUnit.Text);
+                                goodsCase.cooler_size = cooler_size;
                                 goodsCase.width = width;
                                 goodsCase.depth = depth;
                                 goodsCase.height = height;

@@ -301,5 +301,21 @@ namespace 卒業制作
                 MessageBox.Show("商品が選択されていません", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int goods_code = int.Parse(dgvGoods.CurrentRow.Cells["goods_code"].Value.ToString());
+
+            DialogResult ret = MessageBox.Show("商品番号「"+ goods_code +"」を削除します\n\n" +
+                                               "利用者がカートや構成チェック、ブックマークにこの商品を追加している場合、これらのデータも削除されます\n" +
+                                               "また、注文明細からもこの商品のデータが削除されます\n" +
+                                               "この商品を発送していない場合は注意してください\n\n" +
+                                               "削除を続行すると、元に戻すことはできません\n" +
+                                               "本当に削除しますか？", "注意", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
+            if (ret == DialogResult.Yes)
+            {
+                
+            }
+        }
     }
 }
