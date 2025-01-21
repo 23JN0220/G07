@@ -123,5 +123,49 @@ namespace ClassLibrary
             }
             return table;
         }
+
+        public DataTable GetGoodsSsdStandard(int standard_id)
+        {
+            DataTable table = new DataTable();
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT Goods.goods_code, goods_name FROM Goods INNER JOIN Goods_SSD ON Goods.goods_code = Goods_SSD.goods_code WHERE standard_id = @standard_id";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@standard_id", standard_id);
+
+                int cnt = adapter.Fill(table);
+
+                if (cnt == 0)
+                {
+                    table = null;
+                }
+            }
+            return table;
+        }
+
+        public DataTable GetGoodsSsdConnection(int connection_id)
+        {
+            DataTable table = new DataTable();
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT Goods.goods_code, goods_name FROM Goods INNER JOIN Goods_SSD ON Goods.goods_code = Goods_SSD.goods_code WHERE connection_id = @connection_id";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@connection_id", connection_id);
+
+                int cnt = adapter.Fill(table);
+
+                if (cnt == 0)
+                {
+                    table = null;
+                }
+            }
+            return table;
+        }
     }
 }

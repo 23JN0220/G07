@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseissd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\\u5352\u696D\u5236\u4F5C\\frmgokanseissd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseissd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\classlibrary\\goodsssdtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\goodsssdtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\classlibrary\\ssdstandardtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\ssdstandardtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\classlibrary\\ssdconnectiontable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\ssdconnectiontable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\\u5352\u696D\u5236\u4F5C\\frmgokanseissd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseissd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\test\\classlibrary\\ssdtypetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,28 +34,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SsdTypeTable.cs",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\SsdTypeTable.cs",
-              "RelativeDocumentMoniker": "ClassLibrary\\SsdTypeTable.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\SsdTypeTable.cs",
-              "RelativeToolTip": "ClassLibrary\\SsdTypeTable.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAcwHMAAAANAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "SsdStandardTable.cs",
+              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\SsdStandardTable.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\SsdStandardTable.cs",
+              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\SsdStandardTable.cs",
+              "RelativeToolTip": "ClassLibrary\\SsdStandardTable.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAYwIgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T05:40:57.968Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SsdConnectionTable.cs",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\SsdConnectionTable.cs",
-              "RelativeDocumentMoniker": "ClassLibrary\\SsdConnectionTable.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\SsdConnectionTable.cs",
-              "RelativeToolTip": "ClassLibrary\\SsdConnectionTable.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAYwG0AAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T05:39:25.077Z",
+              "WhenOpened": "2025-01-21T06:53:31.358Z",
               "EditorCaption": ""
             },
             {
@@ -161,14 +148,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GoodsSsdTable.cs",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\GoodsSsdTable.cs",
-              "RelativeDocumentMoniker": "ClassLibrary\\GoodsSsdTable.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\GoodsSsdTable.cs",
-              "RelativeToolTip": "ClassLibrary\\GoodsSsdTable.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAADwv3AAAABBAAAAAAAAAA==",
+              "Title": "SsdConnectionTable.cs",
+              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\SsdConnectionTable.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\SsdConnectionTable.cs",
+              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\SsdConnectionTable.cs",
+              "RelativeToolTip": "ClassLibrary\\SsdConnectionTable.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAUwAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T05:00:37.521Z",
+              "WhenOpened": "2025-01-21T05:39:25.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SsdTypeTable.cs",
+              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\SsdTypeTable.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\SsdTypeTable.cs",
+              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\ClassLibrary\\SsdTypeTable.cs",
+              "RelativeToolTip": "ClassLibrary\\SsdTypeTable.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAYwIcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T05:40:57.968Z",
               "EditorCaption": ""
             },
             {
@@ -179,14 +179,14 @@
               "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiSsd.cs",
               "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGokanseiSsd.cs",
               "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGokanseiSsd.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAgwHcAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAJkBAAAAAAAAAAAzwLgBAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-21T04:55:53.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "frmGokanseiSsd.cs [\u30C7\u30B6\u30A4\u30F3]",
               "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\test\\\u5352\u696D\u5236\u4F5C\\frmGokanseiSsd.cs",
               "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiSsd.cs",

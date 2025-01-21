@@ -77,5 +77,61 @@ namespace ClassLibrary
             }
             return standard_id;
         }
+
+        public int Insert(string standard_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "INSERT INTO SSD_Standard(standard_name) VALUES (@standard_name)";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@standard_name", standard_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+            return ret;
+        }
+
+        public int Update(string standard_name, string standard_name_old)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE SSD_Standard SET standard_name = @standard_name WHERE standard_name = @standard_name_old";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@standard_name", standard_name);
+                command.Parameters.AddWithValue("@standard_name_old", standard_name_old);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
+
+        public int Delete(string standard_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "DELETE FROM SSD_Standard WHERE standard_name = @standard_name";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@standard_name", standard_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+            return ret;
+        }
     }
 }

@@ -85,7 +85,7 @@ namespace ClassLibrary
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "INSERT INTO SSD_Connection(@standard_name) VALUES (@standard_name)";
+                string sql = "INSERT INTO SSD_Connection(standard_name) VALUES (@standard_name)";
 
                 SqlCommand command = new SqlCommand(sql, connection);
                 command.Parameters.AddWithValue("@standard_name", standard_name);
@@ -103,7 +103,7 @@ namespace ClassLibrary
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "UPDATE SSD_Type SET standard_name = @standard_name WHERE standard_name = @standard_name_old";
+                string sql = "UPDATE SSD_Connection SET standard_name = @standard_name WHERE standard_name = @standard_name_old";
 
                 SqlCommand command = new SqlCommand(sql, connection);
                 command.Parameters.AddWithValue("@standard_name", standard_name);
@@ -112,6 +112,24 @@ namespace ClassLibrary
                 connection.Open();
                 ret = command.ExecuteNonQuery();
 
+            }
+            return ret;
+        }
+
+        public int Delete(string standard_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "DELETE FROM SSD_Connection WHERE standard_name = @standard_name";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@standard_name", standard_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
             }
             return ret;
         }

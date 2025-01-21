@@ -103,6 +103,7 @@
             this.btnSpAdd.TabIndex = 5;
             this.btnSpAdd.Text = "追加";
             this.btnSpAdd.UseVisualStyleBackColor = true;
+            this.btnSpAdd.Click += new System.EventHandler(this.btnSpAdd_Click);
             // 
             // btnSpChange
             // 
@@ -112,6 +113,7 @@
             this.btnSpChange.TabIndex = 6;
             this.btnSpChange.Text = "変更";
             this.btnSpChange.UseVisualStyleBackColor = true;
+            this.btnSpChange.Click += new System.EventHandler(this.btnSpChange_Click);
             // 
             // btnSpDelete
             // 
@@ -121,6 +123,7 @@
             this.btnSpDelete.TabIndex = 7;
             this.btnSpDelete.Text = "削除";
             this.btnSpDelete.UseVisualStyleBackColor = true;
+            this.btnSpDelete.Click += new System.EventHandler(this.btnSpDelete_Click);
             // 
             // txtPlugs
             // 
@@ -148,6 +151,7 @@
             this.btnPchange.TabIndex = 10;
             this.btnPchange.Text = "変更";
             this.btnPchange.UseVisualStyleBackColor = true;
+            this.btnPchange.Click += new System.EventHandler(this.btnPchange_Click);
             // 
             // btnPdelete
             // 
@@ -157,6 +161,7 @@
             this.btnPdelete.TabIndex = 11;
             this.btnPdelete.Text = "削除";
             this.btnPdelete.UseVisualStyleBackColor = true;
+            this.btnPdelete.Click += new System.EventHandler(this.btnPdelete_Click);
             // 
             // label3
             // 
