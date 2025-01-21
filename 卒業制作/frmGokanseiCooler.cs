@@ -38,5 +38,10 @@ namespace 卒業制作
         {
             txtCPUcooler.Text = lstType.SelectedItem.ToString();
         }
+
+        private void btnCPUcAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -69,5 +69,23 @@ namespace ClassLibrary
             }
             return cooler_type_id;
         }
+        public int Insert(string cooler_type_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "INSERT INTO Cooler_Type(cooler_type_name) VALUES (@cooler_type_name)";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@cooler_type_name", cooler_type_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
     }
 }

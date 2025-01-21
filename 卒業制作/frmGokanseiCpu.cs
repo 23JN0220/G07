@@ -89,12 +89,15 @@ namespace 卒業制作
         {
             if (txtSeries.Text != "")
             {
-               CpuSeriesTable cpuSeriesTable = new CpuSeriesTable();
+                if (!lstSeries.Items.Contains(txtSeries.Text))
+                {
+                    CpuSeriesTable cpuSeriesTable = new CpuSeriesTable();
                 int ret = cpuSeriesTable.Insert(txtSeries.Text);
 
                 if (ret == 1)
                 {
-                    MessageBox.Show("データを追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   
+                        MessageBox.Show("データを追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     lstSeries.Items.Clear();
                     DataTable dataTable = cpuSeriesTable.GetCpuSeries();
@@ -109,11 +112,16 @@ namespace 卒業制作
                 {
                     MessageBox.Show("データを追加できませんでした。", "追加エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
+                }
+                else
+                {
+                    MessageBox.Show("同じ名称のタイプが既に存在します。\n別の名称を入力してください。", "重複エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
 
             }
             else
             {
-                MessageBox.Show("タイプの名称が入力されていません。\n名称を入力してください。", "未入力エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("シリーズの名称が入力されていません。\n名称を入力してください。", "未入力エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -184,6 +192,220 @@ namespace 卒業制作
             else
             {
                 MessageBox.Show("変更する項目が選択されていません。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnGadd_Click(object sender, EventArgs e)
+        {
+            if (txtGen.Text != "")
+            {
+                if (!lstGen.Items.Contains(txtGen.Text))
+                {
+                    CpuGenerationTable cpuGenerationTable = new CpuGenerationTable();
+                int ret = cpuGenerationTable.Insert(txtGen.Text);
+                   
+                   
+                        if (ret == 1)
+                        {
+                           
+                                MessageBox.Show("データを追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                lstSeries.Items.Clear();
+                                DataTable dataTable = cpuGenerationTable.GetCPUGeneration();
+                                foreach (DataRow dr in dataTable.Rows)
+                                {
+                                    lstGen.Items.Add(dr[1].ToString());
+                                }
+
+                                txtGen.Text = "";
+                         }
+                          else
+                          {
+                                MessageBox.Show("データを追加できませんでした。", "追加エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                          }
+                 }
+                    
+                else
+                {
+                      MessageBox.Show("同じ名称のタイプが既に存在します。\n別の名称を入力してください。", "重複エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            else
+            {
+                MessageBox.Show("世代の名称が入力されていません。\n名称を入力してください。", "未入力エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnGchange_Click(object sender, EventArgs e)
+        {
+            if (txtGen.Text != "" && lstGen.SelectedIndex != -1)
+            {
+                CpuGenerationTable cpuGenerationTable = new CpuGenerationTable();
+                int ret = cpuGenerationTable.Update(txtGen.Text, lstGen.SelectedItem.ToString());
+
+                if (ret == 1)
+                {
+                    MessageBox.Show("データを変更しました。", "変更完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    lstGen.Items.Clear();
+                    DataTable dataTable = cpuGenerationTable.GetCPUGeneration();
+                    foreach (DataRow dr in dataTable.Rows)
+                    {
+                        lstGen.Items.Add(dr[1].ToString());
+                    }
+
+                    txtGen.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("データを変更できませんでした。", "変更エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            else
+            {
+                MessageBox.Show("変更する項目が選択されていないか、変更後の名称が未入力です。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnSoAdd_Click(object sender, EventArgs e)
+        {
+            if (txtSocket.Text != "")
+            {
+                if (!lstSocket.Items.Contains(txtSocket.Text))
+                {
+                    CpuSocketTable cpuSocketTable = new CpuSocketTable();
+                    int ret = cpuSocketTable.Insert(txtSocket.Text);
+
+                    if (ret == 1)
+                    {
+
+                        MessageBox.Show("データを追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        lstSocket.Items.Clear();
+                        DataTable dataTable = cpuSocketTable.GetCPUSocket();
+                        foreach (DataRow dr in dataTable.Rows)
+                        {
+                            lstSocket.Items.Add(dr[1].ToString());
+                        }
+
+                        txtSocket.Text = "";
+                    }
+                    else
+                    {
+                        MessageBox.Show("データを追加できませんでした。", "追加エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("同じ名称のタイプが既に存在します。\n別の名称を入力してください。", "重複エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("ソケットの名称が入力されていません。\n名称を入力してください。", "未入力エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnSoChange_Click(object sender, EventArgs e)
+        {
+            if (txtSocket.Text != "" && lstSocket.SelectedIndex != -1)
+            {
+                CpuSocketTable cpuSocketTable = new CpuSocketTable();
+                int ret =cpuSocketTable.Update(txtSocket.Text, lstSocket.SelectedItem.ToString());
+
+                if (ret == 1)
+                {
+                    MessageBox.Show("データを変更しました。", "変更完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    lstSocket.Items.Clear();
+                    DataTable dataTable = cpuSocketTable.GetCPUSocket();
+                    foreach (DataRow dr in dataTable.Rows)
+                    {
+                        lstSocket.Items.Add(dr[1].ToString());
+                    }
+
+                    txtSocket.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("データを変更できませんでした。", "変更エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            else
+            {
+                MessageBox.Show("変更する項目が選択されていないか、変更後の名称が未入力です。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnCadd_Click(object sender, EventArgs e)
+        {
+            if (txtChipset.Text != "")
+            {
+                if (!lstSocket.Items.Contains(txtChipset.Text))
+                {
+                 ChipSetSeriesTable chipSetSeriesTable =new ChipSetSeriesTable();
+                    int ret = chipSetSeriesTable.Insert(txtChipset.Text);
+
+                    if (ret == 1)
+                    {
+
+                        MessageBox.Show("データを追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        lstChipset.Items.Clear();
+                        DataTable dataTable = chipSetSeriesTable.GetChipsetSeries();
+                        foreach (DataRow dr in dataTable.Rows)
+                        {
+                            lstChipset.Items.Add(dr[1].ToString());
+                        }
+
+                        txtChipset.Text = "";
+                    }
+                    else
+                    {
+                        MessageBox.Show("データを追加できませんでした。", "追加エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("同じ名称のタイプが既に存在します。\n別の名称を入力してください。", "重複エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("チップセットシリーズの名称が入力されていません。\n名称を入力してください。", "未入力エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnCchange_Click(object sender, EventArgs e)
+        {
+            if (txtChipset.Text != "" && lstChipset.SelectedIndex != -1)
+            {
+                ChipSetSeriesTable chipSetSeriesTable = new ChipSetSeriesTable();
+                int ret = chipSetSeriesTable.Update(txtChipset.Text, lstChipset.SelectedItem.ToString());
+
+                if (ret == 1)
+                {
+                    MessageBox.Show("データを変更しました。", "変更完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    lstChipset.Items.Clear();
+                    DataTable dataTable = chipSetSeriesTable.GetChipsetSeries();
+                    foreach (DataRow dr in dataTable.Rows)
+                    {
+                        lstChipset.Items.Add(dr[1].ToString());
+                    }
+
+                    txtChipset.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("データを変更できませんでした。", "変更エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            else
+            {
+                MessageBox.Show("変更する項目が選択されていないか、変更後の名称が未入力です。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }

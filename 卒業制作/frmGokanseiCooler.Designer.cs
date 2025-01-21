@@ -91,6 +91,7 @@
             this.btnCPUcAdd.TabIndex = 5;
             this.btnCPUcAdd.Text = "追加";
             this.btnCPUcAdd.UseVisualStyleBackColor = true;
+            this.btnCPUcAdd.Click += new System.EventHandler(this.btnCPUcAdd_Click);
             // 
             // btnCPUcChange
             // 
