@@ -138,6 +138,7 @@
             this.btnPadd.TabStop = false;
             this.btnPadd.Text = "追加";
             this.btnPadd.UseVisualStyleBackColor = true;
+            this.btnPadd.Click += new System.EventHandler(this.btnPadd_Click);
             // 
             // btnPchange
             // 

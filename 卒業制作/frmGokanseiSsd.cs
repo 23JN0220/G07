@@ -67,27 +67,33 @@ namespace 卒業制作
         {
             if (txtType.Text != "")
             {
-                SsdTypeTable ssdTypeTable = new SsdTypeTable();
-                int ret = ssdTypeTable.Insert(txtType.Text);
-
-                if (ret == 1)
+                if (!lstType.Items.Contains(txtType.Text))
                 {
-                    MessageBox.Show("データを追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    SsdTypeTable ssdTypeTable = new SsdTypeTable();
+                    int ret = ssdTypeTable.Insert(txtType.Text);
 
-                    lstType.Items.Clear();
-                    DataTable dataTable = ssdTypeTable.GetSsdType();
-                    foreach (DataRow dr in dataTable.Rows)
+                    if (ret == 1)
                     {
-                        lstType.Items.Add(dr[1].ToString());
-                    }
+                        MessageBox.Show("データを追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    txtType.Text = "";
+                        lstType.Items.Clear();
+                        DataTable dataTable = ssdTypeTable.GetSsdType();
+                        foreach (DataRow dr in dataTable.Rows)
+                        {
+                            lstType.Items.Add(dr[1].ToString());
+                        }
+
+                        txtType.Text = "";
+                    }
+                    else
+                    {
+                        MessageBox.Show("データを追加できませんでした。", "追加エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("データを追加できませんでした。", "追加エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("同じ名称のタイプが既に存在します。\n別の名称を入力してください。", "重複エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
-
             }
             else
             {
@@ -99,26 +105,36 @@ namespace 卒業制作
         {
             if (txtType.Text != "" && lstType.SelectedIndex != -1)
             {
-                SsdTypeTable ssdTypeTable = new SsdTypeTable();
-                int ret = ssdTypeTable.Update(txtType.Text, lstType.SelectedItem.ToString());
-
-                if (ret == 1)
+                if (!lstType.Items.Contains(txtType.Text))
                 {
-                    MessageBox.Show("データを変更しました。", "変更完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    SsdTypeTable ssdTypeTable = new SsdTypeTable();
+                    int ret = ssdTypeTable.Update(txtType.Text, lstType.SelectedItem.ToString());
 
-                    lstType.Items.Clear();
-                    DataTable dataTable = ssdTypeTable.GetSsdType();
-                    foreach (DataRow dr in dataTable.Rows)
+                    if (ret == 1)
                     {
-                        lstType.Items.Add(dr[1].ToString());
-                    }
+                        MessageBox.Show("データを変更しました。", "変更完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    txtType.Text = "";
+                        lstType.Items.Clear();
+                        DataTable dataTable = ssdTypeTable.GetSsdType();
+                        foreach (DataRow dr in dataTable.Rows)
+                        {
+                            lstType.Items.Add(dr[1].ToString());
+                        }
+
+                        txtType.Text = "";
+                    }
+                    else
+                    {
+                        MessageBox.Show("データを変更できませんでした。", "変更エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("データを変更できませんでした。", "変更エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("同じ名称のタイプが既に存在します。\n別の名称を入力してください。", "重複エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
+
+
+
             }
             else
             {
@@ -154,14 +170,45 @@ namespace 卒業制作
 
                     frmGokanseiWarning.ShowDialog();
                 }
-                
 
-                
+
+
 
             }
             else
             {
                 MessageBox.Show("変更する項目が選択されていません。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnPadd_Click(object sender, EventArgs e)
+        {
+            if (txtPlugs.Text != "")
+            {
+                SsdConnectionTable ssdConnectionTable = new SsdConnectionTable();
+                int ret = ssdConnectionTable.Insert(txtPlugs.Text);
+
+                if (ret == 1)
+                {
+                    MessageBox.Show("データを追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    lstPlugs.Items.Clear();
+                    DataTable dataTable = ssdConnectionTable.GetSsdConnection();
+                    foreach (DataRow dr in dataTable.Rows)
+                    {
+                        lstPlugs.Items.Add(dr[1].ToString());
+                    }
+
+                    txtPlugs.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("データを追加できませんでした。", "追加エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            else
+            {
+                MessageBox.Show("接続方法の名称が入力されていません。\n名称を入力してください。", "未入力エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }
