@@ -81,7 +81,7 @@ namespace 卒業制作
                 }
 
             }
-            
+
         }
 
 
@@ -304,18 +304,125 @@ namespace 卒業制作
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            int goods_code = int.Parse(dgvGoods.CurrentRow.Cells["goods_code"].Value.ToString());
-
-            DialogResult ret = MessageBox.Show("商品番号「"+ goods_code +"」を削除します\n\n" +
-                                               "利用者がカートや構成チェック、ブックマークにこの商品を追加している場合、これらのデータも削除されます\n" +
-                                               "また、注文明細からもこの商品のデータが削除されます\n" +
-                                               "この商品を発送していない場合は注意してください\n\n" +
-                                               "削除を続行すると、元に戻すことはできません\n" +
-                                               "本当に削除しますか？", "注意", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
-            if (ret == DialogResult.Yes)
+            if (dgvGoods.SelectedCells.Count > 0)
             {
-                
+                int goods_code = int.Parse(dgvGoods.CurrentRow.Cells["goods_code"].Value.ToString());
+
+                DialogResult ret = MessageBox.Show("商品番号「" + goods_code + "」を削除します\n\n" +
+                                                   "利用者がカートや構成チェック、ブックマークにこの商品を追加している場合、これらのデータも削除されます\n" +
+                                                   "また、注文明細からもこの商品のデータが削除されます\n" +
+                                                   "この商品を発送していない場合は注意してください\n\n" +
+                                                   "削除を続行すると、元に戻すことはできません\n" +
+                                                   "本当に削除しますか？", "注意", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
+                if (ret == DialogResult.Yes)
+                {
+                    GoodsTable goodsTable = new GoodsTable();
+                    BookmarkTable bookmarkTable = new BookmarkTable();
+                    CartTable cartTable = new CartTable();
+                    CompositionTable compositionTable = new CompositionTable();
+                    OrderDetailTable orderDetailTable = new OrderDetailTable();
+                    ReviewTable reviewTable = new ReviewTable();
+
+                    int retBookmark = bookmarkTable.DeleteByGoodsCode(goods_code);
+                    int retCart = cartTable.DeleteByGoodsCode(goods_code);
+                    int retComposition = compositionTable.DeleteByGoodsCode(goods_code);
+                    int retOrder = orderDetailTable.DeleteByGoodsCode(goods_code);
+                    int retreview = reviewTable.DeleteByGoodsCode(goods_code);
+
+                    int group_code = int.Parse(dgvGoods.CurrentRow.Cells["group_code"].Value.ToString());
+
+                    switch (group_code)
+                    {
+                        case 1:
+                            GoodsCpuTable goodsCpuTable = new GoodsCpuTable();
+                            CpuChipsetSeriesTable cpuChipsetSeriesTable = new CpuChipsetSeriesTable();
+
+                            cpuChipsetSeriesTable.Delete(goods_code);
+                            goodsCpuTable.Delete(goods_code);
+
+                            break;
+                        case 2:
+                            GoodsCoolerTable goodsCoolerTable = new GoodsCoolerTable();
+                            CoolerSocketTable coolerSocketTable = new CoolerSocketTable();
+
+                            coolerSocketTable.Delete(goods_code);
+                            goodsCoolerTable.Delete(goods_code);
+
+                            break;
+                        case 3:
+                            GoodsMotherboardTable goodsMotherboardTable = new GoodsMotherboardTable();
+
+                            goodsMotherboardTable.Delete(goods_code);
+
+                            break;
+                        case 4:
+                            GoodsMemoryTable goodsMemoryTable = new GoodsMemoryTable();
+
+                            goodsMemoryTable.Delete(goods_code);
+
+                            break;
+                        case 5:
+                            GoodsGpuTable goodsGpuTable = new GoodsGpuTable();
+
+                            goodsGpuTable.Delete(goods_code);
+
+                            break;
+                        case 6:
+                            GoodsSsdTable goodsSsdTable = new GoodsSsdTable();
+
+                            goodsSsdTable.Delete(goods_code);
+
+                            break;
+                        case 7:
+                            GoodsHddTable goodsHddTable = new GoodsHddTable();
+
+                            goodsHddTable.Delete(goods_code);
+
+                            break;
+                        case 8:
+                            GoodsPowerTable goodsPowerTable = new GoodsPowerTable();
+
+                            goodsPowerTable.Delete(goods_code);
+
+                            break;
+                        case 9:
+                            GoodsCaseTable goodsCaseTable = new GoodsCaseTable();
+                            CaseMotherboardSizeTable caseMotherboardSizeTable = new CaseMotherboardSizeTable();
+
+                            caseMotherboardSizeTable.Delete(goods_code);
+                            goodsCaseTable.Delete(goods_code);
+
+                            break;
+                        case 10:
+                            GoodsFanTable goodsFanTable = new GoodsFanTable();
+
+                            goodsFanTable.Delete(goods_code);
+
+                            break;
+                        case 11:
+                            GoodsOsTable goodsOsTable = new GoodsOsTable();
+
+                            goodsOsTable.Delete(goods_code);
+
+                            break;
+                        default:
+                            MessageBox.Show("この商品のカテゴリーが不明です", "商品エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            break;
+                    }
+
+                    goodsTable.Delete(goods_code);
+
+                    MessageBox.Show("商品を削除しました", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    btnSearch.PerformClick();
+
+                }
+                else
+                {
+                    MessageBox.Show("商品が選択されていません", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
+
         }
     }
 }
