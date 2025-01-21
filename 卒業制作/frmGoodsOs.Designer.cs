@@ -40,13 +40,15 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPicture = new System.Windows.Forms.Button();
             this.ofdPicture = new System.Windows.Forms.OpenFileDialog();
+            this.lstMaker = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(910, 84);
+            this.label14.Location = new System.Drawing.Point(910, 119);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(31, 21);
             this.label14.TabIndex = 98;
@@ -75,7 +77,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(447, 84);
+            this.label10.Location = new System.Drawing.Point(447, 119);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(52, 21);
             this.label10.TabIndex = 97;
@@ -84,7 +86,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(410, 49);
+            this.label2.Location = new System.Drawing.Point(410, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 21);
             this.label2.TabIndex = 94;
@@ -103,14 +105,14 @@
             // 
             this.lstVersion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstVersion.FormattingEnabled = true;
-            this.lstVersion.Location = new System.Drawing.Point(505, 46);
+            this.lstVersion.Location = new System.Drawing.Point(505, 81);
             this.lstVersion.Name = "lstVersion";
             this.lstVersion.Size = new System.Drawing.Size(399, 29);
             this.lstVersion.TabIndex = 2;
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(505, 81);
+            this.txtPrice.Location = new System.Drawing.Point(505, 116);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(399, 28);
             this.txtPrice.TabIndex = 3;
@@ -144,6 +146,24 @@
             // 
             this.ofdPicture.Filter = "画像ファイル(*.jpg;*.jpeg;*.png;)|*.jpg;*.jpeg;*.png";
             // 
+            // lstMaker
+            // 
+            this.lstMaker.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstMaker.FormattingEnabled = true;
+            this.lstMaker.Location = new System.Drawing.Point(505, 46);
+            this.lstMaker.Name = "lstMaker";
+            this.lstMaker.Size = new System.Drawing.Size(399, 29);
+            this.lstMaker.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(404, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 21);
+            this.label3.TabIndex = 94;
+            this.label3.Text = "メーカー名";
+            // 
             // frmGoodsOs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
@@ -154,8 +174,10 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.label10);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.lstMaker);
             this.Controls.Add(this.lstVersion);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtName);
@@ -184,5 +206,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnPicture;
         private System.Windows.Forms.OpenFileDialog ofdPicture;
+        private System.Windows.Forms.ComboBox lstMaker;
+        private System.Windows.Forms.Label label3;
     }
 }

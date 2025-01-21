@@ -38,6 +38,7 @@ namespace 卒業制作
         private void frmGoodsOs_Load(object sender, EventArgs e)
         {
             OsVersionTable osVersionTable = new OsVersionTable();
+            MakerTable makerTable = new MakerTable();
 
             DataTable table = osVersionTable.GetOsVersion();
             foreach (DataRow dr in table.Rows)
@@ -45,10 +46,19 @@ namespace 卒業制作
                 lstVersion.Items.Add(dr[1].ToString());
             }
 
+            table = makerTable.GetMaker();
+            foreach (DataRow dr in table.Rows)
+            {
+                lstMaker.Items.Add(dr[1].ToString());
+            }
+
+            lstMaker.SelectedIndex = lstMaker.FindStringExact("Microsoft");
+
             if (goods != null)
             {
                 txtName.Text = goods.goods_name;
                 txtPrice.Text = goods.price.ToString();
+                lstMaker.SelectedIndex = lstMaker.FindStringExact(makerTable.GetMakerNameById(goods.maker_id));
 
                 lstVersion.SelectedIndex = lstVersion.FindStringExact(osVersionTable.GetOsVersionNameById(goodsOs.version_id));
 
