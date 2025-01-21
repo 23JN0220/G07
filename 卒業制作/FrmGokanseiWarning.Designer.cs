@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.dgvGoods = new System.Windows.Forms.DataGridView();
-            this.goods_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.goods_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
+            this.goods_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.goods_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGoods)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,6 +40,8 @@
             // 
             this.dgvGoods.AllowUserToAddRows = false;
             this.dgvGoods.AllowUserToDeleteRows = false;
+            this.dgvGoods.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvGoods.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvGoods.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGoods.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.goods_code,
@@ -49,16 +51,6 @@
             this.dgvGoods.RowTemplate.Height = 21;
             this.dgvGoods.Size = new System.Drawing.Size(584, 371);
             this.dgvGoods.TabIndex = 0;
-            // 
-            // goods_code
-            // 
-            this.goods_code.HeaderText = "商品番号";
-            this.goods_code.Name = "goods_code";
-            // 
-            // goods_name
-            // 
-            this.goods_name.HeaderText = "商品名";
-            this.goods_name.Name = "goods_name";
             // 
             // label1
             // 
@@ -77,6 +69,21 @@
             this.btnBack.TabIndex = 2;
             this.btnBack.Text = "戻る";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // goods_code
+            // 
+            this.goods_code.DataPropertyName = "goods_code";
+            this.goods_code.HeaderText = "商品番号";
+            this.goods_code.Name = "goods_code";
+            this.goods_code.Width = 90;
+            // 
+            // goods_name
+            // 
+            this.goods_name.DataPropertyName = "goods_name";
+            this.goods_name.HeaderText = "商品名";
+            this.goods_name.Name = "goods_name";
+            this.goods_name.Width = 90;
             // 
             // FrmGokanseiWarning
             // 
@@ -90,6 +97,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "FrmGokanseiWarning";
             this.Text = "互換性管理";
+            this.Load += new System.EventHandler(this.FrmGokanseiWarning_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGoods)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -99,9 +107,9 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvGoods;
-        private System.Windows.Forms.DataGridViewTextBoxColumn goods_code;
-        private System.Windows.Forms.DataGridViewTextBoxColumn goods_name;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.DataGridViewTextBoxColumn goods_code;
+        private System.Windows.Forms.DataGridViewTextBoxColumn goods_name;
     }
 }

@@ -103,5 +103,25 @@ namespace ClassLibrary
             }
             return ret;
         }
+
+        public DataTable GetGoodsSsdType(int type_id)
+        {
+            DataTable table = new DataTable();
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT Goods.goods_code, goods_name FROM Goods INNER JOIN Goods_SSD ON Goods.goods_code = Goods_SSD.goods_code WHERE type_id = @type_id";
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@type_id", type_id);
+
+                int cnt = adapter.Fill(table);
+
+                if (cnt == 0)
+                {
+                    table = null;
+                }
+            }
+            return table;
+        }
     }
 }

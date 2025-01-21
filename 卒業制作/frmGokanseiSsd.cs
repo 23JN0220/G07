@@ -130,25 +130,39 @@ namespace 卒業制作
         {
             if (lstType.SelectedIndex != -1)
             {
+                GoodsSsdTable goodsSsdTable = new GoodsSsdTable();
+                SsdTypeTable ssdTypeTable = new SsdTypeTable();
+
                 string type_name = lstType.SelectedItem.ToString();
+                int type_id = ssdTypeTable.GetSsdTypeIdByName(type_name);
 
-                DialogResult result = MessageBox.Show("「" + type_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DataTable dataTable = goodsSsdTable.GetGoodsSsdType(type_id);
 
-                if (result == DialogResult.Yes)
+                if (dataTable == null)
                 {
-                   //削除処理を書いてね
+                    DialogResult result = MessageBox.Show("「" + type_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        //削除処理を書いてね
+                    }
                 }
+                else
+                {
+                    FrmGokanseiWarning frmGokanseiWarning = new FrmGokanseiWarning();
+                    frmGokanseiWarning.dataTable = dataTable;
+
+                    frmGokanseiWarning.ShowDialog();
+                }
+                
+
+                
 
             }
             else
             {
                 MessageBox.Show("変更する項目が選択されていません。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-        }
-
-        private void txtSpec_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
