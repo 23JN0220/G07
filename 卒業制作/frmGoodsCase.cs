@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -132,6 +133,244 @@ namespace 卒業制作
 
         }
 
-        
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            if (txtName.Text != "" && lstMaker.SelectedIndex != -1 && lstCaseFan.SelectedIndex != -1 && lstUnit.SelectedIndex != -1 && txtColor.Text != "")
+            {
+                bool retBay = int.TryParse(txtBayNumber.Text, out int bay);
+                bool ret3ShadowBay = int.TryParse(txt3ShadowBayNumber.Text, out int shadowbay3);
+                bool ret2ShadowBay = int.TryParse(txt2ShadowBayNumber.Text, out int shadowbay2);
+                bool retMaxGpu = int.TryParse(txtMaxGpu.Text, out int gpu);
+                bool retCaseFanNumber = int.TryParse(txtCaseNumber.Text, out int caseFanNumber);
+                bool retSlotNumber = int.TryParse(txtSlotNumber.Text, out int slotNumber);
+                bool retWidth = int.TryParse(txtWidth.Text, out int width);
+                bool retDepth = int.TryParse(txtDepth.Text, out int depth);
+                bool retHeight = int.TryParse(txtHeight.Text, out int height);
+                bool retPrice = int.TryParse(txtPrice.Text, out int price);
+
+                if (retBay && ret3ShadowBay && ret2ShadowBay && retMaxGpu && retCaseFanNumber && retSlotNumber && retWidth && retDepth && retHeight && retPrice)
+                {
+                    GoodsTable goodsTable = new GoodsTable();
+                    GoodsCaseTable goodsCaseTable = new GoodsCaseTable();
+                    MakerTable makerTable = new MakerTable();
+                    CaseFanSizeTable caseFanSizeTable = new CaseFanSizeTable();
+                    PowerSizeTable powerSizeTable = new PowerSizeTable();
+                    MotherboardSizeTable motherboardSizeTable = new MotherboardSizeTable();
+                    CaseMotherboardSizeTable caseMotherboardSizeTable = new CaseMotherboardSizeTable();
+
+                    if (goods == null)
+                    {
+                        if (!goodsTable.ExistGoodsName(txtName.Text))
+                        {
+                            goods = new Goods();
+
+                            goods.goods_name = txtName.Text;
+                            goods.maker_id = makerTable.GetMakerIdByName(lstMaker.Text);
+                            goods.price = price;
+                            goods.group_code = 9;
+                            goods.power_consumption = 0;
+
+                            int retGoods = goodsTable.Insert(goods);
+
+                            if (retGoods == 1)
+                            {
+                                goods.goods_code = goodsTable.GetGoodsCodeByName(goods.goods_name);
+                                goods.goods_image = goods.goods_code + ".jpg";
+
+                                int retPic = goodsTable.UpdatePicture(goods);
+
+                                if (retPic == 1)
+                                {
+                                    goodsCase = new GoodsCase();
+                                    goodsCase.goods_code = goods.goods_code;
+                                    goodsCase.bay_number = bay;
+                                    goodsCase.shadowbay3_number = shadowbay3;
+                                    goodsCase.shadowbay2_number = shadowbay2;
+                                    goodsCase.gpu_size = gpu;
+                                    goodsCase.fan_size_id = caseFanSizeTable.GetCaseFanSizeIdByName(lstCaseFan.Text);
+                                    goodsCase.fan_number = caseFanNumber;
+                                    goodsCase.slot_number = slotNumber;
+                                    goodsCase.power_size_id = powerSizeTable.GetPowerSizeIdByName(lstUnit.Text);
+                                    goodsCase.width = width;
+                                    goodsCase.depth = depth;
+                                    goodsCase.height = height;
+                                    goodsCase.color = txtColor.Text;
+                                    if (chkLowPro.Checked)
+                                    {
+                                        goodsCase.lowpro = true;
+                                    }
+                                    else
+                                    {
+                                        goodsCase.lowpro = false;
+                                    }
+                                    if (chkWaterCooler.Checked)
+                                    {
+                                        goodsCase.water_cooling = true;
+                                    }
+                                    else
+                                    {
+                                        goodsCase.water_cooling = false;
+                                    }
+
+                                    int retCase = goodsCaseTable.Insert(goodsCase);
+
+                                    if (retCase == 1)
+                                    {
+                                        bool retMotherboard = true;
+
+                                        for (int i = 0; i < idList.Count; i++)
+                                        {
+                                            int MotherboardSizeId = idList[i];
+                                            int ret = caseMotherboardSizeTable.Insert(goodsCase.goods_code, idList[i]);
+
+                                            if (ret != 1)
+                                            {
+                                                retMotherboard = false;
+                                            }
+                                        }
+
+                                        if (retMotherboard)
+                                        {
+                                            if (changedPic)
+                                            {
+                                                File.Copy(pictureBox1.ImageLocation, "\\\\10.32.97.1\\Web\\SOTSU\\2024\\23JN02\\G07\\images\\goods\\" + goods.goods_code + format, true);
+                                            }
+
+
+                                            MessageBox.Show("商品を追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                            this.Close();
+                                        }
+                                        else
+                                        {
+                                            MessageBox.Show("Cマザーボードサイズ対応データの追加に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("商品のケースのデータの追加に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("商品の画像パスのデータ追加に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("商品の追加に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("同じ商品名の商品が既に追加されているため、追加できません。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                    }
+                    else
+                    {
+                        if (!goodsTable.ExistGoodsName(txtName.Text) || goods.goods_name == txtName.Text)
+                        {
+                            goods.goods_name = txtName.Text;
+                            goods.maker_id = makerTable.GetMakerIdByName(lstMaker.Text);
+                            goods.price = price;
+                            goods.group_code = 9;
+                            goods.power_consumption = 0;
+
+                            int retGoods = goodsTable.Update(goods);
+
+                            if (retGoods == 1)
+                            {
+                                goodsCase = new GoodsCase();
+                                goodsCase.goods_code = goods.goods_code;
+                                goodsCase.bay_number = bay;
+                                goodsCase.shadowbay3_number = shadowbay3;
+                                goodsCase.shadowbay2_number = shadowbay2;
+                                goodsCase.gpu_size = gpu;
+                                goodsCase.fan_size_id = caseFanSizeTable.GetCaseFanSizeIdByName(lstCaseFan.Text);
+                                goodsCase.fan_number = caseFanNumber;
+                                goodsCase.slot_number = slotNumber;
+                                goodsCase.power_size_id = powerSizeTable.GetPowerSizeIdByName(lstUnit.Text);
+                                goodsCase.width = width;
+                                goodsCase.depth = depth;
+                                goodsCase.height = height;
+                                goodsCase.color = txtColor.Text;
+                                if (chkLowPro.Checked)
+                                {
+                                    goodsCase.lowpro = true;
+                                }
+                                else
+                                {
+                                    goodsCase.lowpro = false;
+                                }
+                                if (chkWaterCooler.Checked)
+                                {
+                                    goodsCase.water_cooling = true;
+                                }
+                                else
+                                {
+                                    goodsCase.water_cooling = false;
+                                }
+
+                                int retCase = goodsCaseTable.Update(goodsCase);
+
+                                if (retCase == 1)
+                                {
+                                    int delData = caseMotherboardSizeTable.Delete(goodsCase.goods_code);
+
+                                    bool retMotherboard = true;
+
+                                    for (int i = 0; i < idList.Count; i++)
+                                    {
+                                        int MotherboardSizeId = idList[i];
+                                        int ret = caseMotherboardSizeTable.Insert(goodsCase.goods_code, idList[i]);
+
+                                        if (ret != 1)
+                                        {
+                                            retMotherboard = false;
+                                        }
+                                    }
+
+                                    if (retMotherboard)
+                                    {
+                                        if (changedPic)
+                                        {
+                                            File.Copy(pictureBox1.ImageLocation, "\\\\10.32.97.1\\Web\\SOTSU\\2024\\23JN02\\G07\\images\\goods\\" + goods.goods_code + format, true);
+                                        }
+
+
+                                        MessageBox.Show("商品を更新しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                        this.Close();
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("マザーボードサイズ対応データの更新に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("商品のケースのデータの更新に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("商品データの更新に失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("同じ商品名の商品が既に追加されているため、追加できません。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("名前・カラー以外のテキストボックスには数値を入力してください。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("未入力の項目があります。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
     }
 }
