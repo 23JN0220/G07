@@ -105,7 +105,7 @@ namespace ClassLibrary
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string sql = "UPDATE Goods_Case SET " +
-                            　"bay_number = @bay_number, " +
+                            "bay_number = @bay_number, " +
                              "shadowbay3_number = @shadowbay3_number, " +
                              "shadowbay2_number = @shadowbay2_number, " +
                              "gpu_size = @gpu_size, " +
@@ -178,6 +178,28 @@ namespace ClassLibrary
 
             }
             return ret;
+        }
+
+        public DataTable GetGoodsCaseByPowerSizeId(int power_size_id)
+        {
+            DataTable table = new DataTable();
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT Goods.goods_code, goods_name FROM Goods INNER JOIN Goods_Case ON Goods.goods_code = Goods_Case.goods_code WHERE power_size_id = @power_size_id";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@power_size_id", power_size_id);
+
+                adapter.Fill(table);
+
+                if (table.Rows.Count == 0)
+                {
+                    table = null;
+                }
+            }
+            return table;
         }
     }
 }

@@ -110,16 +110,18 @@ namespace ClassLibrary
             }
             return ret;
         }
-        public int Delete(string series_name)
+        public int Delete(string size_name)
         {
             int ret = 0;
 
             string connectionString = Properties.Settings.Default.DBConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "DELETE FROM CPU_Series WHERE series_name = @series_name";
+                string sql = "DELETE FROM Power_Size WHERE size_name = @size_name";
+
                 SqlCommand command = new SqlCommand(sql, connection);
-                command.Parameters.AddWithValue("@series_name", series_name);
+                command.Parameters.AddWithValue("@size_name", size_name);
+
                 connection.Open();
                 ret = command.ExecuteNonQuery();
             }

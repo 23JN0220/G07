@@ -92,6 +92,7 @@
             this.btnSdelete.TabIndex = 5;
             this.btnSdelete.Text = "削除";
             this.btnSdelete.UseVisualStyleBackColor = true;
+            this.btnSdelete.Click += new System.EventHandler(this.btnSdelete_Click);
             // 
             // btnClose
             // 

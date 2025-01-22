@@ -36,7 +36,10 @@ namespace 卒業制作
 
         private void lstSize_SelectedIndexChanged(object sender, EventArgs e)
         {
-           txtSize.Text = lstSize.SelectedItem.ToString();
+            if (lstSize.SelectedItem != null)
+            {
+                txtSize.Text = lstSize.SelectedItem.ToString();
+            }
         }
 
         private void btnSadd_Click(object sender, EventArgs e)
@@ -112,6 +115,67 @@ namespace 卒業制作
             else
             {
                 MessageBox.Show("変更する項目が選択されていないか、変更後の名称が未入力です。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnSdelete_Click(object sender, EventArgs e)
+        {
+            if (lstSize.SelectedIndex != -1)
+            {
+                GoodsPowerTable goodsPowerTable = new GoodsPowerTable();
+                GoodsCaseTable goodsCaseTable = new GoodsCaseTable();
+                PowerSizeTable powerSizeTable = new PowerSizeTable();
+
+                string size_name = lstSize.SelectedItem.ToString();
+                int size_id = powerSizeTable.GetPowerSizeIdByName(size_name);
+
+                DataTable dataTable = goodsPowerTable.GetGoodsPowerBySizeId(size_id);
+                DataTable dataTable2 = goodsCaseTable.GetGoodsCaseByPowerSizeId(size_id);
+
+                if (dataTable == null && dataTable2 == null)
+                {
+                    DialogResult result = MessageBox.Show("「" + size_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        int ret = powerSizeTable.Delete(size_name);
+
+                        if (ret == 1)
+                        {
+                            MessageBox.Show("データを削除しました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            lstSize.Items.Clear();
+                            DataTable dataTable3 = powerSizeTable.GetPowerSize();
+                            foreach (DataRow dr in dataTable3.Rows)
+                            {
+                                lstSize.Items.Add(dr[1].ToString());
+                            }
+                            txtSize.Text = "";
+                        }
+                        else
+                        {
+                            MessageBox.Show("データを削除できませんでした。", "削除エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                    }
+                }
+                else
+                {
+                    if (dataTable != null && dataTable2 != null)
+                    {
+                        dataTable.Merge(dataTable2);
+                    }
+                    else if (dataTable2 != null)
+                    {
+                        dataTable = dataTable2;
+                    }
+
+                    frmGokanseiWarning frmGokanseiWarning = new frmGokanseiWarning();
+                    frmGokanseiWarning.dataTable = dataTable;
+                    frmGokanseiWarning.ShowDialog();
+                }
+            }
+            else
+            {
+                MessageBox.Show("削除する項目が選択されていません。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }

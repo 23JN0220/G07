@@ -108,5 +108,26 @@ namespace ClassLibrary
             return ret;
         }
 
+        public DataTable GetGoodsPowerBySizeId(int size_id)
+        {
+            DataTable table = new DataTable();
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT Goods.goods_code, goods_name FROM Goods INNER JOIN Goods_Power ON Goods.goods_code = Goods_Power.goods_code WHERE size_id = @size_id";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@size_id", size_id);
+
+                adapter.Fill(table);
+
+                if (table.Rows.Count == 0)
+                {
+                    table = null;
+                }
+            }
+            return table;
+        }
     }
 }
