@@ -69,5 +69,61 @@ namespace ClassLibrary
             }
             return version_id;
         }
+
+        public int Insert(string version_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "INSERT INTO OS_Version (version_name) VALUES (@version_name)";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@version_name", version_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+            return ret;
+        }
+
+        public int Update(string version_name, string version_name_old)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE OS_Version SET version_name = @version_name WHERE version_name = @version_name_old";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@version_name", version_name);
+                command.Parameters.AddWithValue("@version_name_old", version_name_old);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+
+            return ret;
+        }
+
+        public int Delete(int version_id)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "DELETE FROM OS_Version WHERE version_id = @version_id";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@version_id", version_id);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+            return ret;
+        }
     }
 }

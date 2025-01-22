@@ -201,5 +201,27 @@ namespace ClassLibrary
             }
             return table;
         }
+
+        public DataTable GetGoodsCaseBySizeId(int fan_size_id)
+        {
+            DataTable table = new DataTable();
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT Goods.goods_code, goods_name FROM Goods INNER JOIN Goods_Case ON Goods.goods_code = Goods_Case.goods_code WHERE fan_size_id = @fan_size_id";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@fan_size_id", fan_size_id);
+
+                adapter.Fill(table);
+
+                if (table.Rows.Count == 0)
+                {
+                    table = null;
+                }
+            }
+            return table;
+        }
     }
 }

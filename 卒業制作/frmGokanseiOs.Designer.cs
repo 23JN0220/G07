@@ -71,6 +71,7 @@
             this.btnVadd.TabIndex = 3;
             this.btnVadd.Text = "追加";
             this.btnVadd.UseVisualStyleBackColor = true;
+            this.btnVadd.Click += new System.EventHandler(this.btnVadd_Click);
             // 
             // btnVchange
             // 
@@ -80,6 +81,7 @@
             this.btnVchange.TabIndex = 4;
             this.btnVchange.Text = "変更";
             this.btnVchange.UseVisualStyleBackColor = true;
+            this.btnVchange.Click += new System.EventHandler(this.btnVchange_Click);
             // 
             // btnVdelete
             // 
@@ -89,6 +91,7 @@
             this.btnVdelete.TabIndex = 5;
             this.btnVdelete.Text = "削除";
             this.btnVdelete.UseVisualStyleBackColor = true;
+            this.btnVdelete.Click += new System.EventHandler(this.btnVdelete_Click);
             // 
             // btnClose
             // 

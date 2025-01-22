@@ -69,5 +69,62 @@ namespace ClassLibrary
             }
             return size_id;
         }
+
+        public int Insert(string size_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "INSERT INTO CaseFan_Size (size_name) VALUES (@size_name)";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@size_name", size_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
+
+        public int Update(string size_name, string size_name_old)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE CaseFan_Size SET size_name = @size_name WHERE size_name = @size_name_old";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@size_name", size_name);
+                command.Parameters.AddWithValue("@size_name_old", size_name_old);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
+
+        public int Delete(string size_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "DELETE FROM CaseFan_Size WHERE size_name = @size_name";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@size_name", size_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+            return ret;
+        }
     }
 }
