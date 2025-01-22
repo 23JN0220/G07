@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmgokanseigpu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseigpu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\20250122\\classlibrary\\gpuresolutiontable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\gpuresolutiontable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\20250122\\classlibrary\\goodsgputable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\goodsgputable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmgokanseigpu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseigpu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\20250122\\classlibrary\\gpuinterfacetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\gpuinterfacetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\20250122\\classlibrary\\gpuseriestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\gpuseriestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmgokanseimemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseimemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\20250122\\classlibrary\\memorymoduletable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\memorymoduletable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmgokanseicpu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseicpu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\20250122\\classlibrary\\memorystandardtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\memorystandardtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\20250122\\classlibrary\\goodsmemorytable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90F0066A-CBD9-4014-895F-6A1EF2A091B7}|ClassLibrary\\ClassLibrary.csproj|solutionrelative:classlibrary\\goodsmemorytable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmgokanseimemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgokanseimemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,58 +38,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 29,
+          "SelectedChildIndex": 31,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MemoryModuleTable.cs",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\ClassLibrary\\MemoryModuleTable.cs",
-              "RelativeDocumentMoniker": "ClassLibrary\\MemoryModuleTable.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\ClassLibrary\\MemoryModuleTable.cs",
-              "RelativeToolTip": "ClassLibrary\\MemoryModuleTable.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAcwHsAAAAAAAAAAAAAAA==",
+              "Title": "GpuResolutionTable.cs",
+              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\ClassLibrary\\GpuResolutionTable.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\GpuResolutionTable.cs",
+              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\ClassLibrary\\GpuResolutionTable.cs",
+              "RelativeToolTip": "ClassLibrary\\GpuResolutionTable.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAwwIAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T03:51:13.562Z",
+              "WhenOpened": "2025-01-22T04:14:56.389Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "GoodsMemoryTable.cs",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\ClassLibrary\\GoodsMemoryTable.cs",
-              "RelativeDocumentMoniker": "ClassLibrary\\GoodsMemoryTable.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\ClassLibrary\\GoodsMemoryTable.cs",
-              "RelativeToolTip": "ClassLibrary\\GoodsMemoryTable.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAIwKEAAAAAAAAAAAAAAA==",
+              "Title": "GpuInterfaceTable.cs",
+              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\ClassLibrary\\GpuInterfaceTable.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\GpuInterfaceTable.cs",
+              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\ClassLibrary\\GpuInterfaceTable.cs",
+              "RelativeToolTip": "ClassLibrary\\GpuInterfaceTable.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAkwH0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T03:49:42.891Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MemoryStandardTable.cs",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\ClassLibrary\\MemoryStandardTable.cs",
-              "RelativeDocumentMoniker": "ClassLibrary\\MemoryStandardTable.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\ClassLibrary\\MemoryStandardTable.cs",
-              "RelativeToolTip": "ClassLibrary\\MemoryStandardTable.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAYwHwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T03:48:03.724Z",
+              "WhenOpened": "2025-01-22T04:12:36.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frmGokanseiCpu.cs",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmGokanseiCpu.cs",
-              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiCpu.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmGokanseiCpu.cs",
-              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGokanseiCpu.cs",
-              "ViewState": "AgIAAKwBAAAAAAAAAAAIwLsBAAAzAAAAAAAAAA==",
+              "Title": "GoodsGpuTable.cs",
+              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\ClassLibrary\\GoodsGpuTable.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\GoodsGpuTable.cs",
+              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\ClassLibrary\\GoodsGpuTable.cs",
+              "RelativeToolTip": "ClassLibrary\\GoodsGpuTable.cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAgwOkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T03:42:51.503Z",
+              "WhenOpened": "2025-01-22T04:11:08.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GpuSeriesTable.cs",
+              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\ClassLibrary\\GpuSeriesTable.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\GpuSeriesTable.cs",
+              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\ClassLibrary\\GpuSeriesTable.cs",
+              "RelativeToolTip": "ClassLibrary\\GpuSeriesTable.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAkwIAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T04:07:17.373Z",
               "EditorCaption": ""
             },
             {
@@ -189,28 +193,45 @@
               "Name": "ST:141:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "frmGokanseiMemory.cs",
               "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmGokanseiMemory.cs",
               "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiMemory.cs",
               "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmGokanseiMemory.cs",
               "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGokanseiMemory.cs",
-              "ViewState": "AgIAANsAAAAAAAAAAAAgwN4AAABfAAAAAAAAAA==",
+              "ViewState": "AgIAANEAAAAAAAAAAAAkwOQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T03:32:47.892Z",
+              "WhenOpened": "2025-01-22T04:06:37.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmGokanseiMemory.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmGokanseiMemory.cs",
-              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiMemory.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmGokanseiMemory.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGokanseiMemory.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "DocumentIndex": 0,
+              "Title": "frmGokanseiGpu.cs",
+              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmGokanseiGpu.cs",
+              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiGpu.cs",
+              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmGokanseiGpu.cs",
+              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGokanseiGpu.cs",
+              "ViewState": "AgIAAJoBAAAAAAAAAAAcwKQBAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T03:32:20.783Z",
+              "WhenOpened": "2025-01-22T04:00:21.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmGokanseiGpu.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmGokanseiGpu.cs",
+              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGokanseiGpu.cs",
+              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmGokanseiGpu.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGokanseiGpu.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T03:59:15.766Z",
               "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
             }
           ]

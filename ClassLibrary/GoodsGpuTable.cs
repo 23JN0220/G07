@@ -173,5 +173,72 @@ namespace ClassLibrary
             }
             return ret;
         }
+
+        public DataTable GetGoodsGpuBySeriesId(int series_id)
+        {
+            DataTable table = new DataTable();
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT Goods.goods_code, goods_name FROM Goods INNER JOIN Goods_GPU ON Goods.goods_code = Goods_GPU.goods_code WHERE series_id = @series_id";
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+
+                adapter.SelectCommand.Parameters.AddWithValue("@series_id", series_id);
+                adapter.Fill(table);
+
+                if (table.Rows.Count == 0)
+                {
+                    table = null;
+                }
+            }
+            return table;
+        }
+
+        public DataTable GetGoodsGpuByInterfaceId(int interface_id)
+        {
+            DataTable table = new DataTable();
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT Goods.goods_code, goods_name FROM Goods INNER JOIN Goods_GPU ON Goods.goods_code = Goods_GPU.goods_code WHERE interface_id = @interface_id";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@interface_id", interface_id);
+
+                adapter.Fill(table);
+
+                if (table.Rows.Count == 0)
+                {
+                    table = null;
+                }
+            }
+
+            return table;
+        }
+
+        public DataTable GetGoodsGpuByResolutionId(int resolution_id)
+        {
+            DataTable table = new DataTable();
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT Goods.goods_code, goods_name FROM Goods INNER JOIN Goods_GPU ON Goods.goods_code = Goods_GPU.goods_code WHERE resolution_id = @resolution_id";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@resolution_id", resolution_id);
+
+                adapter.Fill(table);
+
+                if (table.Rows.Count == 0)
+                {
+                    table = null;
+                }
+            }
+
+            return table;
+        }
     }
 }

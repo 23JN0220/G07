@@ -109,5 +109,24 @@ namespace ClassLibrary
             }
             return ret;
         }
+
+        public int Delete(string gpu_series_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "DELETE FROM GPU_Series WHERE gpu_series_name = @gpu_series_name";
+                SqlCommand command = new SqlCommand(sql, connection);
+
+                command.Parameters.AddWithValue("@gpu_series_name", gpu_series_name);
+                connection.Open();
+
+                ret = command.ExecuteNonQuery();
+            }
+
+            return ret;
+        }
     }
 }

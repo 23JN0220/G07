@@ -109,5 +109,24 @@ namespace ClassLibrary
             }
             return ret;
         }
+
+        public int Delete(string resolution_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "DELETE FROM GPU_Resolution WHERE resolution_name = @resolution_name";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@resolution_name", resolution_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+
+            return ret;
+        }
     }
 }
