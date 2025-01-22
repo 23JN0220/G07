@@ -75,6 +75,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.txtCooler = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -475,6 +476,15 @@
             this.txtCooler.Size = new System.Drawing.Size(399, 28);
             this.txtCooler.TabIndex = 12;
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(975, 221);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(36, 21);
+            this.label24.TabIndex = 78;
+            this.label24.Text = "cm";
+            // 
             // frmGoodsCase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
@@ -487,6 +497,7 @@
             this.Controls.Add(this.txtCooler);
             this.Controls.Add(this.txtWidth);
             this.Controls.Add(this.label23);
+            this.Controls.Add(this.label24);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
@@ -585,5 +596,6 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox txtCooler;
+        private System.Windows.Forms.Label label24;
     }
 }
