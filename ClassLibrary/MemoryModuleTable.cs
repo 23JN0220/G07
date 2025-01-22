@@ -109,5 +109,23 @@ namespace ClassLibrary
             }
             return ret;
         }
+
+        public int Delete(string module_name) {
+
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "DELETE FROM Memory_Module WHERE module_name = @module_name";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@module_name", module_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+            return ret;
+        }
     }
 }

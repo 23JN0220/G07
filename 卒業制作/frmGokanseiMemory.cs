@@ -43,12 +43,18 @@ namespace 卒業制作
 
         private void lstMemoryStandard_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtMemoryStandard.Text = lstMemoryStandard.SelectedItem.ToString();
+            if (lstMemoryStandard.SelectedItem != null)
+            {
+                txtMemoryStandard.Text = lstMemoryStandard.SelectedItem.ToString();
+            }
         }
 
         private void lstModule_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtModule.Text = lstModule.SelectedItem.ToString(); 
+            if (lstModule.SelectedItem != null)
+            {
+                txtModule.Text = lstModule.SelectedItem.ToString();
+            }
         }
 
         private void btnSadd_Click(object sender, EventArgs e)
@@ -200,6 +206,118 @@ namespace 卒業制作
             else
             {
                 MessageBox.Show("変更するモジュールが選択されていないか、変更後の名称が未入力です。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnSdelete_Click(object sender, EventArgs e)
+        {
+            if (lstMemoryStandard.SelectedIndex != -1)
+            {
+                GoodsMemoryTable goodsMemoryTable = new GoodsMemoryTable();
+                MemoryStandardTable memoryStandardTable = new MemoryStandardTable();
+                GoodsMotherboardTable goodsMotherboardTable = new GoodsMotherboardTable();
+
+                string standard_name = lstMemoryStandard.SelectedItem.ToString();
+                int standard_id = memoryStandardTable.GetMemoryStandardIdByName(standard_name);
+
+                DataTable dataTable = goodsMemoryTable.GetGoodsMemoryByStandardId(standard_id);
+                DataTable dataTable2 = goodsMotherboardTable.GetGoodsMotherboardByStandardId(standard_id);
+
+                if (dataTable == null && dataTable2 == null)
+                {
+                    DialogResult result = MessageBox.Show("「" + standard_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        int ret = memoryStandardTable.Delete(standard_name);
+
+                        if (ret == 1)
+                        {
+                            MessageBox.Show("データを削除しました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            lstMemoryStandard.Items.Clear();
+                            DataTable dataTable3 = memoryStandardTable.GetMemoryStandard();
+                            foreach (DataRow dr in dataTable3.Rows)
+                            {
+                                lstMemoryStandard.Items.Add(dr[1].ToString());
+                            }
+                            txtMemoryStandard.Text = "";
+                        }
+                        else
+                        {
+                            MessageBox.Show("データを削除できませんでした。", "削除エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                    }
+                }
+                else
+                {
+                    if (dataTable != null && dataTable2 != null)
+                    {
+                        dataTable.Merge(dataTable2);
+                    }
+                    else if (dataTable2 != null)
+                    {
+                        dataTable = dataTable2;
+                    }
+
+                    frmGokanseiWarning frmGokanseiWarning = new frmGokanseiWarning();
+                    frmGokanseiWarning.dataTable = dataTable;
+                    frmGokanseiWarning.ShowDialog();
+                }
+            }
+            else
+            {
+                MessageBox.Show("削除する項目が選択されていません。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnMdelete_Click(object sender, EventArgs e)
+        {
+            if (lstModule.SelectedIndex != -1)
+            {
+                GoodsMemoryTable goodsMemoryTable = new GoodsMemoryTable();
+                MemoryModuleTable memoryModuleTable = new MemoryModuleTable();
+
+                string module_name = lstModule.SelectedItem.ToString();
+                int module_id = memoryModuleTable.GetMemoryModuleIdByName(module_name);
+
+                DataTable dataTable = goodsMemoryTable.GetGoodsMemoryByModuleId(module_id);
+
+                if (dataTable == null)
+                {
+                    DialogResult result = MessageBox.Show("「" + module_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        int ret = memoryModuleTable.Delete(module_name);
+
+                        if (ret == 1)
+                        {
+                            MessageBox.Show("データを削除しました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            lstModule.Items.Clear();
+                            DataTable dataTable2 = memoryModuleTable.GetMemoryModule();
+                            foreach (DataRow dr in dataTable2.Rows)
+                            {
+                                lstModule.Items.Add(dr[1].ToString());
+                            }
+                            txtModule.Text = "";
+                        }
+                        else
+                        {
+                            MessageBox.Show("データを削除できませんでした。", "削除エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                    }
+                }
+                else
+                {
+                    frmGokanseiWarning frmGokanseiWarning = new frmGokanseiWarning();
+                    frmGokanseiWarning.dataTable = dataTable;
+                    frmGokanseiWarning.ShowDialog();
+                }
+            }
+            else
+            {
+                MessageBox.Show("削除するモジュールが選択されていません。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }

@@ -244,5 +244,27 @@ namespace ClassLibrary
             }
             return table;
         }
+
+        public DataTable GetGoodsMotherboardByStandardId(int standerd_id)
+        {
+            DataTable table = new DataTable();
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT Goods.goods_code, goods_name FROM Goods INNER JOIN Goods_MotherBoard ON Goods.goods_code = Goods_MotherBoard.goods_code WHERE standerd_id = @standerd_id";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@standerd_id", standerd_id);
+
+                int cnt = adapter.Fill(table);
+
+                if (cnt == 0)
+                {
+                    table = null;
+                }
+            }
+            return table;
+        }
     }
 }

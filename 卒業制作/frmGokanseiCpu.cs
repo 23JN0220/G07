@@ -471,6 +471,10 @@ namespace 卒業制作
                     {
                         dataTable.Merge(dataTable2);
                     }
+                    else if (dataTable2 != null)
+                    {
+                        dataTable = dataTable2;
+                    }
 
                     frmGokanseiWarning frmGokanseiWarning = new frmGokanseiWarning();
                     frmGokanseiWarning.dataTable = dataTable;

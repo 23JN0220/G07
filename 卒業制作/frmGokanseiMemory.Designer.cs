@@ -109,6 +109,7 @@
             this.btnSdelete.TabIndex = 5;
             this.btnSdelete.Text = "削除";
             this.btnSdelete.UseVisualStyleBackColor = true;
+            this.btnSdelete.Click += new System.EventHandler(this.btnSdelete_Click);
             // 
             // label2
             // 
@@ -168,6 +169,7 @@
             this.btnMdelete.TabIndex = 11;
             this.btnMdelete.Text = "削除";
             this.btnMdelete.UseVisualStyleBackColor = true;
+            this.btnMdelete.Click += new System.EventHandler(this.btnMdelete_Click);
             // 
             // btnClose
             // 
