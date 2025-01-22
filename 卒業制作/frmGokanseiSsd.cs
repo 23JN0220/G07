@@ -154,14 +154,16 @@ namespace 卒業制作
             if (lstSpec.SelectedIndex != -1)
             {
                 GoodsSsdTable goodsSsdTable = new GoodsSsdTable();
+                GoodsMotherboardTable goodsMotherboardTable = new GoodsMotherboardTable();
                 SsdStandardTable ssdStandardTable = new SsdStandardTable();
 
                 string standard_name = lstSpec.SelectedItem.ToString();
                 int standard_id = ssdStandardTable.GetSsdStandardIdByName(standard_name);
 
                 DataTable dataTable = goodsSsdTable.GetGoodsSsdByStandardId(standard_id);
+                DataTable dataTable2 = goodsMotherboardTable.GetGoodsMotherboardByM2SsdStandardId(standard_id);
 
-                if (dataTable == null)
+                if (dataTable == null && dataTable2 == null)
                 {
                     DialogResult result = MessageBox.Show("「" + standard_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
@@ -189,6 +191,15 @@ namespace 卒業制作
                 }
                 else
                 {
+                    if (dataTable != null && dataTable2 != null)
+                    {
+                        dataTable.Merge(dataTable2);
+                    }
+                    else if (dataTable2 != null)
+                    {
+                        dataTable = dataTable2;
+                    }
+
                     frmGokanseiWarning frmGokanseiWarning = new frmGokanseiWarning();
                     frmGokanseiWarning.dataTable = dataTable;
 
