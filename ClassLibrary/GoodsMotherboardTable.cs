@@ -85,7 +85,7 @@ namespace ClassLibrary
             {
                 string sql = "UPDATE Goods_MotherBoard SET " +
                              "size = @size, " +
-                             "chipset_series_id = chipset_series_id, " +
+                             "chipset_series_id = @chipset_series_id, " +
                              "chipset_id = @chipset_id, " +
                              "socket_id = @socket_id, " +
                              "pci_number = @pci_number, " +
