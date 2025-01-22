@@ -52,7 +52,9 @@ namespace 卒業制作
                 lstMaker.Items.Add(dr[1].ToString());
             }
 
-            lstMaker.SelectedIndex = lstMaker.FindStringExact("Microsoft");
+            if (lstMaker.Items.Contains("Microsoft")) {
+                lstMaker.SelectedIndex = lstMaker.FindStringExact("Microsoft");
+            }
 
             if (goods != null)
             {
