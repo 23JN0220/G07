@@ -98,12 +98,30 @@ namespace ClassLibrary
                 string sql = "UPDATE Cooler_Type SET  cooler_type_name = @cooler_type_name WHERE  cooler_type_name = @cooler_type_name_old";
 
                 SqlCommand command = new SqlCommand(sql, connection);
-                command.Parameters.AddWithValue("@cooler_type_name",cooler_type_name);
-                command.Parameters.AddWithValue("@cooler_type_name_old",cooler_type_name_old);
+                command.Parameters.AddWithValue("@cooler_type_name", cooler_type_name);
+                command.Parameters.AddWithValue("@cooler_type_name_old", cooler_type_name_old);
 
                 connection.Open();
                 ret = command.ExecuteNonQuery();
 
+            }
+            return ret;
+        }
+
+        public int Delete(string cooler_type_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "DELETE FROM Cooler_Type WHERE cooler_type_name = @cooler_type_name";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@cooler_type_name", cooler_type_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
             }
             return ret;
         }

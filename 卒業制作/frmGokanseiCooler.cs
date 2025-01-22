@@ -36,8 +36,12 @@ namespace 卒業制作
 
         private void lstType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtCPUcooler.Text = lstType.SelectedItem.ToString();
+            if (lstType.SelectedItem != null)
+            {
+                txtCPUcooler.Text = lstType.SelectedItem.ToString();
+            }
         }
+
 
         private void btnCPUcAdd_Click(object sender, EventArgs e)
         {
@@ -83,7 +87,7 @@ namespace 卒業制作
             {
                 if (!lstType.Items.Contains(txtCPUcooler.Text))
                 {
-                    CoolerTypeTable coolerTypeTable = new CoolerTypeTable();    
+                    CoolerTypeTable coolerTypeTable = new CoolerTypeTable();
                     int ret = coolerTypeTable.Update(txtCPUcooler.Text, lstType.SelectedItem.ToString());
 
                     if (ret == 1)
@@ -119,7 +123,47 @@ namespace 卒業制作
         {
             if (lstType.SelectedIndex != -1)
             {
+                GoodsCoolerTable goodsCoolerTable = new GoodsCoolerTable();
+                CoolerTypeTable coolerTypeTable = new CoolerTypeTable();
 
+                string cooler_type_name = lstType.SelectedItem.ToString();
+                int cooler_type_id = coolerTypeTable.GetCoolerTypeIdByName(cooler_type_name);
+
+                DataTable dataTable = goodsCoolerTable.GetGoodsCoolerByCoolerTypeId(cooler_type_id);
+
+                if (dataTable == null)
+                {
+                    DialogResult result = MessageBox.Show("「" + cooler_type_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        int ret = coolerTypeTable.Delete(cooler_type_name);
+
+                        if (ret == 1)
+                        {
+                            MessageBox.Show("データを削除しました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            lstType.Items.Clear();
+                            DataTable table2 = coolerTypeTable.GetCoolerType();
+
+                            foreach (DataRow dr in table2.Rows)
+                            {
+                                lstType.Items.Add(dr[1].ToString());
+                            }
+                            txtCPUcooler.Text = "";
+                        }
+                        else
+                        {
+                            MessageBox.Show("データを削除できませんでした。", "削除エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                    }
+                }
+                else
+                {
+                    frmGokanseiWarning frmGokanseiWarning = new frmGokanseiWarning();
+                    frmGokanseiWarning.dataTable = dataTable;
+
+                    frmGokanseiWarning.ShowDialog();
+                }
             }
             else
             {

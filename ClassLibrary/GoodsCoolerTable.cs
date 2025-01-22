@@ -95,5 +95,26 @@ namespace ClassLibrary
             }
             return ret;
         }
+
+        public DataTable GetGoodsCoolerByCoolerTypeId(int cooler_type_id)
+        {
+            DataTable table = new DataTable();
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT Goods.goods_code, goods_name FROM Goods INNER JOIN Goods_Cooler ON Goods.goods_code = Goods_Cooler.goods_code WHERE cooler_type_id = @cooler_type_id";
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+
+                adapter.SelectCommand.Parameters.AddWithValue("@cooler_type_id", cooler_type_id);
+                adapter.Fill(table);
+
+                if (table.Rows.Count == 0)
+                {
+                    table = null;
+                }
+            }
+            return table;
+        }
     }
 }
