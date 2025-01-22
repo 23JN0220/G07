@@ -70,5 +70,43 @@ namespace ClassLibrary
             }
             return interface_id;
         }
+        public int Insert(string interface_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "INSERT INTO GPU_Interface(interface_name) VALUES (@interface_name)";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@interface_name", interface_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
+
+        public int Update(string interface_name, string interface_name_old)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE  GPU_Interface SET interface_name = @interface_name WHERE interface_name = @interface_name_old";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@interface_name", interface_name);
+                command.Parameters.AddWithValue("@interface_name_old", interface_name_old);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
     }
 }

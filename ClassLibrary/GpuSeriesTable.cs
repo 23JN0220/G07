@@ -70,5 +70,44 @@ namespace ClassLibrary
             }
             return gpu_series_id;
         }
+
+        public int Insert(string gpu_series_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "INSERT INTO GPU_Series(gpu_series_name) VALUES (@gpu_series_name)";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@gpu_series_name", gpu_series_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
+
+        public int Update(string gpu_series_name, string gpu_series_name_old)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE GPU_Series SET gpu_series_name = @gpu_series_name　WHERE gpu_series_name = @gpu_series_name_old";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@gpu_series_name", gpu_series_name);
+                command.Parameters.AddWithValue("@gpu_series_name_old", gpu_series_name_old);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
     }
 }

@@ -70,5 +70,44 @@ namespace ClassLibrary
             }
             return resolution_id;
         }
+
+        public int Insert(string resolution_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "INSERT INTO  GPU_Resolution(resolution_name) VALUES (@resolution_name)";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@resolution_name", resolution_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
+
+        public int Update(string resolution_name, string resolution_name_old)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE GPU_Resolution SET resolution_name = @resolution_name WHERE resolution_name = @resolution_name_old";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@resolution_name", resolution_name);
+                command.Parameters.AddWithValue("@resolution_name_old", resolution_name_old);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
     }
 }
