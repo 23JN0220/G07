@@ -116,5 +116,93 @@ namespace ClassLibrary
             }
             return ret;
         }
+
+        public DataTable GetGoodsCpuBySeriesId(int series_id)
+        {
+            DataTable table = new DataTable();
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT Goods.goods_code, goods_name FROM Goods INNER JOIN Goods_CPU ON Goods.goods_code = Goods_CPU.goods_code WHERE series_id = @series_id";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@series_id", series_id);
+
+                int cnt = adapter.Fill(table);
+
+                if (cnt == 0)
+                {
+                    table = null;
+                }
+            }
+            return table;
+        }
+
+        public DataTable GetGoodsCpuByGenerationId(int generation_id)
+        {
+            DataTable table = new DataTable();
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT Goods.goods_code, goods_name FROM Goods INNER JOIN Goods_CPU ON Goods.goods_code = Goods_CPU.goods_code WHERE generation_id = @generation_id";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@generation_id", generation_id);
+
+                int cnt = adapter.Fill(table);
+
+                if (cnt == 0)
+                {
+                    table = null;
+                }
+            }
+            return table;
+        }
+
+        public DataTable GetGoodsCpuBySocketId(int socket_id)
+        {
+            DataTable table = new DataTable();
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT Goods.goods_code, goods_name FROM Goods INNER JOIN Goods_CPU ON Goods.goods_code = Goods_CPU.goods_code WHERE socket_id = @socket_id";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@socket_id", socket_id);
+
+                int cnt = adapter.Fill(table);
+
+                if (cnt == 0)
+                {
+                    table = null;
+                }
+            }
+            return table;
+        }
+
+        public DataTable GetGoodsCpuByChipsetId(int series_id)
+        {
+            DataTable table = new DataTable();
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "SELECT Goods.goods_code, goods_name FROM Goods INNER JOIN Goods_CPU ON Goods.goods_code = Goods_CPU.goods_code WHERE series_id = @series_id";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                adapter.SelectCommand.Parameters.AddWithValue("@series_id", series_id);
+
+                int cnt = adapter.Fill(table);
+
+                if (cnt == 0)
+                {
+                    table = null;
+                }
+            }
+            return table;
+        }
     }
 }

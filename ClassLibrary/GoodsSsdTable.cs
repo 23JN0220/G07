@@ -104,7 +104,7 @@ namespace ClassLibrary
             return ret;
         }
 
-        public DataTable GetGoodsSsdType(int type_id)
+        public DataTable GetGoodsSsdByTypeId(int type_id)
         {
             DataTable table = new DataTable();
             string connectionString = Properties.Settings.Default.DBConnectionString;
@@ -124,7 +124,7 @@ namespace ClassLibrary
             return table;
         }
 
-        public DataTable GetGoodsSsdStandard(int standard_id)
+        public DataTable GetGoodsSsdByStandardId(int standard_id)
         {
             DataTable table = new DataTable();
 
@@ -146,7 +146,7 @@ namespace ClassLibrary
             return table;
         }
 
-        public DataTable GetGoodsSsdConnection(int connection_id)
+        public DataTable GetGoodsSsdByConnectionId(int connection_id)
         {
             DataTable table = new DataTable();
 

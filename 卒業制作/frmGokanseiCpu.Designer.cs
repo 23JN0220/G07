@@ -66,7 +66,6 @@
             this.label1.Size = new System.Drawing.Size(94, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "シリーズ名";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lstSeries
             // 
@@ -201,6 +200,7 @@
             this.btnGdelete.TabIndex = 12;
             this.btnGdelete.Text = "削除";
             this.btnGdelete.UseVisualStyleBackColor = true;
+            this.btnGdelete.Click += new System.EventHandler(this.btnGdelete_Click);
             // 
             // label3
             // 
@@ -268,6 +268,7 @@
             this.btnSoDelete.TabIndex = 18;
             this.btnSoDelete.Text = "削除";
             this.btnSoDelete.UseVisualStyleBackColor = true;
+            this.btnSoDelete.Click += new System.EventHandler(this.btnSoDelete_Click);
             // 
             // label4
             // 
@@ -329,7 +330,7 @@
             this.btnCdelete.TabIndex = 24;
             this.btnCdelete.Text = "削除";
             this.btnCdelete.UseVisualStyleBackColor = true;
-            this.btnCdelete.Click += new System.EventHandler(this.button2_Click);
+            this.btnCdelete.Click += new System.EventHandler(this.btnCdelete_Click);
             // 
             // btnBack
             // 

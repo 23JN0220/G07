@@ -54,7 +54,7 @@ namespace 卒業制作
             {
                 txtSpec.Text = lstSpec.SelectedItem.ToString();
             }
-            
+
         }
 
         private void lstPlugs_SelectedIndexChanged(object sender, EventArgs e)
@@ -68,7 +68,7 @@ namespace 卒業制作
         private void lstType_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lstType.SelectedItem != null)
-            { 
+            {
                 txtType.Text = lstType.SelectedItem.ToString();
             }
         }
@@ -159,34 +159,31 @@ namespace 卒業制作
                 string standard_name = lstSpec.SelectedItem.ToString();
                 int standard_id = ssdStandardTable.GetSsdStandardIdByName(standard_name);
 
-                DataTable dataTable = goodsSsdTable.GetGoodsSsdStandard(standard_id);
+                DataTable dataTable = goodsSsdTable.GetGoodsSsdByStandardId(standard_id);
 
                 if (dataTable == null)
                 {
                     DialogResult result = MessageBox.Show("「" + standard_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
                     {
-                        if (result == DialogResult.Yes)
+                        int ret = ssdStandardTable.Delete(standard_name);
+
+                        if (ret != 0)
                         {
-                            int ret = ssdStandardTable.Delete(standard_name);
+                            MessageBox.Show("データを削除しました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                            if (ret != 0)
+                            lstSpec.Items.Clear();
+                            DataTable table = ssdStandardTable.GetSsdStandard();
+                            foreach (DataRow dr in table.Rows)
                             {
-                                MessageBox.Show("データを削除しました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                                lstSpec.Items.Clear();
-                                DataTable table = ssdStandardTable.GetSsdStandard();
-                                foreach (DataRow dr in table.Rows)
-                                {
-                                    lstSpec.Items.Add(dr[1].ToString());
-                                }
-
-                                txtSpec.Text = "";
+                                lstSpec.Items.Add(dr[1].ToString());
                             }
-                            else
-                            {
-                                MessageBox.Show("データを削除できませんでした。", "削除エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                            }
+
+                            txtSpec.Text = "";
+                        }
+                        else
+                        {
+                            MessageBox.Show("データを削除できませんでした。", "削除エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
                     }
                 }
@@ -244,7 +241,7 @@ namespace 卒業制作
 
         private void btnPchange_Click(object sender, EventArgs e)
         {
-            if (txtPlugs.Text!= "" && lstPlugs.SelectedIndex != -1)
+            if (txtPlugs.Text != "" && lstPlugs.SelectedIndex != -1)
             {
                 if (!lstPlugs.Items.Contains(txtPlugs.Text))
                 {
@@ -288,7 +285,7 @@ namespace 卒業制作
                 SsdConnectionTable ssdConnectionTable = new SsdConnectionTable();
                 string standard_name = lstPlugs.SelectedItem.ToString();
                 int standard_id = ssdConnectionTable.GetSsdConnectionIdByName(standard_name);
-                DataTable dataTable = goodsSsdTable.GetGoodsSsdConnection(standard_id);
+                DataTable dataTable = goodsSsdTable.GetGoodsSsdByConnectionId(standard_id);
                 if (dataTable == null)
                 {
                     DialogResult result = MessageBox.Show("「" + standard_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -417,7 +414,7 @@ namespace 卒業制作
                 string type_name = lstType.SelectedItem.ToString();
                 int type_id = ssdTypeTable.GetSsdTypeIdByName(type_name);
 
-                DataTable dataTable = goodsSsdTable.GetGoodsSsdType(type_id);
+                DataTable dataTable = goodsSsdTable.GetGoodsSsdByTypeId(type_id);
 
                 if (dataTable == null)
                 {
@@ -460,6 +457,6 @@ namespace 卒業制作
             }
         }
 
-        
+
     }
 }
