@@ -72,6 +72,7 @@
             this.btnSadd.TabIndex = 3;
             this.btnSadd.Text = "追加";
             this.btnSadd.UseVisualStyleBackColor = true;
+            this.btnSadd.Click += new System.EventHandler(this.btnSadd_Click);
             // 
             // btnSchange
             // 
@@ -81,6 +82,7 @@
             this.btnSchange.TabIndex = 4;
             this.btnSchange.Text = "変更";
             this.btnSchange.UseVisualStyleBackColor = true;
+            this.btnSchange.Click += new System.EventHandler(this.btnSchange_Click);
             // 
             // btnSdelete
             // 
