@@ -70,5 +70,44 @@ namespace ClassLibrary
             }
             return lan_id;
         }
+
+        public int Insert(string lan_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "INSERT INTO Wireless_LAN(lan_name) VALUES (@lan_name)";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@lan_name", lan_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
+
+        public int Update(string lan_name, string lan_name_old)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE Wireless_LAN SET lan_name = @lan_name WHERE lan_name = @lan_name_old";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@lan_name", lan_name);
+                command.Parameters.AddWithValue("@lan_name_old", lan_name_old);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
     }
 }

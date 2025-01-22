@@ -70,5 +70,44 @@ namespace ClassLibrary
             }
             return chipset_id;
         }
+
+        public int Insert(string chipset_name)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "INSERT INTO Motherboard_Chipset(chipset_name) VALUES (@chipset_name)";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@chipset_name", chipset_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
+
+        public int Update(string chipset_name, string chipset_name_old)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "UPDATE Motherboard_Chipset SET chipset_name = @chipset_name WHERE chipset_name = @chipset_name_old";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@chipset_name", chipset_name);
+                command.Parameters.AddWithValue("@chipset_name_old", chipset_name_old);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+
+            }
+            return ret;
+        }
     }
 }

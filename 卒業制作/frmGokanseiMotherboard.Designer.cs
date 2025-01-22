@@ -108,6 +108,7 @@
             this.btnCadd.TabIndex = 4;
             this.btnCadd.Text = "追加";
             this.btnCadd.UseVisualStyleBackColor = true;
+            this.btnCadd.Click += new System.EventHandler(this.btnCadd_Click);
             // 
             // btnCchange
             // 
@@ -119,6 +120,7 @@
             this.btnCchange.TabIndex = 5;
             this.btnCchange.Text = "変更";
             this.btnCchange.UseVisualStyleBackColor = true;
+            this.btnCchange.Click += new System.EventHandler(this.btnCchange_Click);
             // 
             // btnCdelete
             // 
@@ -162,6 +164,7 @@
             this.btnSadd.TabIndex = 9;
             this.btnSadd.Text = "追加";
             this.btnSadd.UseVisualStyleBackColor = true;
+            this.btnSadd.Click += new System.EventHandler(this.btnSadd_Click);
             // 
             // btnSchange
             // 
@@ -173,6 +176,7 @@
             this.btnSchange.TabIndex = 10;
             this.btnSchange.Text = "変更";
             this.btnSchange.UseVisualStyleBackColor = true;
+            this.btnSchange.Click += new System.EventHandler(this.btnSchange_Click);
             // 
             // btnSdelete
             // 
@@ -227,6 +231,7 @@
             this.btnSpAdd.TabIndex = 15;
             this.btnSpAdd.Text = "追加";
             this.btnSpAdd.UseVisualStyleBackColor = true;
+            this.btnSpAdd.Click += new System.EventHandler(this.btnSpAdd_Click);
             // 
             // btnSpChange
             // 
@@ -238,6 +243,7 @@
             this.btnSpChange.TabIndex = 16;
             this.btnSpChange.Text = "変更";
             this.btnSpChange.UseVisualStyleBackColor = true;
+            this.btnSpChange.Click += new System.EventHandler(this.btnSpChange_Click);
             // 
             // btnSpDelete
             // 

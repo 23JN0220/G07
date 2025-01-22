@@ -101,6 +101,7 @@
             this.btnCPUcChange.TabIndex = 6;
             this.btnCPUcChange.Text = "変更";
             this.btnCPUcChange.UseVisualStyleBackColor = true;
+            this.btnCPUcChange.Click += new System.EventHandler(this.btnCPUcChange_Click);
             // 
             // btnCPUcdelete
             // 
