@@ -32,10 +32,10 @@
             this.txtSearchNumber = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.dgvOrder = new System.Windows.Forms.DataGridView();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.btnReset = new System.Windows.Forms.Button();
             this.goods_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrder)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +54,7 @@
             this.txtSearchNumber.Name = "txtSearchNumber";
             this.txtSearchNumber.Size = new System.Drawing.Size(293, 28);
             this.txtSearchNumber.TabIndex = 1;
+            this.txtSearchNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearchNumber_KeyDown);
             // 
             // btnSearch
             // 
@@ -79,27 +80,7 @@
             this.dgvOrder.Name = "dgvOrder";
             this.dgvOrder.RowTemplate.Height = 21;
             this.dgvOrder.Size = new System.Drawing.Size(569, 243);
-            this.dgvOrder.TabIndex = 3;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(461, 363);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(90, 32);
-            this.btnBack.TabIndex = 4;
-            this.btnBack.Text = "戻る";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // btnReset
-            // 
-            this.btnReset.Location = new System.Drawing.Point(443, 46);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(93, 28);
-            this.btnReset.TabIndex = 5;
-            this.btnReset.Text = "リセット";
-            this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.dgvOrder.TabIndex = 4;
             // 
             // goods_code
             // 
@@ -114,6 +95,26 @@
             this.num.HeaderText = "個数";
             this.num.Name = "num";
             this.num.Width = 77;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(491, 363);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(90, 32);
+            this.btnBack.TabIndex = 5;
+            this.btnBack.Text = "戻る";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(443, 46);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(93, 28);
+            this.btnReset.TabIndex = 3;
+            this.btnReset.Text = "リセット";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // frmOrderDetail
             // 

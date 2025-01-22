@@ -77,5 +77,13 @@ namespace 卒業制作
             }
             
         }
+
+        private void txtSearchNumber_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSearch.PerformClick();
+            }
+        }
     }
 }

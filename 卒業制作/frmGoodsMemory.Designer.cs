@@ -68,7 +68,7 @@
             this.btnClose.Location = new System.Drawing.Point(854, 473);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(95, 38);
-            this.btnClose.TabIndex = 10;
+            this.btnClose.TabIndex = 11;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -78,7 +78,7 @@
             this.btnOK.Location = new System.Drawing.Point(344, 399);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(215, 73);
-            this.btnOK.TabIndex = 9;
+            this.btnOK.TabIndex = 10;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -160,7 +160,7 @@
             this.txtPrice.Location = new System.Drawing.Point(505, 250);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(399, 28);
-            this.txtPrice.TabIndex = 7;
+            this.txtPrice.TabIndex = 8;
             // 
             // txtName
             // 
@@ -191,7 +191,7 @@
             this.txtNumber.Location = new System.Drawing.Point(505, 185);
             this.txtNumber.Name = "txtNumber";
             this.txtNumber.Size = new System.Drawing.Size(399, 28);
-            this.txtNumber.TabIndex = 5;
+            this.txtNumber.TabIndex = 6;
             // 
             // chkEcc
             // 
@@ -199,7 +199,7 @@
             this.chkEcc.Location = new System.Drawing.Point(505, 219);
             this.chkEcc.Name = "chkEcc";
             this.chkEcc.Size = new System.Drawing.Size(111, 25);
-            this.chkEcc.TabIndex = 6;
+            this.chkEcc.TabIndex = 7;
             this.chkEcc.Text = "ECC対応";
             this.chkEcc.UseVisualStyleBackColor = true;
             // 
@@ -242,7 +242,7 @@
             this.btnPicture.Location = new System.Drawing.Point(135, 357);
             this.btnPicture.Name = "btnPicture";
             this.btnPicture.Size = new System.Drawing.Size(103, 28);
-            this.btnPicture.TabIndex = 47;
+            this.btnPicture.TabIndex = 9;
             this.btnPicture.Text = "画像選択";
             this.btnPicture.UseVisualStyleBackColor = true;
             this.btnPicture.Click += new System.EventHandler(this.btnPicture_Click);

@@ -59,7 +59,7 @@
             this.btnClose.Location = new System.Drawing.Point(854, 473);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(95, 38);
-            this.btnClose.TabIndex = 6;
+            this.btnClose.TabIndex = 7;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -69,7 +69,7 @@
             this.btnOK.Location = new System.Drawing.Point(344, 399);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(215, 73);
-            this.btnOK.TabIndex = 5;
+            this.btnOK.TabIndex = 6;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -108,14 +108,14 @@
             this.lstVersion.Location = new System.Drawing.Point(505, 81);
             this.lstVersion.Name = "lstVersion";
             this.lstVersion.Size = new System.Drawing.Size(399, 29);
-            this.lstVersion.TabIndex = 2;
+            this.lstVersion.TabIndex = 3;
             // 
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(505, 116);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(399, 28);
-            this.txtPrice.TabIndex = 3;
+            this.txtPrice.TabIndex = 4;
             // 
             // txtName
             // 
@@ -137,7 +137,7 @@
             this.btnPicture.Location = new System.Drawing.Point(131, 357);
             this.btnPicture.Name = "btnPicture";
             this.btnPicture.Size = new System.Drawing.Size(103, 28);
-            this.btnPicture.TabIndex = 4;
+            this.btnPicture.TabIndex = 5;
             this.btnPicture.Text = "画像選択";
             this.btnPicture.UseVisualStyleBackColor = true;
             this.btnPicture.Click += new System.EventHandler(this.btnPicture_Click);

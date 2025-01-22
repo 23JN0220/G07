@@ -43,7 +43,7 @@
             this.btnMember.Location = new System.Drawing.Point(80, 42);
             this.btnMember.Name = "btnMember";
             this.btnMember.Size = new System.Drawing.Size(171, 59);
-            this.btnMember.TabIndex = 0;
+            this.btnMember.TabIndex = 1;
             this.btnMember.Text = "会員管理";
             this.btnMember.UseVisualStyleBackColor = true;
             this.btnMember.Click += new System.EventHandler(this.btnMember_Click);
@@ -52,8 +52,8 @@
             // 
             this.btnGoods.Location = new System.Drawing.Point(342, 42);
             this.btnGoods.Name = "btnGoods";
-            this.btnGoods.Size = new System.Drawing.Size(179, 59);
-            this.btnGoods.TabIndex = 1;
+            this.btnGoods.Size = new System.Drawing.Size(171, 59);
+            this.btnGoods.TabIndex = 2;
             this.btnGoods.Text = "商品管理";
             this.btnGoods.UseVisualStyleBackColor = true;
             this.btnGoods.Click += new System.EventHandler(this.btnGoods_Click);
@@ -63,7 +63,7 @@
             this.btnCompatibility.Location = new System.Drawing.Point(80, 134);
             this.btnCompatibility.Name = "btnCompatibility";
             this.btnCompatibility.Size = new System.Drawing.Size(171, 59);
-            this.btnCompatibility.TabIndex = 2;
+            this.btnCompatibility.TabIndex = 3;
             this.btnCompatibility.Text = "互換性管理";
             this.btnCompatibility.UseVisualStyleBackColor = true;
             this.btnCompatibility.Click += new System.EventHandler(this.btnCompatibility_Click);
@@ -72,8 +72,8 @@
             // 
             this.btnReview.Location = new System.Drawing.Point(342, 134);
             this.btnReview.Name = "btnReview";
-            this.btnReview.Size = new System.Drawing.Size(179, 59);
-            this.btnReview.TabIndex = 3;
+            this.btnReview.Size = new System.Drawing.Size(171, 59);
+            this.btnReview.TabIndex = 4;
             this.btnReview.Text = "レビュー管理";
             this.btnReview.UseVisualStyleBackColor = true;
             this.btnReview.Click += new System.EventHandler(this.btnReview_Click);
@@ -83,7 +83,7 @@
             this.btnOrder.Location = new System.Drawing.Point(80, 218);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(171, 59);
-            this.btnOrder.TabIndex = 4;
+            this.btnOrder.TabIndex = 5;
             this.btnOrder.Text = "注文管理";
             this.btnOrder.UseVisualStyleBackColor = true;
             this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
@@ -92,27 +92,27 @@
             // 
             this.btnPay.Location = new System.Drawing.Point(342, 218);
             this.btnPay.Name = "btnPay";
-            this.btnPay.Size = new System.Drawing.Size(179, 59);
-            this.btnPay.TabIndex = 5;
+            this.btnPay.Size = new System.Drawing.Size(171, 59);
+            this.btnPay.TabIndex = 6;
             this.btnPay.Text = "支払管理";
             this.btnPay.UseVisualStyleBackColor = true;
             this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(514, 326);
+            this.btnClose.Location = new System.Drawing.Point(514, 382);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(86, 40);
-            this.btnClose.TabIndex = 6;
+            this.btnClose.TabIndex = 8;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnMaker
             // 
-            this.btnMaker.Location = new System.Drawing.Point(80, 292);
+            this.btnMaker.Location = new System.Drawing.Point(80, 307);
             this.btnMaker.Name = "btnMaker";
-            this.btnMaker.Size = new System.Drawing.Size(171, 58);
+            this.btnMaker.Size = new System.Drawing.Size(171, 59);
             this.btnMaker.TabIndex = 7;
             this.btnMaker.Text = "メーカー管理";
             this.btnMaker.UseVisualStyleBackColor = true;
@@ -122,7 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(612, 378);
+            this.ClientSize = new System.Drawing.Size(612, 434);
             this.Controls.Add(this.btnMaker);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnPay);

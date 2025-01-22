@@ -40,13 +40,14 @@
             this.btnFan = new System.Windows.Forms.Button();
             this.btnOs = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCpu
             // 
-            this.btnCpu.Location = new System.Drawing.Point(22, 30);
+            this.btnCpu.Location = new System.Drawing.Point(16, 33);
             this.btnCpu.Name = "btnCpu";
-            this.btnCpu.Size = new System.Drawing.Size(168, 28);
+            this.btnCpu.Size = new System.Drawing.Size(168, 30);
             this.btnCpu.TabIndex = 0;
             this.btnCpu.Text = "CPU";
             this.btnCpu.UseVisualStyleBackColor = true;
@@ -54,9 +55,9 @@
             // 
             // btnCooler
             // 
-            this.btnCooler.Location = new System.Drawing.Point(196, 30);
+            this.btnCooler.Location = new System.Drawing.Point(190, 33);
             this.btnCooler.Name = "btnCooler";
-            this.btnCooler.Size = new System.Drawing.Size(168, 28);
+            this.btnCooler.Size = new System.Drawing.Size(168, 30);
             this.btnCooler.TabIndex = 1;
             this.btnCooler.Text = "CPUクーラー";
             this.btnCooler.UseVisualStyleBackColor = true;
@@ -64,9 +65,9 @@
             // 
             // btnMotherboard
             // 
-            this.btnMotherboard.Location = new System.Drawing.Point(370, 30);
+            this.btnMotherboard.Location = new System.Drawing.Point(364, 33);
             this.btnMotherboard.Name = "btnMotherboard";
-            this.btnMotherboard.Size = new System.Drawing.Size(168, 28);
+            this.btnMotherboard.Size = new System.Drawing.Size(168, 30);
             this.btnMotherboard.TabIndex = 2;
             this.btnMotherboard.Text = "マザーボード";
             this.btnMotherboard.UseVisualStyleBackColor = true;
@@ -74,9 +75,9 @@
             // 
             // btnMemory
             // 
-            this.btnMemory.Location = new System.Drawing.Point(544, 30);
+            this.btnMemory.Location = new System.Drawing.Point(538, 33);
             this.btnMemory.Name = "btnMemory";
-            this.btnMemory.Size = new System.Drawing.Size(168, 28);
+            this.btnMemory.Size = new System.Drawing.Size(168, 30);
             this.btnMemory.TabIndex = 3;
             this.btnMemory.Text = "メモリ";
             this.btnMemory.UseVisualStyleBackColor = true;
@@ -84,9 +85,9 @@
             // 
             // btnGpu
             // 
-            this.btnGpu.Location = new System.Drawing.Point(22, 71);
+            this.btnGpu.Location = new System.Drawing.Point(16, 69);
             this.btnGpu.Name = "btnGpu";
-            this.btnGpu.Size = new System.Drawing.Size(168, 28);
+            this.btnGpu.Size = new System.Drawing.Size(168, 30);
             this.btnGpu.TabIndex = 4;
             this.btnGpu.Text = "グラフィックボード";
             this.btnGpu.UseVisualStyleBackColor = true;
@@ -94,9 +95,9 @@
             // 
             // btnSsd
             // 
-            this.btnSsd.Location = new System.Drawing.Point(196, 73);
+            this.btnSsd.Location = new System.Drawing.Point(190, 69);
             this.btnSsd.Name = "btnSsd";
-            this.btnSsd.Size = new System.Drawing.Size(168, 26);
+            this.btnSsd.Size = new System.Drawing.Size(168, 30);
             this.btnSsd.TabIndex = 5;
             this.btnSsd.Text = "SSD";
             this.btnSsd.UseVisualStyleBackColor = true;
@@ -104,9 +105,9 @@
             // 
             // btnHdd
             // 
-            this.btnHdd.Location = new System.Drawing.Point(370, 73);
+            this.btnHdd.Location = new System.Drawing.Point(364, 69);
             this.btnHdd.Name = "btnHdd";
-            this.btnHdd.Size = new System.Drawing.Size(168, 26);
+            this.btnHdd.Size = new System.Drawing.Size(168, 30);
             this.btnHdd.TabIndex = 6;
             this.btnHdd.Text = "HDD";
             this.btnHdd.UseVisualStyleBackColor = true;
@@ -114,9 +115,9 @@
             // 
             // btnPowerUnit
             // 
-            this.btnPowerUnit.Location = new System.Drawing.Point(544, 71);
+            this.btnPowerUnit.Location = new System.Drawing.Point(538, 69);
             this.btnPowerUnit.Name = "btnPowerUnit";
-            this.btnPowerUnit.Size = new System.Drawing.Size(168, 28);
+            this.btnPowerUnit.Size = new System.Drawing.Size(168, 30);
             this.btnPowerUnit.TabIndex = 7;
             this.btnPowerUnit.Text = "電源ユニット";
             this.btnPowerUnit.UseVisualStyleBackColor = true;
@@ -124,9 +125,9 @@
             // 
             // btnCase
             // 
-            this.btnCase.Location = new System.Drawing.Point(22, 105);
+            this.btnCase.Location = new System.Drawing.Point(16, 105);
             this.btnCase.Name = "btnCase";
-            this.btnCase.Size = new System.Drawing.Size(168, 33);
+            this.btnCase.Size = new System.Drawing.Size(168, 30);
             this.btnCase.TabIndex = 8;
             this.btnCase.Text = "PCケース";
             this.btnCase.UseVisualStyleBackColor = true;
@@ -134,9 +135,9 @@
             // 
             // btnFan
             // 
-            this.btnFan.Location = new System.Drawing.Point(196, 105);
+            this.btnFan.Location = new System.Drawing.Point(190, 105);
             this.btnFan.Name = "btnFan";
-            this.btnFan.Size = new System.Drawing.Size(168, 33);
+            this.btnFan.Size = new System.Drawing.Size(168, 30);
             this.btnFan.TabIndex = 9;
             this.btnFan.Text = "ケースファン";
             this.btnFan.UseVisualStyleBackColor = true;
@@ -144,7 +145,7 @@
             // 
             // btnOs
             // 
-            this.btnOs.Location = new System.Drawing.Point(370, 108);
+            this.btnOs.Location = new System.Drawing.Point(364, 105);
             this.btnOs.Name = "btnOs";
             this.btnOs.Size = new System.Drawing.Size(168, 30);
             this.btnOs.TabIndex = 10;
@@ -154,7 +155,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(544, 108);
+            this.btnBack.Location = new System.Drawing.Point(538, 105);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(168, 30);
             this.btnBack.TabIndex = 11;
@@ -162,11 +163,21 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(369, 21);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "設定する商品のカテゴリーを選択してください";
+            // 
             // frmGokansei
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(764, 186);
+            this.ClientSize = new System.Drawing.Size(721, 150);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnOs);
             this.Controls.Add(this.btnFan);
@@ -184,6 +195,7 @@
             this.Name = "frmGokansei";
             this.Text = "互換性管理画面";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -201,5 +213,6 @@
         private System.Windows.Forms.Button btnFan;
         private System.Windows.Forms.Button btnOs;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label label1;
     }
 }

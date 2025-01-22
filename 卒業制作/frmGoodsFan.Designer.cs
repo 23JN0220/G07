@@ -71,7 +71,7 @@
             this.btnClose.Location = new System.Drawing.Point(854, 473);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(95, 38);
-            this.btnClose.TabIndex = 7;
+            this.btnClose.TabIndex = 8;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -81,7 +81,7 @@
             this.btnOK.Location = new System.Drawing.Point(344, 399);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(215, 73);
-            this.btnOK.TabIndex = 6;
+            this.btnOK.TabIndex = 7;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -183,7 +183,7 @@
             this.btnPicture.Location = new System.Drawing.Point(131, 357);
             this.btnPicture.Name = "btnPicture";
             this.btnPicture.Size = new System.Drawing.Size(103, 28);
-            this.btnPicture.TabIndex = 63;
+            this.btnPicture.TabIndex = 6;
             this.btnPicture.Text = "画像選択";
             this.btnPicture.UseVisualStyleBackColor = true;
             this.btnPicture.Click += new System.EventHandler(this.btnPicture_Click);

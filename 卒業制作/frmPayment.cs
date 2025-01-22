@@ -104,9 +104,17 @@ namespace 卒業制作
 
         private void btnDetail_Click(object sender, EventArgs e)
         {
-            frmOrderDetail frmOrderDetail = new frmOrderDetail();
-            frmOrderDetail.order_id = int.Parse(dgvPayment.CurrentRow.Cells["order_id"].Value.ToString());
-            frmOrderDetail.ShowDialog();
+            if (dgvPayment.SelectedCells.Count != 0)
+            {
+                frmOrderDetail frmOrderDetail = new frmOrderDetail();
+                frmOrderDetail.order_id = int.Parse(dgvPayment.CurrentRow.Cells["order_id"].Value.ToString());
+                frmOrderDetail.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("注文番号のデータを選択してください", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

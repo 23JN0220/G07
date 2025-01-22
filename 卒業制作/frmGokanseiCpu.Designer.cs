@@ -120,7 +120,7 @@
             this.lstGen.Margin = new System.Windows.Forms.Padding(2);
             this.lstGen.Name = "lstGen";
             this.lstGen.Size = new System.Drawing.Size(186, 88);
-            this.lstGen.TabIndex = 5;
+            this.lstGen.TabIndex = 6;
             this.lstGen.SelectedIndexChanged += new System.EventHandler(this.lstGen_SelectedIndexChanged);
             // 
             // txtGen
@@ -130,7 +130,7 @@
             this.txtGen.Margin = new System.Windows.Forms.Padding(2);
             this.txtGen.Name = "txtGen";
             this.txtGen.Size = new System.Drawing.Size(198, 28);
-            this.txtGen.TabIndex = 6;
+            this.txtGen.TabIndex = 7;
             // 
             // btnSeChange
             // 
@@ -139,7 +139,7 @@
             this.btnSeChange.Margin = new System.Windows.Forms.Padding(2);
             this.btnSeChange.Name = "btnSeChange";
             this.btnSeChange.Size = new System.Drawing.Size(61, 35);
-            this.btnSeChange.TabIndex = 7;
+            this.btnSeChange.TabIndex = 4;
             this.btnSeChange.Text = "変更";
             this.btnSeChange.UseVisualStyleBackColor = true;
             this.btnSeChange.Click += new System.EventHandler(this.btnSeChange_Click);
@@ -151,7 +151,7 @@
             this.btnSeDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnSeDelete.Name = "btnSeDelete";
             this.btnSeDelete.Size = new System.Drawing.Size(61, 35);
-            this.btnSeDelete.TabIndex = 8;
+            this.btnSeDelete.TabIndex = 5;
             this.btnSeDelete.Text = "削除";
             this.btnSeDelete.UseVisualStyleBackColor = true;
             this.btnSeDelete.Click += new System.EventHandler(this.btnSeDelete_Click);
@@ -163,7 +163,7 @@
             this.btnGadd.Margin = new System.Windows.Forms.Padding(2);
             this.btnGadd.Name = "btnGadd";
             this.btnGadd.Size = new System.Drawing.Size(61, 33);
-            this.btnGadd.TabIndex = 9;
+            this.btnGadd.TabIndex = 8;
             this.btnGadd.Text = "追加";
             this.btnGadd.UseVisualStyleBackColor = true;
             this.btnGadd.Click += new System.EventHandler(this.btnGadd_Click);
@@ -175,7 +175,7 @@
             this.btnGchange.Margin = new System.Windows.Forms.Padding(2);
             this.btnGchange.Name = "btnGchange";
             this.btnGchange.Size = new System.Drawing.Size(61, 33);
-            this.btnGchange.TabIndex = 10;
+            this.btnGchange.TabIndex = 9;
             this.btnGchange.Text = "変更";
             this.btnGchange.UseVisualStyleBackColor = true;
             this.btnGchange.Click += new System.EventHandler(this.btnGchange_Click);
@@ -197,7 +197,7 @@
             this.btnGdelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnGdelete.Name = "btnGdelete";
             this.btnGdelete.Size = new System.Drawing.Size(61, 33);
-            this.btnGdelete.TabIndex = 12;
+            this.btnGdelete.TabIndex = 10;
             this.btnGdelete.Text = "削除";
             this.btnGdelete.UseVisualStyleBackColor = true;
             this.btnGdelete.Click += new System.EventHandler(this.btnGdelete_Click);
@@ -222,7 +222,7 @@
             this.lstSocket.Margin = new System.Windows.Forms.Padding(2);
             this.lstSocket.Name = "lstSocket";
             this.lstSocket.Size = new System.Drawing.Size(186, 88);
-            this.lstSocket.TabIndex = 14;
+            this.lstSocket.TabIndex = 11;
             this.lstSocket.SelectedIndexChanged += new System.EventHandler(this.lstSocket_SelectedIndexChanged);
             // 
             // txtSocket
@@ -232,7 +232,7 @@
             this.txtSocket.Margin = new System.Windows.Forms.Padding(2);
             this.txtSocket.Name = "txtSocket";
             this.txtSocket.Size = new System.Drawing.Size(198, 28);
-            this.txtSocket.TabIndex = 15;
+            this.txtSocket.TabIndex = 12;
             // 
             // btnSoAdd
             // 
@@ -241,7 +241,7 @@
             this.btnSoAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnSoAdd.Name = "btnSoAdd";
             this.btnSoAdd.Size = new System.Drawing.Size(61, 33);
-            this.btnSoAdd.TabIndex = 16;
+            this.btnSoAdd.TabIndex = 13;
             this.btnSoAdd.Text = "追加";
             this.btnSoAdd.UseVisualStyleBackColor = true;
             this.btnSoAdd.Click += new System.EventHandler(this.btnSoAdd_Click);
@@ -253,7 +253,7 @@
             this.btnSoChange.Margin = new System.Windows.Forms.Padding(2);
             this.btnSoChange.Name = "btnSoChange";
             this.btnSoChange.Size = new System.Drawing.Size(61, 33);
-            this.btnSoChange.TabIndex = 17;
+            this.btnSoChange.TabIndex = 14;
             this.btnSoChange.Text = "変更";
             this.btnSoChange.UseVisualStyleBackColor = true;
             this.btnSoChange.Click += new System.EventHandler(this.btnSoChange_Click);
@@ -265,7 +265,7 @@
             this.btnSoDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnSoDelete.Name = "btnSoDelete";
             this.btnSoDelete.Size = new System.Drawing.Size(61, 33);
-            this.btnSoDelete.TabIndex = 18;
+            this.btnSoDelete.TabIndex = 15;
             this.btnSoDelete.Text = "削除";
             this.btnSoDelete.UseVisualStyleBackColor = true;
             this.btnSoDelete.Click += new System.EventHandler(this.btnSoDelete_Click);
@@ -288,7 +288,7 @@
             this.lstChipset.Location = new System.Drawing.Point(28, 432);
             this.lstChipset.Name = "lstChipset";
             this.lstChipset.Size = new System.Drawing.Size(186, 88);
-            this.lstChipset.TabIndex = 20;
+            this.lstChipset.TabIndex = 16;
             this.lstChipset.SelectedIndexChanged += new System.EventHandler(this.lstChipset_SelectedIndexChanged);
             // 
             // txtChipset
@@ -297,7 +297,7 @@
             this.txtChipset.Location = new System.Drawing.Point(257, 432);
             this.txtChipset.Name = "txtChipset";
             this.txtChipset.Size = new System.Drawing.Size(198, 28);
-            this.txtChipset.TabIndex = 21;
+            this.txtChipset.TabIndex = 17;
             // 
             // btnCadd
             // 
@@ -305,7 +305,7 @@
             this.btnCadd.Location = new System.Drawing.Point(254, 466);
             this.btnCadd.Name = "btnCadd";
             this.btnCadd.Size = new System.Drawing.Size(61, 35);
-            this.btnCadd.TabIndex = 22;
+            this.btnCadd.TabIndex = 18;
             this.btnCadd.Text = "追加";
             this.btnCadd.UseVisualStyleBackColor = true;
             this.btnCadd.Click += new System.EventHandler(this.btnCadd_Click);
@@ -316,7 +316,7 @@
             this.btnCchange.Location = new System.Drawing.Point(323, 466);
             this.btnCchange.Name = "btnCchange";
             this.btnCchange.Size = new System.Drawing.Size(61, 35);
-            this.btnCchange.TabIndex = 23;
+            this.btnCchange.TabIndex = 19;
             this.btnCchange.Text = "変更";
             this.btnCchange.UseVisualStyleBackColor = true;
             this.btnCchange.Click += new System.EventHandler(this.btnCchange_Click);
@@ -327,7 +327,7 @@
             this.btnCdelete.Location = new System.Drawing.Point(390, 467);
             this.btnCdelete.Name = "btnCdelete";
             this.btnCdelete.Size = new System.Drawing.Size(62, 32);
-            this.btnCdelete.TabIndex = 24;
+            this.btnCdelete.TabIndex = 20;
             this.btnCdelete.Text = "削除";
             this.btnCdelete.UseVisualStyleBackColor = true;
             this.btnCdelete.Click += new System.EventHandler(this.btnCdelete_Click);
@@ -338,7 +338,7 @@
             this.btnBack.Location = new System.Drawing.Point(373, 525);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(82, 38);
-            this.btnBack.TabIndex = 25;
+            this.btnBack.TabIndex = 21;
             this.btnBack.Text = "戻る";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);

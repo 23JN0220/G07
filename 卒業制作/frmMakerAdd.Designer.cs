@@ -47,7 +47,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 36);
+            this.label1.Location = new System.Drawing.Point(48, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 21);
             this.label1.TabIndex = 5;
@@ -55,15 +55,15 @@
             // 
             // txtMaker_name
             // 
-            this.txtMaker_name.Location = new System.Drawing.Point(170, 108);
+            this.txtMaker_name.Location = new System.Drawing.Point(179, 108);
             this.txtMaker_name.Name = "txtMaker_name";
-            this.txtMaker_name.Size = new System.Drawing.Size(300, 28);
+            this.txtMaker_name.Size = new System.Drawing.Size(291, 28);
             this.txtMaker_name.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(69, 108);
+            this.label2.Location = new System.Drawing.Point(69, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 21);
             this.label2.TabIndex = 6;
@@ -73,7 +73,7 @@
             // 
             this.btnOk.Location = new System.Drawing.Point(510, 108);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(98, 33);
+            this.btnOk.Size = new System.Drawing.Size(98, 28);
             this.btnOk.TabIndex = 2;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = true;

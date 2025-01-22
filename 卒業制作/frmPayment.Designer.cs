@@ -78,7 +78,7 @@
             this.btnDelete.Location = new System.Drawing.Point(721, 45);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(78, 32);
-            this.btnDelete.TabIndex = 3;
+            this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "削除";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -158,7 +158,7 @@
             this.btnClose.Location = new System.Drawing.Point(663, 395);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(136, 37);
-            this.btnClose.TabIndex = 5;
+            this.btnClose.TabIndex = 7;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -168,7 +168,7 @@
             this.btnSearchReset.Location = new System.Drawing.Point(558, 18);
             this.btnSearchReset.Name = "btnSearchReset";
             this.btnSearchReset.Size = new System.Drawing.Size(122, 28);
-            this.btnSearchReset.TabIndex = 2;
+            this.btnSearchReset.TabIndex = 3;
             this.btnSearchReset.Text = "検索リセット";
             this.btnSearchReset.UseVisualStyleBackColor = true;
             this.btnSearchReset.Click += new System.EventHandler(this.btnSearchReset_Click);

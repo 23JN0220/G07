@@ -85,7 +85,7 @@
             this.lstPlugs.Location = new System.Drawing.Point(29, 236);
             this.lstPlugs.Name = "lstPlugs";
             this.lstPlugs.Size = new System.Drawing.Size(120, 88);
-            this.lstPlugs.TabIndex = 3;
+            this.lstPlugs.TabIndex = 8;
             this.lstPlugs.SelectedIndexChanged += new System.EventHandler(this.lstPlugs_SelectedIndexChanged);
             // 
             // txtSpec
@@ -130,14 +130,14 @@
             this.txtPlugs.Location = new System.Drawing.Point(264, 208);
             this.txtPlugs.Name = "txtPlugs";
             this.txtPlugs.Size = new System.Drawing.Size(237, 28);
-            this.txtPlugs.TabIndex = 8;
+            this.txtPlugs.TabIndex = 9;
             // 
             // btnPadd
             // 
             this.btnPadd.Location = new System.Drawing.Point(264, 256);
             this.btnPadd.Name = "btnPadd";
             this.btnPadd.Size = new System.Drawing.Size(75, 32);
-            this.btnPadd.TabIndex = 9;
+            this.btnPadd.TabIndex = 10;
             this.btnPadd.TabStop = false;
             this.btnPadd.Text = "追加";
             this.btnPadd.UseVisualStyleBackColor = true;
@@ -148,7 +148,7 @@
             this.btnPchange.Location = new System.Drawing.Point(345, 256);
             this.btnPchange.Name = "btnPchange";
             this.btnPchange.Size = new System.Drawing.Size(75, 32);
-            this.btnPchange.TabIndex = 10;
+            this.btnPchange.TabIndex = 11;
             this.btnPchange.Text = "変更";
             this.btnPchange.UseVisualStyleBackColor = true;
             this.btnPchange.Click += new System.EventHandler(this.btnPchange_Click);
@@ -158,7 +158,7 @@
             this.btnPdelete.Location = new System.Drawing.Point(426, 256);
             this.btnPdelete.Name = "btnPdelete";
             this.btnPdelete.Size = new System.Drawing.Size(75, 32);
-            this.btnPdelete.TabIndex = 11;
+            this.btnPdelete.TabIndex = 12;
             this.btnPdelete.Text = "削除";
             this.btnPdelete.UseVisualStyleBackColor = true;
             this.btnPdelete.Click += new System.EventHandler(this.btnPdelete_Click);

@@ -42,7 +42,7 @@
             this.btnDelete.Location = new System.Drawing.Point(461, 21);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(88, 33);
-            this.btnDelete.TabIndex = 0;
+            this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "削除";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -91,7 +91,7 @@
             this.btnClose.Location = new System.Drawing.Point(448, 353);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(101, 37);
-            this.btnClose.TabIndex = 2;
+            this.btnClose.TabIndex = 3;
             this.btnClose.Text = "戻る";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);

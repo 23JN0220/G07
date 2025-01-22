@@ -22,9 +22,10 @@ namespace 卒業制作
         private void frmMeker_Load(object sender, EventArgs e)
         {
             MakerTable MakerTable = new MakerTable();
-            DataTable  table = MakerTable.GetMaker();
+            DataTable table = MakerTable.GetMaker();
 
-            DataTable dt = MakerTable.GetMaker(); {
+            DataTable dt = MakerTable.GetMaker();
+            {
 
                 dgvMaker.AutoGenerateColumns = false;
                 dgvMaker.DataSource = dt;
@@ -49,9 +50,10 @@ namespace 卒業制作
                 dgvMaker.AutoGenerateColumns = false;
                 dgvMaker.DataSource = dt1;
             }
-            else {
+            else
+            {
                 dgvMaker.DataSource = null;
-                MessageBox.Show("メーカーは見つかりませんでした","検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("メーカーは見つかりませんでした", "検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }
@@ -91,7 +93,7 @@ namespace 卒業制作
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (dgvMaker.SelectedRows.Count != -1)
+            if (dgvMaker.SelectedRows.Count != 0)
             {
                 int maker_id = int.Parse(dgvMaker.CurrentRow.Cells["maker_id"].Value.ToString());
                 string maker_name = dgvMaker.CurrentRow.Cells["maker_name"].Value.ToString();
@@ -140,30 +142,47 @@ namespace 卒業制作
 
         private void btnMakerChange_Click(object sender, EventArgs e)
         {
-            frmMakerAdd frmMakerAdd = new frmMakerAdd();
-            MakerTable makerTable = new MakerTable();
-
-            Maker maker = new Maker();
-
-            maker.maker_id = int.Parse(dgvMaker.CurrentRow.Cells["maker_id"].Value.ToString());
-            maker.maker_name = dgvMaker.CurrentRow.Cells["maker_name"].Value.ToString();
-
-            frmMakerAdd.maker = maker;
-
-            frmMakerAdd.ShowDialog();
-
-            DataTable dt1 = makerTable.GetMakerNameByName(txtMaker_Name.Text);
-
-            if (dt1 != null)
+            if (dgvMaker.SelectedRows.Count != 0)
             {
+                frmMakerAdd frmMakerAdd = new frmMakerAdd();
+                MakerTable makerTable = new MakerTable();
 
-                dgvMaker.AutoGenerateColumns = false;
-                dgvMaker.DataSource = dt1;
+                Maker maker = new Maker();
+
+                maker.maker_id = int.Parse(dgvMaker.CurrentRow.Cells["maker_id"].Value.ToString());
+                maker.maker_name = dgvMaker.CurrentRow.Cells["maker_name"].Value.ToString();
+
+                frmMakerAdd.maker = maker;
+
+                frmMakerAdd.ShowDialog();
+
+                DataTable dt1 = makerTable.GetMakerNameByName(txtMaker_Name.Text);
+
+                if (dt1 != null)
+                {
+
+                    dgvMaker.AutoGenerateColumns = false;
+                    dgvMaker.DataSource = dt1;
+                }
+                else
+                {
+                    dgvMaker.DataSource = null;
+                    MessageBox.Show("メーカーは見つかりませんでした", "検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             else
             {
-                dgvMaker.DataSource = null;
-                MessageBox.Show("メーカーは見つかりませんでした", "検索結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("メーカーが選択されていません。", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+
+        }
+
+        private void txtMaker_Name_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSearch.PerformClick();
             }
         }
     }

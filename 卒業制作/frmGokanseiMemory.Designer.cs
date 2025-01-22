@@ -73,7 +73,7 @@
             this.btnSadd.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnSadd.Name = "btnSadd";
             this.btnSadd.Size = new System.Drawing.Size(82, 36);
-            this.btnSadd.TabIndex = 2;
+            this.btnSadd.TabIndex = 4;
             this.btnSadd.Text = "追加";
             this.btnSadd.UseVisualStyleBackColor = true;
             this.btnSadd.Click += new System.EventHandler(this.btnSadd_Click);
@@ -94,7 +94,7 @@
             this.btnSchange.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnSchange.Name = "btnSchange";
             this.btnSchange.Size = new System.Drawing.Size(79, 36);
-            this.btnSchange.TabIndex = 4;
+            this.btnSchange.TabIndex = 5;
             this.btnSchange.Text = "変更";
             this.btnSchange.UseVisualStyleBackColor = true;
             this.btnSchange.Click += new System.EventHandler(this.btnSchange_Click);
@@ -106,7 +106,7 @@
             this.btnSdelete.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnSdelete.Name = "btnSdelete";
             this.btnSdelete.Size = new System.Drawing.Size(79, 36);
-            this.btnSdelete.TabIndex = 5;
+            this.btnSdelete.TabIndex = 6;
             this.btnSdelete.Text = "削除";
             this.btnSdelete.UseVisualStyleBackColor = true;
             this.btnSdelete.Click += new System.EventHandler(this.btnSdelete_Click);

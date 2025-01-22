@@ -417,12 +417,12 @@ namespace 卒業制作
                     btnSearch.PerformClick();
 
                 }
-                else
-                {
-                    MessageBox.Show("商品が選択されていません", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-            }
 
+            }
+            else
+            {
+                MessageBox.Show("商品が選択されていません", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }

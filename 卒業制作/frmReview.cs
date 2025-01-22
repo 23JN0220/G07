@@ -48,7 +48,7 @@ namespace 卒業制作
                 string member_id = dgvReview.CurrentRow.Cells["member_id"].Value.ToString();
                 string goods_code = dgvReview.CurrentRow.Cells["goods_code"].Value.ToString();
 
-                DialogResult result = MessageBox.Show("会員番号「" + member_id + "」、商品番号「" + goods_code + "」のレビューを削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("会員番号「" + member_id + "」、商品番号「" + goods_code + "」のレビューを削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
                 if (result == DialogResult.Yes)
                 {

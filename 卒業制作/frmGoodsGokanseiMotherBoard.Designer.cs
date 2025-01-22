@@ -52,14 +52,14 @@
             this.lstData.Name = "lstData";
             this.lstData.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.lstData.Size = new System.Drawing.Size(534, 361);
-            this.lstData.TabIndex = 14;
+            this.lstData.TabIndex = 1;
             // 
             // btnClose
             // 
             this.btnClose.Location = new System.Drawing.Point(475, 439);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 34);
-            this.btnClose.TabIndex = 13;
+            this.btnClose.TabIndex = 3;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -69,7 +69,7 @@
             this.btnOK.Location = new System.Drawing.Point(211, 439);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(140, 34);
-            this.btnOK.TabIndex = 12;
+            this.btnOK.TabIndex = 2;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);

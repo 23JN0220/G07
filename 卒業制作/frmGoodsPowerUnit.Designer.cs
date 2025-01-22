@@ -77,7 +77,7 @@
             this.btnClose.Location = new System.Drawing.Point(965, 473);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(95, 38);
-            this.btnClose.TabIndex = 12;
+            this.btnClose.TabIndex = 11;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -87,7 +87,7 @@
             this.btnOK.Location = new System.Drawing.Point(424, 399);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(215, 73);
-            this.btnOK.TabIndex = 11;
+            this.btnOK.TabIndex = 10;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -160,14 +160,14 @@
             this.txtPowerCapacity.Location = new System.Drawing.Point(612, 116);
             this.txtPowerCapacity.Name = "txtPowerCapacity";
             this.txtPowerCapacity.Size = new System.Drawing.Size(399, 28);
-            this.txtPowerCapacity.TabIndex = 6;
+            this.txtPowerCapacity.TabIndex = 4;
             // 
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(612, 253);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(399, 28);
-            this.txtPrice.TabIndex = 10;
+            this.txtPrice.TabIndex = 8;
             // 
             // txtName
             // 
@@ -208,14 +208,14 @@
             this.lstPlus.Location = new System.Drawing.Point(612, 150);
             this.lstPlus.Name = "lstPlus";
             this.lstPlus.Size = new System.Drawing.Size(399, 29);
-            this.lstPlus.TabIndex = 7;
+            this.lstPlus.TabIndex = 5;
             // 
             // txtPciconnector
             // 
             this.txtPciconnector.Location = new System.Drawing.Point(612, 185);
             this.txtPciconnector.Name = "txtPciconnector";
             this.txtPciconnector.Size = new System.Drawing.Size(399, 28);
-            this.txtPciconnector.TabIndex = 8;
+            this.txtPciconnector.TabIndex = 6;
             // 
             // label11
             // 
@@ -231,7 +231,7 @@
             this.txtSataConnector.Location = new System.Drawing.Point(612, 219);
             this.txtSataConnector.Name = "txtSataConnector";
             this.txtSataConnector.Size = new System.Drawing.Size(399, 28);
-            this.txtSataConnector.TabIndex = 9;
+            this.txtSataConnector.TabIndex = 7;
             // 
             // label12
             // 
@@ -251,7 +251,7 @@
             this.btnPicture.Location = new System.Drawing.Point(131, 357);
             this.btnPicture.Name = "btnPicture";
             this.btnPicture.Size = new System.Drawing.Size(103, 28);
-            this.btnPicture.TabIndex = 69;
+            this.btnPicture.TabIndex = 9;
             this.btnPicture.Text = "画像選択";
             this.btnPicture.UseVisualStyleBackColor = true;
             this.btnPicture.Click += new System.EventHandler(this.btnPicture_Click);

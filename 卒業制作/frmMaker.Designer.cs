@@ -56,12 +56,13 @@
             this.txtMaker_Name.Name = "txtMaker_Name";
             this.txtMaker_Name.Size = new System.Drawing.Size(186, 28);
             this.txtMaker_Name.TabIndex = 1;
+            this.txtMaker_Name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMaker_Name_KeyDown);
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(389, 32);
+            this.btnSearch.Location = new System.Drawing.Point(377, 32);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(85, 34);
+            this.btnSearch.Size = new System.Drawing.Size(85, 28);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "検索";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -69,10 +70,10 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(519, 32);
+            this.btnDelete.Location = new System.Drawing.Point(500, 72);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(89, 34);
-            this.btnDelete.TabIndex = 3;
+            this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "削除";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -114,7 +115,7 @@
             this.btnClose.Location = new System.Drawing.Point(500, 351);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(108, 38);
-            this.btnClose.TabIndex = 5;
+            this.btnClose.TabIndex = 10;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -123,8 +124,8 @@
             // 
             this.btnMakerChange.Location = new System.Drawing.Point(385, 295);
             this.btnMakerChange.Name = "btnMakerChange";
-            this.btnMakerChange.Size = new System.Drawing.Size(89, 38);
-            this.btnMakerChange.TabIndex = 6;
+            this.btnMakerChange.Size = new System.Drawing.Size(89, 34);
+            this.btnMakerChange.TabIndex = 8;
             this.btnMakerChange.Text = "編集";
             this.btnMakerChange.UseVisualStyleBackColor = true;
             this.btnMakerChange.Click += new System.EventHandler(this.btnMakerChange_Click);
@@ -133,7 +134,7 @@
             // 
             this.btnAddMaker.Location = new System.Drawing.Point(54, 295);
             this.btnAddMaker.Name = "btnAddMaker";
-            this.btnAddMaker.Size = new System.Drawing.Size(92, 34);
+            this.btnAddMaker.Size = new System.Drawing.Size(89, 34);
             this.btnAddMaker.TabIndex = 7;
             this.btnAddMaker.Text = "追加";
             this.btnAddMaker.UseVisualStyleBackColor = true;
