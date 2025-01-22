@@ -159,7 +159,7 @@ namespace 卒業制作
                 string standard_name = lstSpec.SelectedItem.ToString();
                 int standard_id = ssdStandardTable.GetSsdStandardIdByName(standard_name);
 
-                DataTable dataTable = goodsSsdTable.GetGoodsSsdType(standard_id);
+                DataTable dataTable = goodsSsdTable.GetGoodsSsdByStandardId(standard_id);
 
                 if (dataTable == null)
                 {
@@ -285,7 +285,7 @@ namespace 卒業制作
                 SsdConnectionTable ssdConnectionTable = new SsdConnectionTable();
                 string standard_name = lstPlugs.SelectedItem.ToString();
                 int standard_id = ssdConnectionTable.GetSsdConnectionIdByName(standard_name);
-                DataTable dataTable = goodsSsdTable.GetGoodsSsdConnection(standard_id);
+                DataTable dataTable = goodsSsdTable.GetGoodsSsdByConnectionId(standard_id);
                 if (dataTable == null)
                 {
                     DialogResult result = MessageBox.Show("「" + standard_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -414,7 +414,7 @@ namespace 卒業制作
                 string type_name = lstType.SelectedItem.ToString();
                 int type_id = ssdTypeTable.GetSsdTypeIdByName(type_name);
 
-                DataTable dataTable = goodsSsdTable.GetGoodsSsdType(type_id);
+                DataTable dataTable = goodsSsdTable.GetGoodsSsdByTypeId(type_id);
 
                 if (dataTable == null)
                 {

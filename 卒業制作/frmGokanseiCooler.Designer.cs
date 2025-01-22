@@ -111,6 +111,7 @@
             this.btnCPUcdelete.TabIndex = 7;
             this.btnCPUcdelete.Text = "削除";
             this.btnCPUcdelete.UseVisualStyleBackColor = true;
+            this.btnCPUcdelete.Click += new System.EventHandler(this.btnCPUcdelete_Click);
             // 
             // btnBack
             // 

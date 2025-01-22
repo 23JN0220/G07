@@ -114,5 +114,17 @@ namespace 卒業制作
                 MessageBox.Show("変更する種類が選択されていないか、変更後の名称が未入力です。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void btnCPUcdelete_Click(object sender, EventArgs e)
+        {
+            if (lstType.SelectedIndex != -1)
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("削除する項目が選択されていません。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
     }
 }
