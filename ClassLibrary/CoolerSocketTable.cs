@@ -71,5 +71,23 @@ namespace ClassLibrary
             }
             return ret;
         }
+
+        public int DeleteBySocketId(int socket_id)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "DELETE FROM Cooler_Socket WHERE socket_id = @socket_id";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@socket_id", socket_id);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+            return ret;
+        }
     }
 }

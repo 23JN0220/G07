@@ -430,7 +430,7 @@ namespace 卒業制作
                 GoodsCpuTable goodsCpuTable = new GoodsCpuTable();
                 GoodsMotherboardTable goodsMotherboardTable = new GoodsMotherboardTable();
                 CpuSocketTable cpuSocketTable = new CpuSocketTable();
-                
+                CoolerSocketTable coolerSocketTable = new CoolerSocketTable();
 
                 string socket_name = lstSocket.SelectedItem.ToString();
                 int socket_id = cpuSocketTable.GetCPUSocketIdByName(socket_name);
@@ -443,8 +443,9 @@ namespace 卒業制作
                     DialogResult result = MessageBox.Show("「" + socket_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
                     {
+                        int ret2 = coolerSocketTable.DeleteBySocketId(socket_id);
                         int ret = cpuSocketTable.Delete(socket_name);
-
+                        
                         if (ret == 1)
                         {
                             MessageBox.Show("データを削除しました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
