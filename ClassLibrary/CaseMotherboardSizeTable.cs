@@ -73,5 +73,23 @@ namespace ClassLibrary
             }
             return ret;
         }
+
+        public int DeleteByMotherboardSizeId(int mother_size_id)
+        {
+            int ret = 0;
+
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "DELETE FROM Case_Motherboard_Size WHERE mother_size_id = @mother_size_id";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@mother_size_id", mother_size_id);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+            return ret;
+        }
     }
 }

@@ -109,5 +109,22 @@ namespace ClassLibrary
             }
             return ret;
         }
+
+        public int Delete(string size_name)
+        {
+            int ret = 0;
+            string connectionString = Properties.Settings.Default.DBConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "DELETE FROM Motherboard_size WHERE size_name = @size_name";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@size_name", size_name);
+
+                connection.Open();
+                ret = command.ExecuteNonQuery();
+            }
+            return ret;
+        }
     }
 }

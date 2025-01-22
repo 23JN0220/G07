@@ -48,17 +48,27 @@ namespace 卒業制作
 
         private void lstChipset_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtChipset.Text = lstChipset.SelectedItem.ToString();
+            if (lstChipset.SelectedItem != null)
+            {
+                txtChipset.Text = lstChipset.SelectedItem.ToString();
+            }
+            
         }
 
         private void lstSize_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtSize.Text = lstSize.SelectedItem.ToString();
+            if (lstSize.SelectedItem != null)
+            {
+                txtSize.Text = lstSize.SelectedItem.ToString();
+            }
         }
 
         private void lstWirelessLan_SelectedIndexChanged(object sender, EventArgs e)
         {
-           txtWirelessLan.Text = lstWirelessLan.SelectedItem.ToString();    
+            if (lstWirelessLan.SelectedItem != null)
+            {
+                txtWirelessLan.Text = lstWirelessLan.SelectedItem.ToString();
+            }
         }
 
         private void btnCadd_Click(object sender, EventArgs e)
@@ -286,6 +296,162 @@ namespace 卒業制作
             else
             {
                 MessageBox.Show("変更する項目が選択されていないか、変更後の名称が未入力です。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnCdelete_Click(object sender, EventArgs e)
+        {
+            if (lstChipset.SelectedIndex != -1)
+            {
+                GoodsMotherboardTable goodsMotherboardTable = new GoodsMotherboardTable();
+                MotherboardChipsetTable motherboardChipsetTable = new MotherboardChipsetTable();
+
+                string chipset_name = lstChipset.SelectedItem.ToString();
+                int chipset_id = motherboardChipsetTable.GetMotherboardChipsetIdByName(chipset_name);
+
+                DataTable dataTable = goodsMotherboardTable.GetGoodsMotherboardByChipsetId(chipset_id);
+
+                if (dataTable == null)
+                {
+                    DialogResult result = MessageBox.Show("「" + chipset_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        int ret = motherboardChipsetTable.Delete(chipset_name);
+
+                        if (ret == 1)
+                        {
+                            MessageBox.Show("データを削除しました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            lstChipset.Items.Clear();
+                            dataTable = motherboardChipsetTable.GetMotherboardChipset();
+                            foreach (DataRow dr in dataTable.Rows)
+                            {
+                                lstChipset.Items.Add(dr[1].ToString());
+                            }
+
+                            txtChipset.Text = "";
+                        }
+                        else
+                        {
+                            MessageBox.Show("データを削除できませんでした。", "削除エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                    }
+                }
+                else
+                {
+                    frmGokanseiWarning frmGokanseiWarning = new frmGokanseiWarning();
+                    frmGokanseiWarning.dataTable = dataTable;
+                    frmGokanseiWarning.ShowDialog();
+                }
+            }
+            else
+            {
+                MessageBox.Show("削除する項目が選択されていません。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnSdelete_Click(object sender, EventArgs e)
+        {
+            if (lstSize.SelectedIndex != -1)
+            {
+                GoodsMotherboardTable goodsMotherboardTable = new GoodsMotherboardTable();
+                MotherboardSizeTable motherboardSizeTable = new MotherboardSizeTable();
+                CaseMotherboardSizeTable caseMotherboardSizeTable = new CaseMotherboardSizeTable();
+
+                string size_name = lstSize.SelectedItem.ToString();
+                int size_id = motherboardSizeTable.GetMotherboardSizeIdByName(size_name);
+
+                DataTable dataTable = goodsMotherboardTable.GetGoodsMotherboardBySizeId(size_id);
+
+                if (dataTable == null)
+                {
+                    DialogResult result = MessageBox.Show("「" + size_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        int ret2 = caseMotherboardSizeTable.DeleteByMotherboardSizeId(size_id);
+                        int ret = motherboardSizeTable.Delete(size_name);
+
+                        if (ret == 1)
+                        {
+                            MessageBox.Show("データを削除しました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            lstSize.Items.Clear();
+                            dataTable = motherboardSizeTable.GetMotherboardSize();
+                            foreach (DataRow dr in dataTable.Rows)
+                            {
+                                lstSize.Items.Add(dr[1].ToString());
+                            }
+                            txtSize.Text = "";
+                        }
+                        else
+                        {
+                            MessageBox.Show("データを削除できませんでした。", "削除エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                    }
+                }
+                else
+                {
+                    frmGokanseiWarning frmGokanseiWarning = new frmGokanseiWarning();
+                    frmGokanseiWarning.dataTable = dataTable;
+                    frmGokanseiWarning.ShowDialog();
+                }
+            }
+            else
+            {
+                MessageBox.Show("削除する項目が選択されていません。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnSpDelete_Click(object sender, EventArgs e)
+        {
+            if (lstWirelessLan.SelectedIndex != -1)
+            {
+                GoodsMotherboardTable goodsMotherboardTable = new GoodsMotherboardTable();
+                WirelessLanTable wirelessLanTable = new WirelessLanTable();
+
+                string lan_name = lstWirelessLan.SelectedItem.ToString();
+                int lan_id = wirelessLanTable.GetWirelessLanIdByName(lan_name);
+
+                DataTable dataTable = goodsMotherboardTable.GetGoodsMotherboardByLanId(lan_id);
+
+                if (dataTable == null)
+                {
+                    DialogResult result = MessageBox.Show("「" + lan_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        int ret = wirelessLanTable.Delete(lan_name);
+
+                        if (ret == 1)
+                        {
+                            MessageBox.Show("データを削除しました。", "削除完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            lstWirelessLan.Items.Clear();
+                            dataTable = wirelessLanTable.GetWirelessLan();
+                            foreach (DataRow dr in dataTable.Rows)
+                            {
+                                lstWirelessLan.Items.Add(dr[1].ToString());
+                            }
+
+                            txtWirelessLan.Text = "";
+                        }
+                        else
+                        {
+                            MessageBox.Show("データを削除できませんでした。", "削除エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                    }
+                }
+                else
+                {
+                    frmGokanseiWarning frmGokanseiWarning = new frmGokanseiWarning();
+                    frmGokanseiWarning.dataTable = dataTable;
+                    frmGokanseiWarning.ShowDialog();
+                }
+            }
+            else
+            {
+                MessageBox.Show("削除する項目が選択されていません。\n", "未選択エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }
