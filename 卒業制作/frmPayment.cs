@@ -130,7 +130,19 @@ namespace 卒業制作
                 if (result == DialogResult.Yes)
                 {
                     OrderDetailTable orderDetailTable = new OrderDetailTable();
-                    int ret = orderDetailTable.DeleteByOrderId(order_id);
+
+                    DataTable orderDataTable = orderDetailTable.GetGoodsOrderDetailByOrderId(int.Parse(order_id));
+
+                    int ret;
+
+                    if (orderDataTable != null)
+                    {
+                        ret = orderDetailTable.DeleteByOrderId(order_id);
+                    }
+                    else
+                    {
+                        ret = 1;
+                    }
 
                     if (ret != 0)
                     {

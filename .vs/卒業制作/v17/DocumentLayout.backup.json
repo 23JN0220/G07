@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmgoodsos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgoodsos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmgoodsos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmgoodsos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|c:\\users\\23jn0220\\source\\repos\\g07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{875E5014-3E11-48F4-9436-3DB73F927890}|\u5352\u696D\u5236\u4F5C\\\u5352\u696D\u5236\u4F5C.csproj|solutionrelative:\u5352\u696D\u5236\u4F5C\\frmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -127,27 +123,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmGoodsOs.cs",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmGoodsOs.cs",
-              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGoodsOs.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmGoodsOs.cs",
-              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGoodsOs.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAYwDgAAAANAAAAAAAAAA==",
+              "Title": "frmPayment.cs",
+              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmPayment.cs",
+              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmPayment.cs",
+              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmPayment.cs",
+              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmPayment.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAgwJEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T07:52:01.866Z",
+              "WhenOpened": "2025-01-23T04:06:42.226Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmGoodsOs.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "DocumentMoniker": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmGoodsOs.cs",
-              "RelativeDocumentMoniker": "\u5352\u696D\u5236\u4F5C\\frmGoodsOs.cs",
-              "ToolTip": "C:\\Users\\23JN0220\\source\\repos\\G07\\20250122\\\u5352\u696D\u5236\u4F5C\\frmGoodsOs.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "RelativeToolTip": "\u5352\u696D\u5236\u4F5C\\frmGoodsOs.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T07:52:00.56Z",
-              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
             }
           ]
         }
