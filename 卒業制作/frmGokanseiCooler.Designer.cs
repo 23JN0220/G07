@@ -37,12 +37,13 @@
             this.btnCPUcChange = new System.Windows.Forms.Button();
             this.btnCPUcdelete = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 18);
+            this.label1.Location = new System.Drawing.Point(12, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 21);
             this.label1.TabIndex = 0;
@@ -52,7 +53,7 @@
             // 
             this.lstType.FormattingEnabled = true;
             this.lstType.ItemHeight = 21;
-            this.lstType.Location = new System.Drawing.Point(61, 52);
+            this.lstType.Location = new System.Drawing.Point(12, 114);
             this.lstType.Name = "lstType";
             this.lstType.Size = new System.Drawing.Size(165, 130);
             this.lstType.TabIndex = 1;
@@ -60,15 +61,15 @@
             // 
             // txtCPUcooler
             // 
-            this.txtCPUcooler.Location = new System.Drawing.Point(278, 65);
+            this.txtCPUcooler.Location = new System.Drawing.Point(229, 127);
             this.txtCPUcooler.Name = "txtCPUcooler";
-            this.txtCPUcooler.Size = new System.Drawing.Size(244, 28);
+            this.txtCPUcooler.Size = new System.Drawing.Size(237, 28);
             this.txtCPUcooler.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 197);
+            this.label2.Location = new System.Drawing.Point(12, 260);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 21);
             this.label2.TabIndex = 3;
@@ -77,7 +78,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(84, 237);
+            this.label3.Location = new System.Drawing.Point(35, 299);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(438, 21);
             this.label3.TabIndex = 4;
@@ -85,7 +86,7 @@
             // 
             // btnCPUcAdd
             // 
-            this.btnCPUcAdd.Location = new System.Drawing.Point(278, 127);
+            this.btnCPUcAdd.Location = new System.Drawing.Point(229, 189);
             this.btnCPUcAdd.Name = "btnCPUcAdd";
             this.btnCPUcAdd.Size = new System.Drawing.Size(75, 27);
             this.btnCPUcAdd.TabIndex = 5;
@@ -95,7 +96,7 @@
             // 
             // btnCPUcChange
             // 
-            this.btnCPUcChange.Location = new System.Drawing.Point(359, 127);
+            this.btnCPUcChange.Location = new System.Drawing.Point(310, 189);
             this.btnCPUcChange.Name = "btnCPUcChange";
             this.btnCPUcChange.Size = new System.Drawing.Size(75, 27);
             this.btnCPUcChange.TabIndex = 6;
@@ -105,7 +106,7 @@
             // 
             // btnCPUcdelete
             // 
-            this.btnCPUcdelete.Location = new System.Drawing.Point(447, 127);
+            this.btnCPUcdelete.Location = new System.Drawing.Point(391, 189);
             this.btnCPUcdelete.Name = "btnCPUcdelete";
             this.btnCPUcdelete.Size = new System.Drawing.Size(75, 27);
             this.btnCPUcdelete.TabIndex = 7;
@@ -115,7 +116,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(429, 343);
+            this.btnBack.Location = new System.Drawing.Point(481, 387);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 30);
             this.btnBack.TabIndex = 8;
@@ -123,11 +124,20 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(8, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(548, 42);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "項目を削除する場合は左の表から削除したい項目を選択してから\r\n削除ボタンを押してください";
+            // 
             // frmGokanseiCooler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(573, 429);
+            this.ClientSize = new System.Drawing.Size(568, 429);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnCPUcdelete);
             this.Controls.Add(this.btnCPUcChange);
@@ -136,6 +146,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCPUcooler);
             this.Controls.Add(this.lstType);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -158,5 +169,6 @@
         private System.Windows.Forms.Button btnCPUcChange;
         private System.Windows.Forms.Button btnCPUcdelete;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label label4;
     }
 }

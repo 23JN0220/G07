@@ -41,13 +41,14 @@
             this.btnMchange = new System.Windows.Forms.Button();
             this.btnMdelete = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(34, 48);
+            this.label1.Location = new System.Drawing.Point(11, 70);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 21);
@@ -59,7 +60,7 @@
             this.lstMemoryStandard.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lstMemoryStandard.FormattingEnabled = true;
             this.lstMemoryStandard.ItemHeight = 21;
-            this.lstMemoryStandard.Location = new System.Drawing.Point(38, 74);
+            this.lstMemoryStandard.Location = new System.Drawing.Point(15, 96);
             this.lstMemoryStandard.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.lstMemoryStandard.Name = "lstMemoryStandard";
             this.lstMemoryStandard.Size = new System.Drawing.Size(301, 151);
@@ -69,7 +70,7 @@
             // btnSadd
             // 
             this.btnSadd.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnSadd.Location = new System.Drawing.Point(348, 112);
+            this.btnSadd.Location = new System.Drawing.Point(325, 134);
             this.btnSadd.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnSadd.Name = "btnSadd";
             this.btnSadd.Size = new System.Drawing.Size(82, 36);
@@ -81,7 +82,7 @@
             // txtMemoryStandard
             // 
             this.txtMemoryStandard.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtMemoryStandard.Location = new System.Drawing.Point(348, 74);
+            this.txtMemoryStandard.Location = new System.Drawing.Point(325, 96);
             this.txtMemoryStandard.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txtMemoryStandard.Name = "txtMemoryStandard";
             this.txtMemoryStandard.Size = new System.Drawing.Size(325, 28);
@@ -90,7 +91,7 @@
             // btnSchange
             // 
             this.btnSchange.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnSchange.Location = new System.Drawing.Point(442, 112);
+            this.btnSchange.Location = new System.Drawing.Point(419, 134);
             this.btnSchange.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnSchange.Name = "btnSchange";
             this.btnSchange.Size = new System.Drawing.Size(79, 36);
@@ -102,7 +103,7 @@
             // btnSdelete
             // 
             this.btnSdelete.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnSdelete.Location = new System.Drawing.Point(537, 112);
+            this.btnSdelete.Location = new System.Drawing.Point(514, 134);
             this.btnSdelete.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnSdelete.Name = "btnSdelete";
             this.btnSdelete.Size = new System.Drawing.Size(79, 36);
@@ -115,7 +116,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(34, 243);
+            this.label2.Location = new System.Drawing.Point(11, 265);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 21);
@@ -127,7 +128,7 @@
             this.lstModule.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lstModule.FormattingEnabled = true;
             this.lstModule.ItemHeight = 21;
-            this.lstModule.Location = new System.Drawing.Point(38, 269);
+            this.lstModule.Location = new System.Drawing.Point(15, 291);
             this.lstModule.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.lstModule.Name = "lstModule";
             this.lstModule.Size = new System.Drawing.Size(301, 151);
@@ -136,14 +137,14 @@
             // 
             // txtModule
             // 
-            this.txtModule.Location = new System.Drawing.Point(348, 269);
+            this.txtModule.Location = new System.Drawing.Point(325, 291);
             this.txtModule.Name = "txtModule";
             this.txtModule.Size = new System.Drawing.Size(325, 28);
             this.txtModule.TabIndex = 8;
             // 
             // btnMadd
             // 
-            this.btnMadd.Location = new System.Drawing.Point(355, 324);
+            this.btnMadd.Location = new System.Drawing.Point(332, 346);
             this.btnMadd.Name = "btnMadd";
             this.btnMadd.Size = new System.Drawing.Size(75, 30);
             this.btnMadd.TabIndex = 9;
@@ -153,7 +154,7 @@
             // 
             // btnMchange
             // 
-            this.btnMchange.Location = new System.Drawing.Point(442, 324);
+            this.btnMchange.Location = new System.Drawing.Point(419, 346);
             this.btnMchange.Name = "btnMchange";
             this.btnMchange.Size = new System.Drawing.Size(79, 30);
             this.btnMchange.TabIndex = 10;
@@ -163,7 +164,7 @@
             // 
             // btnMdelete
             // 
-            this.btnMdelete.Location = new System.Drawing.Point(537, 321);
+            this.btnMdelete.Location = new System.Drawing.Point(514, 343);
             this.btnMdelete.Name = "btnMdelete";
             this.btnMdelete.Size = new System.Drawing.Size(79, 36);
             this.btnMdelete.TabIndex = 11;
@@ -173,7 +174,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(593, 428);
+            this.btnClose.Location = new System.Drawing.Point(570, 450);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(80, 35);
             this.btnClose.TabIndex = 12;
@@ -181,11 +182,21 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(548, 42);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "項目を削除する場合は左の表から削除したい項目を選択してから\r\n削除ボタンを押してください";
+            // 
             // frmGokanseiMemory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 481);
+            this.ClientSize = new System.Drawing.Size(664, 500);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnMdelete);
             this.Controls.Add(this.btnMchange);
@@ -224,5 +235,6 @@
         private System.Windows.Forms.Button btnMchange;
         private System.Windows.Forms.Button btnMdelete;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Label label5;
     }
 }

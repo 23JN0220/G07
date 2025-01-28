@@ -35,12 +35,13 @@
             this.btnVchange = new System.Windows.Forms.Button();
             this.btnVdelete = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 32);
+            this.label1.Location = new System.Drawing.Point(12, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 21);
             this.label1.TabIndex = 0;
@@ -50,7 +51,7 @@
             // 
             this.lstVersion.FormattingEnabled = true;
             this.lstVersion.ItemHeight = 21;
-            this.lstVersion.Location = new System.Drawing.Point(12, 70);
+            this.lstVersion.Location = new System.Drawing.Point(12, 129);
             this.lstVersion.Name = "lstVersion";
             this.lstVersion.Size = new System.Drawing.Size(196, 151);
             this.lstVersion.TabIndex = 1;
@@ -58,14 +59,14 @@
             // 
             // txtVersion
             // 
-            this.txtVersion.Location = new System.Drawing.Point(244, 70);
+            this.txtVersion.Location = new System.Drawing.Point(244, 129);
             this.txtVersion.Name = "txtVersion";
             this.txtVersion.Size = new System.Drawing.Size(246, 28);
             this.txtVersion.TabIndex = 2;
             // 
             // btnVadd
             // 
-            this.btnVadd.Location = new System.Drawing.Point(244, 114);
+            this.btnVadd.Location = new System.Drawing.Point(244, 173);
             this.btnVadd.Name = "btnVadd";
             this.btnVadd.Size = new System.Drawing.Size(75, 32);
             this.btnVadd.TabIndex = 3;
@@ -75,7 +76,7 @@
             // 
             // btnVchange
             // 
-            this.btnVchange.Location = new System.Drawing.Point(325, 114);
+            this.btnVchange.Location = new System.Drawing.Point(325, 173);
             this.btnVchange.Name = "btnVchange";
             this.btnVchange.Size = new System.Drawing.Size(75, 32);
             this.btnVchange.TabIndex = 4;
@@ -85,7 +86,7 @@
             // 
             // btnVdelete
             // 
-            this.btnVdelete.Location = new System.Drawing.Point(415, 114);
+            this.btnVdelete.Location = new System.Drawing.Point(415, 173);
             this.btnVdelete.Name = "btnVdelete";
             this.btnVdelete.Size = new System.Drawing.Size(75, 32);
             this.btnVdelete.TabIndex = 5;
@@ -95,7 +96,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(415, 201);
+            this.btnClose.Location = new System.Drawing.Point(415, 260);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 34);
             this.btnClose.TabIndex = 6;
@@ -103,11 +104,22 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label5.Location = new System.Drawing.Point(12, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(354, 63);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "項目を削除する場合は\r\n左の表から削除したい項目を選択してから\r\n削除ボタンを押してください";
+            // 
             // frmGokanseiOs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(514, 266);
+            this.ClientSize = new System.Drawing.Size(506, 314);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnVdelete);
             this.Controls.Add(this.btnVchange);
@@ -134,5 +146,6 @@
         private System.Windows.Forms.Button btnVchange;
         private System.Windows.Forms.Button btnVdelete;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -48,12 +48,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnTdelete = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 23);
+            this.label1.Location = new System.Drawing.Point(27, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 21);
             this.label1.TabIndex = 0;
@@ -63,7 +64,7 @@
             // 
             this.lstSpec.FormattingEnabled = true;
             this.lstSpec.ItemHeight = 21;
-            this.lstSpec.Location = new System.Drawing.Point(29, 58);
+            this.lstSpec.Location = new System.Drawing.Point(31, 104);
             this.lstSpec.Name = "lstSpec";
             this.lstSpec.Size = new System.Drawing.Size(120, 88);
             this.lstSpec.TabIndex = 1;
@@ -72,7 +73,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 198);
+            this.label2.Location = new System.Drawing.Point(27, 216);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 21);
             this.label2.TabIndex = 2;
@@ -82,7 +83,7 @@
             // 
             this.lstPlugs.FormattingEnabled = true;
             this.lstPlugs.ItemHeight = 21;
-            this.lstPlugs.Location = new System.Drawing.Point(29, 236);
+            this.lstPlugs.Location = new System.Drawing.Point(31, 254);
             this.lstPlugs.Name = "lstPlugs";
             this.lstPlugs.Size = new System.Drawing.Size(120, 88);
             this.lstPlugs.TabIndex = 8;
@@ -90,14 +91,14 @@
             // 
             // txtSpec
             // 
-            this.txtSpec.Location = new System.Drawing.Point(264, 58);
+            this.txtSpec.Location = new System.Drawing.Point(266, 104);
             this.txtSpec.Name = "txtSpec";
             this.txtSpec.Size = new System.Drawing.Size(237, 28);
             this.txtSpec.TabIndex = 4;
             // 
             // btnSpAdd
             // 
-            this.btnSpAdd.Location = new System.Drawing.Point(264, 104);
+            this.btnSpAdd.Location = new System.Drawing.Point(266, 150);
             this.btnSpAdd.Name = "btnSpAdd";
             this.btnSpAdd.Size = new System.Drawing.Size(75, 32);
             this.btnSpAdd.TabIndex = 5;
@@ -107,7 +108,7 @@
             // 
             // btnSpChange
             // 
-            this.btnSpChange.Location = new System.Drawing.Point(345, 104);
+            this.btnSpChange.Location = new System.Drawing.Point(347, 150);
             this.btnSpChange.Name = "btnSpChange";
             this.btnSpChange.Size = new System.Drawing.Size(75, 32);
             this.btnSpChange.TabIndex = 6;
@@ -117,7 +118,7 @@
             // 
             // btnSpDelete
             // 
-            this.btnSpDelete.Location = new System.Drawing.Point(426, 104);
+            this.btnSpDelete.Location = new System.Drawing.Point(428, 150);
             this.btnSpDelete.Name = "btnSpDelete";
             this.btnSpDelete.Size = new System.Drawing.Size(75, 32);
             this.btnSpDelete.TabIndex = 7;
@@ -127,14 +128,14 @@
             // 
             // txtPlugs
             // 
-            this.txtPlugs.Location = new System.Drawing.Point(264, 208);
+            this.txtPlugs.Location = new System.Drawing.Point(266, 226);
             this.txtPlugs.Name = "txtPlugs";
             this.txtPlugs.Size = new System.Drawing.Size(237, 28);
             this.txtPlugs.TabIndex = 9;
             // 
             // btnPadd
             // 
-            this.btnPadd.Location = new System.Drawing.Point(264, 256);
+            this.btnPadd.Location = new System.Drawing.Point(266, 274);
             this.btnPadd.Name = "btnPadd";
             this.btnPadd.Size = new System.Drawing.Size(75, 32);
             this.btnPadd.TabIndex = 10;
@@ -145,7 +146,7 @@
             // 
             // btnPchange
             // 
-            this.btnPchange.Location = new System.Drawing.Point(345, 256);
+            this.btnPchange.Location = new System.Drawing.Point(347, 274);
             this.btnPchange.Name = "btnPchange";
             this.btnPchange.Size = new System.Drawing.Size(75, 32);
             this.btnPchange.TabIndex = 11;
@@ -155,7 +156,7 @@
             // 
             // btnPdelete
             // 
-            this.btnPdelete.Location = new System.Drawing.Point(426, 256);
+            this.btnPdelete.Location = new System.Drawing.Point(428, 274);
             this.btnPdelete.Name = "btnPdelete";
             this.btnPdelete.Size = new System.Drawing.Size(75, 32);
             this.btnPdelete.TabIndex = 12;
@@ -166,7 +167,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 359);
+            this.label3.Location = new System.Drawing.Point(27, 362);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 21);
             this.label3.TabIndex = 12;
@@ -176,7 +177,7 @@
             // 
             this.lstType.FormattingEnabled = true;
             this.lstType.ItemHeight = 21;
-            this.lstType.Location = new System.Drawing.Point(29, 414);
+            this.lstType.Location = new System.Drawing.Point(31, 396);
             this.lstType.Name = "lstType";
             this.lstType.Size = new System.Drawing.Size(120, 88);
             this.lstType.TabIndex = 13;
@@ -184,14 +185,14 @@
             // 
             // txtType
             // 
-            this.txtType.Location = new System.Drawing.Point(264, 414);
+            this.txtType.Location = new System.Drawing.Point(266, 396);
             this.txtType.Name = "txtType";
             this.txtType.Size = new System.Drawing.Size(237, 28);
             this.txtType.TabIndex = 14;
             // 
             // btnTadd
             // 
-            this.btnTadd.Location = new System.Drawing.Point(264, 459);
+            this.btnTadd.Location = new System.Drawing.Point(266, 441);
             this.btnTadd.Name = "btnTadd";
             this.btnTadd.Size = new System.Drawing.Size(75, 31);
             this.btnTadd.TabIndex = 15;
@@ -201,7 +202,7 @@
             // 
             // btnTchange
             // 
-            this.btnTchange.Location = new System.Drawing.Point(345, 459);
+            this.btnTchange.Location = new System.Drawing.Point(347, 441);
             this.btnTchange.Name = "btnTchange";
             this.btnTchange.Size = new System.Drawing.Size(75, 31);
             this.btnTchange.TabIndex = 16;
@@ -211,7 +212,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(452, 485);
+            this.button1.Location = new System.Drawing.Point(454, 467);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(8, 8);
             this.button1.TabIndex = 17;
@@ -220,7 +221,7 @@
             // 
             // btnTdelete
             // 
-            this.btnTdelete.Location = new System.Drawing.Point(426, 459);
+            this.btnTdelete.Location = new System.Drawing.Point(428, 441);
             this.btnTdelete.Name = "btnTdelete";
             this.btnTdelete.Size = new System.Drawing.Size(75, 31);
             this.btnTdelete.TabIndex = 18;
@@ -230,7 +231,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(426, 535);
+            this.btnClose.Location = new System.Drawing.Point(428, 517);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 32);
             this.btnClose.TabIndex = 19;
@@ -238,11 +239,21 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(548, 42);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "項目を削除する場合は左の表から削除したい項目を選択してから\r\n削除ボタンを押してください";
+            // 
             // frmGokanseiSsd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(601, 635);
+            this.ClientSize = new System.Drawing.Size(563, 575);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnTdelete);
             this.Controls.Add(this.button1);
@@ -295,5 +306,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnTdelete;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Label label4;
     }
 }
