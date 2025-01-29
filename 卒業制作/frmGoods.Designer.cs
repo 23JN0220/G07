@@ -106,6 +106,7 @@
             this.goods_name,
             this.price});
             this.dgvGoods.Location = new System.Drawing.Point(48, 72);
+            this.dgvGoods.MultiSelect = false;
             this.dgvGoods.Name = "dgvGoods";
             this.dgvGoods.ReadOnly = true;
             this.dgvGoods.RowTemplate.Height = 21;

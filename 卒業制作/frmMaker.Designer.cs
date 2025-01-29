@@ -89,6 +89,7 @@
             this.maker_id,
             this.maker_name});
             this.dgvMaker.Location = new System.Drawing.Point(54, 72);
+            this.dgvMaker.MultiSelect = false;
             this.dgvMaker.Name = "dgvMaker";
             this.dgvMaker.ReadOnly = true;
             this.dgvMaker.RowTemplate.Height = 21;

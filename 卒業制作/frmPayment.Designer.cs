@@ -99,6 +99,7 @@
             this.convenience_store,
             this.paymented});
             this.dgvPayment.Location = new System.Drawing.Point(48, 83);
+            this.dgvPayment.MultiSelect = false;
             this.dgvPayment.Name = "dgvPayment";
             this.dgvPayment.ReadOnly = true;
             this.dgvPayment.RowTemplate.Height = 21;

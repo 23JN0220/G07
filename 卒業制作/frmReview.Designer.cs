@@ -60,6 +60,7 @@
             this.goods_code,
             this.star_quantity});
             this.dgvReview.Location = new System.Drawing.Point(39, 74);
+            this.dgvReview.MultiSelect = false;
             this.dgvReview.Name = "dgvReview";
             this.dgvReview.ReadOnly = true;
             this.dgvReview.RowTemplate.Height = 21;
