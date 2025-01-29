@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,8 @@ namespace 卒業制作
     public partial class frmGoodsGokanseiMotherBoard : Form
     {
         public List<int> idList = new List<int>();
+
+        private bool processed = false;
 
         public frmGoodsGokanseiMotherBoard()
         {
@@ -45,11 +48,7 @@ namespace 卒業制作
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("内容を保存せずに戻ります。\n本当に戻りますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-            if (result == DialogResult.Yes)
-            {
-                this.Close();
-            }
+            this.Close();
         }
 
         private void btnOK_Click(object sender, EventArgs e)
@@ -63,7 +62,20 @@ namespace 卒業制作
                 idList.Add(size_id);
             }
 
+            processed = true;
             this.Close();
+        }
+
+        private void frmGoodsGokanseiMotherBoard_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!processed)
+            {
+                DialogResult result = MessageBox.Show("内容を保存せずに戻ります。\n本当に戻りますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                if (result != DialogResult.Yes)
+                {
+                    e.Cancel = true;
+                }
+            }
         }
     }
 }

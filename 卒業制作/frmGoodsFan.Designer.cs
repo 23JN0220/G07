@@ -217,6 +217,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoodsFan";
             this.Text = "ケースファン";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGoodsFan_FormClosing);
             this.Load += new System.EventHandler(this.frmGoodsFan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

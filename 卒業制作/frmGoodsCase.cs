@@ -21,6 +21,8 @@ namespace 卒業制作
         public bool changedPic = false;
         public string format = null;
 
+        private bool processed = false;
+
         public frmGoodsCase()
         {
             InitializeComponent();
@@ -28,11 +30,7 @@ namespace 卒業制作
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            DialogResult ret = MessageBox.Show("編集中の内容は保存されません。\n本当に閉じますか?", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-            if (ret == DialogResult.Yes)
-            {
-                this.Close();
-            }
+            this.Close();
         }
 
 
@@ -241,6 +239,7 @@ namespace 卒業制作
 
 
                                             MessageBox.Show("商品を追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                            processed = true;
                                             this.Close();
                                         }
                                         else
@@ -342,6 +341,7 @@ namespace 卒業制作
 
 
                                         MessageBox.Show("商品を更新しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                        processed = true;
                                         this.Close();
                                     }
                                     else
@@ -375,6 +375,19 @@ namespace 卒業制作
             {
                 MessageBox.Show("未入力の項目があります。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void frmGoodsCase_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!processed)
+            {
+                DialogResult ret = MessageBox.Show("編集中の内容は保存されません。\n本当に閉じますか?", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                if (ret != DialogResult.Yes)
+                {
+                    e.Cancel = true;
+                }
+            }
+
         }
     }
 }

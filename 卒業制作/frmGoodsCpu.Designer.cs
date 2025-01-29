@@ -377,6 +377,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoodsCpu";
             this.Text = "CPU";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGoodsCpu_FormClosing);
             this.Load += new System.EventHandler(this.frmGoodsCpu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

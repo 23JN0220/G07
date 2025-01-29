@@ -17,6 +17,8 @@ namespace 卒業制作
     {
         public Maker maker;
 
+        private bool processed = false;
+
         public frmMakerAdd()
         {
             InitializeComponent();
@@ -24,11 +26,7 @@ namespace 卒業制作
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            DialogResult ret = MessageBox.Show("編集中の内容は保存されません。\n本当に閉じますか?", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-            if (ret == DialogResult.Yes)
-            {
-                this.Close();
-            }
+            this.Close();
         }
 
         private void btnOk_Click(object sender, EventArgs e)
@@ -63,6 +61,7 @@ namespace 卒業制作
                     if (ret == 1)
                     {
                         MessageBox.Show("登録が完了しました。", "登録完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        processed = true;
                         this.Close();
                     }
                     else
@@ -89,6 +88,19 @@ namespace 卒業制作
 
                
               
+            }
+        }
+
+        private void frmMakerAdd_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!processed)
+            {
+                DialogResult ret = MessageBox.Show("編集中の内容は保存されません。\n本当に閉じますか?", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                if (ret != DialogResult.Yes)
+                {
+                    e.Cancel = true;
+
+                }
             }
         }
     }

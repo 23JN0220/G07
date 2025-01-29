@@ -21,6 +21,8 @@ namespace 卒業制作
         public bool changedPic = false;
         public string format = null;
 
+        private bool processed = false;
+
         public frmGoodsCooler()
         {
             InitializeComponent();
@@ -28,12 +30,7 @@ namespace 卒業制作
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            DialogResult ret = MessageBox.Show("編集中の内容は保存されません。\n本当に閉じますか?", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-            if (ret == DialogResult.Yes)
-            {
-                this.Close();
-            }
-
+            this.Close();
         }
 
         private void btnPicture_Click(object sender, EventArgs e)
@@ -166,6 +163,7 @@ namespace 卒業制作
                                             }
 
                                             MessageBox.Show("商品を追加しました。", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                            processed = true;
                                             this.Close();
                                         }
                                         else
@@ -239,6 +237,7 @@ namespace 卒業制作
                                         }
 
                                         MessageBox.Show("商品情報を更新しました", "追加完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                        processed = true;
                                         this.Close();
                                     }
                                     else
@@ -265,11 +264,24 @@ namespace 卒業制作
                 else
                 {
                     MessageBox.Show("高さと価格の入力欄には半角数字を入力してください", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }    
+                }
             }
             else
             {
                 MessageBox.Show("未入力の項目があります", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void frmGoodsCooler_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!processed)
+            {
+                DialogResult ret = MessageBox.Show("編集中の内容は保存されません。\n本当に閉じますか?", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                if (ret != DialogResult.Yes)
+                {
+                    e.Cancel = true;
+
+                }
             }
         }
     }

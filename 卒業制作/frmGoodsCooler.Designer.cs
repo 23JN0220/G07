@@ -240,6 +240,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoodsCooler";
             this.Text = "CPUクーラー";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGoodsCooler_FormClosing);
             this.Load += new System.EventHandler(this.frmGoodsCooler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

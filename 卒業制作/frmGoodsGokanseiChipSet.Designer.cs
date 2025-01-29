@@ -97,6 +97,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoodsGokanseiChipSet";
             this.Text = "項目選択";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGoodsGokanseiChipSet_FormClosing);
             this.Load += new System.EventHandler(this.frmGoodsGokanseiChipSet_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

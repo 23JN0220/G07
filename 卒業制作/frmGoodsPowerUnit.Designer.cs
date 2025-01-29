@@ -287,6 +287,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoodsPowerUnit";
             this.Text = "電源ユニット";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGoodsPowerUnit_FormClosing);
             this.Load += new System.EventHandler(this.frmGoodsPowerUnit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -220,6 +220,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoodsHdd";
             this.Text = "HDD";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGoodsHdd_FormClosing);
             this.Load += new System.EventHandler(this.frmGoodsHdd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

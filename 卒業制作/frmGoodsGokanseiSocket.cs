@@ -15,6 +15,8 @@ namespace 卒業制作
     {
         public List<int> idList = new List<int>();
 
+        private bool processed = false;
+
         public frmGoodsGokanseiSocket()
         {
             InitializeComponent();
@@ -44,11 +46,7 @@ namespace 卒業制作
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("内容を保存せずに戻ります。\n本当に戻りますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-            if (result == DialogResult.Yes)
-            {
-                this.Close();
-            }
+            this.Close();
         }
 
         private void btnOK_Click(object sender, EventArgs e)
@@ -63,7 +61,20 @@ namespace 卒業制作
                 idList.Add(socket_id);
             }
 
+            processed = true;
             this.Close();
+        }
+
+        private void frmGoodsGokanseiSocket_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!processed)
+            {
+                DialogResult result = MessageBox.Show("内容を保存せずに戻ります。\n本当に戻りますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                if (result != DialogResult.Yes)
+                {
+                    e.Cancel = true;
+                }
+            }
         }
     }
 }

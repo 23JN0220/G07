@@ -447,6 +447,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoodsGpu";
             this.Text = "グラフィックボード";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGoodsGpu_FormClosing);
             this.Load += new System.EventHandler(this.frmGoodsGpu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

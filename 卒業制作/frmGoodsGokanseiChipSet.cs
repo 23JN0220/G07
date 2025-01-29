@@ -16,14 +16,14 @@ namespace 卒業制作
     {
 
         public List<int> idList = new List<int>();
-
+        private bool processed = false;
 
         public frmGoodsGokanseiChipSet()
         {
             InitializeComponent();
         }
 
-        
+
         private void frmGoodsGokanseiChipSet_Load(object sender, EventArgs e)
         {
             ChipSetSeriesTable chipSetSeriesTable = new ChipSetSeriesTable();
@@ -36,7 +36,8 @@ namespace 卒業制作
 
                 lstData.Items.Add(dr[1].ToString());
 
-                if (idList.Contains(int.Parse(dr[0].ToString()))) {
+                if (idList.Contains(int.Parse(dr[0].ToString())))
+                {
                     //MessageBox.Show(dr[0].ToString());
                     lstData.SetSelected(i, true);
                 }
@@ -50,11 +51,7 @@ namespace 卒業制作
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("内容を保存せずに戻ります。\n本当に戻りますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-            if (result == DialogResult.Yes)
-            {
-                this.Close();
-            }
+            this.Close();
         }
 
 
@@ -72,7 +69,20 @@ namespace 卒業制作
                 idList.Add(series_id);
             }
 
+            processed = true;
             this.Close();
+        }
+
+        private void frmGoodsGokanseiChipSet_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!processed)
+            {
+                DialogResult result = MessageBox.Show("内容を保存せずに戻ります。\n本当に戻りますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                if (result != DialogResult.Yes)
+                {
+                    e.Cancel = true;
+                }
+            }
         }
     }
 }

@@ -541,6 +541,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmGoodsCase";
             this.Text = "PCケース";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGoodsCase_FormClosing);
             this.Load += new System.EventHandler(this.frmGoodsCase_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
