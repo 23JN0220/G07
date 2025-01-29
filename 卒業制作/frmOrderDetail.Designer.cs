@@ -78,6 +78,7 @@
             this.num});
             this.dgvOrder.Location = new System.Drawing.Point(12, 108);
             this.dgvOrder.Name = "dgvOrder";
+            this.dgvOrder.ReadOnly = true;
             this.dgvOrder.RowTemplate.Height = 21;
             this.dgvOrder.Size = new System.Drawing.Size(569, 243);
             this.dgvOrder.TabIndex = 4;
@@ -87,6 +88,7 @@
             this.goods_code.DataPropertyName = "goods_code";
             this.goods_code.HeaderText = "商品番号";
             this.goods_code.Name = "goods_code";
+            this.goods_code.ReadOnly = true;
             this.goods_code.Width = 119;
             // 
             // num
@@ -94,6 +96,7 @@
             this.num.DataPropertyName = "num";
             this.num.HeaderText = "個数";
             this.num.Name = "num";
+            this.num.ReadOnly = true;
             this.num.Width = 77;
             // 
             // btnBack

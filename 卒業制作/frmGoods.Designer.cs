@@ -96,6 +96,7 @@
             // dgvGoods
             // 
             this.dgvGoods.AllowUserToAddRows = false;
+            this.dgvGoods.AllowUserToDeleteRows = false;
             this.dgvGoods.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvGoods.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvGoods.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;

@@ -61,6 +61,7 @@
             this.star_quantity});
             this.dgvReview.Location = new System.Drawing.Point(39, 74);
             this.dgvReview.Name = "dgvReview";
+            this.dgvReview.ReadOnly = true;
             this.dgvReview.RowTemplate.Height = 21;
             this.dgvReview.Size = new System.Drawing.Size(510, 258);
             this.dgvReview.TabIndex = 1;
@@ -70,6 +71,7 @@
             this.member_id.DataPropertyName = "member_id";
             this.member_id.HeaderText = "会員番号";
             this.member_id.Name = "member_id";
+            this.member_id.ReadOnly = true;
             this.member_id.Width = 119;
             // 
             // goods_code
@@ -77,6 +79,7 @@
             this.goods_code.DataPropertyName = "goods_code";
             this.goods_code.HeaderText = "商品番号";
             this.goods_code.Name = "goods_code";
+            this.goods_code.ReadOnly = true;
             this.goods_code.Width = 119;
             // 
             // star_quantity
@@ -84,6 +87,7 @@
             this.star_quantity.DataPropertyName = "star_quantity";
             this.star_quantity.HeaderText = "星の数";
             this.star_quantity.Name = "star_quantity";
+            this.star_quantity.ReadOnly = true;
             this.star_quantity.Width = 94;
             // 
             // btnClose

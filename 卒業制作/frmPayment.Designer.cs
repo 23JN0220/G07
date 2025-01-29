@@ -100,6 +100,7 @@
             this.paymented});
             this.dgvPayment.Location = new System.Drawing.Point(48, 83);
             this.dgvPayment.Name = "dgvPayment";
+            this.dgvPayment.ReadOnly = true;
             this.dgvPayment.RowTemplate.Height = 21;
             this.dgvPayment.Size = new System.Drawing.Size(751, 283);
             this.dgvPayment.TabIndex = 4;
@@ -109,6 +110,7 @@
             this.order_id.DataPropertyName = "order_id";
             this.order_id.HeaderText = "注文番号";
             this.order_id.Name = "order_id";
+            this.order_id.ReadOnly = true;
             this.order_id.Width = 119;
             // 
             // order_date
@@ -116,6 +118,7 @@
             this.order_date.DataPropertyName = "order_date";
             this.order_date.HeaderText = "注文日時";
             this.order_date.Name = "order_date";
+            this.order_date.ReadOnly = true;
             this.order_date.Width = 119;
             // 
             // member_id
@@ -123,6 +126,7 @@
             this.member_id.DataPropertyName = "member_id";
             this.member_id.HeaderText = "会員番号";
             this.member_id.Name = "member_id";
+            this.member_id.ReadOnly = true;
             this.member_id.Width = 119;
             // 
             // price
@@ -130,6 +134,7 @@
             this.price.DataPropertyName = "price";
             this.price.HeaderText = "合計金額";
             this.price.Name = "price";
+            this.price.ReadOnly = true;
             this.price.Width = 119;
             // 
             // creditcard_number
@@ -137,6 +142,7 @@
             this.creditcard_number.DataPropertyName = "creditcard_number";
             this.creditcard_number.HeaderText = "カード番号";
             this.creditcard_number.Name = "creditcard_number";
+            this.creditcard_number.ReadOnly = true;
             this.creditcard_number.Width = 124;
             // 
             // convenience_store
@@ -144,6 +150,7 @@
             this.convenience_store.DataPropertyName = "convenience_store";
             this.convenience_store.HeaderText = "コンビニ名";
             this.convenience_store.Name = "convenience_store";
+            this.convenience_store.ReadOnly = true;
             this.convenience_store.Width = 118;
             // 
             // paymented
@@ -151,6 +158,7 @@
             this.paymented.DataPropertyName = "paymented";
             this.paymented.HeaderText = "支払い済み";
             this.paymented.Name = "paymented";
+            this.paymented.ReadOnly = true;
             this.paymented.Width = 134;
             // 
             // btnClose

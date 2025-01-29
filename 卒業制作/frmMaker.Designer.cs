@@ -81,6 +81,7 @@
             // dgvMaker
             // 
             this.dgvMaker.AllowUserToAddRows = false;
+            this.dgvMaker.AllowUserToDeleteRows = false;
             this.dgvMaker.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvMaker.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvMaker.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -89,6 +90,7 @@
             this.maker_name});
             this.dgvMaker.Location = new System.Drawing.Point(54, 72);
             this.dgvMaker.Name = "dgvMaker";
+            this.dgvMaker.ReadOnly = true;
             this.dgvMaker.RowTemplate.Height = 21;
             this.dgvMaker.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMaker.Size = new System.Drawing.Size(420, 205);
