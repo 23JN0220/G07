@@ -33,9 +33,6 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.dgvPayment = new System.Windows.Forms.DataGridView();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnSearchReset = new System.Windows.Forms.Button();
-            this.btnDetail = new System.Windows.Forms.Button();
             this.order_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.order_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.member_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,6 +40,9 @@
             this.creditcard_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.convenience_store = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paymented = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnSearchReset = new System.Windows.Forms.Button();
+            this.btnDetail = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPayment)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,6 +58,7 @@
             // txtNumber
             // 
             this.txtNumber.Location = new System.Drawing.Point(211, 18);
+            this.txtNumber.MaxLength = 240;
             this.txtNumber.Name = "txtNumber";
             this.txtNumber.Size = new System.Drawing.Size(246, 28);
             this.txtNumber.TabIndex = 1;
@@ -105,36 +106,6 @@
             this.dgvPayment.RowTemplate.Height = 21;
             this.dgvPayment.Size = new System.Drawing.Size(751, 283);
             this.dgvPayment.TabIndex = 4;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Location = new System.Drawing.Point(663, 395);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(136, 37);
-            this.btnClose.TabIndex = 7;
-            this.btnClose.Text = "閉じる";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnSearchReset
-            // 
-            this.btnSearchReset.Location = new System.Drawing.Point(558, 18);
-            this.btnSearchReset.Name = "btnSearchReset";
-            this.btnSearchReset.Size = new System.Drawing.Size(122, 28);
-            this.btnSearchReset.TabIndex = 3;
-            this.btnSearchReset.Text = "検索リセット";
-            this.btnSearchReset.UseVisualStyleBackColor = true;
-            this.btnSearchReset.Click += new System.EventHandler(this.btnSearchReset_Click);
-            // 
-            // btnDetail
-            // 
-            this.btnDetail.Location = new System.Drawing.Point(48, 395);
-            this.btnDetail.Name = "btnDetail";
-            this.btnDetail.Size = new System.Drawing.Size(262, 37);
-            this.btnDetail.TabIndex = 6;
-            this.btnDetail.Text = "選択された番号の明細";
-            this.btnDetail.UseVisualStyleBackColor = true;
-            this.btnDetail.Click += new System.EventHandler(this.btnDetail_Click);
             // 
             // order_id
             // 
@@ -192,6 +163,36 @@
             this.paymented.Name = "paymented";
             this.paymented.ReadOnly = true;
             this.paymented.Width = 134;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(663, 395);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(136, 37);
+            this.btnClose.TabIndex = 7;
+            this.btnClose.Text = "閉じる";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnSearchReset
+            // 
+            this.btnSearchReset.Location = new System.Drawing.Point(558, 18);
+            this.btnSearchReset.Name = "btnSearchReset";
+            this.btnSearchReset.Size = new System.Drawing.Size(122, 28);
+            this.btnSearchReset.TabIndex = 3;
+            this.btnSearchReset.Text = "検索リセット";
+            this.btnSearchReset.UseVisualStyleBackColor = true;
+            this.btnSearchReset.Click += new System.EventHandler(this.btnSearchReset_Click);
+            // 
+            // btnDetail
+            // 
+            this.btnDetail.Location = new System.Drawing.Point(48, 395);
+            this.btnDetail.Name = "btnDetail";
+            this.btnDetail.Size = new System.Drawing.Size(262, 37);
+            this.btnDetail.TabIndex = 6;
+            this.btnDetail.Text = "選択された番号の明細";
+            this.btnDetail.UseVisualStyleBackColor = true;
+            this.btnDetail.Click += new System.EventHandler(this.btnDetail_Click);
             // 
             // frmPayment
             // 

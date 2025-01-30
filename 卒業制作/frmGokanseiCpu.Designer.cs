@@ -85,6 +85,7 @@
             this.txtSeries.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txtSeries.Location = new System.Drawing.Point(246, 119);
             this.txtSeries.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSeries.MaxLength = 240;
             this.txtSeries.Name = "txtSeries";
             this.txtSeries.Size = new System.Drawing.Size(198, 28);
             this.txtSeries.TabIndex = 2;
@@ -129,6 +130,7 @@
             this.txtGen.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txtGen.Location = new System.Drawing.Point(242, 241);
             this.txtGen.Margin = new System.Windows.Forms.Padding(2);
+            this.txtGen.MaxLength = 240;
             this.txtGen.Name = "txtGen";
             this.txtGen.Size = new System.Drawing.Size(198, 28);
             this.txtGen.TabIndex = 7;
@@ -231,6 +233,7 @@
             this.txtSocket.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txtSocket.Location = new System.Drawing.Point(246, 363);
             this.txtSocket.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSocket.MaxLength = 240;
             this.txtSocket.Name = "txtSocket";
             this.txtSocket.Size = new System.Drawing.Size(198, 28);
             this.txtSocket.TabIndex = 12;
@@ -296,6 +299,7 @@
             // 
             this.txtChipset.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txtChipset.Location = new System.Drawing.Point(245, 489);
+            this.txtChipset.MaxLength = 240;
             this.txtChipset.Name = "txtChipset";
             this.txtChipset.Size = new System.Drawing.Size(198, 28);
             this.txtChipset.TabIndex = 17;

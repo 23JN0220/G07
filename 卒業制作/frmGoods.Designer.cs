@@ -48,6 +48,7 @@
             // txtGoods
             // 
             this.txtGoods.Location = new System.Drawing.Point(146, 15);
+            this.txtGoods.MaxLength = 250;
             this.txtGoods.Name = "txtGoods";
             this.txtGoods.Size = new System.Drawing.Size(211, 28);
             this.txtGoods.TabIndex = 0;

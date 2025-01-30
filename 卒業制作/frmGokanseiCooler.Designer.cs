@@ -62,6 +62,7 @@
             // txtCPUcooler
             // 
             this.txtCPUcooler.Location = new System.Drawing.Point(229, 127);
+            this.txtCPUcooler.MaxLength = 240;
             this.txtCPUcooler.Name = "txtCPUcooler";
             this.txtCPUcooler.Size = new System.Drawing.Size(237, 28);
             this.txtCPUcooler.TabIndex = 2;

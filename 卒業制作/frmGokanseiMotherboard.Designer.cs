@@ -95,6 +95,7 @@
             this.txtChipset.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txtChipset.Location = new System.Drawing.Point(243, 122);
             this.txtChipset.Margin = new System.Windows.Forms.Padding(2);
+            this.txtChipset.MaxLength = 240;
             this.txtChipset.Name = "txtChipset";
             this.txtChipset.Size = new System.Drawing.Size(225, 28);
             this.txtChipset.TabIndex = 3;
@@ -152,6 +153,7 @@
             this.txtSize.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txtSize.Location = new System.Drawing.Point(242, 244);
             this.txtSize.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSize.MaxLength = 240;
             this.txtSize.Name = "txtSize";
             this.txtSize.Size = new System.Drawing.Size(225, 28);
             this.txtSize.TabIndex = 8;
@@ -220,6 +222,7 @@
             this.txtWirelessLan.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txtWirelessLan.Location = new System.Drawing.Point(242, 365);
             this.txtWirelessLan.Margin = new System.Windows.Forms.Padding(2);
+            this.txtWirelessLan.MaxLength = 240;
             this.txtWirelessLan.Name = "txtWirelessLan";
             this.txtWirelessLan.Size = new System.Drawing.Size(225, 28);
             this.txtWirelessLan.TabIndex = 14;

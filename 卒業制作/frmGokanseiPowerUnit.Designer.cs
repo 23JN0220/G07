@@ -61,6 +61,7 @@
             // txtSize
             // 
             this.txtSize.Location = new System.Drawing.Point(200, 125);
+            this.txtSize.MaxLength = 240;
             this.txtSize.Name = "txtSize";
             this.txtSize.Size = new System.Drawing.Size(249, 28);
             this.txtSize.TabIndex = 2;

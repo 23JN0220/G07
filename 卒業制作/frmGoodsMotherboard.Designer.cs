@@ -236,6 +236,7 @@
             // txtSataNumber
             // 
             this.txtSataNumber.Location = new System.Drawing.Point(527, 324);
+            this.txtSataNumber.MaxLength = 240;
             this.txtSataNumber.Name = "txtSataNumber";
             this.txtSataNumber.Size = new System.Drawing.Size(399, 28);
             this.txtSataNumber.TabIndex = 10;
@@ -243,6 +244,7 @@
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(527, 462);
+            this.txtPrice.MaxLength = 240;
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(399, 28);
             this.txtPrice.TabIndex = 14;
@@ -250,6 +252,7 @@
             // txtPciNumber
             // 
             this.txtPciNumber.Location = new System.Drawing.Point(527, 221);
+            this.txtPciNumber.MaxLength = 240;
             this.txtPciNumber.Name = "txtPciNumber";
             this.txtPciNumber.Size = new System.Drawing.Size(399, 28);
             this.txtPciNumber.TabIndex = 7;
@@ -257,6 +260,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(527, 12);
+            this.txtName.MaxLength = 240;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(399, 28);
             this.txtName.TabIndex = 1;
@@ -272,6 +276,7 @@
             // txtM2SSDNumber
             // 
             this.txtM2SSDNumber.Location = new System.Drawing.Point(527, 290);
+            this.txtM2SSDNumber.MaxLength = 240;
             this.txtM2SSDNumber.Name = "txtM2SSDNumber";
             this.txtM2SSDNumber.Size = new System.Drawing.Size(399, 28);
             this.txtM2SSDNumber.TabIndex = 9;
@@ -324,6 +329,7 @@
             // txtMaxNumber
             // 
             this.txtMaxNumber.Location = new System.Drawing.Point(527, 393);
+            this.txtMaxNumber.MaxLength = 240;
             this.txtMaxNumber.Name = "txtMaxNumber";
             this.txtMaxNumber.Size = new System.Drawing.Size(399, 28);
             this.txtMaxNumber.TabIndex = 12;

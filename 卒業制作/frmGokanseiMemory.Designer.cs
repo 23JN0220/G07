@@ -84,6 +84,7 @@
             this.txtMemoryStandard.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txtMemoryStandard.Location = new System.Drawing.Point(325, 96);
             this.txtMemoryStandard.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.txtMemoryStandard.MaxLength = 240;
             this.txtMemoryStandard.Name = "txtMemoryStandard";
             this.txtMemoryStandard.Size = new System.Drawing.Size(325, 28);
             this.txtMemoryStandard.TabIndex = 3;
@@ -138,6 +139,7 @@
             // txtModule
             // 
             this.txtModule.Location = new System.Drawing.Point(325, 291);
+            this.txtModule.MaxLength = 240;
             this.txtModule.Name = "txtModule";
             this.txtModule.Size = new System.Drawing.Size(325, 28);
             this.txtModule.TabIndex = 8;

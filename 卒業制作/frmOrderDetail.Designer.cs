@@ -51,6 +51,7 @@
             // txtSearchNumber
             // 
             this.txtSearchNumber.Location = new System.Drawing.Point(16, 46);
+            this.txtSearchNumber.MaxLength = 240;
             this.txtSearchNumber.Name = "txtSearchNumber";
             this.txtSearchNumber.Size = new System.Drawing.Size(293, 28);
             this.txtSearchNumber.TabIndex = 1;

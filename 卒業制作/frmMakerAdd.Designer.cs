@@ -39,6 +39,7 @@
             // txtMaker_id
             // 
             this.txtMaker_id.Location = new System.Drawing.Point(179, 36);
+            this.txtMaker_id.MaxLength = 240;
             this.txtMaker_id.Name = "txtMaker_id";
             this.txtMaker_id.ReadOnly = true;
             this.txtMaker_id.Size = new System.Drawing.Size(168, 28);
@@ -56,6 +57,7 @@
             // txtMaker_name
             // 
             this.txtMaker_name.Location = new System.Drawing.Point(179, 108);
+            this.txtMaker_name.MaxLength = 240;
             this.txtMaker_name.Name = "txtMaker_name";
             this.txtMaker_name.Size = new System.Drawing.Size(291, 28);
             this.txtMaker_name.TabIndex = 0;

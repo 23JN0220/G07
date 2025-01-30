@@ -158,6 +158,7 @@
             // txtPowerCapacity
             // 
             this.txtPowerCapacity.Location = new System.Drawing.Point(612, 116);
+            this.txtPowerCapacity.MaxLength = 240;
             this.txtPowerCapacity.Name = "txtPowerCapacity";
             this.txtPowerCapacity.Size = new System.Drawing.Size(399, 28);
             this.txtPowerCapacity.TabIndex = 4;
@@ -165,6 +166,7 @@
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(612, 253);
+            this.txtPrice.MaxLength = 240;
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(399, 28);
             this.txtPrice.TabIndex = 8;
@@ -172,6 +174,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(612, 12);
+            this.txtName.MaxLength = 240;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(399, 28);
             this.txtName.TabIndex = 1;
@@ -213,6 +216,7 @@
             // txtPciconnector
             // 
             this.txtPciconnector.Location = new System.Drawing.Point(612, 185);
+            this.txtPciconnector.MaxLength = 240;
             this.txtPciconnector.Name = "txtPciconnector";
             this.txtPciconnector.Size = new System.Drawing.Size(399, 28);
             this.txtPciconnector.TabIndex = 6;
@@ -229,6 +233,7 @@
             // txtSataConnector
             // 
             this.txtSataConnector.Location = new System.Drawing.Point(612, 219);
+            this.txtSataConnector.MaxLength = 240;
             this.txtSataConnector.Name = "txtSataConnector";
             this.txtSataConnector.Size = new System.Drawing.Size(399, 28);
             this.txtSataConnector.TabIndex = 7;

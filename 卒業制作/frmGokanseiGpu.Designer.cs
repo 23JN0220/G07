@@ -73,6 +73,7 @@
             // txtSeries
             // 
             this.txtSeries.Location = new System.Drawing.Point(307, 101);
+            this.txtSeries.MaxLength = 240;
             this.txtSeries.Name = "txtSeries";
             this.txtSeries.Size = new System.Drawing.Size(306, 28);
             this.txtSeries.TabIndex = 2;
@@ -129,6 +130,7 @@
             // txtInterface
             // 
             this.txtInterface.Location = new System.Drawing.Point(307, 280);
+            this.txtInterface.MaxLength = 240;
             this.txtInterface.Name = "txtInterface";
             this.txtInterface.Size = new System.Drawing.Size(306, 28);
             this.txtInterface.TabIndex = 8;
@@ -193,6 +195,7 @@
             // txtRes
             // 
             this.txtRes.Location = new System.Drawing.Point(307, 445);
+            this.txtRes.MaxLength = 240;
             this.txtRes.Name = "txtRes";
             this.txtRes.Size = new System.Drawing.Size(306, 28);
             this.txtRes.TabIndex = 15;

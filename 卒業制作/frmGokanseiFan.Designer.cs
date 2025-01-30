@@ -60,6 +60,7 @@
             // txtSizeStandards
             // 
             this.txtSizeStandards.Location = new System.Drawing.Point(210, 153);
+            this.txtSizeStandards.MaxLength = 240;
             this.txtSizeStandards.Name = "txtSizeStandards";
             this.txtSizeStandards.Size = new System.Drawing.Size(237, 28);
             this.txtSizeStandards.TabIndex = 2;

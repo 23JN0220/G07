@@ -53,6 +53,7 @@
             // txtMaker_Name
             // 
             this.txtMaker_Name.Location = new System.Drawing.Point(185, 32);
+            this.txtMaker_Name.MaxLength = 240;
             this.txtMaker_Name.Name = "txtMaker_Name";
             this.txtMaker_Name.Size = new System.Drawing.Size(186, 28);
             this.txtMaker_Name.TabIndex = 1;

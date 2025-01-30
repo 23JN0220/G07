@@ -74,6 +74,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(505, 12);
+            this.txtName.MaxLength = 240;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(399, 28);
             this.txtName.TabIndex = 1;
@@ -117,6 +118,7 @@
             // txtCore
             // 
             this.txtCore.Location = new System.Drawing.Point(505, 186);
+            this.txtCore.MaxLength = 240;
             this.txtCore.Name = "txtCore";
             this.txtCore.Size = new System.Drawing.Size(399, 28);
             this.txtCore.TabIndex = 6;
@@ -124,6 +126,7 @@
             // txtClock
             // 
             this.txtClock.Location = new System.Drawing.Point(505, 289);
+            this.txtClock.MaxLength = 240;
             this.txtClock.Name = "txtClock";
             this.txtClock.Size = new System.Drawing.Size(399, 28);
             this.txtClock.TabIndex = 9;
@@ -131,6 +134,7 @@
             // txtPowerConsumption
             // 
             this.txtPowerConsumption.Location = new System.Drawing.Point(505, 323);
+            this.txtPowerConsumption.MaxLength = 240;
             this.txtPowerConsumption.Name = "txtPowerConsumption";
             this.txtPowerConsumption.Size = new System.Drawing.Size(399, 28);
             this.txtPowerConsumption.TabIndex = 10;
@@ -138,6 +142,7 @@
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(505, 357);
+            this.txtPrice.MaxLength = 240;
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(399, 28);
             this.txtPrice.TabIndex = 11;
@@ -301,6 +306,7 @@
             // txtThread
             // 
             this.txtThread.Location = new System.Drawing.Point(505, 220);
+            this.txtThread.MaxLength = 240;
             this.txtThread.Name = "txtThread";
             this.txtThread.Size = new System.Drawing.Size(399, 28);
             this.txtThread.TabIndex = 7;

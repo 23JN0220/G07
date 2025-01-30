@@ -60,6 +60,7 @@
             // txtVersion
             // 
             this.txtVersion.Location = new System.Drawing.Point(244, 129);
+            this.txtVersion.MaxLength = 240;
             this.txtVersion.Name = "txtVersion";
             this.txtVersion.Size = new System.Drawing.Size(246, 28);
             this.txtVersion.TabIndex = 2;

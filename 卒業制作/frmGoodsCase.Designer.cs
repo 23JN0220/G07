@@ -246,6 +246,7 @@
             // txtCaseNumber
             // 
             this.txtCaseNumber.Location = new System.Drawing.Point(570, 287);
+            this.txtCaseNumber.MaxLength = 240;
             this.txtCaseNumber.Name = "txtCaseNumber";
             this.txtCaseNumber.Size = new System.Drawing.Size(399, 28);
             this.txtCaseNumber.TabIndex = 9;
@@ -253,6 +254,7 @@
             // txtSlotNumber
             // 
             this.txtSlotNumber.Location = new System.Drawing.Point(570, 321);
+            this.txtSlotNumber.MaxLength = 240;
             this.txtSlotNumber.Name = "txtSlotNumber";
             this.txtSlotNumber.Size = new System.Drawing.Size(399, 28);
             this.txtSlotNumber.TabIndex = 10;
@@ -260,6 +262,7 @@
             // txtDepth
             // 
             this.txtDepth.Location = new System.Drawing.Point(570, 458);
+            this.txtDepth.MaxLength = 240;
             this.txtDepth.Name = "txtDepth";
             this.txtDepth.Size = new System.Drawing.Size(399, 28);
             this.txtDepth.TabIndex = 14;
@@ -267,6 +270,7 @@
             // txtMaxGpu
             // 
             this.txtMaxGpu.Location = new System.Drawing.Point(570, 218);
+            this.txtMaxGpu.MaxLength = 240;
             this.txtMaxGpu.Name = "txtMaxGpu";
             this.txtMaxGpu.Size = new System.Drawing.Size(399, 28);
             this.txtMaxGpu.TabIndex = 7;
@@ -274,6 +278,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(570, 12);
+            this.txtName.MaxLength = 240;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(399, 28);
             this.txtName.TabIndex = 1;
@@ -289,6 +294,7 @@
             // txtBayNumber
             // 
             this.txtBayNumber.Location = new System.Drawing.Point(570, 116);
+            this.txtBayNumber.MaxLength = 240;
             this.txtBayNumber.Name = "txtBayNumber";
             this.txtBayNumber.Size = new System.Drawing.Size(399, 28);
             this.txtBayNumber.TabIndex = 4;
@@ -296,6 +302,7 @@
             // txt3ShadowBayNumber
             // 
             this.txt3ShadowBayNumber.Location = new System.Drawing.Point(570, 150);
+            this.txt3ShadowBayNumber.MaxLength = 240;
             this.txt3ShadowBayNumber.Name = "txt3ShadowBayNumber";
             this.txt3ShadowBayNumber.Size = new System.Drawing.Size(399, 28);
             this.txt3ShadowBayNumber.TabIndex = 5;
@@ -303,6 +310,7 @@
             // txt2ShadowBayNumber
             // 
             this.txt2ShadowBayNumber.Location = new System.Drawing.Point(570, 184);
+            this.txt2ShadowBayNumber.MaxLength = 240;
             this.txt2ShadowBayNumber.Name = "txt2ShadowBayNumber";
             this.txt2ShadowBayNumber.Size = new System.Drawing.Size(399, 28);
             this.txt2ShadowBayNumber.TabIndex = 6;
@@ -310,6 +318,7 @@
             // txtHeight
             // 
             this.txtHeight.Location = new System.Drawing.Point(570, 492);
+            this.txtHeight.MaxLength = 240;
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(399, 28);
             this.txtHeight.TabIndex = 15;
@@ -326,6 +335,7 @@
             // txtColor
             // 
             this.txtColor.Location = new System.Drawing.Point(570, 526);
+            this.txtColor.MaxLength = 240;
             this.txtColor.Name = "txtColor";
             this.txtColor.Size = new System.Drawing.Size(399, 28);
             this.txtColor.TabIndex = 16;
@@ -342,6 +352,7 @@
             // txtWidth
             // 
             this.txtWidth.Location = new System.Drawing.Point(570, 424);
+            this.txtWidth.MaxLength = 240;
             this.txtWidth.Name = "txtWidth";
             this.txtWidth.Size = new System.Drawing.Size(399, 28);
             this.txtWidth.TabIndex = 13;
@@ -349,6 +360,7 @@
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(570, 591);
+            this.txtPrice.MaxLength = 240;
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(399, 28);
             this.txtPrice.TabIndex = 19;
@@ -472,6 +484,7 @@
             // txtCooler
             // 
             this.txtCooler.Location = new System.Drawing.Point(570, 390);
+            this.txtCooler.MaxLength = 240;
             this.txtCooler.Name = "txtCooler";
             this.txtCooler.Size = new System.Drawing.Size(399, 28);
             this.txtCooler.TabIndex = 12;

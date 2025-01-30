@@ -92,6 +92,7 @@
             // txtSpec
             // 
             this.txtSpec.Location = new System.Drawing.Point(266, 104);
+            this.txtSpec.MaxLength = 240;
             this.txtSpec.Name = "txtSpec";
             this.txtSpec.Size = new System.Drawing.Size(237, 28);
             this.txtSpec.TabIndex = 4;
@@ -129,6 +130,7 @@
             // txtPlugs
             // 
             this.txtPlugs.Location = new System.Drawing.Point(266, 226);
+            this.txtPlugs.MaxLength = 240;
             this.txtPlugs.Name = "txtPlugs";
             this.txtPlugs.Size = new System.Drawing.Size(237, 28);
             this.txtPlugs.TabIndex = 9;
@@ -186,6 +188,7 @@
             // txtType
             // 
             this.txtType.Location = new System.Drawing.Point(266, 396);
+            this.txtType.MaxLength = 240;
             this.txtType.Name = "txtType";
             this.txtType.Size = new System.Drawing.Size(237, 28);
             this.txtType.TabIndex = 14;

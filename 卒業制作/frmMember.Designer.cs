@@ -117,6 +117,7 @@
             // txtMember
             // 
             this.txtMember.Location = new System.Drawing.Point(143, 41);
+            this.txtMember.MaxLength = 240;
             this.txtMember.Name = "txtMember";
             this.txtMember.Size = new System.Drawing.Size(235, 28);
             this.txtMember.TabIndex = 0;

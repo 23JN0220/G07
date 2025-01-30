@@ -255,6 +255,7 @@
             // txtDp
             // 
             this.txtDp.Location = new System.Drawing.Point(608, 286);
+            this.txtDp.MaxLength = 240;
             this.txtDp.Name = "txtDp";
             this.txtDp.Size = new System.Drawing.Size(399, 28);
             this.txtDp.TabIndex = 9;
@@ -262,6 +263,7 @@
             // txtHdmi
             // 
             this.txtHdmi.Location = new System.Drawing.Point(608, 320);
+            this.txtHdmi.MaxLength = 240;
             this.txtHdmi.Name = "txtHdmi";
             this.txtHdmi.Size = new System.Drawing.Size(399, 28);
             this.txtHdmi.TabIndex = 10;
@@ -269,6 +271,7 @@
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(608, 518);
+            this.txtPrice.MaxLength = 240;
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(399, 28);
             this.txtPrice.TabIndex = 16;
@@ -276,6 +279,7 @@
             // txtSize
             // 
             this.txtSize.Location = new System.Drawing.Point(608, 217);
+            this.txtSize.MaxLength = 240;
             this.txtSize.Name = "txtSize";
             this.txtSize.Size = new System.Drawing.Size(399, 28);
             this.txtSize.TabIndex = 7;
@@ -283,6 +287,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(608, 11);
+            this.txtName.MaxLength = 240;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(399, 28);
             this.txtName.TabIndex = 1;
@@ -298,6 +303,7 @@
             // txtMemory
             // 
             this.txtMemory.Location = new System.Drawing.Point(608, 115);
+            this.txtMemory.MaxLength = 240;
             this.txtMemory.Name = "txtMemory";
             this.txtMemory.Size = new System.Drawing.Size(399, 28);
             this.txtMemory.TabIndex = 4;
@@ -305,6 +311,7 @@
             // txtCuda
             // 
             this.txtCuda.Location = new System.Drawing.Point(608, 149);
+            this.txtCuda.MaxLength = 240;
             this.txtCuda.Name = "txtCuda";
             this.txtCuda.Size = new System.Drawing.Size(399, 28);
             this.txtCuda.TabIndex = 5;
@@ -312,6 +319,7 @@
             // txtPowerConsumption
             // 
             this.txtPowerConsumption.Location = new System.Drawing.Point(608, 183);
+            this.txtPowerConsumption.MaxLength = 240;
             this.txtPowerConsumption.Name = "txtPowerConsumption";
             this.txtPowerConsumption.Size = new System.Drawing.Size(399, 28);
             this.txtPowerConsumption.TabIndex = 6;
@@ -329,6 +337,7 @@
             // txtOutput
             // 
             this.txtOutput.Location = new System.Drawing.Point(608, 385);
+            this.txtOutput.MaxLength = 240;
             this.txtOutput.Name = "txtOutput";
             this.txtOutput.Size = new System.Drawing.Size(399, 28);
             this.txtOutput.TabIndex = 12;
@@ -346,6 +355,7 @@
             // txtSlot
             // 
             this.txtSlot.Location = new System.Drawing.Point(608, 484);
+            this.txtSlot.MaxLength = 240;
             this.txtSlot.Name = "txtSlot";
             this.txtSlot.Size = new System.Drawing.Size(399, 28);
             this.txtSlot.TabIndex = 15;
