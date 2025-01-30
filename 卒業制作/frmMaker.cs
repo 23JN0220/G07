@@ -104,7 +104,7 @@ namespace 卒業制作
 
                 if (ret2 == 0)
                 {
-                    DialogResult result = MessageBox.Show(maker_name + "を削除します。よろしいですか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult result = MessageBox.Show(maker_name + "を削除します。よろしいですか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
                     if (result == DialogResult.Yes)
                     {

@@ -165,7 +165,7 @@ namespace 卒業制作
 
                 if (dataTable == null && dataTable2 == null)
                 {
-                    DialogResult result = MessageBox.Show("「" + standard_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult result = MessageBox.Show("「" + standard_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
                     if (result == DialogResult.Yes)
                     {
                         int ret = ssdStandardTable.Delete(standard_name);
@@ -299,7 +299,7 @@ namespace 卒業制作
                 DataTable dataTable = goodsSsdTable.GetGoodsSsdByConnectionId(standard_id);
                 if (dataTable == null)
                 {
-                    DialogResult result = MessageBox.Show("「" + standard_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult result = MessageBox.Show("「" + standard_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
                     if (result == DialogResult.Yes)
                     {
                         if (result == DialogResult.Yes)
@@ -429,7 +429,7 @@ namespace 卒業制作
 
                 if (dataTable == null)
                 {
-                    DialogResult result = MessageBox.Show("「" + type_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult result = MessageBox.Show("「" + type_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
                     if (result == DialogResult.Yes)
                     {

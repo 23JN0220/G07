@@ -178,7 +178,7 @@ namespace 卒業制作
 
                 if (dataTable == null)
                 {
-                    DialogResult result = MessageBox.Show("「" + series_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult result = MessageBox.Show("「" + series_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
                     if (result == DialogResult.Yes)
                     {
                         int ret = cpuSeriesTable.Delete(series_name);
@@ -307,7 +307,7 @@ namespace 卒業制作
 
                 if (dataTable == null)
                 {
-                    DialogResult result = MessageBox.Show("「" + generation_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult result = MessageBox.Show("「" + generation_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
                     if (result == DialogResult.Yes)
                     {
                         int ret = cpuGenerationTable.Delete(generation_name);
@@ -440,7 +440,7 @@ namespace 卒業制作
 
                 if (dataTable == null && dataTable2 == null)
                 {
-                    DialogResult result = MessageBox.Show("「" + socket_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult result = MessageBox.Show("「" + socket_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
                     if (result == DialogResult.Yes)
                     {
                         int ret2 = coolerSocketTable.DeleteBySocketId(socket_id);
@@ -578,7 +578,7 @@ namespace 卒業制作
 
                 if (dataTable == null)
                 {
-                    DialogResult result = MessageBox.Show("「" + series_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult result = MessageBox.Show("「" + series_name + "」を削除します。\n削除すると元に戻せません。\n本当に削除しますか？", "削除確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
                     if (result == DialogResult.Yes)
                     {
                         int ret = chipSetSeriesTable.Delete(series_name);
