@@ -147,10 +147,10 @@
             // order_date
             // 
             this.order_date.DataPropertyName = "order_date";
-            this.order_date.HeaderText = "注文日時";
+            this.order_date.HeaderText = "注文日";
             this.order_date.Name = "order_date";
             this.order_date.ReadOnly = true;
-            this.order_date.Width = 119;
+            this.order_date.Width = 98;
             // 
             // member_id
             // 
