@@ -49,7 +49,7 @@ namespace 卒業制作
 
         private void btnPicture_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("画像は320×320のものを使用してください", "画像サイズについて", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("画像は320×320のJPG画像を使用してください", "画像サイズについて", MessageBoxButtons.OK, MessageBoxIcon.Information);
             DialogResult ret = ofdPicture.ShowDialog();
 
             if (ret == DialogResult.OK)
@@ -134,7 +134,7 @@ namespace 卒業制作
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            if (txtName.Text != "" && lstMaker.SelectedIndex != -1 && lstCaseFan.SelectedIndex != -1 && lstUnit.SelectedIndex != -1 && txtColor.Text != "")
+            if (txtName.Text != "" && lstMaker.SelectedIndex != -1 && lstCaseFan.SelectedIndex != -1 && lstUnit.SelectedIndex != -1 && txtColor.Text != "" && idList.Count != 0)
             {
                 bool retBay = int.TryParse(txtBayNumber.Text, out int bay);
                 bool ret3ShadowBay = int.TryParse(txt3ShadowBayNumber.Text, out int shadowbay3);
@@ -367,7 +367,7 @@ namespace 卒業制作
                 }
                 else
                 {
-                    MessageBox.Show("名前・カラー以外のテキストボックスには数値を入力してください。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("入力された形式に誤りがあるか、未入力の項目があります。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
 
             }

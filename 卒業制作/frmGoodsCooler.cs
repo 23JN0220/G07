@@ -35,7 +35,7 @@ namespace 卒業制作
 
         private void btnPicture_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("画像は320×320のものを使用してください", "画像サイズについて", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("画像は320×320のJPG画像を使用してください", "画像サイズについて", MessageBoxButtons.OK, MessageBoxIcon.Information);
             DialogResult ret = ofdPicture.ShowDialog();
 
             if (ret == DialogResult.OK)
@@ -96,7 +96,7 @@ namespace 卒業制作
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            if (txtName.Text != "" && lstMaker.SelectedIndex != -1 && lstType.SelectedIndex != -1 && txtSize.Text != "" && txtPrice.Text != "")
+            if (txtName.Text != "" && lstMaker.SelectedIndex != -1 && lstType.SelectedIndex != -1 && txtSize.Text != "" && txtPrice.Text != "" && idList.Count != 0)
             {
                 GoodsTable goodsTable = new GoodsTable();
                 GoodsCoolerTable goodsCoolerTable = new GoodsCoolerTable();
@@ -263,7 +263,7 @@ namespace 卒業制作
                 }
                 else
                 {
-                    MessageBox.Show("高さと価格の入力欄には半角数字を入力してください", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("入力された形式に誤りがあるか、未入力の項目があります。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
             else
