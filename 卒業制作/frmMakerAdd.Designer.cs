@@ -105,7 +105,7 @@
             this.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmMakerAdd";
-            this.Text = "メーカー名編集";
+            this.Text = "メーカー名追加編集";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMakerAdd_FormClosing);
             this.Load += new System.EventHandler(this.frmMakerAdd_Load);
             this.ResumeLayout(false);
