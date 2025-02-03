@@ -47,6 +47,7 @@ namespace 卒業制作
                 if (ret == 1)
                 {
                     MessageBox.Show("更新が完了しました。", "更新完了", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    processed = true;
                     this.Close();
                 }
                 else
