@@ -81,7 +81,7 @@ namespace ClassLibrary
               
                 command4.ExecuteNonQuery();
 
-                string sql5 = "DELETE FROM Order_Detail WHERE order_id = (SELECT order_id FROM Goods_Order  WHERE member_id = @member_id)";
+                string sql5 = "DELETE FROM Order_Detail WHERE order_id IN (SELECT order_id FROM Goods_Order  WHERE member_id = @member_id)";
 
                 SqlCommand command5 = new SqlCommand(sql5, connection);
                 command5.Parameters.AddWithValue("@member_id", member_id);
